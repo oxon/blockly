@@ -59,6 +59,10 @@ Blockly.Arduino.oxocard_audio_play_recorded = function() {
   return 'oxocard.audio->playRecorded(' + forever + ');\n';
 };
 
+Blockly.Arduino.oxocard_audio_wait_for_loud_noise = function() {
+  return 'oxocard.audio->waitForLoudNoise();\n';
+};
+
 Blockly.Arduino.oxocard_audio_stop_tone = function(block) {
 	return 'oxocard.audio->noTone();\n';
 };

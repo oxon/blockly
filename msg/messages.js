@@ -1558,6 +1558,8 @@ Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TITLE = 'Record for';
 Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TIP = 'Record audio data for given time in milliseconds';
 Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TITLE = 'Play recorded';
 Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TIP = 'Plays the recorded audio data';
+Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE = 'Wait for a loud noise';
+Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP = 'Wait until a loud noise was measured by the microphone';
 
 // Time
 Blockly.Msg.OXOCARD_TIME_UPDATE_TITLE = 'Synchronize time';

@@ -691,6 +691,8 @@
 	"OXOCARD_AUDIO_RECORD_FOR_TIP": "Nehme Audiodaten für die definierte Zeitdauer in Millisekunden auf",
 	"OXOCARD_AUDIO_PLAY_RECORDED_TITLE": "Spiele das Aufgenommene",
 	"OXOCARD_AUDIO_PLAY_RECORDED_TIP": "Spiele die aufgenommenen Audiodaten ab",
+	"OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE": "Warte auf lautes Geräusch",
+	"OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP": "Warte bis ein lautes Geräusch vom Mikrofon gemessen wurde",
 	"OXOCARD_CONNECT_TO_INTERNET_SINE": "Sinus",
 	"OXOCARD_CONNECT_TO_INTERNET_SQUARE": "Rechteck",
 	"OXOCARD_CONNECT_TO_INTERNET_SAWTOOTH": "Sägezahn",

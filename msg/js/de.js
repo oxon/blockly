@@ -422,6 +422,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_VOLUME_DOWN_TITLE = "Verringere Lautstärke";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_VOLUME_UP_TIP = "Erhöht die Lautstärke um eine Stufe";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_VOLUME_UP_TITLE = "Erhöhe Lautstärke";
+/** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP = "Warte bis ein lautes Geräusch vom Mikrofon gemessen wurde";
+/** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE = "Warte auf lautes Geräusch";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TIP = "Warte nach jedem Ton, bis er fertig gespielt wurde";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE = "Nach jedem Ton warten";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_NOT_FOR_TONE_TIP = "Wartet nicht nach jedem Ton, bis er fertig ist";

@@ -173,6 +173,18 @@ Blockly.Blocks.oxocard_audio_play_recorded = {
 	}
 };
 
+Blockly.Blocks.oxocard_audio_wait_for_loud_noise = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP);
+		this.setColour(Blockly.ColorDefinitions.AUDIO);
+	}
+};
+
 Blockly.Blocks.oxocard_audio_stop_tone = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {

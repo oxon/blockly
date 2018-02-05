@@ -422,6 +422,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_VOLUME_DOWN_TITLE = "Volume down";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_VOLUME_UP_TIP = "Turns the volume one step up";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_VOLUME_UP_TITLE = "Volume up";
+/** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP = "Wait until a loud noise was measured by the microphone";
+/** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE = "Wait for a loud noise";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TIP = "If this is set the programm waits after every following tone";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE = "Wait after tones";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAIT_NOT_FOR_TONE_TIP = "If this is set the programm does not wait after every following tone";
