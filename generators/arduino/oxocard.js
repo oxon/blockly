@@ -19,17 +19,17 @@ Blockly.Arduino.oxocard_turn_off = function(block) {
 };
 
 Blockly.Arduino['oxocard_turn_off_with_buttons'] = function(block) {
-	console.log(this);//blup
-	var valueL1 = this.getFieldValue("L1").toLowerCase();
-	var valueL2 = this.getFieldValue("L2").toLowerCase();
-	var valueL3 = this.getFieldValue("L3").toLowerCase();
-	var valueR1 = this.getFieldValue("R1").toLowerCase();
-	var valueR2 = this.getFieldValue("R2").toLowerCase();
-	var valueR3 = this.getFieldValue("R3").toLowerCase();
-	return 'uint8_t buttonByte = oxocard.button->createButtonByte(\n'
-		+ '  ' + valueL1 + ', ' + valueL2 + ', ' + valueL3 + ', '
-		+ valueR1 + ', ' + valueR2 + ', ' + valueR3 + ');\n'
-		+ 'oxocard.system->turnOff(buttonByte);\n'
+	var valueL1 = this.getFieldValue("L1") == 'TRUE' ? '1' : '0';
+	var valueL2 = this.getFieldValue("L2") == 'TRUE' ? '1' : '0';
+	var valueL3 = this.getFieldValue("L3") == 'TRUE' ? '1' : '0';
+	var valueR1 = this.getFieldValue("R1") == 'TRUE' ? '1' : '0';
+	var valueR2 = this.getFieldValue("R2") == 'TRUE' ? '1' : '0';
+	var valueR3 = this.getFieldValue("R3") == 'TRUE' ? '1' : '0';
+	return 'oxocard.system->turnOff(\n'
+		+ '  oxocard.button->createButtonByte('
+		+ valueL1 + ', ' + valueL2 + ', ' + valueL3 + ', '
+		+ valueR1 + ', ' + valueR2 + ', ' + valueR3 + ')\n'
+		+ ');\n'
 };
 
 Blockly.Arduino.oxocard_handle_auto_turnoff = function() {

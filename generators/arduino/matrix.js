@@ -14,7 +14,7 @@ Blockly.Arduino.oxocard_matrix_draw_image = function() {
 	}
 	var posX = Blockly.Arduino.valueToCode(this, 'X', Blockly.Arduino.ORDER_NONE) || '0';
 	var posY = Blockly.Arduino.valueToCode(this, 'Y', Blockly.Arduino.ORDER_NONE) || '0';
-	return code = code + posX + ',' + posY + ');\n';
+	return code = code + ' ' + posX + ', ' + posY + ');\n';
 };
 
 Blockly.Arduino.oxocard_matrix_draw_rgb_image = function() {
@@ -139,8 +139,9 @@ Blockly.Arduino.oxocard_matrix_draw_text = function() {
 };
 
 Blockly.Arduino.oxocard_matrix_draw_weather = function() {
-	return 'rgbColor_t color = oxocard.weather->getDrawableIconColor();\n'
-		+ 'uint8_t *imagePtr = oxocard.weather->getDrawableIcon();\n'
-		+ 'oxocard.matrix->clear();\n'
-		+ 'oxocard.matrix->drawImage(imagePtr, 0, 0, color);\n';
+	return 'oxocard.matrix->clear();\n'
+		+ 'oxocard.matrix->drawImage(\n'
+		+ '  oxocard.weather->getDrawableIcon(), 0, 0,\n'
+		+ '  oxocard.weather->getDrawableIconColor()\n'
+		+ ');\n';
 };
