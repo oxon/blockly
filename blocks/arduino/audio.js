@@ -143,6 +143,36 @@ Blockly.Blocks.oxocard_audio_wait = {
 	}
 };
 
+Blockly.Blocks.oxocard_audio_record_for = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TITLE)
+			.appendField(new Blockly.FieldDropdown([["250ms", "250"],
+				["500ms", "500"], ["1s", "1000"],
+				["1.5s", "1500"], ["2s", "2000"],
+				["2.5s", "2500"], ["3s", "3000"]]), "DUR")
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TIP);
+		this.setColour(Blockly.ColorDefinitions.AUDIO);
+	}
+};
+
+Blockly.Blocks.oxocard_audio_play_recorded = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TITLE)
+			.appendField(new Blockly.FieldDropdown([["1", "false"],
+				["∞", "true"]]), "FOREVER")
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TIP);
+		this.setColour(Blockly.ColorDefinitions.AUDIO);
+	}
+};
+
 Blockly.Blocks.oxocard_audio_stop_tone = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {

@@ -31,12 +31,12 @@ Blockly.Arduino.oxocard_audio_volume_down = function(block) {
 
 Blockly.Arduino.oxocard_audio_set_octave = function() {
   var octave = this.getFieldValue('OCTAVE');
-  return 'oxocard.audio->setGlobalOctave(Octave::' +octave +');\n';
+  return 'oxocard.audio->setGlobalOctave(Octave::' + octave +');\n';
 };
 
 Blockly.Arduino.oxocard_audio_set_waveform = function() {
   var waveform = this.getFieldValue('WAVEFORM');
-  return 'oxocard.audio->setGlobalWaveForm(WaveFormGenerator::' +waveform +');\n';
+  return 'oxocard.audio->setGlobalWaveForm(WaveFormGenerator::' + waveform +');\n';
 };
 
 Blockly.Arduino.oxocard_audio_set_bpm = function() {
@@ -46,7 +46,17 @@ Blockly.Arduino.oxocard_audio_set_bpm = function() {
 
 Blockly.Arduino.oxocard_audio_wait = function() {
   var duration = this.getFieldValue('DUR');
-  return 'delay(oxocard.audio->noteToMs(' +duration +'));\n';
+  return 'delay(oxocard.audio->noteToMs(' + duration + '));\n';
+};
+
+Blockly.Arduino.oxocard_audio_record_for = function() {
+  var duration = this.getFieldValue('DUR');
+  return 'oxocard.audio->recordFor(' + duration + ');\n';
+};
+
+Blockly.Arduino.oxocard_audio_play_recorded = function() {
+  var forever = this.getFieldValue('FOREVER').toLowerCase();
+  return 'oxocard.audio->playRecorded(' + forever + ');\n';
 };
 
 Blockly.Arduino.oxocard_audio_stop_tone = function(block) {
@@ -55,34 +65,34 @@ Blockly.Arduino.oxocard_audio_stop_tone = function(block) {
 
 Blockly.Arduino.oxocard_audio_play_tone = function() {
   var note = this.getFieldValue('NOTE');
-  return 'oxocard.audio->tone(Note::' +note +');\n';
+  return 'oxocard.audio->tone(Note::' + note +');\n';
 };
 
 Blockly.Arduino.oxocard_audio_play_tone_dur_ms = function() {
   var note = this.getFieldValue('NOTE');
   var duration = Blockly.Arduino.valueToCode(this, 'DUR', Blockly.Arduino.ORDER_ATOMIC) || 0;
-  return 'oxocard.audio->tone(Note::' +note +', ' +duration +');\n';
+  return 'oxocard.audio->tone(Note::' + note +', ' + duration +');\n';
 };
 
 Blockly.Arduino.oxocard_audio_play_tone_dur = function() {
   var note = this.getFieldValue('NOTE');
   var duration = this.getFieldValue('DUR');
-  return 'oxocard.audio->tone(Note::' +note +', oxocard.audio->noteToMs(' +duration +'));\n';
+  return 'oxocard.audio->tone(Note::' + note +', oxocard.audio->noteToMs(' + duration +'));\n';
 };
 
 Blockly.Arduino.oxocard_audio_play_tone_hz = function() {
   var note = Blockly.Arduino.valueToCode(this, 'FRQ', Blockly.Arduino.ORDER_ATOMIC) || 0;
-  return 'oxocard.audio->tone(' +note +');\n';
+  return 'oxocard.audio->tone(' + note +');\n';
 };
 
 Blockly.Arduino.oxocard_audio_play_tone_hz_dur_ms = function() {
   var note = Blockly.Arduino.valueToCode(this, 'FRQ', Blockly.Arduino.ORDER_ATOMIC) || 0;
   var duration = Blockly.Arduino.valueToCode(this, 'DUR', Blockly.Arduino.ORDER_ATOMIC) || 0;
-  return 'oxocard.audio->tone(' +note +', ' +duration +');\n';
+  return 'oxocard.audio->tone(' + note +', ' + duration +');\n';
 };
 
 Blockly.Arduino.oxocard_audio_play_tone_hz_dur = function() {
   var note = Blockly.Arduino.valueToCode(this, 'FRQ', Blockly.Arduino.ORDER_ATOMIC) || 0;
   var duration = this.getFieldValue('DUR');
-  return 'oxocard.audio->tone(' +note +', oxocard.audio->noteToMs(' +duration +'));\n';
+  return 'oxocard.audio->tone(' + note +', oxocard.audio->noteToMs(' + duration +'));\n';
 };

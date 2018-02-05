@@ -1553,7 +1553,11 @@ Blockly.Msg.OXOCARD_AUDIO_STOP_TONE_TIP = 'Stops the current playing tone';
 Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_TITLE = 'Play tone';
 Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_TIP = 'Plays a tone. the octave can set with the corresponding block';
 Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TITLE = 'Play tone (Herz)';
-Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TIP = 'Plays a tone in Herz.';
+Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TIP = 'Plays a tone in Herz';
+Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TITLE = 'Record for';
+Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TIP = 'Record audio data for given time in milliseconds';
+Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TITLE = 'Play recorded';
+Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TIP = 'Plays the recorded audio data';
 
 // Time
 Blockly.Msg.OXOCARD_TIME_UPDATE_TITLE = 'Synchronize time';

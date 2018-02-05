@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-01-26 14:32:40.094573",
+		"lastupdated": "2018-02-05 16:50:49.405257",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -693,7 +693,11 @@
 	"OXOCARD_AUDIO_PLAY_TONE_TITLE": "Play tone",
 	"OXOCARD_AUDIO_PLAY_TONE_TIP": "Plays a tone. the octave can set with the corresponding block",
 	"OXOCARD_AUDIO_PLAY_TONE_HZ_TITLE": "Play tone (Herz)",
-	"OXOCARD_AUDIO_PLAY_TONE_HZ_TIP": "Plays a tone in Herz.",
+	"OXOCARD_AUDIO_PLAY_TONE_HZ_TIP": "Plays a tone in Herz",
+	"OXOCARD_AUDIO_RECORD_FOR_TITLE": "Record for",
+	"OXOCARD_AUDIO_RECORD_FOR_TIP": "Record audio data for given time in milliseconds",
+	"OXOCARD_AUDIO_PLAY_RECORDED_TITLE": "Play recorded",
+	"OXOCARD_AUDIO_PLAY_RECORDED_TIP": "Plays the recorded audio data",
 	"OXOCARD_TIME_UPDATE_TITLE": "Synchronize time",
 	"OXOCARD_TIME_UPDATE_TIP": "Updates the time on the OXOcard",
 	"OXOCARD_TIME_GET_FROM_TITLE": "Get time for ",
