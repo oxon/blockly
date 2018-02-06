@@ -263,8 +263,6 @@ Blockly.Arduino['math_change'] = function(block) {
  * @return {array} Completed code with order of operation.
  */
 Blockly.Arduino.math_decrement = function(block) {
-	console.log(block);
-	console.log(block.getFieldValue('VAR'));
 	var varName = Blockly.Arduino.variableDB_.getName(
 		block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
 	return varName + ' --;\n';
