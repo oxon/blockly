@@ -38,9 +38,9 @@ Blockly.Blocks.math_increment = {
 	init: function() {
 		this.appendDummyInput()
 		.appendField(Blockly.Msg.OXOCARD_MATH_INCREMENT_TITLE);
-		this.appendValueInput('VAR')
-			.setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
-
+		this.appendDummyInput()
+		  .appendField(new Blockly.FieldVariable(
+		  Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
