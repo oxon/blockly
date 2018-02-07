@@ -17,8 +17,8 @@ Blockly.Blocks.math_decrement = {
 		this.appendDummyInput()
 		.appendField(Blockly.Msg.OXOCARD_MATH_DECREMENT_TITLE);
 		this.appendDummyInput()
-		  .appendField(new Blockly.FieldVariable(
-		  Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
+			.appendField(new Blockly.FieldVariable(
+				Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -39,8 +39,8 @@ Blockly.Blocks.math_increment = {
 		this.appendDummyInput()
 		.appendField(Blockly.Msg.OXOCARD_MATH_INCREMENT_TITLE);
 		this.appendDummyInput()
-		  .appendField(new Blockly.FieldVariable(
-		  Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
+			.appendField(new Blockly.FieldVariable(
+				Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -58,7 +58,7 @@ Blockly.Blocks.math_set_var_with = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TITLE)
 			.appendField(new Blockly.FieldVariable(
-			Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
+				Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TITLE2)
 			.appendField(new Blockly.FieldMathInput('1*(1+2)'), 'EXPRESSION')
@@ -67,29 +67,35 @@ Blockly.Blocks.math_set_var_with = {
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TIP);
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getVarType: function(varName) {
+		return Blockly.Types.NUMBER;
 	}
 };
 
-
-Blockly.Blocks.math_set_var_random= {
+Blockly.Blocks.math_set_var_random = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE)
 			.appendField(new Blockly.FieldVariable(
-			Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
-			this.appendValueInput('FROM')
-				.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE2)
-				.setCheck('Number')
-				.setAlign(Blockly.ALIGN_RIGHT);
-			this.appendValueInput('TO')
-				.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE3)
-				.setCheck('Number')
-				.setAlign(Blockly.ALIGN_RIGHT);
+				Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
+		this.appendValueInput('FROM')
+			.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE2)
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('TO')
+			.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE3)
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TIP);
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+		this.contextMenuMsg_ = Blockly.Msg.VARIABLES_SET_CREATE_GET;
+	},
+	getVarType: function(varName) {
+		return Blockly.Types.NUMBER;
 	}
 };
