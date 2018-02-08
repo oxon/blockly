@@ -156,10 +156,27 @@ Blockly.Arduino.oxocard_comm_send_direct_message_and_number = function(block) {
 	return 'oxocard.communication->sendDirectMessageAndNumber(\n  ' + msg + ',\n  ' + num + ',\n  ' + receiver + '\n);\n';
 };
 
+Blockly.Arduino.oxocard_comm_check_for_direct = function() {
+	var code = 'oxocard.communication->isDirectMessageAndNotFiltered()';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_comm_compare_direct_message = function() {
+	var msg = Blockly.Arduino.valueToCode(this, 'MSG', Blockly.Arduino.ORDER_NONE) ||  '""' ;
+	var code = 'oxocard.communication->compareDirectMessage(' + msg + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_comm_compare_direct_number = function() {
+	var num = Blockly.Arduino.valueToCode(this, 'NUM', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	var code = 'oxocard.communication->compareDirectNumber(' + num + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 // BROADCAST
 Blockly.Arduino.oxocard_comm_send_broadcast_message = function(block) {
 	var msg = Blockly.Arduino.valueToCode(this, 'MSG', Blockly.Arduino.ORDER_NONE) ||  '""' ;
-	return 'oxocard.communication->sendBroadcastMessage(' + msg +');\n';
+	return 'oxocard.communication->sendBroadcastMessage(' + msg + ');\n';
 };
 
 Blockly.Arduino.oxocard_comm_send_broadcast_number = function() {
@@ -170,7 +187,7 @@ Blockly.Arduino.oxocard_comm_send_broadcast_number = function() {
 Blockly.Arduino.oxocard_comm_send_broadcast_message_and_number = function(block) {
 	var msg = Blockly.Arduino.valueToCode(this, 'MSG', Blockly.Arduino.ORDER_NONE) ||  '""' ;
 	var num = Blockly.Arduino.valueToCode(this, 'NUM', Blockly.Arduino.ORDER_ATOMIC) || 0;
-	return 'oxocard.communication->sendBroadcastMessageAndNumber(' + msg +', ' +num +');\n';
+	return 'oxocard.communication->sendBroadcastMessageAndNumber(' + msg + ', ' + num + ');\n';
 };
 
 Blockly.Arduino.oxocard_comm_check_for_broadcast = function() {
@@ -180,7 +197,7 @@ Blockly.Arduino.oxocard_comm_check_for_broadcast = function() {
 
 Blockly.Arduino.oxocard_comm_compare_broadcast_message = function() {
 	var msg = Blockly.Arduino.valueToCode(this, 'MSG', Blockly.Arduino.ORDER_NONE) ||  '""' ;
-	var code = 'oxocard.communication->compareBroadcastMessage(' + msg +')';
+	var code = 'oxocard.communication->compareBroadcastMessage(' + msg + ')';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
