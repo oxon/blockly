@@ -497,6 +497,35 @@ Blockly.Blocks.oxocard_comm_compare_direct_number = {
     }
 };
 
+
+Blockly.Blocks.oxocard_comm_get_direct_message = {
+  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.OXOCARD_COMM_GET_DIRECT_MESSAGE_TITLE)
+    this.setOutput(true, 'Text');
+    this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_DIRECT_MESSAGE_TIP);
+    this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+  },
+  getBlockType: function() {
+    return Blockly.Types.TEXT;
+  }
+};
+
+Blockly.Blocks.oxocard_comm_get_direct_number = {
+  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TITLE)
+    this.setOutput(true, 'Number');
+    this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TIP);
+    this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+  },
+  getBlockType: function() {
+    return Blockly.Types.NUMBER;
+  }
+};
+
 // BROADCAST
 Blockly.Blocks.oxocard_comm_send_broadcast_message = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',

@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-08 16:26:56.154975",
+		"lastupdated": "2018-02-08 16:34:02.809840",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -663,6 +663,10 @@
 	"OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TIP": "Compares the direct message with the given message",
 	"OXOCARD_COMM_COMPARE_DIRECT_NUMBER_TITLE": "Compare direct number",
 	"OXOCARD_COMM_COMPARE_DIRECT_NUMBER_TIP": "Compares the direct number with the given number",
+	"OXOCARD_COMM_GET_DIRECT_MESSAGE_TITLE": "Get direct message",
+	"OXOCARD_COMM_GET_DIRECT_MESSAGE_TIP": "Reads the text from the received direct message",
+	"OXOCARD_COMM_GET_DIRECT_NUMBER_TITLE": "Get number",
+	"OXOCARD_COMM_GET_DIRECT_NUMBER_TIP": "Reads the number from the received direct message",
 	"OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE": "Send broadcast message",
 	"OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP": "Broadcast a message to all OXOcards",
 	"OXOCARD_COMM_SEND_BROADCAST_NUMBER_TITLE": "Send broadcast number",
