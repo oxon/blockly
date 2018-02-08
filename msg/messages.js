@@ -1530,11 +1530,13 @@ Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_AND_NUMBER_TIP = 'Broadcast a me
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TITLE = 'Check for broadcast message';
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TIP = 'Checks if the received message is a broadcast message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TITLE = 'Compare broadcast message';
-Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TIP = 'Compares the broadcast message with the given message';
+Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TIP = 'Compares the received broadcast message with the given message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TITLE = 'Compare broadcast number';
-Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TIP = 'Compares the broadcast number with the given number';
+Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TIP = 'Compares the received broadcast number with the given number';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TITLE = 'Get broadcast message';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TIP = 'Reads the text from the received broadcast message';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = 'Get broadcast number';
-Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads the number from the broadcast message';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads the number from the received broadcast message';
 
 // Audio
 Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE = 'Wait after tones';

@@ -455,6 +455,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = "Kurzmeldung ausschalten";
 /** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = "Schaltet den Kurzmeldungsdienst ein";
 /** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE = "Kurzmeldung einschalten mit Name";
+/** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TIP = "Liefert die empfangene Broadcast Nachricht zurück";
+/** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TITLE = "Hole Broadcast Nachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = "Liefert die empfangene Broadcast Nummer zurück";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = "Hole Broadcast Nummer";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_AND_NUMBER_TIP = "Broadcastet eine Nachricht und eine Nummer an alle OXOcards";

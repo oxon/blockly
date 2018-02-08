@@ -173,6 +173,16 @@ Blockly.Arduino.oxocard_comm_compare_direct_number = function() {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.oxocard_comm_get_direct_message = function() {
+  var code = 'oxocard.communication->getDirectMessage()';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_comm_get_direct_number = function() {
+  var code = 'oxocard.communication->getDirectNumber()';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 // BROADCAST
 Blockly.Arduino.oxocard_comm_send_broadcast_message = function(block) {
 	var msg = Blockly.Arduino.valueToCode(this, 'MSG', Blockly.Arduino.ORDER_NONE) ||  '""' ;
@@ -205,6 +215,11 @@ Blockly.Arduino.oxocard_comm_compare_broadcast_number = function() {
 	var num = Blockly.Arduino.valueToCode(this, 'NUM', Blockly.Arduino.ORDER_ATOMIC) || 0;
 	var code = 'oxocard.communication->compareBroadcastNumber(' + num + ')';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_comm_get_broadcast_message = function() {
+  var code = 'oxocard.communication->getBroadcastMessage()';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
 Blockly.Arduino.oxocard_comm_get_broadcast_number = function() {
