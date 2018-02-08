@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-05 16:59:48.956720",
+		"lastupdated": "2018-02-08 15:52:24.874944",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -650,6 +650,13 @@
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP": "Waits until a new message arives",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD": "with timeout",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP": "Waits for a given time for a message",
+	"OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT": "at",
+	"OXOCARD_COMM_SEND_DIRECT_MESSAGE_TITLE": "Send direct message",
+	"OXOCARD_COMM_SEND_DIRECT_MESSAGE_TIP": "Send a message to the specified OXOcard",
+	"OXOCARD_COMM_SEND_DIRECT_NUMBER_TITLE": "Send direct number",
+	"OXOCARD_COMM_SEND_DIRECT_NUMBER_TIP": "Send a number to the specified OXOcard",
+	"OXOCARD_COMM_SEND_DIRECT_NUMBER_FIELD": "and number",
+	"OXOCARD_COMM_SEND_DIRECT_MESSAGE_AND_NUMBER_TIP": "Send a message and a number to the specified OXOcard",
 	"OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE": "Send broadcast message",
 	"OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP": "Broadcast a message to all OXOcards",
 	"OXOCARD_COMM_SEND_BROADCAST_NUMBER_TITLE": "Send broadcast number",
