@@ -1500,12 +1500,12 @@ Blockly.Msg.OXOCARD_WEATHER_GET_ICON_TITLE = 'Weather: get icon';
 Blockly.Msg.OXOCARD_WEATHER_GET_ICON_TIP = 'Get the icon number of the weather';
 
 // Communication
-Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE = 'Enable short message with name';
-Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = 'Enables the short messages';
-Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = 'Disable short message';
-Blockly.Msg.OXOCARD_COMM_DISABLE_TIP = 'Disables the short messages';
+Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE = 'Enable messages with name';
+Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = 'Enables the sending and receiving of messages';
+Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = 'Disable messages';
+Blockly.Msg.OXOCARD_COMM_DISABLE_TIP = 'Disables the sending and receiving of messages';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE = 'Wait for messages';
-Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP = 'Waits until a new message arives';
+Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP = 'Waits until a new message is received';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD = 'with timeout';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP = 'Waits for a given time for a message';
 Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT = 'at';
