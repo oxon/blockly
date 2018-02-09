@@ -43,7 +43,7 @@ Blockly.Arduino.oxocard_disable_auto_turnoff = function(block) {
 };
 
 Blockly.Arduino.oxocard_connect_to_internet = function(block) {
-	 return 'oxocard.wifi->tryToConnect();\n';
+	 return 'oxocard.wifi->autoConnect();\n';
 };
 
 
