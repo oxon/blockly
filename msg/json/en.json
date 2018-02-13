@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-08 16:34:02.809840",
+		"lastupdated": "2018-02-13 09:50:26.806869",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -642,12 +642,12 @@
 	"OXOCARD_WEATHER_GET_CITY_TIP": "Get the name of the weather",
 	"OXOCARD_WEATHER_GET_ICON_TITLE": "Weather: get icon",
 	"OXOCARD_WEATHER_GET_ICON_TIP": "Get the icon number of the weather",
-	"OXOCARD_COMM_ENABLE_TITLE": "Enable short message with name",
-	"OXOCARD_COMM_ENABLE_TIP": "Enables the short messages",
-	"OXOCARD_COMM_DISABLE_TITLE": "Disable short message",
-	"OXOCARD_COMM_DISABLE_TIP": "Disables the short messages",
+	"OXOCARD_COMM_ENABLE_TITLE": "Enable messages with name",
+	"OXOCARD_COMM_ENABLE_TIP": "Enables the sending and receiving of messages",
+	"OXOCARD_COMM_DISABLE_TITLE": "Disable messages",
+	"OXOCARD_COMM_DISABLE_TIP": "Disables the sending and receiving of messages",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE": "Wait for messages",
-	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP": "Waits until a new message arives",
+	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP": "Waits until a new message is received",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD": "with timeout",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP": "Waits for a given time for a message",
 	"OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT": "at",
