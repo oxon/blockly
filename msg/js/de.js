@@ -578,6 +578,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_PRINT_TITLE = "Schreibe";
 /** @export */ Blockly.Msg.OXOCARD_RANDOM_TIP = "Liefert eine zufällige Zahl zwischen 0 und dem angegebenen Wert";
 /** @export */ Blockly.Msg.OXOCARD_RANDOM_TITLE = "Zufallszahl 0 bis ";
+/** @export */ Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TIP = "Liefert die Batteriespannung in V zurück";
+/** @export */ Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TITLE = "Lese Batteriespannung [V]";
 /** @export */ Blockly.Msg.OXOCARD_RESET_OXOCARD_TIP = "Startet die OXOcard neu";
 /** @export */ Blockly.Msg.OXOCARD_RESET_OXOCARD_TITLE = "OXOcard neu starten";
 /** @export */ Blockly.Msg.OXOCARD_RESET_TIMER_TIP = "Startet den Timer neu";
