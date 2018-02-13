@@ -668,6 +668,7 @@
 	"OXOCARD_COMM_CHECK_FOR_DIRECT_TITLE": "Kurznachricht empfangen?",
 	"OXOCARD_COMM_CHECK_FOR_DIRECT_TIP": "Prüft ob eine Kurznachricht eingetroffen ist",
 	"OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TITLE": "Vergleiche Kurznachricht",
+	"OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM": "von",
 	"OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TIP": "Vergleiche die empfangene Nachricht mit dem angegebenen Text",
 	"OXOCARD_COMM_COMPARE_DIRECT_NUMBER_TITLE": "Vergleiche Nummer",
 	"OXOCARD_COMM_COMPARE_DIRECT_NUMBER_TIP": "Vergleiche die empfangene Nummer mit dem angegebenen Wert",

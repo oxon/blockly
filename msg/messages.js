@@ -1518,6 +1518,7 @@ Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AND_NUMBER_TIP = 'Send a message an
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TITLE = 'Check for direct message';
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TIP = 'Checks if the received message is a direct message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TITLE = 'Compare direct message';
+Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM = 'from';
 Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TIP = 'Compares the direct message with the given message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_NUMBER_TITLE = 'Compare direct number';
 Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_NUMBER_TIP = 'Compares the direct number with the given number';
