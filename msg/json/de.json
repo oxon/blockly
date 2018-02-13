@@ -730,7 +730,7 @@
 	"OXOCARD_AUDIO_PLAY_TONE_HZ_TIP": "Spielt einen Ton in Herz.",
 	"OXOCARD_TIME_UPDATE_TITLE": "Synchronisiere Zeit",
 	"OXOCARD_TIME_UPDATE_TIP": "Aktualisiert die Zeit der OXOcard mit dem Internet",
-	"OXOCARD_TIME_GET_FROM_TITLE": "Hole Zeit von ",
+	"OXOCARD_TIME_GET_FROM_TITLE": "Benutze Zeitzone von ",
 	"OXOCARD_TIME_GET_FROM_ID_1": "Pacific - Samoa / Pago",
 	"OXOCARD_TIME_GET_FROM_ID_2": "Pacific - Honolulu / Papeete",
 	"OXOCARD_TIME_GET_FROM_ID_3": "Pacific - Auckland / Anchorage",

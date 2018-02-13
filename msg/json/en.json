@@ -721,7 +721,7 @@
 	"OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP": "Wait until a loud noise was measured by the microphone",
 	"OXOCARD_TIME_UPDATE_TITLE": "Synchronize time",
 	"OXOCARD_TIME_UPDATE_TIP": "Updates the time on the OXOcard",
-	"OXOCARD_TIME_GET_FROM_TITLE": "Get time for ",
+	"OXOCARD_TIME_GET_FROM_TITLE": "Use timezone from ",
 	"OXOCARD_TIME_GET_FROM_ID_1": "Pacific - Samoa / Pago",
 	"OXOCARD_TIME_GET_FROM_ID_2": "Pacific - Honolulu / Papeete",
 	"OXOCARD_TIME_GET_FROM_ID_3": "Pacific - Auckland / Anchorage",

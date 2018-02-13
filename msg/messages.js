@@ -1584,7 +1584,7 @@ Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP = 'Wait until a loud noise was
 // Time
 Blockly.Msg.OXOCARD_TIME_UPDATE_TITLE = 'Synchronize time';
 Blockly.Msg.OXOCARD_TIME_UPDATE_TIP = 'Updates the time on the OXOcard';
-Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE = 'Get time for ';
+Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE = 'Use timezone from ';
 Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_1 = 'Pacific - Samoa / Pago';
 Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_2 = 'Pacific - Honolulu / Papeete';
 Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_3 = 'Pacific - Auckland / Anchorage';

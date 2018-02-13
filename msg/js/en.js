@@ -612,7 +612,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_8 = "America - Santiago / Halifax";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_9 = "America - São Paulo / Buenos Aires";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_TIP = "Get the time from a given city";
-/** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE = "Get time for ";
+/** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE = "Use timezone from ";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_VALUE_DAY = "day";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_VALUE_HOUR = "hour";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_VALUE_MINUTE = "minutes";
