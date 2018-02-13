@@ -90,6 +90,20 @@ Blockly.Blocks.oxocard_disable_auto_turnoff = {
 	}
 };
 
+Blockly.Blocks.oxocard_read_battery_voltage = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TITLE)
+		this.setOutput(true, 'Number');
+		this.setTooltip(Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getBlockType: function() {
+		return Blockly.Types.DECIMAL;
+	}
+};
+
 Blockly.Blocks.oxocard_connect_to_internet = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {

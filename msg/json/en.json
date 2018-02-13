@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-08 14:17:18.401912",
+		"lastupdated": "2018-02-13 17:28:21.502924",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -574,6 +574,8 @@
 	"OXOCARD_AUTO_TURNOFF_TIP": "Enter sleep mode after given timeout",
 	"OXOCARD_NO_AUTO_TURNOFF_TITLE": "Disable anto turnoff",
 	"OXOCARD_NO_AUTO_TURNOFF_TIP": "Disable the auto turnoff functionality",
+	"OXOCARD_READ_BATTERY_VOLTAGE_TITLE": "Read battery voltage [V]",
+	"OXOCARD_READ_BATTERY_VOLTAGE_TIP": "Reads the battery voltage in V",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "Is button pressed?",
 	"OXOCARD_BUTTON_PRESSED_TIP": "Yes(?) if button pressed",
 	"OXOCARD_GET_TIMER_SECONDS_TITLE": "Get timer seconds",

@@ -511,6 +511,8 @@
 	"OXOCARD_AUTO_TURNOFF_TIP": "Schaltet nach der angegebenen Zeit automatisch aus",
 	"OXOCARD_NO_AUTO_TURNOFF_TITLE": "Nie automatisch ausschalten",
 	"OXOCARD_NO_AUTO_TURNOFF_TIP": "Deaktiviert die automatische ausschalt Funktion",
+	"OXOCARD_READ_BATTERY_VOLTAGE_TITLE": "Lese Batteriespannung [V]",
+	"OXOCARD_READ_BATTERY_VOLTAGE_TIP": "Liefert die Batteriespannung in V zurück",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "Ist Knopf gedrückt?",
 	"OXOCARD_BUTTON_PRESSED_TIP": "Ja, wenn der angegebene Knopf gedrückt ist",
 	"OXOCARD_GET_TIMER_SECONDS_TITLE": "Hole Timer Sekunden",
