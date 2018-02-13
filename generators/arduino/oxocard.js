@@ -164,8 +164,7 @@ Blockly.Arduino.oxocard_comm_check_for_direct = function() {
 Blockly.Arduino.oxocard_comm_compare_direct_message_from = function() {
 	var msg = Blockly.Arduino.valueToCode(this, 'MSG', Blockly.Arduino.ORDER_NONE) ||  '""' ;
 	var from = Blockly.Arduino.valueToCode(this, 'FROM', Blockly.Arduino.ORDER_NONE) ||  '""' ;
-	var code = 'oxocard.communication->setDirectMessageFilter(' + from + ');\n' +
-		'oxocard.communication->compareDirectMessage(' + msg + ')';
+	var code = 'oxocard.communication->compareDirectMessageFrom(' + msg + ', ' + from + ')';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 

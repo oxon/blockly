@@ -447,6 +447,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TITLE = "Vergleiche Broadcast Nachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TIP = "Vergleiche die empfangene Nummer mit dem angegebenen Wert";
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TITLE = "Vergleiche Broadcast Nummer";
+/** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM = "von";
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TIP = "Vergleiche die empfangene Nachricht mit dem angegebenen Text";
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TITLE = "Vergleiche Kurznachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_NUMBER_TIP = "Vergleiche die empfangene Nummer mit dem angegebenen Wert";
