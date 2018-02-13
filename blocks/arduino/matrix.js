@@ -77,11 +77,11 @@ Blockly.Blocks.oxocard_matrix_set_color_var = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TITLE);
 		this.appendValueInput('R')
-			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);;
+			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
 		this.appendValueInput('G')
-			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);;
+			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
 		this.appendValueInput('B')
-			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);;
+			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setInputsInline(true);
