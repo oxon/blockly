@@ -74,18 +74,16 @@ this.customYSpacing = 4;
  * @private
  */
 Blockly.FieldLed.prototype.render_ = function() {
-this.updateWidth();
-  };
+	this.updateWidth();
+};
 
 Blockly.FieldLed.prototype.updateWidth = function() {
-
 	this.size_.width = Blockly.FieldLed.sizeWidth;
-  };
+};
 
-  Blockly.FieldLed.prototype.getSize = function() {
+Blockly.FieldLed.prototype.getSize = function() {
 	return {width: Blockly.FieldLed.sizeWidth, height: Blockly.FieldLed.sizeHeight};
-
-  }
+}
 
 
 /**
@@ -93,7 +91,7 @@ Blockly.FieldLed.prototype.updateWidth = function() {
  * @return {string} Current state.
  */
 Blockly.FieldLed.prototype.getValue = function() {
-  return String(this.state_).toUpperCase();
+	return String(this.state_).toUpperCase();
 };
 
 /**
@@ -101,17 +99,18 @@ Blockly.FieldLed.prototype.getValue = function() {
  * @param {string} strBool New state.
  */
 Blockly.FieldLed.prototype.setValue = function(strBool) {
-  var newState = (strBool == 'TRUE');
-  if (this.state_ !== newState) {
-    if (this.sourceBlock_ && Blockly.Events.isEnabled()) {
-      Blockly.Events.fire(new Blockly.Events.Change(
-          this.sourceBlock_, 'field', this.name, this.state_, newState));
-    }
-    this.state_ = newState;
-    if (this.checkElement_) {
-      this.checkElement_.style.fill = newState ? (this.ledOnColor) :  (this.ledOffColor);
-    }
-  }
+	var newState = (strBool == 'TRUE');
+	if (this.state_ !== newState) {
+		if (this.sourceBlock_ && Blockly.Events.isEnabled()) {
+				Blockly.Events.fire(
+					new Blockly.Events.Change(this.sourceBlock_, 'field', this.name, this.state_, newState)
+				);
+		}
+		this.state_ = newState;
+		if (this.checkElement_) {
+			this.checkElement_.style.fill = newState ? (this.ledOnColor) :  (this.ledOffColor);
+		}
+	}
 };
 
 /**
