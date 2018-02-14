@@ -64,22 +64,29 @@ Blockly.FieldButton.prototype.updateWidth = function() {
 };
 
 Blockly.FieldButton.prototype.onMouseDown_ = function(e) {
-  if (!this.sourceBlock_ || !this.sourceBlock_.workspace) {
-    return;
-  }
-  var gesture = this.sourceBlock_.workspace.getGesture(e);
-  if (gesture) {
-    this.state_ = !this.state_;
-	if (this.borderRect_) {
-		if(this.state_){
-			this.borderRect_.style.fill = '#fff';
-			this.textElement_.style.fill = '#000'
-		} else {
-			this.borderRect_.style.fill = '#444';
-			this.textElement_.style.fill = '#fff'
+	if (!this.sourceBlock_ || !this.sourceBlock_.workspace) {
+		return;
+	}
+	var gesture = this.sourceBlock_.workspace.getGesture(e);
+	if (gesture) {
+		
+
+		if (Blockly.Events.isEnabled()) {
+			Blockly.Events.fire(
+				new Blockly.Events.Change(this.sourceBlock_, 'field', this.name, this.state_, !this.state_)
+			);
+		}
+		this.state_ = !this.state_;
+		if (this.borderRect_) {
+			if(this.state_){
+				this.borderRect_.style.fill = '#fff';
+				this.textElement_.style.fill = '#000'
+			} else {
+				this.borderRect_.style.fill = '#444';
+				this.textElement_.style.fill = '#fff'
+			}
 		}
 	}
-  }
 };
 
 /**
