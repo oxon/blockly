@@ -103,10 +103,10 @@ Blockly.Blocks.oxocard_audio_set_waveform = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_SET_WAVEFORM_TITLE)
 			.appendField(new Blockly.FieldDropdown(
-				[[Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_SINE, "WAVE_SINE"],
-				[Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_SQUARE, "WAVE_SQUARE"],
-				[Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_SAWTOOTH, "WAVE_SAWTOOTH"],
-				[Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TRIANGLE, "WAVE_TRIANGLE"]]), "WAVEFORM")
+				[[Blockly.Msg.OXOCARD_AUDIO_WAVE_SINE, "WAVE_SINE"],
+				[Blockly.Msg.OXOCARD_AUDIO_WAVE_SQUARE, "WAVE_SQUARE"],
+				[Blockly.Msg.OXOCARD_AUDIO_WAVE_SAWTOOTH, "WAVE_SAWTOOTH"],
+				[Blockly.Msg.OXOCARD_AUDIO_WAVE_TRIANGLE, "WAVE_TRIANGLE"]]), "WAVEFORM")
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_SET_WAVEFORM_TIP);
@@ -293,6 +293,51 @@ Blockly.Blocks.oxocard_audio_play_tone_hz_dur = {
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TIP);
+		this.setColour(Blockly.ColorDefinitions.AUDIO);
+	}
+};
+
+Blockly.Blocks.oxocard_audio_play_sound_effect = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				["alarm", "alarm"],
+				["baby sneeze", "baby_sneeze"],
+				["bee", "bee"],
+				["cannon", "cannon"],
+				["choo choo", "choo_choo"],
+				["cling", "cling"],
+				["crash", "crash"],
+				["crickets", "crickets"],
+				["cuckoo clock", "cuckoo_clock"],
+				["firecrackers", "firecrackers"],
+				["flute", "flute"],
+				["jungle", "jungle"],
+				["knife throw", "knife_throw"],
+				["open can", "open_can"],
+				["pew", "pew"],
+				["phone", "phone"],
+				["pling", "pling"],
+				["pool shot", "pool_shot"],
+				["rifle", "rifle"],
+				["sirene", "sirene"],
+				["slap", "slap"],
+				["spin jump", "spin_jump"],
+				["spurs", "spurs"],
+				["turkey", "turkey"],
+				["wake up", "wake_up"],
+				["water", "water"]
+			]), "SOUND")
+			.appendField(new Blockly.FieldDropdown([
+				["1", "false"],
+				["∞", "true"]
+			]), "FOREVER")
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TIP);
 		this.setColour(Blockly.ColorDefinitions.AUDIO);
 	}
 };
