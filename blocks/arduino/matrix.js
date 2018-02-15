@@ -62,8 +62,8 @@ Blockly.Blocks.oxocard_matrix_set_color = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
-		.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE)
-		.appendField(new Blockly.FieldColour(), 'COLOR');
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE)
+			.appendField(new Blockly.FieldColour(), 'COLOR');
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP);
@@ -310,6 +310,24 @@ Blockly.Blocks.oxocard_matrix_draw_text = {
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE)
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["#1", "0"],
+					["#2", "1"],
+					["#3", "2"]
+				]), "BUFFER");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP);
 		this.setColour(Blockly.ColorDefinitions.DISPLAY);
 	}
 };

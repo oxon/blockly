@@ -1392,11 +1392,11 @@ Blockly.Msg.OXOCARD_MATRIX_DRAW_CIRCLE_RADIUS = 'radius';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE = 'Draw triangle';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TIP = 'Draws a triangle based on given positions.';
 
-Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TITLE = 'Fill object';
-Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TIP = 'Objects are filled when drawn.';
+Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TITLE = 'Fill geometric objects';
+Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TIP = 'Geometric objects are filled when drawn.';
 
-Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TITLE = 'Empty object';
-Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TIP = 'Objects are not filled when drawn.';
+Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TITLE = 'Empty geometric objects';
+Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TIP = 'Geometric objects are not filled when drawn.';
 
 Blockly.Msg.OXOCARD_MATRIX_DRAW_NUMBER_TITLE = 'Draw number';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_NUMBER_TIP = 'Draws a number to the display';
@@ -1406,6 +1406,8 @@ Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_SMALL_FONT = 'Small font';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_BIG_FONT = 'Big font';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_TIP = 'Draws a given text to the display';
 
+Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE = 'Set frame buffer';
+Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP = 'Sets the frame buffer which should be used at the moment';
 
 // System
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn OXOcard off';
