@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-13 17:48:59.909645",
+		"lastupdated": "2018-02-15 09:04:44.007866",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -701,10 +701,10 @@
 	"OXOCARD_AUDIO_SET_OCTAVE_TITLE": "Set octave",
 	"OXOCARD_AUDIO_SET_OCTAVE_TIP": "Sets the global octave for the tones",
 	"OXOCARD_AUDIO_SET_WAVEFORM_TITLE": "Set waveform",
-	"OXOCARD_CONNECT_TO_INTERNET_SINE": "Sine",
-	"OXOCARD_CONNECT_TO_INTERNET_SQUARE": "Square",
-	"OXOCARD_CONNECT_TO_INTERNET_SAWTOOTH": "Sawtooth",
-	"OXOCARD_CONNECT_TO_INTERNET_TRIANGLE": "Triangle",
+	"OXOCARD_AUDIO_WAVE_SINE": "Sine",
+	"OXOCARD_AUDIO_WAVE_SQUARE": "Square",
+	"OXOCARD_AUDIO_WAVE_SAWTOOTH": "Sawtooth",
+	"OXOCARD_AUDIO_WAVE_TRIANGLE": "Triangle",
 	"OXOCARD_AUDIO_SET_WAVEFORM_TIP": "Sets the global waveform for the tones",
 	"OXOCARD_AUDIO_SET_BPM_TITLE": "Set BPM",
 	"OXOCARD_AUDIO_SET_BPM_TIP": "Set the global beats per minute (BPM)",
@@ -722,6 +722,8 @@
 	"OXOCARD_AUDIO_PLAY_RECORDED_TIP": "Plays the recorded audio data",
 	"OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE": "Wait for a loud noise",
 	"OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP": "Wait until a loud noise was measured by the microphone",
+	"OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TITLE": "Play sound effect",
+	"OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TIP": "Plays selected sound effect once or forever",
 	"OXOCARD_TIME_UPDATE_TITLE": "Synchronize time",
 	"OXOCARD_TIME_UPDATE_TIP": "Updates the time on the OXOcard",
 	"OXOCARD_TIME_GET_FROM_TITLE": "Use timezone from ",

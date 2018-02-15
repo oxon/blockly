@@ -1561,10 +1561,10 @@ Blockly.Msg.OXOCARD_AUDIO_VOLUME_DOWN_TIP = 'Turns the volume one step down';
 Blockly.Msg.OXOCARD_AUDIO_SET_OCTAVE_TITLE = 'Set octave';
 Blockly.Msg.OXOCARD_AUDIO_SET_OCTAVE_TIP = 'Sets the global octave for the tones';
 Blockly.Msg.OXOCARD_AUDIO_SET_WAVEFORM_TITLE = 'Set waveform';
-Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_SINE = 'Sine';
-Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_SQUARE = 'Square';
-Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_SAWTOOTH = 'Sawtooth';
-Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TRIANGLE = 'Triangle';
+Blockly.Msg.OXOCARD_AUDIO_WAVE_SINE = 'Sine';
+Blockly.Msg.OXOCARD_AUDIO_WAVE_SQUARE = 'Square';
+Blockly.Msg.OXOCARD_AUDIO_WAVE_SAWTOOTH = 'Sawtooth';
+Blockly.Msg.OXOCARD_AUDIO_WAVE_TRIANGLE = 'Triangle';
 Blockly.Msg.OXOCARD_AUDIO_SET_WAVEFORM_TIP = 'Sets the global waveform for the tones';
 Blockly.Msg.OXOCARD_AUDIO_SET_BPM_TITLE = 'Set BPM';
 Blockly.Msg.OXOCARD_AUDIO_SET_BPM_TIP = 'Set the global beats per minute (BPM)';
@@ -1582,6 +1582,8 @@ Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TITLE = 'Play recorded';
 Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TIP = 'Plays the recorded audio data';
 Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE = 'Wait for a loud noise';
 Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP = 'Wait until a loud noise was measured by the microphone';
+Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TITLE = 'Play sound effect';
+Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TIP = 'Plays selected sound effect once or forever';
 
 // Time
 Blockly.Msg.OXOCARD_TIME_UPDATE_TITLE = 'Synchronize time';
