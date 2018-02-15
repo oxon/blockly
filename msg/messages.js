@@ -1342,13 +1342,11 @@ Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE3 = 'to';
 Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TIP = 'Set a given variable with a random number between two numbers';
 
 // Logic
-
-Blockly.Msg.OXOCARD_LOGIC_IF_TITLE = 'If';
-Blockly.Msg.OXOCARD_LOGIC_IF_TIP = 'Do something if the condiation is tue.';
-Blockly.Msg.OXOCARD_LOGIC_IF_DO = 'do';
-
 Blockly.Msg.OXOCARD_LOGIC_OPERATION_AND = 'and';
 Blockly.Msg.OXOCARD_LOGIC_OPERATION_OR = 'or';
+
+Blockly.Msg.OXOCARD_LOGIC_WHILE_FOREVER_TITLE = 'Do forever';
+Blockly.Msg.OXOCARD_LOGIC_WHILE_FOREVER_TIP = 'Repeats the blocks inside forever';
 
 // Matrix
 Blockly.Msg.OXOCARD_MATRIX_DRAW_IMAGE_TITLE ='Monochronic image';
@@ -1374,6 +1372,8 @@ Blockly.Msg.OXOCARD_MATRIX_CLEAR_TIP = 'Will clear all pixels on the matrix.';
 
 Blockly.Msg.OXOCARD_MATRIX_DRAW_PIXEL_TITLE = 'Draw pixel';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_PIXEL_TIP = 'Draws the pixel on the coordinates defined.';
+Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TITLE = 'Clear pixel';
+Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TIP = 'Clears the pixel on the coordinates defined.';
 
 Blockly.Msg.OXOCARD_MATRIX_DRAW_LINE_TITLE = 'Draw line';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_LINE_TIP = 'Draws a line based on the coordinates defined.';
@@ -1456,6 +1456,7 @@ Blockly.Msg.OXOCARD_SMILE_TITLE = 'Draw smile';
 Blockly.Msg.OXOCARD_SMILE_TIP = 'A simple smile :)';
 Blockly.Msg.OXOCARD_WINK_TITLE = 'Draw wink';
 Blockly.Msg.OXOCARD_WINK_TIP = 'A simple wink ;)';
+
 // Accelerometer
 Blockly.Msg.OXOCARD_GET_ACCELERATION_TITLE = 'Get acceleration';
 Blockly.Msg.OXOCARD_GET_ACCELERATION_TIP = 'Return the selected accelerometer axis value';
@@ -1471,12 +1472,14 @@ Blockly.Msg.OXOCARD_SET_CURSOR_TITLE = 'Set cursor';
 Blockly.Msg.OXOCARD_SET_CURSOR_TIP = 'Set the position of the cursor';
 Blockly.Msg.OXOCARD_GET_CURSOR_VALUE_TITLE = 'Get cursor ';
 Blockly.Msg.OXOCARD_GET_CURSOR_VALUE_TIP = 'Get the x or y value of the cursor';
+
 // Bluetooth
 Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_TITLE = 'Setup the OXOcard as iBeacon';
 Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_ID_FIELD = 'With the ID';
 Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_TIP = 'Sets the OXOcard up as iBeacon with the given ID';
 Blockly.Msg.OXOCARD_FIND_IBEACON_TITLE = 'Find iBeacon with the ID';
 Blockly.Msg.OXOCARD_FIND_IBEACON_TIP = 'Serach for iBeacons with the given ID';
+
 // Speaker
 Blockly.Msg.OXOCARD_TONE_TITLE = 'Play tone';
 Blockly.Msg.OXOCARD_TONE_FREQUENCY_FIELD = 'with frequency';
@@ -1486,6 +1489,7 @@ Blockly.Msg.OXOCARD_TONE_NO_DURATION_TITLE = 'Play tone';
 Blockly.Msg.OXOCARD_TONE_NO_DURATION_TIP = 'Plays a tone';
 Blockly.Msg.OXOCARD_NO_TONE_TITLE = 'No tone';
 Blockly.Msg.OXOCARD_NO_TONE_TIP = 'Stops the tone';
+
 // Weather
 Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TITLE = 'Get weather from';
 Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TIP = 'Get weather from the selected city';
@@ -1620,10 +1624,6 @@ Blockly.Msg.OXOCARD_TIME_GET_VALUE_DAY = 'day';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_MONTH = 'month';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_YEAR = 'year';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_TIP = 'Get a specific value from the time e.g. seconds';
-
-// Logic
-Blockly.Msg.OXOCARD_LOGIC_WHILE_FOREVER_TITLE = 'Do forever';
-Blockly.Msg.OXOCARD_LOGIC_WHILE_FOREVER_TIP = 'Repeats the blocks inside forever';
 
 // Other
 Blockly.Msg.OXOCARD_RANDOM_TITLE = 'Random 0 to ';

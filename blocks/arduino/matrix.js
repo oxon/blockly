@@ -164,11 +164,31 @@ Blockly.Blocks.oxocard_matrix_draw_pixel = {
 			.appendField('y')
 			.setCheck('Number')
 			.setAlign(Blockly.ALIGN_RIGHT);
-
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DRAW_PIXEL_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_clear_pixel = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TITLE);
+		this.appendValueInput('X')
+			.appendField('x')
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('Y')
+			.appendField('y')
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TIP);
 		this.setColour(Blockly.ColorDefinitions.DISPLAY);
 	}
 };
@@ -188,7 +208,6 @@ Blockly.Blocks.oxocard_matrix_draw_line = {
 			.appendField(' x').setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
 		this.appendValueInput('TO_Y')
 			.appendField('y').setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
-
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -213,7 +232,6 @@ Blockly.Blocks.oxocard_matrix_draw_rectangle = {
 		this.appendValueInput('H')
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_RECTANGLE_HEIGHT)
 			.setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
-
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -234,7 +252,6 @@ Blockly.Blocks.oxocard_matrix_draw_circle = {
 		this.appendValueInput('R')
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_CIRCLE_RADIUS)
 			.setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
-
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -260,7 +277,6 @@ Blockly.Blocks.oxocard_matrix_draw_triangle = {
 			.appendField('  P3  x').setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
 		this.appendValueInput('Y_THREE')
 			.appendField('y').setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
-
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
