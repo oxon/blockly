@@ -68,10 +68,6 @@ Blockly.Arduino.oxocard_matrix_set_color_var = function() {
 	return code += 'rgb(' + r + ', ' + g + ', ' + b + '));\n';
 };
 
-Blockly.Arduino.oxocard_matrix_update = function() {
-	return 'oxocard.matrix->update();\n';
-};
-
 Blockly.Arduino.oxocard_matrix_draw_all = function(){
 	return 'oxocard.matrix->fillScreen();\n';
 };
@@ -148,6 +144,18 @@ Blockly.Arduino.oxocard_matrix_draw_text = function() {
 Blockly.Arduino.oxocard_matrix_set_frame_buffer = function() {
 	var bufferNr = this.getFieldValue('BUFFER');
 	return 'oxocard.matrix->setCurrentFrameBuffer(' + bufferNr + ');\n';
+};
+
+Blockly.Arduino.oxocard_matrix_update = function() {
+	return 'oxocard.matrix->update();\n';
+};
+
+Blockly.Arduino.oxocard_matrix_enable_auto_update = function() {
+	return 'oxocard.matrix->enableAutoUpdate();\n';
+};
+
+Blockly.Arduino.oxocard_matrix_disable_auto_update = function() {
+	return 'oxocard.matrix->disableAutoUpdate();\n';
 };
 
 Blockly.Arduino.oxocard_matrix_draw_weather = function() {

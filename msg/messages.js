@@ -1355,9 +1355,6 @@ Blockly.Msg.OXOCARD_MATRIX_DRAW_IMAGE_TIP = 'Turn on specific pixels.';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_RGB_IMAGE_TITLE ='Multicolor image';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_RGB_IMAGE_TIP = 'Turn on specific pixels with color.';
 
-Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE = 'Update matrix';
-Blockly.Msg.OXOCARD_MATRIX_UPDATE_TIP = 'Draws current image.';
-
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE = 'Set pen color';
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP = 'The following draw-blocks will draw this color.';
 
@@ -1408,6 +1405,12 @@ Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_TIP = 'Draws a given text to the display';
 
 Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE = 'Set frame buffer';
 Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP = 'Sets the frame buffer which should be used at the moment';
+Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE = 'Update matrix';
+Blockly.Msg.OXOCARD_MATRIX_UPDATE_TIP = 'Draws current image.';
+Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE = 'Enable auto updating';
+Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP = 'Enalbes that all draw functions will be drawn immediately on the display';
+Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TITLE = 'Disable auto updating';
+Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TIP = 'Disalbes that all draw functions will be drawn immediately on the display';
 
 // System
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn OXOcard off';

@@ -90,18 +90,6 @@ Blockly.Blocks.oxocard_matrix_set_color_var = {
 	}
 };
 
-Blockly.Blocks.oxocard_matrix_update = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
-	init: function() {
-		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE);
-		this.setPreviousStatement(true, null);
-		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TIP);
-		this.setColour(Blockly.ColorDefinitions.DISPLAY);
-	}
-};
-
 Blockly.Blocks.oxocard_matrix_draw_all = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
@@ -328,6 +316,42 @@ Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_update = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_enable_auto_update = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_disable_auto_update = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TIP);
 		this.setColour(Blockly.ColorDefinitions.DISPLAY);
 	}
 };
