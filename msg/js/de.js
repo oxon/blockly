@@ -511,9 +511,6 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE = "Ist Orientierung";
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD = "Auf";
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_VERTICALLY_FIELD = "Vertikal";
-/** @export */ Blockly.Msg.OXOCARD_LOGIC_IF_DO = "do";  // untranslated
-/** @export */ Blockly.Msg.OXOCARD_LOGIC_IF_TIP = "Do something if the condiation is tue.";  // untranslated
-/** @export */ Blockly.Msg.OXOCARD_LOGIC_IF_TITLE = "If";  // untranslated
 /** @export */ Blockly.Msg.OXOCARD_LOGIC_OPERATION_AND = "und";
 /** @export */ Blockly.Msg.OXOCARD_LOGIC_OPERATION_OR = "oder";
 /** @export */ Blockly.Msg.OXOCARD_LOGIC_WHILE_FOREVER_TIP = "Wiederhole die Blöcke für immer";
@@ -529,6 +526,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TIP = "Setze eine Variable mit einem mathematischen Ausdruck (e.g. 1*(5/8)).";
 /** @export */ Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TITLE = "Setze";
 /** @export */ Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TITLE2 = "mit";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TIP = "Löscht ein Pixel an der angegebenen Koordinate";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TITLE = "Lösche Pixel";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_CLEAR_TIP = "Löscht die ganze Matrix";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_CLEAR_TITLE = "Lösche Display";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_ALL_TIP = "Zeichnet alle Pixel auf der OXOcard";

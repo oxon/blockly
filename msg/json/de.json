@@ -632,6 +632,8 @@
 	"OXOCARD_MATRIX_CLEAR_TIP":  "Löscht die ganze Matrix",
 	"OXOCARD_MATRIX_DRAW_PIXEL_TITLE":  "Zeichne Pixel",
 	"OXOCARD_MATRIX_DRAW_PIXEL_TIP":  "Zeichnet ein Pixel an der angegebenen Koordinate",
+	"OXOCARD_MATRIX_CLEAR_PIXEL_TITLE":  "Lösche Pixel",
+	"OXOCARD_MATRIX_CLEAR_PIXEL_TIP":  "Löscht ein Pixel an der angegebenen Koordinate",
 	"OXOCARD_MATRIX_DRAW_LINE_TITLE":  "Zeichne Linie",
 	"OXOCARD_MATRIX_DRAW_LINE_TIP":  "Zeichnet eine Linie vom angegebenen Start- zum Endpunkt",
 	"OXOCARD_MATRIX_DRAW_LINE_FROM":  "von",

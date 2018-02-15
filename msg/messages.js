@@ -1372,6 +1372,8 @@ Blockly.Msg.OXOCARD_MATRIX_CLEAR_TIP = 'Will clear all pixels on the matrix.';
 
 Blockly.Msg.OXOCARD_MATRIX_DRAW_PIXEL_TITLE = 'Draw pixel';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_PIXEL_TIP = 'Draws the pixel on the coordinates defined.';
+Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TITLE = 'Clear pixel';
+Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TIP = 'Clears the pixel on the coordinates defined.';
 
 Blockly.Msg.OXOCARD_MATRIX_DRAW_LINE_TITLE = 'Draw line';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_LINE_TIP = 'Draws a line based on the coordinates defined.';
