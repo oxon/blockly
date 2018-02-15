@@ -85,6 +85,7 @@
 	"CONTROLS_IF_MSG_IF": "falls",
 	"CONTROLS_IF_MSG_ELSEIF": "sonst falls",
 	"CONTROLS_IF_MSG_ELSE": "sonst",
+	"CONTROLS_IF_MSG_THEN": "mache",
 	"CONTROLS_IF_IF_TOOLTIP": "Hinzufügen, entfernen oder sortieren von Sektionen",
 	"CONTROLS_IF_ELSEIF_TOOLTIP": "Eine weitere Bedingung hinzufügen.",
 	"CONTROLS_IF_ELSE_TOOLTIP": "Eine sonst-Bedingung hinzufügen. Führt eine Anweisung aus, falls keine Bedingung zutrifft.",
@@ -497,6 +498,8 @@
 
 	"OXOCARD_LOGIC_OPERATION_AND": "und",
 	"OXOCARD_LOGIC_OPERATION_OR": "oder",
+	"OXOCARD_LOGIC_WHILE_FOREVER_TITLE": "Mache für immer",
+	"OXOCARD_LOGIC_WHILE_FOREVER_TIP": "Wiederhole die Blöcke für immer",
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE": "OXOcard ausschalten",
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE2": "Klicke die Tasten, mit denen du wieder",
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE3": "einschalten möchtest",
@@ -629,6 +632,8 @@
 	"OXOCARD_MATRIX_CLEAR_TIP":  "Löscht die ganze Matrix",
 	"OXOCARD_MATRIX_DRAW_PIXEL_TITLE":  "Zeichne Pixel",
 	"OXOCARD_MATRIX_DRAW_PIXEL_TIP":  "Zeichnet ein Pixel an der angegebenen Koordinate",
+	"OXOCARD_MATRIX_CLEAR_PIXEL_TITLE":  "Lösche Pixel",
+	"OXOCARD_MATRIX_CLEAR_PIXEL_TIP":  "Löscht ein Pixel an der angegebenen Koordinate",
 	"OXOCARD_MATRIX_DRAW_LINE_TITLE":  "Zeichne Linie",
 	"OXOCARD_MATRIX_DRAW_LINE_TIP":  "Zeichnet eine Linie vom angegebenen Start- zum Endpunkt",
 	"OXOCARD_MATRIX_DRAW_LINE_FROM":  "von",
@@ -769,8 +774,6 @@
 	"OXOCARD_TIME_GET_VALUE_MONTH": "Monat",
 	"OXOCARD_TIME_GET_VALUE_YEAR": "Jahr",
 	"OXOCARD_TIME_GET_VALUE_TIP": "Lese einen wert der Zeit z.B. die Minuten",
-	"OXOCARD_LOGIC_WHILE_FOREVER_TITLE": "Mache für immer",
-	"OXOCARD_LOGIC_WHILE_FOREVER_TIP": "Wiederhole die Blöcke für immer",
 	"OXOCARD_UPDATE_TITLE": "OXOcard aktualisieren",
 	"OXOCARD_UPDATE_TIP": "Aktualisiert die OXOcard mit dem neusten code von Blockly"
 }
