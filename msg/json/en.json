@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-16 11:20:31.620869",
+		"lastupdated": "2018-02-16 15:51:12.018673",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -562,8 +562,8 @@
 	"OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE": "Set frame buffer",
 	"OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP": "Sets the frame buffer which should be used at the moment",
 	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TITLE": "Copy frame buffer content",
-	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI": "from",
-	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_SOURCE": "to",
+	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI": "from ",
+	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_SOURCE": " to ",
 	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TIP": "Copies the content of the given source frame buffer to the other",
 	"OXOCARD_MATRIX_UPDATE_TITLE": "Update matrix",
 	"OXOCARD_MATRIX_UPDATE_TIP": "Draws current image.",
@@ -571,6 +571,8 @@
 	"OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP": "Enalbes that all draw functions will be drawn immediately on the display",
 	"OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TITLE": "Disable auto updating",
 	"OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TIP": "Disalbes that all draw functions will be drawn immediately on the display",
+	"OXOCARD_MATRIX_READ_PIXEL_TITLE": "Read pixel color",
+	"OXOCARD_MATRIX_READ_PIXEL_TIP": "Returns the color (RGB) of the given pixel",
 	"OXOCARD_MATRIX_IS_PIXEL_TITLE": "Is pixel set?",
 	"OXOCARD_MATRIX_IS_PIXEL_TIP": "Returns true if at least one color (RGB) of the pixel is set",
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE": "Turn OXOcard off",

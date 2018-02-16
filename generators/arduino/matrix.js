@@ -164,6 +164,14 @@ Blockly.Arduino.oxocard_matrix_disable_auto_update = function() {
 	return 'oxocard.matrix->disableAutoUpdate();\n';
 };
 
+Blockly.Arduino.oxocard_matrix_read_pixel = function() {
+	var posX = Blockly.Arduino.valueToCode(this, 'X', Blockly.Arduino.ORDER_NONE);
+	var posY = Blockly.Arduino.valueToCode(this, 'Y', Blockly.Arduino.ORDER_NONE);
+	var color = this.getFieldValue('COLOR');
+	var code = 'oxocard.matrix->readPixel(' + posX + ', ' + posY + ').' + color;
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 Blockly.Arduino.oxocard_matrix_is_pixel = function() {
 	var posX = Blockly.Arduino.valueToCode(this, 'X', Blockly.Arduino.ORDER_NONE);
 	var posY = Blockly.Arduino.valueToCode(this, 'Y', Blockly.Arduino.ORDER_NONE);
