@@ -93,7 +93,7 @@ Blockly.Arduino.oxocard_matrix_draw_pixel = function() {
 Blockly.Arduino.oxocard_matrix_clear_pixel = function() {
 	var posX = Blockly.Arduino.valueToCode(this, 'X', Blockly.Arduino.ORDER_NONE);
 	var posY = Blockly.Arduino.valueToCode(this, 'Y', Blockly.Arduino.ORDER_NONE);
-	return 'oxocard.matrix->drawPixel(' + posX + ', ' + posY + ', rgb(0, 0, 0));\n';
+	return 'oxocard.matrix->clearPixel(' + posX + ', ' + posY + ');\n';
 };
 
 Blockly.Arduino.oxocard_matrix_draw_line = function() {
