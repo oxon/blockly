@@ -385,6 +385,36 @@ Blockly.Blocks.oxocard_matrix_disable_auto_update = {
 	}
 };
 
+Blockly.Blocks.oxocard_matrix_read_pixel = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE);
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["R", "r"],
+					["G", "g"],
+					["B", "b"]
+				]), "COLOR");
+		this.appendValueInput('X')
+			.appendField('x')
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('Y')
+			.appendField('y')
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.setOutput(true, 'Colour');
+		this.setInputsInline(true);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	},
+  getBlockType: function() {
+    return Blockly.Types.NUMBER;
+  }
+};
+
 Blockly.Blocks.oxocard_matrix_is_pixel = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {

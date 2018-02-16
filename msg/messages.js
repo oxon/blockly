@@ -1415,6 +1415,8 @@ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE = 'Enable auto updating';
 Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP = 'Enalbes that all draw functions will be drawn immediately on the display';
 Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TITLE = 'Disable auto updating';
 Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TIP = 'Disalbes that all draw functions will be drawn immediately on the display';
+Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE = 'Read pixel color';
+Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP = 'Returns the color (RGB) of the given pixel';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = 'Is pixel set?';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = 'Returns true if at least one color (RGB) of the pixel is set';
 
