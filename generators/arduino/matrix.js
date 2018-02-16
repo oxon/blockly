@@ -46,7 +46,9 @@ Blockly.Arduino.oxocard_matrix_draw_rgb_image = function() {
 		}
 	}
 	if(somePixelSet > 0){
-		code += 'oxocard.matrix->update();\n';
+		code += 'if (oxocard.matrix->isAutoUpdate()) {\n' +
+		'  oxocard.matrix->update();\n' +
+		'}\n';
 	}
 	return code;
 };
