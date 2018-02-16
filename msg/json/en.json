@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-16 09:27:58.528582",
+		"lastupdated": "2018-02-16 11:20:31.620869",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -561,6 +561,10 @@
 	"OXOCARD_MATRIX_DRAW_TEXT_TIP": "Draws a given text to the display",
 	"OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE": "Set frame buffer",
 	"OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP": "Sets the frame buffer which should be used at the moment",
+	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TITLE": "Copy frame buffer content",
+	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI": "from",
+	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_SOURCE": "to",
+	"OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TIP": "Copies the content of the given source frame buffer to the other",
 	"OXOCARD_MATRIX_UPDATE_TITLE": "Update matrix",
 	"OXOCARD_MATRIX_UPDATE_TIP": "Draws current image.",
 	"OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE": "Enable auto updating",

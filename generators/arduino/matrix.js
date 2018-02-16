@@ -146,6 +146,12 @@ Blockly.Arduino.oxocard_matrix_set_frame_buffer = function() {
 	return 'oxocard.matrix->setCurrentFrameBuffer(' + bufferNr + ');\n';
 };
 
+Blockly.Arduino.oxocard_matrix_copy_frame_buffer_content = function() {
+	var sourceNr = this.getFieldValue('SOURCE');
+	var destiNr = this.getFieldValue('DESTI');
+	return 'oxocard.matrix->copyFrameBufferContent(' + destiNr + ', ' + sourceNr + ');\n';
+};
+
 Blockly.Arduino.oxocard_matrix_update = function() {
 	return 'oxocard.matrix->update();\n';
 };

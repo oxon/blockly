@@ -320,6 +320,35 @@ Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
 	}
 };
 
+Blockly.Blocks.oxocard_matrix_copy_frame_buffer_content = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TITLE)
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI)
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["#1", "0"],
+					["#2", "1"],
+					["#3", "2"]
+				]), "SOURCE");
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_SOURCE)
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["#1", "0"],
+					["#2", "1"],
+					["#3", "2"]
+				]), "DESTI");
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
 Blockly.Blocks.oxocard_matrix_update = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
