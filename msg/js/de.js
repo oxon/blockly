@@ -561,6 +561,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE = "Zeichne Dreieck";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP = "Aktivier die Funktion, das alle Zeichnen-Funktionen automatisch ausgegeben werden";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE = "Matrix automatisch Aktuallisieren";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = "Gibt ein WAHR (1) zurück, wenn mindestens eine Farbe (RGB) des Pixels gesetzt ist";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = "Ist Pixel gesetzt?";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP = "Die nachfolgenden  Blöcke zeichnen in dieser Farbe";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE = "Setze Pinselfarbe";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TIP = "Die nachfolgenden  Blöcke zeichnen in dieser Farbe";

@@ -561,6 +561,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE = "Draw triangle";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP = "Enalbes that all draw functions will be drawn immediately on the display";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE = "Enable auto updating";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = "Returns true if at least one color (RGB) of the pixel is set";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = "Is pixel set?";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP = "The following draw-blocks will draw this color.";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE = "Set pen color";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TIP = "The following draw-blocks will draw this color.";

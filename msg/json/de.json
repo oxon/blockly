@@ -663,6 +663,8 @@
 	"OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP": "Aktivier die Funktion, das alle Zeichnen-Funktionen automatisch ausgegeben werden",
 	"OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TITLE": "Matrix nicht automatisch Aktuallisieren",
 	"OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TIP": "Deaktivier die Funktion, das alle Zeichnen-Funktionen automatisch ausgegeben werden",
+	"OXOCARD_MATRIX_IS_PIXEL_TITLE": "Ist Pixel gesetzt?",
+	"OXOCARD_MATRIX_IS_PIXEL_TIP": "Gibt ein WAHR (1) zurück, wenn mindestens eine Farbe (RGB) des Pixels gesetzt ist",
 	"OXOCARD_COMM_ENABLE_TITLE": "Nachrichten einschalten mit Name",
 	"OXOCARD_COMM_ENABLE_TIP": "Schaltet das Empfangen und Senden von Nachrichten ein",
 	"OXOCARD_COMM_DISABLE_TITLE": "Nachrichten ausschalten",
