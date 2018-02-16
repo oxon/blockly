@@ -62,8 +62,8 @@ Blockly.Blocks.oxocard_matrix_set_color = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
-		.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE)
-		.appendField(new Blockly.FieldColour(), 'COLOR');
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE)
+			.appendField(new Blockly.FieldColour(), 'COLOR');
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP);
@@ -86,18 +86,6 @@ Blockly.Blocks.oxocard_matrix_set_color_var = {
 		this.setNextStatement(true, null);
 		this.setInputsInline(true);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TIP);
-		this.setColour(Blockly.ColorDefinitions.DISPLAY);
-	}
-};
-
-Blockly.Blocks.oxocard_matrix_update = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
-	init: function() {
-		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE);
-		this.setPreviousStatement(true, null);
-		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TIP);
 		this.setColour(Blockly.ColorDefinitions.DISPLAY);
 	}
 };
@@ -312,6 +300,112 @@ Blockly.Blocks.oxocard_matrix_draw_text = {
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_TIP);
 		this.setColour(Blockly.ColorDefinitions.DISPLAY);
 	}
+};
+
+Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE)
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["#1", "0"],
+					["#2", "1"],
+					["#3", "2"]
+				]), "BUFFER");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_copy_frame_buffer_content = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TITLE)
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI)
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["#1", "0"],
+					["#2", "1"],
+					["#3", "2"]
+				]), "SOURCE");
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_SOURCE)
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["#1", "0"],
+					["#2", "1"],
+					["#3", "2"]
+				]), "DESTI");
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_update = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_enable_auto_update = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_disable_auto_update = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
+Blockly.Blocks.oxocard_matrix_is_pixel = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE);
+		this.appendValueInput('X')
+			.appendField('x')
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('Y')
+			.appendField('y')
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.setOutput(true, 'Boolean');
+		this.setInputsInline(true);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	},
+  getBlockType: function() {
+    return Blockly.Types.BOOLEAN;
+  }
 };
 
 Blockly.Blocks.oxocard_matrix_draw_weather = {

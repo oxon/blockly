@@ -68,10 +68,6 @@ Blockly.Arduino.oxocard_matrix_set_color_var = function() {
 	return code += 'rgb(' + r + ', ' + g + ', ' + b + '));\n';
 };
 
-Blockly.Arduino.oxocard_matrix_update = function() {
-	return 'oxocard.matrix->update();\n';
-};
-
 Blockly.Arduino.oxocard_matrix_draw_all = function(){
 	return 'oxocard.matrix->fillScreen();\n';
 };
@@ -97,7 +93,7 @@ Blockly.Arduino.oxocard_matrix_draw_pixel = function() {
 Blockly.Arduino.oxocard_matrix_clear_pixel = function() {
 	var posX = Blockly.Arduino.valueToCode(this, 'X', Blockly.Arduino.ORDER_NONE);
 	var posY = Blockly.Arduino.valueToCode(this, 'Y', Blockly.Arduino.ORDER_NONE);
-	return 'oxocard.matrix->drawPixel(' + posX + ', ' + posY + ', rgb(0, 0, 0));\n';
+	return 'oxocard.matrix->clearPixel(' + posX + ', ' + posY + ');\n';
 };
 
 Blockly.Arduino.oxocard_matrix_draw_line = function() {
@@ -138,10 +134,41 @@ Blockly.Arduino.oxocard_matrix_draw_number = function() {
 	return 'oxocard.matrix->drawNumber(' + num +');\n';
 };
 
+
 Blockly.Arduino.oxocard_matrix_draw_text = function() {
 	var text = Blockly.Arduino.valueToCode(this, 'TEXT', Blockly.Arduino.ORDER_NONE);
 	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
 	return 'oxocard.matrix->drawText(' + text + ', ' + isBigFont +');\n';
+};
+
+Blockly.Arduino.oxocard_matrix_set_frame_buffer = function() {
+	var bufferNr = this.getFieldValue('BUFFER');
+	return 'oxocard.matrix->setCurrentFrameBuffer(' + bufferNr + ');\n';
+};
+
+Blockly.Arduino.oxocard_matrix_copy_frame_buffer_content = function() {
+	var sourceNr = this.getFieldValue('SOURCE');
+	var destiNr = this.getFieldValue('DESTI');
+	return 'oxocard.matrix->copyFrameBufferContent(' + destiNr + ', ' + sourceNr + ');\n';
+};
+
+Blockly.Arduino.oxocard_matrix_update = function() {
+	return 'oxocard.matrix->update();\n';
+};
+
+Blockly.Arduino.oxocard_matrix_enable_auto_update = function() {
+	return 'oxocard.matrix->enableAutoUpdate();\n';
+};
+
+Blockly.Arduino.oxocard_matrix_disable_auto_update = function() {
+	return 'oxocard.matrix->disableAutoUpdate();\n';
+};
+
+Blockly.Arduino.oxocard_matrix_is_pixel = function() {
+	var posX = Blockly.Arduino.valueToCode(this, 'X', Blockly.Arduino.ORDER_NONE);
+	var posY = Blockly.Arduino.valueToCode(this, 'Y', Blockly.Arduino.ORDER_NONE);
+	var code = 'oxocard.matrix->isPixel(' + posX + ', ' + posY + ')';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
 Blockly.Arduino.oxocard_matrix_draw_weather = function() {
