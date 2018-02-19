@@ -3,11 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        ws(dir: 'ws') {
-          dir(path: 'ws') {
-            git(url: 'https://github.com/oxon/blockly', branch: 'master', credentialsId: 'oxon-deploy', poll: true)
-          }
-          
+        ws(dir: 'workspace-blockly') {
+          git(url: 'https://github.com/oxon/blockly/', branch: 'master', credentialsId: 'oxocard-deploy')
         }
         
       }
