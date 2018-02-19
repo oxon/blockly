@@ -104,5 +104,5 @@ Blockly.Arduino.oxocard_audio_play_tone_hz_dur = function() {
 Blockly.Arduino.oxocard_audio_play_sound_effect = function() {
   var sound = this.getFieldValue('SOUND');
   var forever = this.getFieldValue('FOREVER').toLowerCase();
-  return 'oxocard.audio->playWavFile((uint8_t*)' + sound + '_8bit_32kHz_wav, ' + sound + '_8bit_32kHz_wav_size, ' + forever + ');\n';
+  return 'oxocard.audio->playWavFile((uint8_t*)' + sound + '_wav, ' + sound + '_wav_size, ' + forever + ');\n';
 };
