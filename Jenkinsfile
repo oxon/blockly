@@ -4,7 +4,10 @@ pipeline {
     stage('build') {
       steps {
         ws(dir: 'ws') {
-          git(url: 'https://github.com/oxon/blockly', branch: 'master', credentialsId: 'oxon-deploy')
+          dir(path: 'ws') {
+            git(url: 'https://github.com/oxon/blockly', branch: 'master', credentialsId: 'oxon-deploy', poll: true)
+          }
+          
         }
         
       }
