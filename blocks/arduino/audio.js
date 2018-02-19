@@ -327,7 +327,6 @@ Blockly.Blocks.oxocard_audio_play_sound_effect = {
 				["spin jump", "spin_jump"],
 				["spurs", "spurs"],
 				["turkey", "turkey"],
-				["wake up", "wake_up"],
 				["water", "water"]
 			]), "SOUND")
 			.appendField(new Blockly.FieldDropdown([
