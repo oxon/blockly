@@ -17,5 +17,10 @@ pipeline {
         
       }
     }
+    stage('archive') {
+      steps {
+        archiveArtifacts 'blockly/msg/js/**/*.js,blockly/blockly_compressed.js,blockly/blocks_compressed.js,blockly/arduino_compressed.js'
+      }
+    }
   }
 }
