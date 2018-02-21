@@ -394,6 +394,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_SIN = "Ist der Sinus des Winkels.";
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_TAN = "Ist der Tangens des Winkels.";
 /** @export */ Blockly.Msg.NEW_COLOUR_VARIABLE = "Create colour variable...";  // untranslated
+/** @export */ Blockly.Msg.NEW_INSTANCE = "New instance...";
+/** @export */ Blockly.Msg.NEW_INSTANCE_TITLE = "New instance name:";
 /** @export */ Blockly.Msg.NEW_NUMBER_VARIABLE = "Create number variable...";  // untranslated
 /** @export */ Blockly.Msg.NEW_STRING_VARIABLE = "Create string variable...";  // untranslated
 /** @export */ Blockly.Msg.NEW_VARIABLE = "Variable erstellen …";

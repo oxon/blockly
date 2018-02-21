@@ -240,7 +240,7 @@
 	"TEXT_GET_SUBSTRING_HELPURL": "{{Optional}} url - Information about extracting characters from text.  Reminder: urls are the lowest priority translations.  Feel free to skip.",
 	"TEXT_GET_SUBSTRING_INPUT_IN_TEXT": "block text - Precedes a piece of text from which a portion should be extracted. [[File:Blockly-get-substring.png]]",
 	"TEXT_GET_SUBSTRING_START_FROM_START": "dropdown - Indicates that the following number specifies the position (relative to the start position) of the beginning of the region of text that should be obtained from the preceding piece of text.  See [https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text]. [[File:Blockly-get-substring.png]]",
-	"TEXT_GET_SUBSTRING_START_FROM_END": "dropdown - Indicates that the following number specifies the position (relative to the end position) of the beginning of the region of text that should be obtained from the preceding piece of text.  See [https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text]. Note: If {{msg-Blockly|ORDINAL_NUMBER_SUFFIX}} is defined, it will automatically appear ''after'' this and any other [https://translatewiki.net/wiki/Translating:Blockly#Ordinal_numbers ordinal numbers] on this block. [[File:Blockly-get-substring.png]]",
+	"TEXT_GET_SUBSTRING_START_FROM_END": "dropdown - Indicates that the following number specifies the position (relative to the end position) of the beginning of the region of text that should be obtained from the preceding piece of text.  See [https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text]. Note: If {{msg-blockly|ORDINAL_NUMBER_SUFFIX}} is defined, it will automatically appear ''after'' this and any other [https://translatewiki.net/wiki/Translating:Blockly#Ordinal_numbers ordinal numbers] on this block. [[File:Blockly-get-substring.png]]",
 	"TEXT_GET_SUBSTRING_START_FIRST": "block text - Indicates that a region starting with the first letter of the preceding piece of text should be extracted.  See [https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text]. [[File:Blockly-get-substring.png]]",
 	"TEXT_GET_SUBSTRING_END_FROM_START": "dropdown - Indicates that the following number specifies the position (relative to the start position) of the end of the region of text that should be obtained from the preceding piece of text.  See [https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text]. [[File:Blockly-get-substring.png]]",
 	"TEXT_GET_SUBSTRING_END_FROM_END": "dropdown - Indicates that the following number specifies the position (relative to the end position) of the end of the region of text that should be obtained from the preceding piece of text.  See [https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text https://github.com/google/blockly/wiki/Text#extracting-a-region-of-text]. [[File:Blockly-get-substring.png]]",
@@ -299,7 +299,7 @@
 	"LISTS_GET_INDEX_GET": "dropdown - Indicates that the user wishes to [https://github.com/google/blockly/wiki/Lists#getting-a-single-item get an item from a list] without removing it from the list.",
 	"LISTS_GET_INDEX_GET_REMOVE": "dropdown - Indicates that the user wishes to [https://github.com/google/blockly/wiki/Lists#getting-a-single-item get and remove an item from a list], as opposed to merely getting it without modifying the list.",
 	"LISTS_GET_INDEX_REMOVE": "dropdown - Indicates that the user wishes to [https://github.com/google/blockly/wiki/Lists#removing-an-item remove an item from a list].\n{{Identical|Remove}}",
-	"LISTS_GET_INDEX_FROM_START": "dropdown - Indicates that an index relative to the front of the list should be used to [https://github.com/google/blockly/wiki/Lists#getting-a-single-item get and/or remove an item from a list].  Note: If {{msg-Blockly|ORDINAL_NUMBER_SUFFIX}} is defined, it will automatically appear ''after'' this number (and any other ordinal numbers on this block). See [[Translating:Blockly#Ordinal_numbers]] for more information on ordinal numbers in Blockly. [[File:Blockly-list-get-item.png]]",
+	"LISTS_GET_INDEX_FROM_START": "dropdown - Indicates that an index relative to the front of the list should be used to [https://github.com/google/blockly/wiki/Lists#getting-a-single-item get and/or remove an item from a list].  Note: If {{msg-blockly|ORDINAL_NUMBER_SUFFIX}} is defined, it will automatically appear ''after'' this number (and any other ordinal numbers on this block). See [[Translating:Blockly#Ordinal_numbers]] for more information on ordinal numbers in Blockly. [[File:Blockly-list-get-item.png]]",
 	"LISTS_GET_INDEX_FROM_END": "dropdown - Indicates that an index relative to the end of the list should be used to [https://github.com/google/blockly/wiki/Lists#getting-a-single-item access an item in a list]. [[File:Blockly-list-get-item.png]]",
 	"LISTS_GET_INDEX_FIRST": "dropdown - Indicates that the '''first''' item should be [https://github.com/google/blockly/wiki/Lists#getting-a-single-item accessed in a list]. [[File:Blockly-list-get-item.png]]",
 	"LISTS_GET_INDEX_LAST": "dropdown - Indicates that the '''last''' item should be [https://github.com/google/blockly/wiki/Lists#getting-a-single-item accessed in a list]. [[File:Blockly-list-get-item.png]]",
@@ -389,15 +389,8 @@
 	"PROCEDURES_HIGHLIGHT_DEF": "context menu - This appears on the context menu for function calls.  Selecting it causes the corresponding function definition to be highlighted (as shown at [[Translating:Blockly#context_menus]].",
 	"PROCEDURES_CREATE_DO": "context menu - This appears on the context menu for function definitions. Selecting it creates a block to call the function.\n\nParameters:\n* %1 - the name of the function.\n{{Identical|Create}}",
 	"PROCEDURES_IFRETURN_TOOLTIP": "tooltip - If the first value is true, this causes the second value to be returned immediately from the enclosing function.",
-	"PROCEDURES_IFRETURN_HELPURL": "{{optional}}\nurl - Information about guard clauses.",
-	"PROCEDURES_IFRETURN_WARNING": "warning - This appears if the user tries to use this block outside of a function definition.",
-	"NEW_INSTANCE": "Instances - Menu item to indicate that it will create a new instance",
-	"RENAME_INSTANCE": "Instances - Menu item to rename an instance name",
-	"NEW_INSTANCE_TITLE": "Instances - Menu item to create a new instance name and apply it to that block",
-	"RENAME_INSTANCE_TITLE": "Instances - Confirmation message that a number of instances will be renamed to a new name"
 	"PROCEDURES_IFRETURN_HELPURL": "{{Optional}} url - Information about guard clauses.",
 	"PROCEDURES_IFRETURN_WARNING": "warning - This appears if the user tries to use this block outside of a function definition.",
-
 	"ARD_TYPE_CHAR": "Arduino Types - Character C type char",
 	"ARD_TYPE_TEXT": "Arduino Types - Text C type String",
 	"ARD_TYPE_BOOL": "Arduino Types - Boolean type",
@@ -783,6 +776,9 @@
 	"OXOCARD_RANDOM_TITLE": "",
 	"OXOCARD_RANDOM_TIP": "",
 	"OXOCARD_CONNECT_TO_INTERNET_TITLE": "",
-	"OXOCARD_CONNECT_TO_INTERNET_TIP": ""
-
+	"OXOCARD_CONNECT_TO_INTERNET_TIP": "",
+	"NEW_INSTANCE": "Instances - Menu item to indicate that it will create a new instance",
+	"RENAME_INSTANCE": "Instances - Menu item to rename an instance name",
+	"NEW_INSTANCE_TITLE": "Instances - Menu item to create a new instance name and apply it to that block",
+	"RENAME_INSTANCE_TITLE": "Instances - Confirmation message that a number of instances will be renamed to a new name"
 }

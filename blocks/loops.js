@@ -25,7 +25,7 @@
 'use strict';
 
 goog.provide('Blockly.Blocks.loops');
-
+goog.provide('Blockly.Constants.Loops');
 goog.require('Blockly.Blocks');
 goog.require('Blockly.Types');
 goog.require('Blockly.ColorDefinitions');
