@@ -285,11 +285,7 @@ goog.addDependency("debug/logrecord.js", ['goog.debug.LogRecord'], []);
 goog.addDependency("debug/logrecordserializer.js", ['goog.debug.logRecordSerializer'], ['goog.debug.LogRecord', 'goog.debug.Logger', 'goog.json', 'goog.object']);
 goog.addDependency("debug/logrecordserializer_test.js", ['goog.debug.logRecordSerializerTest'], ['goog.debug.LogRecord', 'goog.debug.Logger', 'goog.debug.logRecordSerializer', 'goog.testing.jsunit']);
 goog.addDependency("debug/relativetimeprovider.js", ['goog.debug.RelativeTimeProvider'], []);
-<<<<<<< HEAD
-goog.addDependency("debug/tracer.js", ['goog.debug.Trace'], ['goog.array', 'goog.asserts', 'goog.debug.Logger', 'goog.iter', 'goog.log', 'goog.structs.Map', 'goog.structs.SimplePool']);
-=======
 goog.addDependency("debug/tracer.js", ['goog.debug.StopTraceDetail', 'goog.debug.Trace'], ['goog.array', 'goog.asserts', 'goog.debug.Logger', 'goog.iter', 'goog.log', 'goog.structs.Map', 'goog.structs.SimplePool']);
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 goog.addDependency("debug/tracer_test.js", ['goog.debug.TraceTest'], ['goog.array', 'goog.debug.Trace', 'goog.testing.jsunit', 'goog.testing.recordFunction']);
 goog.addDependency("defineclass_test.js", ['goog.defineClassTest'], ['goog.testing.jsunit']);
 goog.addDependency("delegate/delegateregistry.js", [], []);
@@ -660,12 +656,6 @@ goog.addDependency("html/safeurl_test_vectors.js", ['goog.html.safeUrlTestVector
 goog.addDependency("html/sanitizer/attributewhitelist.js", ['goog.html.sanitizer.AttributeSanitizedWhitelist', 'goog.html.sanitizer.AttributeWhitelist'], []);
 goog.addDependency("html/sanitizer/csssanitizer.js", ['goog.html.sanitizer.CssSanitizer'], ['goog.array', 'goog.dom', 'goog.dom.TagName', 'goog.html.CssSpecificity', 'goog.html.SafeStyle', 'goog.html.SafeStyleSheet', 'goog.html.SafeUrl', 'goog.html.sanitizer.noclobber', 'goog.html.uncheckedconversions', 'goog.object', 'goog.string', 'goog.userAgent', 'goog.userAgent.product']);
 goog.addDependency("html/sanitizer/csssanitizer_test.js", ['goog.html.CssSanitizerTest'], ['goog.array', 'goog.html.SafeStyle', 'goog.html.SafeStyleSheet', 'goog.html.SafeUrl', 'goog.html.sanitizer.CssSanitizer', 'goog.html.testing', 'goog.string', 'goog.testing.dom', 'goog.testing.jsunit', 'goog.userAgent', 'goog.userAgent.product', 'goog.userAgent.product.isVersion']);
-<<<<<<< HEAD
-goog.addDependency("html/sanitizer/htmlsanitizer.js", ['goog.html.sanitizer.HtmlSanitizer', 'goog.html.sanitizer.HtmlSanitizer.Builder', 'goog.html.sanitizer.HtmlSanitizerAttributePolicy', 'goog.html.sanitizer.HtmlSanitizerPolicy', 'goog.html.sanitizer.HtmlSanitizerPolicyContext', 'goog.html.sanitizer.HtmlSanitizerPolicyHints', 'goog.html.sanitizer.HtmlSanitizerUrlPolicy'], ['goog.array', 'goog.asserts', 'goog.dom', 'goog.dom.NodeType', 'goog.dom.TagName', 'goog.functions', 'goog.html.SafeHtml', 'goog.html.SafeStyle', 'goog.html.SafeStyleSheet', 'goog.html.SafeUrl', 'goog.html.sanitizer.AttributeSanitizedWhitelist', 'goog.html.sanitizer.AttributeWhitelist', 'goog.html.sanitizer.CssSanitizer', 'goog.html.sanitizer.TagBlacklist', 'goog.html.sanitizer.TagWhitelist', 'goog.html.sanitizer.noclobber', 'goog.html.uncheckedconversions', 'goog.object', 'goog.string', 'goog.string.Const', 'goog.userAgent']);
-goog.addDependency("html/sanitizer/htmlsanitizer_test.js", ['goog.html.HtmlSanitizerTest'], ['goog.array', 'goog.dom', 'goog.functions', 'goog.html.SafeHtml', 'goog.html.SafeUrl', 'goog.html.sanitizer.HtmlSanitizer', 'goog.html.sanitizer.HtmlSanitizer.Builder', 'goog.html.sanitizer.TagBlacklist', 'goog.html.sanitizer.TagWhitelist', 'goog.html.sanitizer.unsafe', 'goog.html.testing', 'goog.object', 'goog.string.Const', 'goog.testing.dom', 'goog.testing.jsunit', 'goog.userAgent', 'goog.userAgent.product']);
-goog.addDependency("html/sanitizer/noclobber.js", [], []);
-goog.addDependency("html/sanitizer/noclobber_test.js", [], []);
-=======
 goog.addDependency("html/sanitizer/elementweakmap.js", [], []);
 goog.addDependency("html/sanitizer/elementweakmap_test.js", [], []);
 goog.addDependency("html/sanitizer/htmlsanitizer.js", ['goog.html.sanitizer.HtmlSanitizer', 'goog.html.sanitizer.HtmlSanitizer.Builder', 'goog.html.sanitizer.HtmlSanitizerAttributePolicy', 'goog.html.sanitizer.HtmlSanitizerPolicy', 'goog.html.sanitizer.HtmlSanitizerPolicyContext', 'goog.html.sanitizer.HtmlSanitizerPolicyHints', 'goog.html.sanitizer.HtmlSanitizerUrlPolicy'], ['goog.array', 'goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.functions', 'goog.html.SafeHtml', 'goog.html.SafeStyle', 'goog.html.SafeStyleSheet', 'goog.html.SafeUrl', 'goog.html.sanitizer.AttributeSanitizedWhitelist', 'goog.html.sanitizer.AttributeWhitelist', 'goog.html.sanitizer.CssSanitizer', 'goog.html.sanitizer.SafeDomTreeProcessor', 'goog.html.sanitizer.TagBlacklist', 'goog.html.sanitizer.TagWhitelist', 'goog.html.sanitizer.noclobber', 'goog.html.uncheckedconversions', 'goog.object', 'goog.string', 'goog.string.Const', 'goog.userAgent']);
@@ -674,7 +664,6 @@ goog.addDependency("html/sanitizer/noclobber.js", [], []);
 goog.addDependency("html/sanitizer/noclobber_test.js", [], []);
 goog.addDependency("html/sanitizer/safedomtreeprocessor.js", [], []);
 goog.addDependency("html/sanitizer/safedomtreeprocessor_test.js", [], []);
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 goog.addDependency("html/sanitizer/tagblacklist.js", ['goog.html.sanitizer.TagBlacklist'], []);
 goog.addDependency("html/sanitizer/tagwhitelist.js", ['goog.html.sanitizer.TagWhitelist'], []);
 goog.addDependency("html/sanitizer/unsafe.js", ['goog.html.sanitizer.unsafe'], ['goog.asserts', 'goog.html.sanitizer.HtmlSanitizer.Builder', 'goog.string', 'goog.string.Const']);
@@ -782,11 +771,8 @@ goog.addDependency("labs/net/webchannel/channel.js", ['goog.labs.net.webChannel.
 goog.addDependency("labs/net/webchannel/channelrequest.js", ['goog.labs.net.webChannel.ChannelRequest'], ['goog.Timer', 'goog.async.Throttle', 'goog.events.EventHandler', 'goog.labs.net.webChannel.Channel', 'goog.labs.net.webChannel.WebChannelDebug', 'goog.labs.net.webChannel.environment', 'goog.labs.net.webChannel.requestStats', 'goog.net.ErrorCode', 'goog.net.EventType', 'goog.net.WebChannel', 'goog.net.XmlHttp', 'goog.object', 'goog.string', 'goog.userAgent']);
 goog.addDependency("labs/net/webchannel/channelrequest_test.js", ['goog.labs.net.webChannel.channelRequestTest'], ['goog.Uri', 'goog.functions', 'goog.labs.net.webChannel.ChannelRequest', 'goog.labs.net.webChannel.WebChannelDebug', 'goog.labs.net.webChannel.requestStats', 'goog.labs.net.webChannel.requestStats.ServerReachability', 'goog.testing.MockClock', 'goog.testing.PropertyReplacer', 'goog.testing.jsunit', 'goog.testing.net.XhrIo', 'goog.testing.recordFunction']);
 goog.addDependency("labs/net/webchannel/connectionstate.js", ['goog.labs.net.webChannel.ConnectionState'], []);
-<<<<<<< HEAD
-=======
 goog.addDependency("labs/net/webchannel/environment.js", [], []);
 goog.addDependency("labs/net/webchannel/environment_test.js", [], []);
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 goog.addDependency("labs/net/webchannel/forwardchannelrequestpool.js", [], []);
 goog.addDependency("labs/net/webchannel/forwardchannelrequestpool_test.js", [], []);
 goog.addDependency("labs/net/webchannel/netutils.js", ['goog.labs.net.webChannel.netUtils'], ['goog.Uri', 'goog.labs.net.webChannel.WebChannelDebug']);
