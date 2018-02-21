@@ -331,13 +331,8 @@
 	"LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST": "tooltip - See [https://github.com/google/blockly/wiki/Lists#getting-a-single-item} (even though the page describes the 'get' block, the idea is the same for the 'insert' block).",
 	"LISTS_SET_INDEX_TOOLTIP_INSERT_LAST": "tooltip - See [https://github.com/google/blockly/wiki/Lists#getting-a-single-item} (even though the page describes the 'get' block, the idea is the same for the 'insert' block).",
 	"LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM": "tooltip - See [https://github.com/google/blockly/wiki/Lists#getting-a-single-item} (even though the page describes the 'get' block, the idea is the same for the 'insert' block).",
-<<<<<<< HEAD
-	"LISTS_GET_SUBLIST_HELPURL": "url - Information describing extracting a sublist from an existing list.",
-	"LISTS_GET_SUBLIST_START_FROM_START": "dropdown - Indicates that an index relative to the front of the list should be used to specify the beginning of the range from which to [https://github.com/google/blockly/wiki/Lists#getting-a-sublist get a sublist]. [[File:Blockly-get-sublist.png]] Note: If {{msg-Blockly|ORDINAL_NUMBER_SUFFIX}} is defined, it will automatically appear ''after'' this number (and any other ordinal numbers on this block). See [[Translating:Blockly#Ordinal_numbers]] for more information on ordinal numbers in Blockly.",
-=======
 	"LISTS_GET_SUBLIST_HELPURL": "{{Optional}} url - Information describing extracting a sublist from an existing list.",
 	"LISTS_GET_SUBLIST_START_FROM_START": "dropdown - Indicates that an index relative to the front of the list should be used to specify the beginning of the range from which to [https://github.com/google/blockly/wiki/Lists#getting-a-sublist get a sublist]. [[File:Blockly-get-sublist.png]] Note: If {{msg-blockly|ORDINAL_NUMBER_SUFFIX}} is defined, it will automatically appear ''after'' this number (and any other ordinal numbers on this block). See [[Translating:Blockly#Ordinal_numbers]] for more information on ordinal numbers in Blockly.",
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 	"LISTS_GET_SUBLIST_START_FROM_END": "dropdown - Indicates that an index relative to the end of the list should be used to specify the beginning of the range from which to [https://github.com/google/blockly/wiki/Lists#getting-a-sublist get a sublist].",
 	"LISTS_GET_SUBLIST_START_FIRST": "dropdown - Indicates that the [https://github.com/google/blockly/wiki/Lists#getting-a-sublist sublist to extract] should begin with the list's first item.",
 	"LISTS_GET_SUBLIST_END_FROM_START": "dropdown - Indicates that an index relative to the front of the list should be used to specify the end of the range from which to [https://github.com/google/blockly/wiki/Lists#getting-a-sublist get a sublist]. [[File:Blockly-get-sublist.png]]",
@@ -394,9 +389,15 @@
 	"PROCEDURES_HIGHLIGHT_DEF": "context menu - This appears on the context menu for function calls.  Selecting it causes the corresponding function definition to be highlighted (as shown at [[Translating:Blockly#context_menus]].",
 	"PROCEDURES_CREATE_DO": "context menu - This appears on the context menu for function definitions. Selecting it creates a block to call the function.\n\nParameters:\n* %1 - the name of the function.\n{{Identical|Create}}",
 	"PROCEDURES_IFRETURN_TOOLTIP": "tooltip - If the first value is true, this causes the second value to be returned immediately from the enclosing function.",
-<<<<<<< HEAD
 	"PROCEDURES_IFRETURN_HELPURL": "{{optional}}\nurl - Information about guard clauses.",
 	"PROCEDURES_IFRETURN_WARNING": "warning - This appears if the user tries to use this block outside of a function definition.",
+	"NEW_INSTANCE": "Instances - Menu item to indicate that it will create a new instance",
+	"RENAME_INSTANCE": "Instances - Menu item to rename an instance name",
+	"NEW_INSTANCE_TITLE": "Instances - Menu item to create a new instance name and apply it to that block",
+	"RENAME_INSTANCE_TITLE": "Instances - Confirmation message that a number of instances will be renamed to a new name"
+	"PROCEDURES_IFRETURN_HELPURL": "{{Optional}} url - Information about guard clauses.",
+	"PROCEDURES_IFRETURN_WARNING": "warning - This appears if the user tries to use this block outside of a function definition.",
+
 	"ARD_TYPE_CHAR": "Arduino Types - Character C type char",
 	"ARD_TYPE_TEXT": "Arduino Types - Text C type String",
 	"ARD_TYPE_BOOL": "Arduino Types - Boolean type",
@@ -782,13 +783,6 @@
 	"OXOCARD_RANDOM_TITLE": "",
 	"OXOCARD_RANDOM_TIP": "",
 	"OXOCARD_CONNECT_TO_INTERNET_TITLE": "",
-	"OXOCARD_CONNECT_TO_INTERNET_TIP": "",
-	"NEW_INSTANCE": "Instances - Menu item to indicate that it will create a new instance",
-	"RENAME_INSTANCE": "Instances - Menu item to rename an instance name",
-	"NEW_INSTANCE_TITLE": "Instances - Menu item to create a new instance name and apply it to that block",
-	"RENAME_INSTANCE_TITLE": "Instances - Confirmation message that a number of instances will be renamed to a new name"
-=======
-	"PROCEDURES_IFRETURN_HELPURL": "{{Optional}} url - Information about guard clauses.",
-	"PROCEDURES_IFRETURN_WARNING": "warning - This appears if the user tries to use this block outside of a function definition."
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
+	"OXOCARD_CONNECT_TO_INTERNET_TIP": ""
+
 }

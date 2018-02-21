@@ -393,14 +393,9 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_COS = "Return the cosine of a degree (not radian).";
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_SIN = "Return the sine of a degree (not radian).";
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_TAN = "Return the tangent of a degree (not radian).";
-<<<<<<< HEAD
-/** @export */ Blockly.Msg.NEW_INSTANCE = "New instance...";
-/** @export */ Blockly.Msg.NEW_INSTANCE_TITLE = "New instance name:";
-=======
 /** @export */ Blockly.Msg.NEW_COLOUR_VARIABLE = "Create colour variable...";
 /** @export */ Blockly.Msg.NEW_NUMBER_VARIABLE = "Create number variable...";
 /** @export */ Blockly.Msg.NEW_STRING_VARIABLE = "Create string variable...";
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 /** @export */ Blockly.Msg.NEW_VARIABLE = "Create variable...";
 /** @export */ Blockly.Msg.NEW_VARIABLE_TITLE = "New variable name:";
 /** @export */ Blockly.Msg.NEW_VARIABLE_TYPE_TITLE = "New variable type:";

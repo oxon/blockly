@@ -62,41 +62,9 @@ Blockly.Blocks['controls_repeat_ext'] = {
   }
 };
 
-<<<<<<< HEAD
-Blockly.Blocks['controls_repeat'] = {
-  /**
-   * Block for repeat n times (internal number).
-   * The 'controls_repeat_ext' block is preferred as it is more flexible.
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": Blockly.Msg.CONTROLS_REPEAT_TITLE,
-      "args0": [
-        {
-          "type": "field_number",
-          "name": "TIMES",
-          "check": Blockly.Types.NUMBER.checkList,
-          "text": "10"
-        }
-      ],
-      "previousStatement": null,
-      "nextStatement": null,
-      "colour": Blockly.Blocks.loops.HUE,
-      "tooltip": Blockly.Msg.CONTROLS_REPEAT_TOOLTIP,
-      "helpUrl": Blockly.Msg.CONTROLS_REPEAT_HELPURL
-    });
-    this.appendStatementInput('DO')
-        .appendField(Blockly.Msg.CONTROLS_REPEAT_INPUT_DO);
-    this.getField('TIMES').setValidator(
-        Blockly.FieldTextInput.nonnegativeIntegerValidator);
-  }
-};
-=======
 Blockly.Extensions.register('controls_whileUntil_tooltip',
     Blockly.Extensions.buildTooltipForDropdown(
         'MODE', Blockly.Constants.Loops.WHILE_UNTIL_TOOLTIPS));
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 
 Blockly.Blocks.oxocard_logic_while_forever = {
 	init: function() {
@@ -110,7 +78,6 @@ Blockly.Blocks.oxocard_logic_while_forever = {
 	}
 };
 
-<<<<<<< HEAD
 Blockly.Blocks['controls_whileUntil'] = {
   /**
    * Block for 'do while/until' loop.
@@ -141,11 +108,10 @@ Blockly.Blocks['controls_whileUntil'] = {
     });
   }
 };
-=======
+
 Blockly.Extensions.register('controls_flow_tooltip',
     Blockly.Extensions.buildTooltipForDropdown(
         'FLOW', Blockly.Constants.Loops.BREAK_CONTINUE_TOOLTIPS));
->>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 
 Blockly.Blocks['controls_for'] = {
   /**
