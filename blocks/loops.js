@@ -62,6 +62,7 @@ Blockly.Blocks['controls_repeat_ext'] = {
   }
 };
 
+<<<<<<< HEAD
 Blockly.Blocks['controls_repeat'] = {
   /**
    * Block for repeat n times (internal number).
@@ -91,6 +92,11 @@ Blockly.Blocks['controls_repeat'] = {
         Blockly.FieldTextInput.nonnegativeIntegerValidator);
   }
 };
+=======
+Blockly.Extensions.register('controls_whileUntil_tooltip',
+    Blockly.Extensions.buildTooltipForDropdown(
+        'MODE', Blockly.Constants.Loops.WHILE_UNTIL_TOOLTIPS));
+>>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 
 Blockly.Blocks.oxocard_logic_while_forever = {
 	init: function() {
@@ -104,6 +110,7 @@ Blockly.Blocks.oxocard_logic_while_forever = {
 	}
 };
 
+<<<<<<< HEAD
 Blockly.Blocks['controls_whileUntil'] = {
   /**
    * Block for 'do while/until' loop.
@@ -134,6 +141,11 @@ Blockly.Blocks['controls_whileUntil'] = {
     });
   }
 };
+=======
+Blockly.Extensions.register('controls_flow_tooltip',
+    Blockly.Extensions.buildTooltipForDropdown(
+        'FLOW', Blockly.Constants.Loops.BREAK_CONTINUE_TOOLTIPS));
+>>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 
 Blockly.Blocks['controls_for'] = {
   /**

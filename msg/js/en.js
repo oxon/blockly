@@ -393,10 +393,17 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_COS = "Return the cosine of a degree (not radian).";
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_SIN = "Return the sine of a degree (not radian).";
 /** @export */ Blockly.Msg.MATH_TRIG_TOOLTIP_TAN = "Return the tangent of a degree (not radian).";
+<<<<<<< HEAD
 /** @export */ Blockly.Msg.NEW_INSTANCE = "New instance...";
 /** @export */ Blockly.Msg.NEW_INSTANCE_TITLE = "New instance name:";
+=======
+/** @export */ Blockly.Msg.NEW_COLOUR_VARIABLE = "Create colour variable...";
+/** @export */ Blockly.Msg.NEW_NUMBER_VARIABLE = "Create number variable...";
+/** @export */ Blockly.Msg.NEW_STRING_VARIABLE = "Create string variable...";
+>>>>>>> e0be7e498b2ea76cb76faea0aff29220cfc077af
 /** @export */ Blockly.Msg.NEW_VARIABLE = "Create variable...";
 /** @export */ Blockly.Msg.NEW_VARIABLE_TITLE = "New variable name:";
+/** @export */ Blockly.Msg.NEW_VARIABLE_TYPE_TITLE = "New variable type:";
 /** @export */ Blockly.Msg.ORDINAL_NUMBER_SUFFIX = "";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TIP = "Get the volume from the audio output";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TITLE = "Get volume";
@@ -783,7 +790,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.VARIABLES_SET_HELPURL = "https://github.com/google/blockly/wiki/Variables#set";
 /** @export */ Blockly.Msg.VARIABLES_SET_TOOLTIP = "Sets this variable to be equal to the input.";
 /** @export */ Blockly.Msg.VARIABLE_ALREADY_EXISTS = "A variable named '%1' already exists.";
-/** @export */ Blockly.Msg.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = "A variable named '%1' already exists for another variable of type '%2'.";
+/** @export */ Blockly.Msg.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = "A variable named '%1' already exists for another type: '%2'.";
 /** @export */ Blockly.Msg.PROCEDURES_DEFRETURN_TITLE = Blockly.Msg.PROCEDURES_DEFNORETURN_TITLE;
 /** @export */ Blockly.Msg.CONTROLS_IF_IF_TITLE_IF = Blockly.Msg.CONTROLS_IF_MSG_IF;
 /** @export */ Blockly.Msg.CONTROLS_WHILEUNTIL_INPUT_DO = Blockly.Msg.CONTROLS_REPEAT_INPUT_DO;
@@ -813,3 +820,4 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.TEXTS_HUE = "160";
 /** @export */ Blockly.Msg.PROCEDURES_HUE = "290";
 /** @export */ Blockly.Msg.COLOUR_HUE = "20";
+/** @export */ Blockly.Msg.VARIABLES_DYNAMIC_HUE = "310";
