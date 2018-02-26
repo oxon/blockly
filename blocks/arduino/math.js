@@ -99,3 +99,22 @@ Blockly.Blocks.math_set_var_random = {
 		return Blockly.Types.NUMBER;
 	}
 };
+
+Blockly.Blocks.math_set_oxocard_random = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_RANDOM_TITLE);
+			// .appendField(new Blockly.FieldTextInput('1', Blockly.FieldTextInput.numberValidator),'NUM');
+		this.appendValueInput('NUM')
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.setInputsInline(true);
+		this.setOutput(true, 'Number');
+		this.setTooltip(Blockly.Msg.OXOCARD_RANDOM_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getBlockType: function() {
+	  return Blockly.Types.NUMBER;
+	}
+  };

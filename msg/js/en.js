@@ -595,7 +595,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_PRINTLN_TITLE = "Println";
 /** @export */ Blockly.Msg.OXOCARD_PRINT_TIP = "Prints the given number or string to the console";
 /** @export */ Blockly.Msg.OXOCARD_PRINT_TITLE = "Print";
-/** @export */ Blockly.Msg.OXOCARD_RANDOM_TIP = "Returns a random number between 0 an the given value";
+/** @export */ Blockly.Msg.OXOCARD_RANDOM_TIP = "Returns a random number between 0 and the given value";
 /** @export */ Blockly.Msg.OXOCARD_RANDOM_TITLE = "Random 0 to ";
 /** @export */ Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TIP = "Reads the battery voltage in V";
 /** @export */ Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TITLE = "Read battery voltage [V]";
