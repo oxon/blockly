@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-02-21 09:59:08.603096",
+		"lastupdated": "2018-02-26 11:42:34.521077",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -780,7 +780,7 @@
 	"OXOCARD_TIME_GET_VALUE_YEAR": "year",
 	"OXOCARD_TIME_GET_VALUE_TIP": "Get a specific value from the time e.g. seconds",
 	"OXOCARD_RANDOM_TITLE": "Random 0 to ",
-	"OXOCARD_RANDOM_TIP": "Returns a random number between 0 an the given value",
+	"OXOCARD_RANDOM_TIP": "Returns a random number between 0 and the given value",
 	"OXOCARD_CONNECT_TO_INTERNET_TITLE": "Connect with internet",
 	"OXOCARD_CONNECT_TO_INTERNET_TIP": "Opens a connection to the internet",
 	"NEW_INSTANCE": "New instance...",

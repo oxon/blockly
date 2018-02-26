@@ -380,3 +380,10 @@ Blockly.Arduino['math_set_var_random'] = function(block) {
 		Blockly.Variables.NAME_TYPE);
 	return varName + ' = random(' + from + ', ' + to + '+1);\n';
 };
+
+Blockly.Arduino['math_set_oxocard_random'] = function(block) {
+	var number = Blockly.Arduino.valueToCode(block, 'NUM',
+		Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
+  var code = 'random(' + number + '+1)';
+  return [code, Blockly.Arduino.ORDER_UNARY_POSTFIX];
+};

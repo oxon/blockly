@@ -1652,7 +1652,7 @@ Blockly.Msg.OXOCARD_TIME_GET_VALUE_TIP = 'Get a specific value from the time e.g
 
 // Other
 Blockly.Msg.OXOCARD_RANDOM_TITLE = 'Random 0 to ';
-Blockly.Msg.OXOCARD_RANDOM_TIP = 'Returns a random number between 0 an the given value';
+Blockly.Msg.OXOCARD_RANDOM_TIP = 'Returns a random number between 0 and the given value';
 Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TITLE = 'Connect with internet';
 Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TIP = 'Opens a connection to the internet';
 
