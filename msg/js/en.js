@@ -585,6 +585,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE = "Set frame buffer";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TIP = "Geometric objects are not filled when drawn.";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TITLE = "Empty geometric objects";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TIP = "The following draw-blocks will draw a random color.";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TITLE = "Set random pen color";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_UPDATE_TIP = "Draws current image.";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE = "Update matrix";
 /** @export */ Blockly.Msg.OXOCARD_NO_AUTO_TURNOFF_TIP = "Disable the auto turnoff functionality";

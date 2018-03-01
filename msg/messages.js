@@ -1368,6 +1368,9 @@ Blockly.Msg.OXOCARD_MATRIX_DRAW_RGB_IMAGE_TIP = 'Turn on specific pixels with co
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE = 'Set pen color';
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP = 'The following draw-blocks will draw this color.';
 
+Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TITLE = 'Set random pen color';
+Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TIP = 'The following draw-blocks will draw a random color.';
+
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TITLE = 'Set pen color';
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TIP = 'The following draw-blocks will draw this color.';
 
