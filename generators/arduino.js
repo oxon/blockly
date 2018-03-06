@@ -109,7 +109,7 @@ Blockly.Arduino.init = function(workspace) {
   } else {
     Blockly.Arduino.variableDB_.reset();
   }
-
+  Blockly.Arduino.variableDB_.setVariableMap(workspace.getVariableMap());
   // Iterate through to capture all blocks types and set the function arguments
   var varsWithTypes = Blockly.Arduino.StaticTyping.collectVarsWithTypes(workspace);
   Blockly.Arduino.StaticTyping.setProcedureArgs(workspace, varsWithTypes);
