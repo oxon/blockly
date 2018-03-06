@@ -4,12 +4,12 @@ goog.provide('Blockly.ColorDefinitions');
 
 Blockly.ColorDefinitions = Blockly.ColorDefinitions || {};
 
-Blockly.ColorDefinitions.LOGIC = '#4B688B';
-Blockly.ColorDefinitions.VARIABLES = '#338A2E';
-Blockly.ColorDefinitions.FUNCTIONS = '#672770';
-Blockly.ColorDefinitions.TIME = '#AA8C39';
-Blockly.ColorDefinitions.ONOFF = '#2e2e2e';
-Blockly.ColorDefinitions.DISPLAY = '#2e2e2e';
-Blockly.ColorDefinitions.ACCMETER = '#7E1518';
-Blockly.ColorDefinitions.COMMUNICATION = '#034500';
-Blockly.ColorDefinitions.AUDIO = '#143153';
+Blockly.ColorDefinitions.LOGIC = '#666666';
+Blockly.ColorDefinitions.VARIABLES = '#3b3b3b';
+Blockly.ColorDefinitions.FUNCTIONS = '#2e2e2e';
+Blockly.ColorDefinitions.TIME = '#242424';
+Blockly.ColorDefinitions.ONOFF = '#242424';
+Blockly.ColorDefinitions.DISPLAY = '#242424';
+Blockly.ColorDefinitions.ACCMETER = '#242424';
+Blockly.ColorDefinitions.COMMUNICATION = '#242424';
+Blockly.ColorDefinitions.AUDIO = '#242424';

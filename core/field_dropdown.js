@@ -531,6 +531,7 @@ Blockly.FieldDropdown.prototype.renderSelectedText_ = function() {
   }
   this.textElement_.setAttribute('text-anchor', 'start');
   this.textElement_.setAttribute('x', 0);
+  this.textElement_.setAttribute('y', 17);
 
   this.size_.height = Blockly.BlockSvg.MIN_BLOCK_Y;
   this.size_.width = Blockly.Field.getCachedWidth(this.textElement_);
