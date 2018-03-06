@@ -120,18 +120,18 @@ Blockly.BlockSvg.DISTANCE_45_OUTSIDE = (1 - Math.SQRT1_2) *
  * SVG path for drawing next/previous notch from left to right.
  * @const
  */
-Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 4,0 3.5,3.5 3.5,-3.5';
+Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 3.5,0 3.5,4 4,-4';
 /**
  * SVG path for drawing next/previous notch from left to right with
  * highlighting.
  * @const
  */
-Blockly.BlockSvg.NOTCH_PATH_LEFT_HIGHLIGHT = 'l 3,3 3,-3';
+Blockly.BlockSvg.NOTCH_PATH_LEFT_HIGHLIGHT = 'l 3.5,3.5 3.5,-3.5';
 /**
  * SVG path for drawing next/previous notch from right to left.
  * @const
  */
-Blockly.BlockSvg.NOTCH_PATH_RIGHT = 'l -4,0 -3,3 -3,-3';
+Blockly.BlockSvg.NOTCH_PATH_RIGHT = 'l -4,0 -3.5,3.5 -3.5,-3.5';
 /**
  * SVG path for drawing jagged teeth at the end of collapsed blocks.
  * @const

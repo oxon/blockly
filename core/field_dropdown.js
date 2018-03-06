@@ -481,7 +481,7 @@ Blockly.FieldDropdown.prototype.render_ = function() {
   } else {
     this.renderSelectedText_();
   }
-  this.borderRect_.setAttribute('height', this.size_.height - 9);
+  this.borderRect_.setAttribute('height', this.size_.height);
   this.borderRect_.setAttribute('width',
       this.size_.width + Blockly.BlockSvg.SEP_SPACE_X);
 };
