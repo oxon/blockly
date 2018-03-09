@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-03-09 10:06:56.456259",
+		"lastupdated": "2018-03-09 11:49:11.726776",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -66,7 +66,7 @@
 	"CONTROLS_WHILEUNTIL_TOOLTIP_WHILE": "While a value is true, then do some statements.",
 	"CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL": "While a value is false, then do some statements.",
 	"CONTROLS_FOR_HELPURL": "https://github.com/google/blockly/wiki/Loops#count-with",
-	"CONTROLS_FOR_TOOLTIP": "Have the variable '%1' take on the values from the start number to the end number, counting by the specified interval, and do the specified blocks.",
+	"CONTROLS_FOR_TOOLTIP": "Have the given variable take on the values from the start number to the end number, counting by the specified interval, and do the specified blocks.",
 	"CONTROLS_FOR_TITLE": "count with %1 from %2 to %3 by %4",
 	"CONTROLS_FOREACH_HELPURL": "https://github.com/google/blockly/wiki/Loops#for-each",
 	"CONTROLS_FOREACH_TITLE": "for each item %1 in list %2",

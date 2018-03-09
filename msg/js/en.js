@@ -152,7 +152,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.CONTROLS_FOREACH_TOOLTIP = "For each item in a list, set the variable '%1' to the item, and then do some statements.";
 /** @export */ Blockly.Msg.CONTROLS_FOR_HELPURL = "https://github.com/google/blockly/wiki/Loops#count-with";
 /** @export */ Blockly.Msg.CONTROLS_FOR_TITLE = "count with %1 from %2 to %3 by %4";
-/** @export */ Blockly.Msg.CONTROLS_FOR_TOOLTIP = "Have the variable '%1' take on the values from the start number to the end number, counting by the specified interval, and do the specified blocks.";
+/** @export */ Blockly.Msg.CONTROLS_FOR_TOOLTIP = "Have the given variable take on the values from the start number to the end number, counting by the specified interval, and do the specified blocks.";
 /** @export */ Blockly.Msg.CONTROLS_IF_ELSEIF_TOOLTIP = "Add a condition to the if block.";
 /** @export */ Blockly.Msg.CONTROLS_IF_ELSE_TOOLTIP = "Add a final, catch-all condition to the if block.";
 /** @export */ Blockly.Msg.CONTROLS_IF_HELPURL = "https://github.com/google/blockly/wiki/IfElse";
