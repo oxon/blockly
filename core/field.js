@@ -145,11 +145,13 @@ Blockly.Field.prototype.init = function() {
     this.fieldGroup_.style.display = 'none';
   }
   this.borderRect_ = Blockly.utils.createSvgElement('rect',
-      {'rx': 0,
-       'ry': 0,
-       'x': -Blockly.BlockSvg.SEP_SPACE_X / 2,
-       'y': 0,
-       'height': 16}, this.fieldGroup_);
+      {
+        'rx': 0,
+        'ry': 0,
+        'x': -Blockly.BlockSvg.SEP_SPACE_X / 2,
+        'y': 0,
+        'height': 16
+      }, this.fieldGroup_);
   /** @type {!Element} */
   this.textElement_ = Blockly.utils.createSvgElement('text',
       {'class': 'blocklyText', 'y': this.size_.height - 12.5},
@@ -158,8 +160,8 @@ Blockly.Field.prototype.init = function() {
   this.updateEditable();
   this.sourceBlock_.getSvgRoot().appendChild(this.fieldGroup_);
   this.mouseDownWrapper_ =
-      Blockly.bindEventWithChecks_(this.fieldGroup_, 'mousedown', this,
-      this.onMouseDown_);
+      Blockly.bindEventWithChecks_(
+          this.fieldGroup_, 'mousedown', this, this.onMouseDown_);
   // Force a render.
   this.render_();
 };

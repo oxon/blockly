@@ -71,6 +71,18 @@ Blockly.Blocks.oxocard_matrix_set_color = {
 	}
 };
 
+Blockly.Blocks.oxocard_matrix_set_random_color = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
 Blockly.Blocks.oxocard_matrix_set_color_var = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
