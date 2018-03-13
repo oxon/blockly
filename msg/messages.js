@@ -1402,10 +1402,10 @@ Blockly.Msg.OXOCARD_MATRIX_DRAW_CIRCLE_RADIUS = 'radius';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE = 'Draw triangle';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TIP = 'Draws a triangle based on given positions';
 
-Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TITLE = 'Fill geometric objects';
+Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TITLE = 'Fill';
 Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TIP = 'Geometric objects are filled when drawn';
 
-Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TITLE = 'Empty geometric objects';
+Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TITLE = 'No fill';
 Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TIP = 'Geometric objects are not filled when drawn';
 
 Blockly.Msg.OXOCARD_MATRIX_DRAW_NUMBER_TITLE = 'Draw number';

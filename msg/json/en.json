@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-03-09 11:49:11.726776",
+		"lastupdated": "2018-03-13 13:08:27.372924",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -555,9 +555,9 @@
 	"OXOCARD_MATRIX_DRAW_CIRCLE_RADIUS": "radius",
 	"OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE": "Draw triangle",
 	"OXOCARD_MATRIX_DRAW_TRIANGLE_TIP": "Draws a triangle based on given positions",
-	"OXOCARD_MATRIX_SET_FILL_TITLE": "Fill geometric objects",
+	"OXOCARD_MATRIX_SET_FILL_TITLE": "Fill",
 	"OXOCARD_MATRIX_SET_FILL_TIP": "Geometric objects are filled when drawn",
-	"OXOCARD_MATRIX_SET_NOFILL_TITLE": "Empty geometric objects",
+	"OXOCARD_MATRIX_SET_NOFILL_TITLE": "No fill",
 	"OXOCARD_MATRIX_SET_NOFILL_TIP": "Geometric objects are not filled when drawn",
 	"OXOCARD_MATRIX_DRAW_NUMBER_TITLE": "Draw number",
 	"OXOCARD_MATRIX_DRAW_NUMBER_TIP": "Draws a number on the display",
