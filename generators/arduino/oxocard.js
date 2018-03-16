@@ -14,6 +14,10 @@ Blockly.Arduino.oxocard_update = function(block) {
 	 return 'FlashScenario(&oxocard).run();\n';
 };
 
+Blockly.Arduino.oxocard_reboot = function(block) {
+	 return 'oxocard.system->reboot();\n';
+};
+
 Blockly.Arduino.oxocard_turn_off = function(block) {
 	 return 'oxocard.system->turnOff();\n';
 };
