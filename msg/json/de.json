@@ -790,6 +790,18 @@
 	"OXOCARD_TIME_GET_VALUE_MONTH": "Monat",
 	"OXOCARD_TIME_GET_VALUE_YEAR": "Jahr",
 	"OXOCARD_TIME_GET_VALUE_TIP": "Liest einen Wert der Zeit (z.B. Minuten)",
+
+	"OXOCARD_LIST_ADD_TITLE1": "Füge",
+	"OXOCARD_LIST_ADD_TITLE1_5": " Wert",
+	"OXOCARD_LIST_ADD_TITLE2": "der Liste hinzu",
+	"OXOCARD_LIST_ADD_TIP": "Fügt den angegebenen integer Wert der Liste hinzu",
+	"OXOCARD_LIST_GET_TITLE1": "Hole Element Nr.",
+	"OXOCARD_LIST_GET_TITLE2": "von der Liste",
+	"OXOCARD_LIST_GET_TIP": "Hole das definierte Element von der Liste",
+	"OXOCARD_LIST_REMOVE_TITLE1": "Entferne Element Nr.",
+	"OXOCARD_LIST_REMOVE_TITLE2": "von der Liste",
+	"OXOCARD_LIST_REMOVE_TIP": "Entfernt das definierte Element von der Liste",
+
 	"OXOCARD_UPDATE_TITLE": "OXOcard aktualisieren",
 	"OXOCARD_UPDATE_TIP": "Aktualisiert die OXOcard mit dem neusten Code von Blockly"
 }
