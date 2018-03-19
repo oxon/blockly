@@ -24,6 +24,18 @@ Blockly.Blocks['oxocard_button_ispressed'] = {
   }
 };
 
+Blockly.Blocks.oxocard_reboot = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_REBOOT_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_REBOOT_TIP);
+		this.setColour(Blockly.ColorDefinitions.ONOFF);
+	}
+};
+
 Blockly.Blocks.oxocard_turn_off = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {

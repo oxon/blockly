@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-03-13 13:08:27.372924",
+		"lastupdated": "2018-03-16 17:45:58.733149",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -586,8 +586,8 @@
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE3": "to turn on again",
 	"OXOCARD_TURN_OXOCARD_OFF_TIP": "Turns off the card",
 	"OXOCARD_TURN_OXOCARD_OFF_TIP2": "Turns off the card and set the buttons able to wake the card up",
-	"OXOCARD_RESET_OXOCARD_TITLE": "Reset OXOcard",
-	"OXOCARD_RESET_OXOCARD_TIP": "Reboots the card",
+	"OXOCARD_REBOOT_TITLE": "Reset OXOcard",
+	"OXOCARD_REBOOT_TIP": "Resets the OXOcard",
 	"OXOCARD_AUTO_TURNOFF_WP_TITLE": "Handle auto turnoff",
 	"OXOCARD_AUTO_TURNOFF_WP_TIP": "Enters sleep mode after 2 minutes",
 	"OXOCARD_AUTO_TURNOFF_TITLE": "Handle auto turnoff",
