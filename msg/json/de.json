@@ -561,7 +561,7 @@
 	"OXOCARD_SMILE_TIP": "Zeichnet ein einfaches Smiley :)",
 	"OXOCARD_WINK_TITLE": "Zeichne Zwinkersmiley ;)",
 	"OXOCARD_WINK_TIP": "Zeichnet ein einfaches Zwinkersmiley ;)",
-	"OXOCARD_GET_ACCELERATION_TITLE": "Beschleunigung",
+	"OXOCARD_GET_ACCELERATION_TITLE": "hole Beschleunigung",
 	"OXOCARD_GET_ACCELERATION_TIP": "Liefert die Beschleunigung um die angegebene Achse",
 	"OXOCARD_GET_ORIENTATION_TITLE": "Orientierung ",
 	"OXOCARD_GET_ORIENTATION_TIP": "Liefert die Orientierung der OXOcard",
