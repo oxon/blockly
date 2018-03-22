@@ -151,7 +151,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.CONTROLS_FOREACH_TITLE = "für jeden Wert %1 aus der Liste %2";
 /** @export */ Blockly.Msg.CONTROLS_FOREACH_TOOLTIP = "Führt eine Anweisung für jeden Wert in der Liste aus und setzt dabei die Variable \"%1\" auf den aktuellen Listenwert";
 /** @export */ Blockly.Msg.CONTROLS_FOR_HELPURL = "https://de.wikipedia.org/wiki/For-Schleife";
-/** @export */ Blockly.Msg.CONTROLS_FOR_TITLE = "zähle %1 von %2 bis %3 in Schritten von %4";
+/** @export */ Blockly.Msg.CONTROLS_FOR_TITLE = "Zähle %1 von %2 bis %3 in Schritten von %4";
 /** @export */ Blockly.Msg.CONTROLS_FOR_TOOLTIP = "Zählt die angegebene Variable von einem Startwert bis zu einem Endwert und führt für jeden Wert eine Anweisung aus";
 /** @export */ Blockly.Msg.CONTROLS_IF_ELSEIF_TOOLTIP = "Eine weitere Bedingung hinzufügen";
 /** @export */ Blockly.Msg.CONTROLS_IF_ELSE_TOOLTIP = "Eine sonst-Bedingung hinzufügen. Führt eine Anweisung aus, falls keine Bedingung zutrifft";
