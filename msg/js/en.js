@@ -569,6 +569,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_TITLE = "Draw text";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TIP = "Draws a triangle based on given positions";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE = "Draw triangle";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TIP = "Draws the weather icon";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TITLE = "Weather: draw icon";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP = "Enalbes that all draw functions will be drawn immediately on the display";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE = "Enable auto updating";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = "Returns true if at least one color (RGB) of the pixel is set";

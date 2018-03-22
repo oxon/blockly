@@ -569,6 +569,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_TITLE = "Zeichne Text";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TIP = "Zeichnet ein Dreieck zwischen den angegebenen Eckpunkten";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE = "Zeichne Dreieck";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TIP = "Zeichnet das Wetter gemäss Icon-Nummer aus den Wetterdaten";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TITLE = "Wetter: Zeichne Icon";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TIP = "Aktiviert die Funktion, dass alle Zeichnen-Blöcke automatisch ausgegeben werden";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE = "Bildspeicher automatisch ausgeben";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = "Liefert wahr, wenn mindestens eine Farbe (RGB) des Pixels gesetzt ist";

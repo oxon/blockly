@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-03-22 14:36:21.444484",
+		"lastupdated": "2018-03-22 15:18:20.522254",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -581,6 +581,8 @@
 	"OXOCARD_MATRIX_READ_PIXEL_TIP": "Returns the color (RGB) of the given pixel",
 	"OXOCARD_MATRIX_IS_PIXEL_TITLE": "Is pixel set?",
 	"OXOCARD_MATRIX_IS_PIXEL_TIP": "Returns true if at least one color (RGB) of the pixel is set",
+	"OXOCARD_MATRIX_DRAW_WEATHER_TITLE": "Weather: draw icon",
+	"OXOCARD_MATRIX_DRAW_WEATHER_TIP": "Draws the weather icon",
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE": "Turn OXOcard off",
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE2": "Click to set the Buttons",
 	"OXOCARD_TURN_OXOCARD_OFF_TITLE3": "to turn on again",

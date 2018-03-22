@@ -1432,6 +1432,8 @@ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE = 'Read pixel color';
 Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP = 'Returns the color (RGB) of the given pixel';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = 'Is pixel set?';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = 'Returns true if at least one color (RGB) of the pixel is set';
+Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TITLE = 'Weather: draw icon';
+Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TIP = 'Draws the weather icon';
 
 // System
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn OXOcard off';
