@@ -151,7 +151,7 @@ Blockly.Arduino.oxocard_matrix_draw_text = function() {
 
 Blockly.Arduino.oxocard_matrix_set_frame_buffer = function() {
 	var bufferNr = this.getFieldValue('BUFFER');
-	return 'oxocard.matrix->setActiveFrameBuffer(' + bufferNr + ');\n';
+	return 'oxocard.matrix->setActiveFrameBuffer(' + bufferNr + ', false);\n';
 };
 
 Blockly.Arduino.oxocard_matrix_copy_frame_buffer_content = function() {
