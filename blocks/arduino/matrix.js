@@ -321,9 +321,9 @@ Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE)
 			.appendField(new Blockly.FieldDropdown(
 				[
-					["#1", "0"],
-					["#2", "1"],
-					["#3", "2"]
+					["#1", "1"],
+					["#2", "2"],
+					["#3", "3"]
 				]), "BUFFER");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -341,17 +341,17 @@ Blockly.Blocks.oxocard_matrix_copy_frame_buffer_content = {
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI)
 			.appendField(new Blockly.FieldDropdown(
 				[
-					["#1", "0"],
-					["#2", "1"],
-					["#3", "2"]
+					["#1", "1"],
+					["#2", "2"],
+					["#3", "3"]
 				]), "SOURCE");
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_SOURCE)
 			.appendField(new Blockly.FieldDropdown(
 				[
-					["#1", "0"],
-					["#2", "1"],
-					["#3", "2"]
+					["#1", "1"],
+					["#2", "2"],
+					["#3", "3"]
 				]), "DESTI");
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
