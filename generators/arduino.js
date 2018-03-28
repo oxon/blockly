@@ -97,6 +97,9 @@ Blockly.Arduino.init = function(workspace) {
   Blockly.Arduino.variables_ = Object.create(null);
   // Create a dictionary of functions from the code generator
   Blockly.Arduino.codeFunctions_ = Object.create(null);
+  // Create a dictionary of functions created by the user (prototypes
+  // so order doesn't matter.)
+  Blockly.Arduino.userFunctionPrototypes_ = Object.create(null);
   // Create a dictionary of functions created by the user
   Blockly.Arduino.userFunctions_ = Object.create(null);
   // Create a dictionary mapping desired function names in definitions_
@@ -129,7 +132,7 @@ Blockly.Arduino.init = function(workspace) {
  */
 Blockly.Arduino.finish = function(code) {
   // Convert the includes, definitions, and functions dictionaries into lists
-  var includes = ['#include "OXOcardRunner.h"'], definitions = [], variables = [], functions = [];
+  var includes = ['#include "OXOcardRunner.h"'], definitions = [], variables = [], functions = [], prototypes = [];
   for (var name in Blockly.Arduino.includes_) {
     includes.push(Blockly.Arduino.includes_[name]);
   }
@@ -148,6 +151,12 @@ Blockly.Arduino.finish = function(code) {
   if (definitions.length) {
     definitions.push('\n');
   }
+  for(var name in Blockly.Arduino.userFunctionPrototypes_) {
+	prototypes.push(Blockly.Arduino.userFunctionPrototypes_[name]);
+  }
+  if (prototypes.length) {
+    prototypes.push('\n');
+  }
   for (var name in Blockly.Arduino.codeFunctions_) {
     functions.push(Blockly.Arduino.codeFunctions_[name]);
   }
@@ -163,13 +172,14 @@ Blockly.Arduino.finish = function(code) {
   delete Blockly.Arduino.definitions_;
   delete Blockly.Arduino.codeFunctions_;
   delete Blockly.Arduino.userFunctions_;
+  delete Blockly.Arduino.userFunctionPrototypes_;
   delete Blockly.Arduino.functionNames_;
   delete Blockly.Arduino.setups_;
   delete Blockly.Arduino.pins_;
   Blockly.Arduino.variableDB_.reset();
 
   var allDefs = includes.join('\n') + variables.join('\n') +
-      definitions.join('\n') + functions.join('\n\n');
+      definitions.join('\n') + prototypes.join('\n') + functions.join('\n\n');
   var userMain = 'void user_main() {\n  ' + code.replace(/\n/g, '\n  ') + '\n}';
   return allDefs + userMain;
 };

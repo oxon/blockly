@@ -257,7 +257,7 @@ Blockly.Msg.CONTROLS_IF_MSG_IF = 'if';
 Blockly.Msg.CONTROLS_IF_MSG_ELSEIF = 'else if';
 /// block text - See [https://github.com/google/blockly/wiki/IfElse https://github.com/google/blockly/wiki/IfElse].  The English word "otherwise" would probably be superior to "else", but the latter is used because it is traditional and shorter.
 Blockly.Msg.CONTROLS_IF_MSG_ELSE = 'else';
-Blockly.Msg.CONTROLS_IF_MSG_THEN = Blockly.Msg.CONTROLS_REPEAT_INPUT_DO;
+Blockly.Msg.CONTROLS_IF_MSG_THEN = 'then';
 Blockly.Msg.CONTROLS_IF_IF_TITLE_IF = Blockly.Msg.CONTROLS_IF_MSG_IF;
 /// tooltip - Describes [https://github.com/google/blockly/wiki/IfElse#block-modification if block modification].
 Blockly.Msg.CONTROLS_IF_IF_TOOLTIP = 'Add, remove, or reorder sections to reconfigure this if block.';
@@ -1432,6 +1432,8 @@ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE = 'Read pixel color';
 Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP = 'Returns the color (RGB) of the given pixel';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = 'Is pixel set?';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = 'Returns true if at least one color (RGB) of the pixel is set';
+Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TITLE = 'Weather: draw icon';
+Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TIP = 'Draws the weather icon';
 
 // System
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn OXOcard off';
@@ -1439,8 +1441,8 @@ Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE2 = 'Click to set the Buttons';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE3 = 'to turn on again';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TIP = 'Turns off the card';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TIP2 = 'Turns off the card and set the buttons able to wake the card up';
-Blockly.Msg.OXOCARD_RESET_OXOCARD_TITLE = 'Reset OXOcard';
-Blockly.Msg.OXOCARD_RESET_OXOCARD_TIP = 'Reboots the card';
+Blockly.Msg.OXOCARD_REBOOT_TITLE = 'Reset OXOcard';
+Blockly.Msg.OXOCARD_REBOOT_TIP = 'Resets the OXOcard';
 Blockly.Msg.OXOCARD_AUTO_TURNOFF_WP_TITLE = 'Handle auto turnoff';
 Blockly.Msg.OXOCARD_AUTO_TURNOFF_WP_TIP = 'Enters sleep mode after 2 minutes';
 Blockly.Msg.OXOCARD_AUTO_TURNOFF_TITLE = 'Handle auto turnoff';

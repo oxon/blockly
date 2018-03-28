@@ -321,9 +321,9 @@ Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE)
 			.appendField(new Blockly.FieldDropdown(
 				[
-					["#1", "0"],
-					["#2", "1"],
-					["#3", "2"]
+					["#1", "1"],
+					["#2", "2"],
+					["#3", "3"]
 				]), "BUFFER");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -341,17 +341,17 @@ Blockly.Blocks.oxocard_matrix_copy_frame_buffer_content = {
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI)
 			.appendField(new Blockly.FieldDropdown(
 				[
-					["#1", "0"],
-					["#2", "1"],
-					["#3", "2"]
+					["#1", "1"],
+					["#2", "2"],
+					["#3", "3"]
 				]), "SOURCE");
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_SOURCE)
 			.appendField(new Blockly.FieldDropdown(
 				[
-					["#1", "0"],
-					["#2", "1"],
-					["#3", "2"]
+					["#1", "1"],
+					["#2", "2"],
+					["#3", "3"]
 				]), "DESTI");
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
@@ -454,10 +454,10 @@ Blockly.Blocks.oxocard_matrix_draw_weather = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
-			.appendField("T_ Zeichne Wetter Icon");
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TITLE);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
-		this.setTooltip("T_ Tip");
-		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
 	}
 };
