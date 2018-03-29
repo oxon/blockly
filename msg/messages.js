@@ -1659,13 +1659,19 @@ Blockly.Msg.OXOCARD_TIME_GET_VALUE_TIP = 'Gets a specific value from the time (e
 Blockly.Msg.OXOCARD_LIST_ADD_TITLE1 = 'Append';
 Blockly.Msg.OXOCARD_LIST_ADD_TITLE1_5 = ' value';
 Blockly.Msg.OXOCARD_LIST_ADD_TITLE2 = 'to the list';
-Blockly.Msg.OXOCARD_LIST_ADD_TIP = 'Append an integer value to the list';
+Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TITLE2 = 'to the color list';
+Blockly.Msg.OXOCARD_LIST_ADD_TIP = 'Append given value to the list';
+Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TIP = 'Append given value to the color list';
 Blockly.Msg.OXOCARD_LIST_GET_TITLE1 = 'Get element No.';
 Blockly.Msg.OXOCARD_LIST_GET_TITLE2 = 'from the list';
+Blockly.Msg.OXOCARD_LIST_GET_COLOR_TITLE2 = 'from the color list';
 Blockly.Msg.OXOCARD_LIST_GET_TIP = 'Get defined element from the list';
+Blockly.Msg.OXOCARD_LIST_GET_COLOR_TIP = 'Get defined element from the color list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE1 = 'Remove element No.';
 Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE2 = 'from the list';
+Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TITLE2 = 'from the color list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_TIP = 'Remove defined element from the list';
+Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TIP = 'Remove defined element from the color list';
 
 // Other
 Blockly.Msg.OXOCARD_RANDOM_TITLE = 'Random 0 to ';

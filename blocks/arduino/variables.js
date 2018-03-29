@@ -118,11 +118,11 @@ Blockly.Blocks.oxocard_list_add_color = {
 			.setCheck("Number")
 			.appendField('B:');
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_TITLE2);
+			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TITLE2);
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_LIST_ADD_TIP);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TIP);
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	}
 };
@@ -151,16 +151,17 @@ Blockly.Blocks.oxocard_list_get_color = {
 			.setCheck("Number")
 			.appendField(Blockly.Msg.OXOCARD_LIST_GET_TITLE1);
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_LIST_GET_TITLE2)
 			.appendField(new Blockly.FieldDropdown(
 				[
 					["R", "r"],
 					["G", "g"],
 					["B", "b"]
 				]), "COLOR");
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_GET_COLOR_TITLE2);
 		this.setOutput(true, 'Colour');
 		this.setInputsInline(true);
-		this.setTooltip(Blockly.Msg.OXOCARD_LIST_GET_TIP);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_GET_COLOR_TIP);
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	},
   getBlockType: function() {
@@ -191,11 +192,11 @@ Blockly.Blocks.oxocard_list_remove_color = {
 			.setCheck("Number")
 			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE1);
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE2);
+			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TITLE2);
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_LIST_REMOVE_TIP);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TIP);
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	}
 };
