@@ -183,3 +183,19 @@ Blockly.Blocks.oxocard_list_remove = {
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	}
 };
+
+Blockly.Blocks.oxocard_list_remove_color = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendValueInput("VALUE")
+			.setCheck("Number")
+			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE1);
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE2);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_REMOVE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	}
+};
