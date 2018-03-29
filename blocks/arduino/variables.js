@@ -159,7 +159,7 @@ Blockly.Blocks.oxocard_list_get_color = {
 				]), "COLOR");
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_LIST_GET_COLOR_TITLE2);
-		this.setOutput(true, 'Colour');
+		this.setOutput(true, 'Number');
 		this.setInputsInline(true);
 		this.setTooltip(Blockly.Msg.OXOCARD_LIST_GET_COLOR_TIP);
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);

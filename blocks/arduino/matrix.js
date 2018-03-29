@@ -417,7 +417,7 @@ Blockly.Blocks.oxocard_matrix_read_pixel = {
 			.appendField('y')
 			.setCheck('Number')
 			.setAlign(Blockly.ALIGN_RIGHT);
-		this.setOutput(true, 'Colour');
+		this.setOutput(true, 'Number');
 		this.setInputsInline(true);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP);
 		this.setColour(Blockly.ColorDefinitions.DISPLAY);
