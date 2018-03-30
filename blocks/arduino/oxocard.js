@@ -116,6 +116,20 @@ Blockly.Blocks.oxocard_read_battery_voltage = {
 	}
 };
 
+Blockly.Blocks.oxocard_is_battery_fully_charged = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_IS_BATTERY_FULLY_CHARGED_TITLE)
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_IS_BATTERY_FULLY_CHARGED_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
+};
+
 Blockly.Blocks.oxocard_connect_to_internet = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
