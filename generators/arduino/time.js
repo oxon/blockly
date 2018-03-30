@@ -18,6 +18,11 @@ goog.require('Blockly.Arduino');
   return code;
 };
 
+Blockly.Arduino.oxocard_time_get_millis = function() {
+  var code = 'millis()';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 Blockly.Arduino.oxocard_set_time_zone = function() {
 	var timeZone = this.getFieldValue('ZONE');
 	return 'oxocard.clock->setTimeZone(' + timeZone + ');\n';

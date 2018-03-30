@@ -756,6 +756,8 @@
 	"OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TITLE": "Spiele Soundeffekt",
 	"OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TIP": "Spielt den ausgewählten Soundeffekt einmal oder für immer",
 
+	"OXOCARD_TIME_GET_MILLIS_TITLE": "Millisekunden seit Programmbeginn",
+	"OXOCARD_TIME_GET_MILLIS_TIP": "Liefert die vergangenen Millisekunden seit Programmbeginn",
 	"OXOCARD_TIME_UPDATE_TITLE": "Synchronisiere Zeit",
 	"OXOCARD_TIME_UPDATE_TIP": "Aktualisiert die Uhrzeit der OXOcard mit dem Internet",
 	"OXOCARD_TIME_GET_FROM_TITLE": "Benutze Zeitzone von ",

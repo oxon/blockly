@@ -640,6 +640,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_9 = "America - São Paulo / Buenos Aires";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_TIP = "Gets the time of a given city";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE = "Use timezone from ";
+/** @export */ Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TIP = "Returns the past milliseconds since the program start";
+/** @export */ Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TITLE = "milliseconds since program start";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_VALUE_DAY = "day";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_VALUE_HOUR = "hour";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_VALUE_MINUTE = "minute";
