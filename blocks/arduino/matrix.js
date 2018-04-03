@@ -454,10 +454,10 @@ Blockly.Blocks.oxocard_matrix_draw_weather = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TITLE);
+			.appendField(Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TITLE);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TIP);
+		this.setTooltip(Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
 	}
 };
