@@ -249,36 +249,41 @@ Blockly.Blocks.oxocard_update = {
 
 /* ---------- Accelerometer ---------- */
 Blockly.Blocks.oxocard_get_acceleration = {
-  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_GET_ACCELERATION_TITLE)
-        .appendField(new Blockly.FieldDropdown([["X", "X"], ["Y", "Y"], ["Z", "Z"]]), "AXIS")
-    this.setOutput(true, 'Number');
-    this.setTooltip(Blockly.Msg.OXOCARD_GET_ACCELERATION_TIP);
-    this.setColour(Blockly.ColorDefinitions.ACCMETER);
-  },
-  getBlockType: function() {
-    return Blockly.Types.NUMBER;
-  }
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_GET_ACCELERATION_TITLE)
+			.appendField(new Blockly.FieldDropdown([["X", "X"], ["Y", "Y"], ["Z", "Z"]]), "AXIS")
+		this.setOutput(true, 'Number');
+		this.setTooltip(Blockly.Msg.OXOCARD_GET_ACCELERATION_TIP);
+		this.setColour(Blockly.ColorDefinitions.ACCMETER);
+	},
+	getBlockType: function() {
+		return Blockly.Types.NUMBER;
+	}
 };
 
 Blockly.Blocks['oxocard_is_orientation'] = {
-  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE)
-        .appendField(new Blockly.FieldDropdown([[Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD, "UP"],
-                      [Blockly.Msg.OXOCARD_IS_ORIENTATION_DOWN_FIELD, "DOWN"],
-                      [Blockly.Msg.OXOCARD_IS_ORIENTATION_HORIZONTALLY_FIELD, "HORIZONTALLY"],
-                      [Blockly.Msg.OXOCARD_IS_ORIENTATION_VERTICALLY_FIELD, "VERTICALLY"]]), "DIRECTION")
-    this.setOutput(true, 'Boolean');
-    this.setTooltip(Blockly.Msg.OXOCARD_IS_ORIENTATION_TIP);
-    this.setColour(Blockly.ColorDefinitions.ACCMETER);
-  },
-  getBlockType: function() {
-    return Blockly.Types.BOOLEAN;
-  }
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE)
+			.appendField(new Blockly.FieldDropdown([[Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD, "UP"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_DOWN_FIELD, "DOWN"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HORIZONTALLY_FIELD, "HORIZONTALLY"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_VERTICALLY_FIELD, "VERTICALLY"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_UP_FIELD, "HALF_UP"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_DOWN_FIELD, "HALF_DOWN"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_LEFT_FIELD, "HALF_LEFT"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_RIGHT_FIELD, "HALF_RIGHT"]
+			]), "DIRECTION")
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_IS_ORIENTATION_TIP);
+		this.setColour(Blockly.ColorDefinitions.ACCMETER);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
 };
 
 Blockly.Blocks.oxocard_set_cursor = {
