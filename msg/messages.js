@@ -1432,8 +1432,6 @@ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE = 'Read pixel color';
 Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP = 'Returns the color (RGB) of the given pixel';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = 'Is pixel set?';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = 'Returns true if at least one color (RGB) of the pixel is set';
-Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TITLE = 'Weather: draw icon';
-Blockly.Msg.OXOCARD_MATRIX_DRAW_WEATHER_TIP = 'Draws the weather icon';
 
 // System
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn OXOcard off';
@@ -1523,19 +1521,19 @@ Blockly.Msg.OXOCARD_NO_TONE_TITLE = 'No tone';
 Blockly.Msg.OXOCARD_NO_TONE_TIP = 'Stops the tone';
 
 // Weather
-Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TITLE = 'Get weather from';
-Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TIP = 'Gets weather from the selected city';
-Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TITLE = 'Weather: Get';
-Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TEMP = 'Temperature';
-Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_DEWPOINT = 'Dew point';
-Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_HUMIDITY = 'Humidity';
-Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_WIND = 'Wind';
-Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_PRECIPITATION = 'Precipitation';
-Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TIP = 'Gets a value from the weather';
-Blockly.Msg.OXOCARD_WEATHER_GET_CITY_TITLE = 'Weather: get city name';
-Blockly.Msg.OXOCARD_WEATHER_GET_CITY_TIP = 'Gets the name of the city';
-Blockly.Msg.OXOCARD_WEATHER_GET_ICON_TITLE = 'Weather: get icon';
-Blockly.Msg.OXOCARD_WEATHER_GET_ICON_TIP = 'Gets the icon number of the weather';
+Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TITLE = 'Get weatherdata from';
+Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TIP = 'Gets the weatherdata from the selected city';
+Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TITLE = 'read';
+Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TEMP = 'Temperature (°C)';
+Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_DEWPOINT = 'Dew point (°C)';
+Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_HUMIDITY = 'Humidity (%)';
+Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_WIND = 'Wind (km/h)';
+Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_PRECIPITATION = 'Precipitation (mm)';
+Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TIP = 'Reads a value from the weatherdata';
+Blockly.Msg.OXOCARD_WEATHER_GET_CITY_TITLE = 'read city name';
+Blockly.Msg.OXOCARD_WEATHER_GET_CITY_TIP = 'Reads the name of the city';
+Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TITLE = 'Draw forecast icon';
+Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TIP = 'Draws the weather forecast icon';
 
 // Communication
 Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE = 'Enable messages with name';
