@@ -598,6 +598,8 @@
 	"OXOCARD_NO_AUTO_TURNOFF_TIP": "Disables the auto turnoff functionality",
 	"OXOCARD_READ_BATTERY_VOLTAGE_TITLE": "Read battery voltage [V]",
 	"OXOCARD_READ_BATTERY_VOLTAGE_TIP": "Reads the battery voltage in V",
+	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TITLE": "is battery fully charged?",
+	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TIP": "Returns true if battery is fully charged",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "Is button pressed?",
 	"OXOCARD_BUTTON_PRESSED_TIP": "Yes(?) if button pressed",
 	"OXOCARD_GET_TIMER_SECONDS_TITLE": "Get timer seconds",

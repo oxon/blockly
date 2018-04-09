@@ -516,6 +516,8 @@
 	"OXOCARD_NO_AUTO_TURNOFF_TIP": "Deaktiviert die automatische Ausschalt-Funktion",
 	"OXOCARD_READ_BATTERY_VOLTAGE_TITLE": "lies Batteriespannung [V]",
 	"OXOCARD_READ_BATTERY_VOLTAGE_TIP": "Liefert die Batteriespannung in Volt",
+	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TITLE": "ist Batterie voll geladen?",
+	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TIP": "Liefert wahr wenn die Batterie voll geladen ist",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "ist Knopf gedrückt?",
 	"OXOCARD_BUTTON_PRESSED_TIP": "Prüft, ob der Knopf gedrückt ist; liefert wahr oder falsch",
 	"OXOCARD_GET_TIMER_SECONDS_TITLE": "Hole Timer Sekunden",

@@ -51,6 +51,11 @@ Blockly.Arduino.oxocard_read_battery_voltage = function(block) {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.oxocard_is_battery_fully_charged = function(block) {
+	var code = 'oxocard.system->isBatteryFullyCharged()';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 Blockly.Arduino.oxocard_connect_to_internet = function(block) {
 	 return 'oxocard.wifi->autoConnect();\n';
 };

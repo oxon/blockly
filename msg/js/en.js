@@ -512,6 +512,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_GET_ORIENTATION_TITLE = "Get orientation";
 /** @export */ Blockly.Msg.OXOCARD_GET_TIMER_SECONDS_TIP = "Returns the seconds value uf the timer";
 /** @export */ Blockly.Msg.OXOCARD_GET_TIMER_SECONDS_TITLE = "Get timer seconds";
+/** @export */ Blockly.Msg.OXOCARD_IS_BATTERY_FULLY_CHARGED_TIP = "Returns true if battery is fully charged";
+/** @export */ Blockly.Msg.OXOCARD_IS_BATTERY_FULLY_CHARGED_TITLE = "is battery fully charged?";
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_DOWN_FIELD = "Down";
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_HORIZONTALLY_FIELD = "Horizontally";
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_TIP = "Returns if the OXOcard is in the given orientation";
