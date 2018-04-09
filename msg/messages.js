@@ -1618,6 +1618,8 @@ Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TITLE = 'Play sound effect';
 Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TIP = 'Plays a selected sound effect once or forever';
 
 // Time
+Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TITLE = 'milliseconds since program start';
+Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TIP = 'Returns the past milliseconds since the program start';
 Blockly.Msg.OXOCARD_TIME_UPDATE_TITLE = 'Synchronize time';
 Blockly.Msg.OXOCARD_TIME_UPDATE_TIP = 'Updates the time on the OXOcard';
 Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE = 'Use timezone from ';

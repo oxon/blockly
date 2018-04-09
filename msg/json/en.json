@@ -748,6 +748,8 @@
 	"OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TIP": "Waits until a loud noise is measured by the microphone",
 	"OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TITLE": "Play sound effect",
 	"OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TIP": "Plays a selected sound effect once or forever",
+	"OXOCARD_TIME_GET_MILLIS_TITLE": "milliseconds since program start",
+	"OXOCARD_TIME_GET_MILLIS_TIP": "Returns the past milliseconds since the program start",
 	"OXOCARD_TIME_UPDATE_TITLE": "Synchronize time",
 	"OXOCARD_TIME_UPDATE_TIP": "Updates the time on the OXOcard",
 	"OXOCARD_TIME_GET_FROM_TITLE": "Use timezone from ",
