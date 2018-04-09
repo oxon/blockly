@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-04-03 09:13:53.882719",
+		"lastupdated": "2018-04-05 09:32:32.610721",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -637,6 +637,10 @@
 	"OXOCARD_IS_ORIENTATION_DOWN_FIELD": "Down",
 	"OXOCARD_IS_ORIENTATION_HORIZONTALLY_FIELD": "Horizontally",
 	"OXOCARD_IS_ORIENTATION_VERTICALLY_FIELD": "Vertically",
+	"OXOCARD_IS_ORIENTATION_HALF_UP_FIELD": "Tilt up",
+	"OXOCARD_IS_ORIENTATION_HALF_DOWN_FIELD": "Tilt down",
+	"OXOCARD_IS_ORIENTATION_HALF_LEFT_FIELD": "Tilt left",
+	"OXOCARD_IS_ORIENTATION_HALF_RIGHT_FIELD": "Tilt right",
 	"OXOCARD_IS_ORIENTATION_TIP": "Returns if the OXOcard is in the given orientation",
 	"OXOCARD_SET_CURSOR_TITLE": "Set cursor",
 	"OXOCARD_SET_CURSOR_TIP": "Sets the position of the cursor",
