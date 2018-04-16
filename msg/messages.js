@@ -1346,11 +1346,6 @@ Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TITLE = 'Set';
 Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TITLE2 = 'with';
 Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TIP = 'Sets a variable with an expression (e.g. 1*(5/8))';
 
-Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE = 'Random number in';
-Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE2 = 'from';
-Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TITLE3 = 'to';
-Blockly.Msg.OXOCARD_MATH_SET_VAR_RANDOM_TIP = 'Set a given variable with a random number between two numbers';
-
 // Logic
 Blockly.Msg.OXOCARD_LOGIC_OPERATION_AND = 'and';
 Blockly.Msg.OXOCARD_LOGIC_OPERATION_OR = 'or';
@@ -1680,8 +1675,9 @@ Blockly.Msg.OXOCARD_LIST_REMOVE_TIP = 'Remove defined element from the list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TIP = 'Remove defined element from the color list';
 
 // Other
-Blockly.Msg.OXOCARD_RANDOM_TITLE = 'Random 0 to ';
-Blockly.Msg.OXOCARD_RANDOM_TIP = 'Returns a random number between 0 and the given value';
+Blockly.Msg.OXOCARD_RANDOM_TITLE1 = 'Random from';
+Blockly.Msg.OXOCARD_RANDOM_TITLE2 = 'to';
+Blockly.Msg.OXOCARD_RANDOM_TIP = 'Returns a random number between (and with) the first given value to (and with) the second value';
 Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TITLE = 'Connect with internet';
 Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TIP = 'Opens a connection to the internet';
 
