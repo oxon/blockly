@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-04-05 09:32:32.610721",
+		"lastupdated": "2018-04-16 14:48:07.281555",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -517,10 +517,6 @@
 	"OXOCARD_MATH_SET_VAR_WITH_TITLE": "Set",
 	"OXOCARD_MATH_SET_VAR_WITH_TITLE2": "with",
 	"OXOCARD_MATH_SET_VAR_WITH_TIP": "Sets a variable with an expression (e.g. 1*(5/8))",
-	"OXOCARD_MATH_SET_VAR_RANDOM_TITLE": "Random number in",
-	"OXOCARD_MATH_SET_VAR_RANDOM_TITLE2": "from",
-	"OXOCARD_MATH_SET_VAR_RANDOM_TITLE3": "to",
-	"OXOCARD_MATH_SET_VAR_RANDOM_TIP": "Set a given variable with a random number between two numbers",
 	"OXOCARD_LOGIC_OPERATION_AND": "and",
 	"OXOCARD_LOGIC_OPERATION_OR": "or",
 	"OXOCARD_LOGIC_WHILE_FOREVER_TITLE": "Do forever",
@@ -806,8 +802,9 @@
 	"OXOCARD_LIST_REMOVE_COLOR_TITLE2": "from the color list",
 	"OXOCARD_LIST_REMOVE_TIP": "Remove defined element from the list",
 	"OXOCARD_LIST_REMOVE_COLOR_TIP": "Remove defined element from the color list",
-	"OXOCARD_RANDOM_TITLE": "Random 0 to ",
-	"OXOCARD_RANDOM_TIP": "Returns a random number between 0 and the given value",
+	"OXOCARD_RANDOM_TITLE1": "Random from",
+	"OXOCARD_RANDOM_TITLE2": "to",
+	"OXOCARD_RANDOM_TIP": "Returns a random number between (and with) the first given value to (and with) the second value",
 	"OXOCARD_CONNECT_TO_INTERNET_TITLE": "Connect with internet",
 	"OXOCARD_CONNECT_TO_INTERNET_TIP": "Opens a connection to the internet",
 	"NEW_INSTANCE": "New instance...",

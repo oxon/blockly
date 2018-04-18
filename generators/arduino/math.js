@@ -371,19 +371,11 @@ Blockly.Arduino['math_set_var_with'] = function(block) {
 	return varName + ' = ' + expression + ';\n';
 };
 
-Blockly.Arduino['math_set_var_random'] = function(block) {
+Blockly.Arduino['math_set_oxocard_random'] = function(block) {
 	var from = Blockly.Arduino.valueToCode(block, 'FROM',
 		Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
 	var to = Blockly.Arduino.valueToCode(block, 'TO',
 		Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
-	var varName = Blockly.Arduino.variableDB_.getName(block.getFieldValue('VAR'),
-		Blockly.Variables.NAME_TYPE);
-	return varName + ' = random(' + from + ', ' + to + '+1);\n';
-};
-
-Blockly.Arduino['math_set_oxocard_random'] = function(block) {
-	var number = Blockly.Arduino.valueToCode(block, 'NUM',
-		Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
-  var code = 'random(' + number + '+1)';
+  var code = 'random(' + from + ', ' + to + '+1)';
   return [code, Blockly.Arduino.ORDER_UNARY_POSTFIX];
 };
