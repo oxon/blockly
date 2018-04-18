@@ -63,9 +63,7 @@ Blockly.Arduino.oxocard_matrix_set_color = function() {
 };
 
 Blockly.Arduino.oxocard_matrix_set_random_color = function() {
-	var code = 'oxocard.matrix->setForeColor(\n';
-	var rand = 'random(255+1)';
-	return code += '  rgb(\n    ' + rand + ',\t// R\n    ' + rand + ',\t// G\n    ' + rand + '\t// B\n  )\n);\n';
+	return 'oxocard.matrix->setForeColor(Random::getColor());\n';
 };
 
 Blockly.Arduino.oxocard_matrix_set_color_var = function() {

@@ -376,6 +376,6 @@ Blockly.Arduino['math_set_oxocard_random'] = function(block) {
 		Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
 	var to = Blockly.Arduino.valueToCode(block, 'TO',
 		Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
-  var code = 'random(' + from + ', ' + to + '+1)';
+  var code = 'Random::getInt(' + from + ', ' + to + '+1)';
   return [code, Blockly.Arduino.ORDER_UNARY_POSTFIX];
 };
