@@ -38,12 +38,12 @@ Blockly.Arduino['oxocard_turn_off_with_buttons'] = function(block) {
 
 Blockly.Arduino.oxocard_handle_auto_turnoff = function() {
   var timeout = Blockly.Arduino.valueToCode(this, 'TIMEOUT', Blockly.Arduino.ORDER_ATOMIC) || 0;
-	return 'AutoTurnOff::getInstance().configureAutoTurnOff(' + timeout + ');\n'
-		+ 'AutoTurnOff::getInstance().enableAutoTurnOff();\n';
+	return 'AutoTurnOff::getInstance().configure(' + timeout + ');\n'
+		+ 'AutoTurnOff::getInstance().enable();\n';
 };
 
 Blockly.Arduino.oxocard_disable_auto_turnoff = function(block) {
-	 return 'AutoTurnOff::getInstance().disableAutoTurnOff();\n';
+	 return 'AutoTurnOff::getInstance().disable();\n';
 };
 
 Blockly.Arduino.oxocard_read_battery_voltage = function(block) {
