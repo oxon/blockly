@@ -56,7 +56,10 @@ Blockly.Blocks['text'] = {
 	  this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	  this.appendDummyInput()
 		  .appendField(this.newQuote_(true))
-		  .appendField(new Blockly.FieldTextInput(''), 'TEXT')
+		  .appendField(new Blockly.FieldTextInput('', function(text) {
+				var pattern = new RegExp("^[\x20-\x7F]+$", "g");
+				return pattern.test(text) ? text : null;
+			}), 'TEXT')
 		  .appendField(this.newQuote_(false));
 	  this.setOutput(true, Blockly.Types.TEXT.output);
 	  // Assign 'this' to a variable for use in the tooltip closure below.
