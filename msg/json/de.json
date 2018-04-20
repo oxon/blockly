@@ -510,7 +510,7 @@
 	"OXOCARD_AUTO_TURNOFF_WP_TITLE": "Automatisch ausschalten",
 	"OXOCARD_AUTO_TURNOFF_WP_TIP": "Die OXOcard schaltet nach 2 Minuten automatisch aus",
 	"OXOCARD_AUTO_TURNOFF_TITLE": "Automatisch ausschalten",
-	"OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD": "mit Timeout",
+	"OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD": "mit Timeout [s]",
 	"OXOCARD_AUTO_TURNOFF_TIP": "Schaltet nach der angegebenen Zeit (in Sekunden) aus",
 	"OXOCARD_NO_AUTO_TURNOFF_TITLE": "Nie automatisch ausschalten",
 	"OXOCARD_NO_AUTO_TURNOFF_TIP": "Deaktiviert die automatische Ausschalt-Funktion",

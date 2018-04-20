@@ -441,7 +441,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAVE_SINE = "Sinus";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAVE_SQUARE = "Rechteck";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAVE_TRIANGLE = "Dreieck";
-/** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD = "mit Timeout";
+/** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD = "mit Timeout [s]";
 /** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TIP = "Schaltet nach der angegebenen Zeit (in Sekunden) aus";
 /** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TITLE = "Automatisch ausschalten";
 /** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_WP_TIP = "Die OXOcard schaltet nach 2 Minuten automatisch aus";

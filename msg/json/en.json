@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-04-16 14:48:07.281555",
+		"lastupdated": "2018-04-20 13:35:35.004828",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -588,7 +588,7 @@
 	"OXOCARD_AUTO_TURNOFF_WP_TITLE": "Handle auto turnoff",
 	"OXOCARD_AUTO_TURNOFF_WP_TIP": "Enters sleep mode after 2 minutes",
 	"OXOCARD_AUTO_TURNOFF_TITLE": "Handle auto turnoff",
-	"OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD": "with timeout",
+	"OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD": "with timeout [s]",
 	"OXOCARD_AUTO_TURNOFF_TIP": "Enters sleep mode after given timeout",
 	"OXOCARD_NO_AUTO_TURNOFF_TITLE": "Disable auto turnoff",
 	"OXOCARD_NO_AUTO_TURNOFF_TIP": "Disables the auto turnoff functionality",

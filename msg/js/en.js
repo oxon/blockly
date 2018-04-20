@@ -441,7 +441,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAVE_SINE = "Sine";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAVE_SQUARE = "Square";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_WAVE_TRIANGLE = "Triangle";
-/** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD = "with timeout";
+/** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TIMEOUT_FIELD = "with timeout [s]";
 /** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TIP = "Enters sleep mode after given timeout";
 /** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_TITLE = "Handle auto turnoff";
 /** @export */ Blockly.Msg.OXOCARD_AUTO_TURNOFF_WP_TIP = "Enters sleep mode after 2 minutes";
