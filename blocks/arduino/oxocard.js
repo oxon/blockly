@@ -409,7 +409,7 @@ Blockly.Blocks.oxocard_comm_enable = {
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE)
-			.appendField(new Blockly.FieldTextInput('OXOcard ' +Math.floor((Math.random() * 100) + 1)), 'NAME');
+			.appendField(new Blockly.FieldTextInput('Oxocard ' +Math.floor((Math.random() * 100) + 1)), 'NAME');
 		// this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);

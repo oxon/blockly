@@ -1252,7 +1252,7 @@ Blockly.Msg.ARD_MAP_VAL = 'value to [0-';
 Blockly.Msg.ARD_MAP_TIP = 'Re-maps a number from [0-1024] to another.';
 Blockly.Msg.ARD_FUN_RUN_SETUP = 'Run first:';
 Blockly.Msg.ARD_FUN_RUN_LOOP = 'Loop forever:';
-Blockly.Msg.ARD_FUN_RUN_TIP = 'Defines the OXOcard setup() and loop() functions.';
+Blockly.Msg.ARD_FUN_RUN_TIP = 'Defines the Oxocard setup() and loop() functions.';
 Blockly.Msg.ARD_PIN_WARN1 = 'Pin %1 is needed for %2 as pin %3. Already used as %4.';
 Blockly.Msg.ARD_SERIAL_SETUP = 'Setup';
 Blockly.Msg.ARD_SERIAL_SPEED = ':  speed to';
@@ -1333,7 +1333,7 @@ Blockly.Msg.ARD_TONE_WARNING = 'Frequency must be in range 31 - 65535';
 Blockly.Msg.ARD_NOTONE = 'Turn off tone on pin #';
 Blockly.Msg.ARD_NOTONE_TIP = 'Turns the tone off on the selected pin';
 
-/// OXOcard Blocks
+/// Oxocard Blocks
 
 // Math
 Blockly.Msg.OXOCARD_MATH_INCREMENT_TITLE = 'Add 1 to';
@@ -1429,13 +1429,13 @@ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = 'Is pixel set?';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = 'Returns true if at least one color (RGB) of the pixel is set';
 
 // System
-Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn OXOcard off';
+Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn Oxocard off';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE2 = 'Click to set the Buttons';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE3 = 'to turn on again';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TIP = 'Turns off the card';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TIP2 = 'Turns off the card and set the buttons able to wake the card up';
-Blockly.Msg.OXOCARD_REBOOT_TITLE = 'Reset OXOcard';
-Blockly.Msg.OXOCARD_REBOOT_TIP = 'Resets the OXOcard';
+Blockly.Msg.OXOCARD_REBOOT_TITLE = 'Reset Oxocard';
+Blockly.Msg.OXOCARD_REBOOT_TIP = 'Resets the Oxocard';
 Blockly.Msg.OXOCARD_AUTO_TURNOFF_WP_TITLE = 'Handle auto turnoff';
 Blockly.Msg.OXOCARD_AUTO_TURNOFF_WP_TIP = 'Enters sleep mode after 2 minutes';
 Blockly.Msg.OXOCARD_AUTO_TURNOFF_TITLE = 'Handle auto turnoff';
@@ -1457,8 +1457,8 @@ Blockly.Msg.OXOCARD_PRINT_TITLE = 'Print';
 Blockly.Msg.OXOCARD_PRINT_TIP = 'Prints the given number or string to the console';
 Blockly.Msg.OXOCARD_PRINTLN_TITLE = 'Println';
 Blockly.Msg.OXOCARD_PRINTLN_TIP = 'Prints the given number or string to the console (with new line)';
-Blockly.Msg.OXOCARD_UPDATE_TITLE = 'Update OXOcard';
-Blockly.Msg.OXOCARD_UPDATE_TIP = 'Updates the OXOcard with the newest code from Blokly';
+Blockly.Msg.OXOCARD_UPDATE_TITLE = 'Update Oxocard';
+Blockly.Msg.OXOCARD_UPDATE_TIP = 'Updates the Oxocard with the newest code from Blokly';
 
 // Display
 Blockly.Msg.OXOCARD_TURN_DISPLAY_ON_TITLE = 'Turn display on';
@@ -1484,7 +1484,7 @@ Blockly.Msg.OXOCARD_WINK_TIP = 'A simple wink ;)';
 Blockly.Msg.OXOCARD_GET_ACCELERATION_TITLE = 'Get acceleration';
 Blockly.Msg.OXOCARD_GET_ACCELERATION_TIP = 'Returns the selected accelerometer axis value';
 Blockly.Msg.OXOCARD_GET_ORIENTATION_TITLE = 'Get orientation';
-Blockly.Msg.OXOCARD_GET_ORIENTATION_TIP = 'Returns the orientation of the OXOcard';
+Blockly.Msg.OXOCARD_GET_ORIENTATION_TIP = 'Returns the orientation of the Oxocard';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE = 'Is orientation';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD = 'Up';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_DOWN_FIELD = 'Down';
@@ -1494,16 +1494,16 @@ Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_UP_FIELD = 'Tilt up';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_DOWN_FIELD = 'Tilt down';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_LEFT_FIELD = 'Tilt left';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_RIGHT_FIELD = 'Tilt right';
-Blockly.Msg.OXOCARD_IS_ORIENTATION_TIP = 'Returns if the OXOcard is in the given orientation';
+Blockly.Msg.OXOCARD_IS_ORIENTATION_TIP = 'Returns if the Oxocard is in the given orientation';
 Blockly.Msg.OXOCARD_SET_CURSOR_TITLE = 'Set cursor';
 Blockly.Msg.OXOCARD_SET_CURSOR_TIP = 'Sets the position of the cursor';
 Blockly.Msg.OXOCARD_GET_CURSOR_VALUE_TITLE = 'Get cursor ';
 Blockly.Msg.OXOCARD_GET_CURSOR_VALUE_TIP = 'Gets the x- or y-value of the cursor';
 
 // Bluetooth
-Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_TITLE = 'Setup the OXOcard as iBeacon';
+Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_TITLE = 'Setup the Oxocard as iBeacon';
 Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_ID_FIELD = 'With the ID';
-Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_TIP = 'Sets the OXOcard up as iBeacon with the given ID';
+Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_TIP = 'Sets the Oxocard up as iBeacon with the given ID';
 Blockly.Msg.OXOCARD_FIND_IBEACON_TITLE = 'Find iBeacon with the ID';
 Blockly.Msg.OXOCARD_FIND_IBEACON_TIP = 'Search for iBeacons with the given ID';
 
@@ -1543,11 +1543,11 @@ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD = 'with timeout';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP = 'Waits for a given time for a message';
 Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT = 'at';
 Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_TITLE = 'Send direct message';
-Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_TIP = 'Sends a message to the specified OXOcard';
+Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_TIP = 'Sends a message to the specified Oxocard';
 Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_NUMBER_TITLE = 'Send direct number';
-Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_NUMBER_TIP = 'Sends a number to the specified OXOcard';
+Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_NUMBER_TIP = 'Sends a number to the specified Oxocard';
 Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_NUMBER_FIELD = 'and number';
-Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AND_NUMBER_TIP = 'Sends a message and a number to the specified OXOcard';
+Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AND_NUMBER_TIP = 'Sends a message and a number to the specified Oxocard';
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TITLE = 'Check for direct message';
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TIP = 'Checks if the received message is a direct message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TITLE = 'Compare direct message';
@@ -1560,11 +1560,11 @@ Blockly.Msg.OXOCARD_COMM_GET_DIRECT_MESSAGE_TIP = 'Reads the text from the recei
 Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TITLE = 'Get number';
 Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TIP = 'Reads the number from the received direct message';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE = 'Send broadcast message';
-Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP = 'Broadcasts a message to every OXOcard';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP = 'Broadcasts a message to every Oxocard';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TITLE = 'Send broadcast number';
-Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TIP = 'Broadcasts a number to every OXOcard';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TIP = 'Broadcasts a number to every Oxocard';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_FIELD = 'and number';
-Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_AND_NUMBER_TIP = 'Broadcasts a message and a number to every OXOcard';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_AND_NUMBER_TIP = 'Broadcasts a message and a number to every Oxocard';
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TITLE = 'Check for broadcast message';
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TIP = 'Checks if the received message is a broadcast message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TITLE = 'Compare broadcast message';
@@ -1620,7 +1620,7 @@ Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TIP = 'Plays a selected sound effect
 Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TITLE = 'milliseconds since program start';
 Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TIP = 'Returns the past milliseconds since the program start';
 Blockly.Msg.OXOCARD_TIME_UPDATE_TITLE = 'Synchronize time';
-Blockly.Msg.OXOCARD_TIME_UPDATE_TIP = 'Updates the time on the OXOcard';
+Blockly.Msg.OXOCARD_TIME_UPDATE_TIP = 'Updates the time on the Oxocard';
 Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE = 'Use timezone from ';
 Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_1 = 'Pacific - Samoa / Pago';
 Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_2 = 'Pacific - Honolulu / Papeete';
