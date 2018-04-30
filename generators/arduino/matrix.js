@@ -146,6 +146,12 @@ Blockly.Arduino.oxocard_matrix_draw_text = function(block) {
 	return 'oxocard.matrix->drawText(' + text + ', ' + isBigFont +');\n';
 };
 
+Blockly.Arduino.oxocard_matrix_draw_text_expert = function() {
+	var text = Blockly.Arduino.valueToCode(this, 'TEXT', Blockly.Arduino.ORDER_NONE);
+	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
+	return 'oxocard.matrix->drawText(' + text + ', ' + isBigFont +');\n';
+};
+
 Blockly.Arduino.oxocard_matrix_set_frame_buffer = function() {
 	var bufferNr = this.getFieldValue('BUFFER');
 	return 'oxocard.matrix->setActiveFrameBuffer(' + bufferNr + ', false);\n';
