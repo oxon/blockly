@@ -139,7 +139,6 @@ Blockly.Arduino.oxocard_matrix_draw_number = function() {
 	return 'oxocard.matrix->drawNumber(' + num +');\n';
 };
 
-
 Blockly.Arduino.oxocard_matrix_draw_text = function(block) {
 	var text = Blockly.Arduino.quote_(block.getFieldValue('TEXT'));
 	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();

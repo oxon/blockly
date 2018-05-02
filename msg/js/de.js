@@ -621,6 +621,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_RANDOM_TITLE2 = "bis";
 /** @export */ Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TIP = "Liefert die Batteriespannung in Volt";
 /** @export */ Blockly.Msg.OXOCARD_READ_BATTERY_VOLTAGE_TITLE = "lies Batteriespannung [V]";
+/** @export */ Blockly.Msg.OXOCARD_READ_TEMPERATURE_TIP = "Liefert die Temperatur in °C (+/- 2°C Genauigkeit)";
+/** @export */ Blockly.Msg.OXOCARD_READ_TEMPERATURE_TITLE = "lies Temperatur [°C]";
 /** @export */ Blockly.Msg.OXOCARD_REBOOT_TIP = "Startet die Oxocard neu";
 /** @export */ Blockly.Msg.OXOCARD_REBOOT_TITLE = "Oxocard neu starten";
 /** @export */ Blockly.Msg.OXOCARD_RESET_TIMER_TIP = "Startet den Timer neu";
