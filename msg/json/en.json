@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-05-02 10:49:55.269404",
+		"lastupdated": "2018-05-02 10:54:22.080482",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -596,8 +596,8 @@
 	"OXOCARD_READ_BATTERY_VOLTAGE_TIP": "Reads the battery voltage in V",
 	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TITLE": "is battery fully charged?",
 	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TIP": "Returns true if battery is fully charged",
-	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TITLE": "is USB cable plugged in?",
-	"OXOCARD_IS_BATTERY_FULLY_CHARGED_TIP": "Returns true if USB cable is plugged in",
+	"OXOCARD_IS_USB_PLUGGED_IN_TITLE": "is USB cable plugged in?",
+	"OXOCARD_IS_USB_PLUGGED_IN_TIP": "Returns true if USB cable is plugged in",
 	"OXOCARD_READ_TEMPERATURE_TITLE": "read temperature [°C]",
 	"OXOCARD_READ_TEMPERATURE_TIP": "Reads the temperature in °C (+/- 2°C precision)",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "is button pressed?",

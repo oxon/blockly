@@ -524,6 +524,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE = "ist Orientierung";
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD = "Aufrecht";
 /** @export */ Blockly.Msg.OXOCARD_IS_ORIENTATION_VERTICALLY_FIELD = "Vertikal";
+/** @export */ Blockly.Msg.OXOCARD_IS_USB_PLUGGED_IN_TIP = "Liefert wahr wenn das USB Kabel eingesteckt ist";
+/** @export */ Blockly.Msg.OXOCARD_IS_USB_PLUGGED_IN_TITLE = "ist USB Kabel eingesteckt?";
 /** @export */ Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TIP = "Fügt den angegebenen Wert der Farben-Liste hinzu";
 /** @export */ Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TITLE2 = "der Farben-Liste hinzu";
 /** @export */ Blockly.Msg.OXOCARD_LIST_ADD_TIP = "Fügt den angegebenen Wert der Liste hinzu";
