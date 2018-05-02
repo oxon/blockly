@@ -56,6 +56,16 @@ Blockly.Arduino.oxocard_is_battery_fully_charged = function(block) {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.oxocard_is_usb_plugged_in = function(block) {
+	var code = 'oxocard.battery->isUsbPluggedIn()';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_read_temperature = function(block) {
+	var code = 'oxocard.accelerometer->getTemperature()';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 Blockly.Arduino.oxocard_connect_to_internet = function(block) {
 	 return 'oxocard.wifi->autoConnect();\n';
 };

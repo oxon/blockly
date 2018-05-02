@@ -130,6 +130,34 @@ Blockly.Blocks.oxocard_is_battery_fully_charged = {
 	}
 };
 
+Blockly.Blocks.oxocard_is_usb_plugged_in = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_IS_USB_PLUGGED_IN_TITLE)
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_IS_USB_PLUGGED_IN_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
+};
+
+Blockly.Blocks.oxocard_read_temperature = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_READ_TEMPERATURE_TITLE)
+		this.setOutput(true, 'Number');
+		this.setTooltip(Blockly.Msg.OXOCARD_READ_TEMPERATURE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getBlockType: function() {
+		return Blockly.Types.DECIMAL;
+	}
+};
+
 Blockly.Blocks.oxocard_connect_to_internet = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
