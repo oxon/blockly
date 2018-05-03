@@ -53,3 +53,46 @@ Blockly.Arduino['variables_set_type'] = function(block) {
 	var code = '(' + varType + ')(' + argument0 + ')';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+
+Blockly.Arduino.oxocard_list_add = function(block) {
+	var val = Blockly.Arduino.valueToCode(
+		block, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	return 'oxocard.intList->add(' + val + ');\n';
+};
+
+Blockly.Arduino.oxocard_list_add_color = function(block) {
+	var r = Blockly.Arduino.valueToCode(
+		block, 'R', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	var g = Blockly.Arduino.valueToCode(
+		block, 'G', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	var b = Blockly.Arduino.valueToCode(
+		block, 'B', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	return 'oxocard.colorList->add(rgb(' + r + ', ' + g +  ', ' + b + '));\n';
+};
+
+Blockly.Arduino.oxocard_list_get = function(block) {
+	var value = Blockly.Arduino.valueToCode(
+		block, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	var code = 'oxocard.intList->get(' + value + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_list_get_color = function(block) {
+	var value = Blockly.Arduino.valueToCode(
+		block, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	var color = this.getFieldValue('COLOR');
+	var code = 'oxocard.colorList->get(' + value + ').' + color;
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_list_remove = function(block) {
+	var value = Blockly.Arduino.valueToCode(
+		block, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	return 'oxocard.intList->remove(' + value + ');\n';
+};
+
+Blockly.Arduino.oxocard_list_remove_color = function(block) {
+	var value = Blockly.Arduino.valueToCode(
+		block, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || '0';
+	return 'oxocard.colorList->remove(' + value + ');\n';
+};

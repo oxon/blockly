@@ -207,7 +207,6 @@ Blockly.Types.regExpFloat_ = new RegExp(/^-?[0-9]*[.][0-9]+$/);
  * @return {!Blockly.Type} Blockly type.
  */
 Blockly.Types.identifyNumber = function(numberString) {
-	console.log("we identify: " + numberString);
     if (Blockly.Types.regExpInt_.test(numberString)) {
       var intValue = parseInt(numberString);
       if (isNaN(intValue)) {

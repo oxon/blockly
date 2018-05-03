@@ -87,4 +87,116 @@ Blockly.Blocks['text'] = {
 	getBlockType: function() {
 	  return Blockly.Types.TEXT;
 	}
-  };
+};
+
+Blockly.Blocks.oxocard_list_add = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendValueInput("VALUE")
+			.setCheck("Number")
+			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_TITLE1 + Blockly.Msg.OXOCARD_LIST_ADD_TITLE1_5);
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_TITLE2);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_ADD_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	}
+};
+
+Blockly.Blocks.oxocard_list_add_color = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendValueInput("R")
+			.setCheck("Number")
+			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_TITLE1 + ' R:');
+		this.appendValueInput("G")
+			.setCheck("Number")
+			.appendField('G:');
+		this.appendValueInput("B")
+			.setCheck("Number")
+			.appendField('B:');
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TITLE2);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	}
+};
+
+Blockly.Blocks.oxocard_list_get = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendValueInput("VALUE")
+			.setCheck("Number")
+			.appendField(Blockly.Msg.OXOCARD_LIST_GET_TITLE1);
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_GET_TITLE2);
+		this.setOutput(true, 'Number');
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_GET_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+  getBlockType: function() {
+    return Blockly.Types.NUMBER;
+  }
+};
+
+Blockly.Blocks.oxocard_list_get_color = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendValueInput("VALUE")
+			.setCheck("Number")
+			.appendField(Blockly.Msg.OXOCARD_LIST_GET_TITLE1);
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldDropdown(
+				[
+					["R", "r"],
+					["G", "g"],
+					["B", "b"]
+				]), "COLOR");
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_GET_COLOR_TITLE2);
+		this.setOutput(true, 'Number');
+		this.setInputsInline(true);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_GET_COLOR_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+  getBlockType: function() {
+    return Blockly.Types.NUMBER;
+  }
+};
+
+Blockly.Blocks.oxocard_list_remove = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendValueInput("VALUE")
+			.setCheck("Number")
+			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE1);
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE2);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_REMOVE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	}
+};
+
+Blockly.Blocks.oxocard_list_remove_color = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendValueInput("VALUE")
+			.setCheck("Number")
+			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE1);
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TITLE2);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	}
+};

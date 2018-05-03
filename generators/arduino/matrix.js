@@ -21,7 +21,6 @@ Blockly.Arduino.oxocard_matrix_draw_rgb_image = function() {
 	var posX = Blockly.Arduino.valueToCode(this, 'X', Blockly.Arduino.ORDER_NONE) || 0;
 	var posY = Blockly.Arduino.valueToCode(this, 'Y', Blockly.Arduino.ORDER_NONE) || 0;
 	let somePixelSet = 0;
-
 	var code = '';
 	for(var i=0, l=8; i<l; i++){
 		for(var j=0, ll=8; j<l; j++){
@@ -35,9 +34,9 @@ Blockly.Arduino.oxocard_matrix_draw_rgb_image = function() {
 					var g = parseInt(value.substring(3,5),16);
 					var b = parseInt(value.substring(5,7),16);
 					code += 'oxocard.matrix->setPixel(';
-					code += (isNaN(posX)) ? '(' + x + '+' + posX + ')' : x;
+					code += (posX == 0 || isNaN(posX)) ? x : ('(' + x + '+' + posX + ')');
 					code += ', ';
-					code += (isNaN(posY)) ? '(' + y + '+' + posY + ')' : y;
+					code += (posY == 0 || isNaN(posY)) ? y : ('(' + y + '+' + posY + ')');
 					code += ', ';
 					code += 'rgb(' + r + ', ' + g + ', ' + b + '));\n';
 					continue;
@@ -63,9 +62,7 @@ Blockly.Arduino.oxocard_matrix_set_color = function() {
 };
 
 Blockly.Arduino.oxocard_matrix_set_random_color = function() {
-	var code = 'oxocard.matrix->setForeColor(\n';
-	var rand = 'random(255+1)';
-	return code += '  rgb(\n    ' + rand + ',\t// R\n    ' + rand + ',\t// G\n    ' + rand + '\t// B\n  )\n);\n';
+	return 'oxocard.matrix->setForeColor(Random::getColor());\n';
 };
 
 Blockly.Arduino.oxocard_matrix_set_color_var = function() {
@@ -142,8 +139,13 @@ Blockly.Arduino.oxocard_matrix_draw_number = function() {
 	return 'oxocard.matrix->drawNumber(' + num +');\n';
 };
 
+Blockly.Arduino.oxocard_matrix_draw_text = function(block) {
+	var text = Blockly.Arduino.quote_(block.getFieldValue('TEXT'));
+	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
+	return 'oxocard.matrix->drawText(' + text + ', ' + isBigFont +');\n';
+};
 
-Blockly.Arduino.oxocard_matrix_draw_text = function() {
+Blockly.Arduino.oxocard_matrix_draw_text_expert = function() {
 	var text = Blockly.Arduino.valueToCode(this, 'TEXT', Blockly.Arduino.ORDER_NONE);
 	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
 	return 'oxocard.matrix->drawText(' + text + ', ' + isBigFont +');\n';
@@ -151,7 +153,7 @@ Blockly.Arduino.oxocard_matrix_draw_text = function() {
 
 Blockly.Arduino.oxocard_matrix_set_frame_buffer = function() {
 	var bufferNr = this.getFieldValue('BUFFER');
-	return 'oxocard.matrix->setCurrentFrameBuffer(' + bufferNr + ');\n';
+	return 'oxocard.matrix->setActiveFrameBuffer(' + bufferNr + ', false);\n';
 };
 
 Blockly.Arduino.oxocard_matrix_copy_frame_buffer_content = function() {
