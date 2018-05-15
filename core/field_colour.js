@@ -82,6 +82,11 @@ Blockly.FieldColour.prototype.columns_ = 0;
 Blockly.FieldColour.prototype.init = function() {
   Blockly.FieldColour.superClass_.init.call(this);
   this.borderRect_.style['fillOpacity'] = 1;
+  this.borderRect_.style['height'] = 26;
+  this.borderRect_.style['width'] = 26;
+
+  this.customXSpacing = 18;
+  this.customYSpacing = 0;
   this.setValue(this.getValue());
 };
 

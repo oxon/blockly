@@ -42,6 +42,7 @@ Blockly.Blocks.oxocard_matrix_draw_rgb_image = {
 			var input = this.appendDummyInput();
 			for(var j=0, ll=8; j<ll; j++){
 				var rgbLed = new Blockly.FieldRGBLed('FALSE');
+				rgbLed.customXSpacing = 14;
 				rgbLed.setSource(theColor);
 				input.appendField(rgbLed , i + '' + j);
 			}
