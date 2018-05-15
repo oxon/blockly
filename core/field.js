@@ -155,7 +155,7 @@ Blockly.Field.prototype.init = function() {
       }, this.fieldGroup_);
   /** @type {!Element} */
   this.textElement_ = Blockly.utils.createSvgElement('text',
-      {'class': 'blocklyText', 'y': this.size_.height/2+4},
+      {'class': 'blocklyText', 'y': this.size_.height/2+4, 'x':4},
       this.fieldGroup_);
 
   this.updateEditable();
@@ -330,7 +330,11 @@ Blockly.Field.prototype.render_ = function() {
  * it eventually does succeed, the result will be cached.
  **/
 Blockly.Field.prototype.updateWidth = function() {
-  var width = Blockly.Field.getCachedWidth(this.textElement_)+10;
+  var width = Blockly.Field.getCachedWidth(this.textElement_);
+  console.log(this);
+  if(this instanceof Blockly.FieldNumber){
+	  width += 20;
+  }
   if (this.borderRect_) {
     this.borderRect_.setAttribute('width',
         width + Blockly.BlockSvg.SEP_SPACE_X);

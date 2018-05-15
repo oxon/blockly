@@ -37,12 +37,12 @@ goog.require('goog.userAgent');
  * Horizontal space between elements.
  * @const
  */
-Blockly.BlockSvg.SEP_SPACE_X = 15;
+Blockly.BlockSvg.SEP_SPACE_X = 10;
 /**
  * Vertical space between elements.
  * @const
  */
-Blockly.BlockSvg.SEP_SPACE_Y = 10;
+Blockly.BlockSvg.SEP_SPACE_Y = 15;
 /**
  * Vertical padding around inline elements.
  * @const
