@@ -46,7 +46,8 @@ goog.require('goog.userAgent');
  */
 Blockly.FieldTextInput = function(text, opt_validator) {
   Blockly.FieldTextInput.superClass_.constructor.call(this, text,
-      opt_validator);
+	  opt_validator);
+	  this.size_.height = 20;
 };
 goog.inherits(Blockly.FieldTextInput, Blockly.Field);
 
@@ -195,7 +196,7 @@ Blockly.FieldTextInput.prototype.showInlineEditor_ = function(quietInput) {
       goog.dom.createDom(goog.dom.TagName.INPUT, 'blocklyHtmlInput');
   htmlInput.setAttribute('spellcheck', this.spellcheck_);
   var fontSize =
-      (Blockly.FieldTextInput.FONTSIZE * this.workspace_.scale) + 'pt';
+      ((Blockly.FieldTextInput.FONTSIZE) * this.workspace_.scale) + 'pt';
   div.style.fontSize = fontSize;
   htmlInput.style.fontSize = fontSize;
 

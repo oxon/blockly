@@ -345,7 +345,6 @@ Blockly.BlockSvg.prototype.renderFields_ = function(fieldList,
       }
     } else {
 		if(field.customXSpacing){
-			
 			root.setAttribute('transform', 'translate(' + (cursorX + field.customXSpacing/2) + ',' + cursorY + ')');
 			cursorX += field.renderWidth + field.customXSpacing;
 		}else{
@@ -470,15 +469,15 @@ Blockly.BlockSvg.prototype.renderCompute_ = function(iconWidth) {
         fieldStatementWidth = Math.max(fieldStatementWidth, input.fieldWidth);
       } else {
         if (row.type == Blockly.INPUT_VALUE) {
-          hasValue = true;
+		  hasValue = true;
         } else if (row.type == Blockly.DUMMY_INPUT) {
           hasDummy = true;
         }
         fieldValueWidth = Math.max(fieldValueWidth, input.fieldWidth);
       }
-    }
+	}
   }
-
+  
   // Make inline rows a bit thicker in order to enclose the values.
   for (var y = 0, row; row = inputRows[y]; y++) {
     row.thicker = false;
