@@ -195,8 +195,8 @@ Blockly.Css.CONTENT = [
 
   '.blocklyHighlightedConnectionPath {',
     'fill: none;',
-    'stroke: #fc3;',
-    'stroke-width: 4px;',
+    'stroke: #00a7e3;',
+    'stroke-width: 2px;',
   '}',
 
   '.blocklyPathLight {',
@@ -206,7 +206,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklySelected>.blocklyPath {',
-    'stroke: #fc3;',
+    'stroke: #00a7e3;',
     'stroke-width: 3px;',
   '}',
 
@@ -282,8 +282,8 @@ Blockly.Css.CONTENT = [
   '.blocklyText {',
     'cursor: default;',
     'fill: #fff;',
-    'font-family: sans-serif;',
-    'font-size: 11pt;',
+    'font-family: \'Roboto\';',
+    'font-size: 10pt;',
   '}',
 
   '.blocklyNonEditableText>text {',
@@ -292,7 +292,7 @@ Blockly.Css.CONTENT = [
 
   '.blocklyNonEditableText>rect,',
   '.blocklyEditableText>rect {',
-    'fill: #514f50;',
+    'fill: #595959;',
 	'fill-opacity: 1;',
   '}',
 
@@ -696,10 +696,9 @@ Blockly.Css.CONTENT = [
    */
 
   '.blocklyWidgetDiv .goog-menu {',
-    'background: #fff;',
-    'border-color: #ccc #666 #666 #ccc;',
-    'border-style: solid;',
-    'border-width: 1px;',
+    'background: #595959;',
+    'color: #fff',
+    'border: 2px solid #000;',
     'cursor: default;',
     'font: normal 13px Arial, sans-serif;',
     'margin: 0;',
@@ -742,12 +741,12 @@ Blockly.Css.CONTENT = [
    * #noflip to .goog-menuitem.
    */
   '.blocklyWidgetDiv .goog-menuitem {',
-    'color: #000;',
+    'color: #fff;',
     'font: normal 13px Arial, sans-serif;',
     'list-style: none;',
     'margin: 0;',
      /* 28px on the left for icon or checkbox; 7em on the right for shortcut. */
-    'padding: 4px 7em 4px 28px;',
+    'padding: 6px 7em 6px 28px;',
     'white-space: nowrap;',
   '}',
 
@@ -792,14 +791,21 @@ Blockly.Css.CONTENT = [
   /* State: hover. */
   '.blocklyWidgetDiv .goog-menuitem-highlight,',
   '.blocklyWidgetDiv .goog-menuitem-hover {',
-    'background-color: #d6e9f8;',
+    'background-color: #2e2e2e;',
      /* Use an explicit top and bottom border so that the selection is visible',
       * in high contrast mode. */
-    'border-color: #d6e9f8;',
+    'border-color: #000;',
     'border-style: dotted;',
     'border-width: 1px 0;',
-    'padding-bottom: 3px;',
-    'padding-top: 3px;',
+    'padding-bottom: 5px;',
+	'padding-top: 5px;',
+	'color:#fff;',
+  '}',
+
+  '.blocklyWidgetDiv .goog-menuitem-highlight .goog-menuitem-content,',
+  '.blocklyWidgetDiv .goog-menuitem-hover .goog-menuitem-content,',
+  '.blocklyWidgetDiv .goog-menuitem .goog-menuitem-content{',
+  'color: #fff !important;',
   '}',
 
   /* State: selected/checked. */

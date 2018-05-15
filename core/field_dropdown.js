@@ -481,7 +481,7 @@ Blockly.FieldDropdown.prototype.render_ = function() {
   } else {
     this.renderSelectedText_();
   }
-  this.borderRect_.setAttribute('height', this.size_.height - 9);
+  this.borderRect_.setAttribute('height', this.size_.height);
   this.borderRect_.setAttribute('width',
       this.size_.width + Blockly.BlockSvg.SEP_SPACE_X);
 };
@@ -530,10 +530,11 @@ Blockly.FieldDropdown.prototype.renderSelectedText_ = function() {
     this.textElement_.appendChild(this.arrow_);
   }
   this.textElement_.setAttribute('text-anchor', 'start');
-  this.textElement_.setAttribute('x', 0);
+  this.textElement_.setAttribute('x', 4);
+  this.textElement_.setAttribute('y', 17);
 
   this.size_.height = Blockly.BlockSvg.MIN_BLOCK_Y;
-  this.size_.width = Blockly.Field.getCachedWidth(this.textElement_);
+  this.size_.width = Blockly.Field.getCachedWidth(this.textElement_)+8;
 };
 
 /**

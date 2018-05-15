@@ -48,7 +48,7 @@ goog.require('goog.ui.ColorPicker');
  */
 Blockly.FieldColour = function(colour, opt_validator) {
   Blockly.FieldColour.superClass_.constructor.call(this, colour, opt_validator);
-  this.setText(Blockly.Field.NBSP + Blockly.Field.NBSP + Blockly.Field.NBSP);
+  this.setText(Blockly.Field.NBSP + Blockly.Field.NBSP + Blockly.Field.NBSP + Blockly.Field.NBSP + Blockly.Field.NBSP);
 };
 goog.inherits(Blockly.FieldColour, Blockly.Field);
 
@@ -82,6 +82,11 @@ Blockly.FieldColour.prototype.columns_ = 0;
 Blockly.FieldColour.prototype.init = function() {
   Blockly.FieldColour.superClass_.init.call(this);
   this.borderRect_.style['fillOpacity'] = 1;
+  this.borderRect_.style['height'] = 26;
+  this.borderRect_.style['width'] = 26;
+  this.size_.width=28;
+  this.customXSpacing = 18;
+  this.customYSpacing = 0;
   this.setValue(this.getValue());
 };
 

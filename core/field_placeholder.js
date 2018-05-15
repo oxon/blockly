@@ -16,7 +16,7 @@ goog.inherits(Blockly.FieldPlaceholder, Blockly.Field);
 Blockly.FieldPlaceholder.prototype.EDITABLE = false;
 
 
-Blockly.Field.prototype.init = function() {
+Blockly.FieldPlaceholder.prototype.init = function() {
 	if (this.fieldGroup_) return;
 
 	// Build the DOM.

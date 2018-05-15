@@ -48,6 +48,7 @@ goog.require('goog.userAgent');
  */
 Blockly.Field = function(text, opt_validator) {
   this.size_ = new goog.math.Size(0, Blockly.BlockSvg.MIN_BLOCK_Y);
+  this.customPadding_ = new goog.math.Size(0,20);
   this.setValue(text);
   this.setValidator(opt_validator);
 };
@@ -150,11 +151,11 @@ Blockly.Field.prototype.init = function() {
         'ry': 0,
         'x': -Blockly.BlockSvg.SEP_SPACE_X / 2,
         'y': 0,
-        'height': 16
+		'height': this.size_.height
       }, this.fieldGroup_);
   /** @type {!Element} */
   this.textElement_ = Blockly.utils.createSvgElement('text',
-      {'class': 'blocklyText', 'y': this.size_.height - 12.5},
+      {'class': 'blocklyText', 'y': this.size_.height/2+4, 'x':4},
       this.fieldGroup_);
 
   this.updateEditable();
@@ -330,6 +331,9 @@ Blockly.Field.prototype.render_ = function() {
  **/
 Blockly.Field.prototype.updateWidth = function() {
   var width = Blockly.Field.getCachedWidth(this.textElement_);
+  if(this instanceof Blockly.FieldNumber){
+	  width += 20;
+  }
   if (this.borderRect_) {
     this.borderRect_.setAttribute('width',
         width + Blockly.BlockSvg.SEP_SPACE_X);
@@ -406,7 +410,11 @@ Blockly.Field.prototype.getSize = function() {
   if (!this.size_.width) {
     this.render_();
   }
-  return this.size_;
+  var correctedHeight = {
+	height: this.size_.height+16,
+	width: this.size_.width,
+  };
+  return correctedHeight;
 };
 
 /**
@@ -418,6 +426,7 @@ Blockly.Field.prototype.getSize = function() {
  */
 Blockly.Field.prototype.getScaledBBox_ = function() {
   var bBox = this.borderRect_.getBBox();
+  
   var scaledHeight = bBox.height * this.sourceBlock_.workspace.scale;
   var scaledWidth = bBox.width * this.sourceBlock_.workspace.scale;
   var xy = this.getAbsoluteXY_();
