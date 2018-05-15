@@ -34,9 +34,9 @@ Blockly.Arduino.oxocard_matrix_draw_rgb_image = function() {
 					var g = parseInt(value.substring(3,5),16);
 					var b = parseInt(value.substring(5,7),16);
 					code += 'oxocard.matrix->setPixel(';
-					code += (posX == 0 || isNaN(posX)) ? x : ('(' + x + '+' + posX + ')');
+					code += (posX == 0) ? x : ('(' + x + '+' + posX + ')');
 					code += ', ';
-					code += (posY == 0 || isNaN(posY)) ? y : ('(' + y + '+' + posY + ')');
+					code += (posY == 0) ? y : ('(' + y + '+' + posY + ')');
 					code += ', ';
 					code += 'rgb(' + r + ', ' + g + ', ' + b + '));\n';
 					continue;
