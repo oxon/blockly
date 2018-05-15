@@ -129,14 +129,14 @@ Blockly.Flyout.prototype.containerVisible_ = true;
  * @type {number}
  * @const
  */
-Blockly.Flyout.prototype.CORNER_RADIUS = 8;
+Blockly.Flyout.prototype.CORNER_RADIUS = 0;
 
 /**
  * Margin around the edges of the blocks in the flyout.
  * @type {number}
  * @const
  */
-Blockly.Flyout.prototype.MARGIN = Blockly.Flyout.prototype.CORNER_RADIUS;
+Blockly.Flyout.prototype.MARGIN = 8;
 
 // TODO: Move GAP_X and GAP_Y to their appropriate files.
 

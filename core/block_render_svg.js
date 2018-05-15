@@ -120,7 +120,7 @@ Blockly.BlockSvg.DISTANCE_45_OUTSIDE = (1 - Math.SQRT1_2) *
  * SVG path for drawing next/previous notch from left to right.
  * @const
  */
-Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 3.5,0 3.5,4 4,-4';
+Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 2.5,0 5.5,6 5.5,-6';
 /**
  * SVG path for drawing next/previous notch from left to right with
  * highlighting.
@@ -131,7 +131,7 @@ Blockly.BlockSvg.NOTCH_PATH_LEFT_HIGHLIGHT = 'l 3.5,3.5 3.5,-3.5';
  * SVG path for drawing next/previous notch from right to left.
  * @const
  */
-Blockly.BlockSvg.NOTCH_PATH_RIGHT = 'l -4,0 -3.5,3.5 -3.5,-3.5';
+Blockly.BlockSvg.NOTCH_PATH_RIGHT = 'l -1,0 -5.5,5.5 -5,-5.5';
 /**
  * SVG path for drawing jagged teeth at the end of collapsed blocks.
  * @const
@@ -151,7 +151,7 @@ Blockly.BlockSvg.JAGGED_TEETH_WIDTH = 15;
  * SVG path for drawing a horizontal puzzle tab from top to bottom.
  * @const
  */
-Blockly.BlockSvg.TAB_PATH_DOWN = 'v 9 l -4,4 4,4 v 3';
+Blockly.BlockSvg.TAB_PATH_DOWN = 'v 9 l -5,5 5,5 v 1';
 /**
  * SVG path for drawing a horizontal puzzle tab from top to bottom with
  * highlighting from the upper-right.
@@ -980,7 +980,7 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps, highlightSteps) {
     // Create output connection.
     this.outputConnection.setOffsetInBlock(0, 0);
     steps.push('V', Blockly.BlockSvg.TAB_HEIGHT);
-    steps.push('l 0,-4 -4,-4 4,-4 ');
+    steps.push('l 0,-2 -4.5,-4.5 4.5,-4.5 ');
     if (this.RTL) {
       highlightSteps.push('M', (Blockly.BlockSvg.TAB_WIDTH * -0.25) + ',8.4');
       highlightSteps.push('l', (Blockly.BlockSvg.TAB_WIDTH * -0.45) + ',-2.1');
