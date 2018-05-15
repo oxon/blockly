@@ -285,7 +285,7 @@ Blockly.BlockSvg.prototype.render = function(opt_bubble) {
   Blockly.Field.startCache();
   this.rendered = true;
 
-  var cursorX = Blockly.BlockSvg.SEP_SPACE_X;
+  var cursorX = Blockly.BlockSvg.SEP_SPACE_X+20;
   if (this.RTL) {
     cursorX = -cursorX;
   }
@@ -300,7 +300,7 @@ Blockly.BlockSvg.prototype.render = function(opt_bubble) {
   // width that the first label needs to move over by.
 
   var inputRows = this.renderCompute_(cursorX);
-  this.renderDraw_(cursorX, inputRows);
+  this.renderDraw_(cursorX-10, inputRows);
   this.renderMoveConnections_();
 
   if (opt_bubble !== false) {

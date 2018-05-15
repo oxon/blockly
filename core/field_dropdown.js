@@ -530,11 +530,11 @@ Blockly.FieldDropdown.prototype.renderSelectedText_ = function() {
     this.textElement_.appendChild(this.arrow_);
   }
   this.textElement_.setAttribute('text-anchor', 'start');
-  this.textElement_.setAttribute('x', 0);
-  this.textElement_.setAttribute('y', 17+3);
+  this.textElement_.setAttribute('x', 4);
+  this.textElement_.setAttribute('y', 17);
 
-  this.size_.height = Blockly.BlockSvg.MIN_BLOCK_Y+5;
-  this.size_.width = Blockly.Field.getCachedWidth(this.textElement_);
+  this.size_.height = Blockly.BlockSvg.MIN_BLOCK_Y;
+  this.size_.width = Blockly.Field.getCachedWidth(this.textElement_)+8;
 };
 
 /**
