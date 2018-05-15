@@ -331,7 +331,6 @@ Blockly.Field.prototype.render_ = function() {
  **/
 Blockly.Field.prototype.updateWidth = function() {
   var width = Blockly.Field.getCachedWidth(this.textElement_);
-  console.log(this);
   if(this instanceof Blockly.FieldNumber){
 	  width += 20;
   }

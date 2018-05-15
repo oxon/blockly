@@ -56,7 +56,6 @@ Blockly.FieldMathInput.prototype.spellcheck_ = false;
 
 
 Blockly.FieldMathInput.prototype.mathValidator = function(newText) {
-	// console.log("vali");
 	newText = String(newText);
 	var pattern = new RegExp("[^a-zA-Z0-9-+*/()%^. ]", "g");
 
