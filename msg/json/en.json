@@ -678,7 +678,7 @@
 	"OXOCARD_COMM_DISABLE_TIP": "Disables the sending and receiving of messages",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE": "Wait for messages",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP": "Waits until a new message is received",
-	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD": "with timeout",
+	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD": "with timeout [ms]",
 	"OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP": "Waits for a given time for a message",
 	"OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT": "at",
 	"OXOCARD_COMM_SEND_DIRECT_MESSAGE_TITLE": "Send direct message",

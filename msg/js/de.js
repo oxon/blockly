@@ -488,7 +488,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_NUMBER_FIELD = "und Zahl";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_NUMBER_TIP = "Sendet eine Zahl an die angegebene Oxocard";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_NUMBER_TITLE = "Sende Zahl";
-/** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD = "mit Timeout";
+/** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD = "mit Timeout [ms]";
 /** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP = "Wartet, bis eine Kurznachricht oder ein Broadcast eintrifft";
 /** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP = "Wartet bis eine Kurznachricht oder ein Broadcast eintrifft";
 /** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE = "Warte auf Nachricht";
