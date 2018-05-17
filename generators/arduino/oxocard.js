@@ -160,6 +160,11 @@ Blockly.Arduino.oxocard_comm_wait_for_message_timeout = function() {
 	return 'oxocard.communication->waitForMessages(' + timeout + ');\n';
 };
 
+Blockly.Arduino.oxocard_comm_wait_for_message_timeout_ms = function() {
+	var timeout = Blockly.Arduino.valueToCode(this, 'TIMEOUT', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	return 'oxocard.communication->waitForMessagesInMilliseconds(' + timeout + ');\n';
+};
+
 // DIRECT
 Blockly.Arduino.oxocard_comm_send_direct_message = function(block) {
 	var msg = Blockly.Arduino.quote_(block.getFieldValue('MSG'));
