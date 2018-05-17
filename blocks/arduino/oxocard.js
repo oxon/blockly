@@ -484,13 +484,13 @@ Blockly.Blocks.oxocard_comm_wait_for_message_timeout = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_wait_for_message_timeout_s = {
+Blockly.Blocks.oxocard_comm_wait_for_message_timeout_ms = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE);
 		this.appendValueInput("TIMEOUT", 'Timeout')
-			.appendField(Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_S_FIELD)
+			.appendField(Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_MS_FIELD)
 			.setCheck('Number');
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
