@@ -209,18 +209,13 @@ Blockly.Arduino.oxocard_comm_compare_direct_number = function() {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
-Blockly.Arduino.oxocard_comm_get_direct_message = function() {
-  var code = 'oxocard.communication->getDirectMessage()';
-  return [code, Blockly.Arduino.ORDER_ATOMIC];
+Blockly.Arduino.oxocard_comm_get_and_draw_direct_message = function() {
+	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
+	return 'oxocard.matrix->drawText(oxocard.communication->getDirectMessage(), ' + isBigFont +');\n';
 };
 
 Blockly.Arduino.oxocard_comm_get_direct_number = function() {
   var code = 'oxocard.communication->getDirectNumber()';
-  return [code, Blockly.Arduino.ORDER_ATOMIC];
-};
-
-Blockly.Arduino.oxocard_comm_get_direct_message = function() {
-  var code = 'oxocard.communication->getDirectMessage()';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
