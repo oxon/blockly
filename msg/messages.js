@@ -1576,8 +1576,8 @@ Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TITLE = 'compare broadcast me
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TIP = 'Compares the received broadcast message with the given message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TITLE = 'compare broadcast number';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TIP = 'Compares the received broadcast number with the given number';
-Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TITLE = 'get broadcast message';
-Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TIP = 'Reads the text from the received broadcast message';
+Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TITLE = 'Draw received broadcast message';
+Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP = 'Draws the text from the received broadcast message';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = 'get broadcast number';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads the number from the received broadcast message';
 

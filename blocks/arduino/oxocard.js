@@ -872,18 +872,21 @@ Blockly.Blocks.oxocard_comm_compare_broadcast_number = {
     }
 };
 
-Blockly.Blocks.oxocard_comm_get_broadcast_message = {
-  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TITLE)
-    this.setOutput(true, 'Text');
-    this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_MESSAGE_TIP);
-    this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
-  },
-  getBlockType: function() {
-    return Blockly.Types.TEXT;
-  }
+Blockly.Blocks.oxocard_comm_get_and_draw_broadcast_message = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_SMALL_FONT, "FALSE"],
+				[Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_BIG_FONT, "TRUE"]
+			]), "BUTTON");
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	}
 };
 
 Blockly.Blocks.oxocard_comm_get_broadcast_number = {
