@@ -130,9 +130,9 @@ Blockly.Arduino.oxocard_weather_get_value = function() {
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
-Blockly.Arduino.oxocard_weather_get_city = function() {;
-  var code = 'oxocard.weather->getName()';
-  return [code, Blockly.Arduino.ORDER_ATOMIC];
+Blockly.Arduino.oxocard_weather_get_and_draw_city = function() {
+	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
+	return 'oxocard.matrix->drawText(oxocard.weather->getName(), ' + isBigFont +');\n';
 };
 
 Blockly.Arduino.oxocard_weather_get_icon = function() {
