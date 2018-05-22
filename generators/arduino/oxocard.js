@@ -47,7 +47,7 @@ Blockly.Arduino.oxocard_disable_auto_turnoff = function(block) {
 };
 
 Blockly.Arduino.oxocard_read_battery_voltage = function(block) {
-	var code = 'oxocard.battery->getVoltage()';
+	var code = 'oxocard.battery->getVoltageInMillivolt()';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
