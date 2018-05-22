@@ -62,7 +62,7 @@ Blockly.Arduino.oxocard_is_usb_plugged_in = function(block) {
 };
 
 Blockly.Arduino.oxocard_read_temperature = function(block) {
-	var code = 'oxocard.accelerometer->getTemperature()';
+	var code = '(int)(round(oxocard.accelerometer->getTemperature()))';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
@@ -126,7 +126,7 @@ Blockly.Arduino.oxocard_get_weather = function() {
 
 Blockly.Arduino.oxocard_weather_get_value = function() {
   var dropdown_button = this.getFieldValue('TYPE');
-  var code = 'oxocard.weather->get' +dropdown_button +'()';
+  var code = '(int)(round(oxocard.weather->get' + dropdown_button +'()))';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
