@@ -693,7 +693,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TIP = "Draws the weather forecast icon";
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TITLE = "Draw forecast icon";
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_AND_DRAW_CITY_TIP = "Draws the name of the city from the weatherdata";
-/** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_AND_DRAW_CITY_TITLE = "draw city name";
+/** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_AND_DRAW_CITY_TITLE = "Draw city name";
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TIP = "Gets the weatherdata from the selected city";
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TITLE = "Get weatherdata from";
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_DEWPOINT = "Dew point (°C)";
