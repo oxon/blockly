@@ -402,18 +402,21 @@ Blockly.Blocks.oxocard_weather_get_value = {
   }
 };
 
-Blockly.Blocks.oxocard_weather_get_city = {
-  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_WEATHER_GET_CITY_TITLE)
-    this.setOutput(true, 'Text');
-    this.setTooltip(Blockly.Msg.OXOCARD_WEATHER_GET_CITY_TIP);
-    this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
-  },
-  getBlockType: function() {
-    return Blockly.Types.TEXT;
-  }
+Blockly.Blocks.oxocard_weather_get_and_draw_city = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_WEATHER_GET_AND_DRAW_CITY_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_SMALL_FONT, "FALSE"],
+				[Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_BIG_FONT, "TRUE"]
+			]), "BUTTON");
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_WEATHER_GET_AND_DRAW_CITY_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	}
 };
 
 Blockly.Blocks.oxocard_weather_get_icon = {
@@ -700,7 +703,6 @@ Blockly.Blocks.oxocard_comm_compare_direct_number = {
 		return Blockly.Types.BOOLEAN;
 	}
 };
-
 
 Blockly.Blocks.oxocard_comm_get_and_draw_direct_message = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
