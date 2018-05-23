@@ -93,6 +93,6 @@ Blockly.Blocks.oxocard_time_get_value = {
 		this.setColour(Blockly.ColorDefinitions.TIME);
 },
 	getBlockType: function() {
-		return Blockly.Types.DECIMAL;
+		return Blockly.Types.NUMBER;
 	}
 };

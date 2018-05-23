@@ -112,7 +112,7 @@ Blockly.Blocks.oxocard_read_battery_voltage = {
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	},
 	getBlockType: function() {
-		return Blockly.Types.DECIMAL;
+		return Blockly.Types.NUMBER;
 	}
 };
 
@@ -154,7 +154,7 @@ Blockly.Blocks.oxocard_read_temperature = {
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	},
 	getBlockType: function() {
-		return Blockly.Types.DECIMAL;
+		return Blockly.Types.NUMBER;
 	}
 };
 
@@ -388,7 +388,7 @@ Blockly.Blocks.oxocard_weather_get_value = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TITLE)
-        .appendField(new Blockly.FieldDropdown([[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TEMP, "Temparature"],
+        .appendField(new Blockly.FieldDropdown([[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TEMP, "Temperature"],
 					[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_DEWPOINT, "DewPoint"],
 					[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_HUMIDITY, "Humidity"],
 					[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_WIND, "Wind"],
@@ -398,7 +398,7 @@ Blockly.Blocks.oxocard_weather_get_value = {
     this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
   },
   getBlockType: function() {
-    return Blockly.Types.DECIMAL;
+    return Blockly.Types.NUMBER;
   }
 };
 
