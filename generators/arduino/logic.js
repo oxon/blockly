@@ -88,11 +88,9 @@ Blockly.Arduino['logic_operation'] = function(block) {
       argument1 = defaultArgument;
     }
   }
-	var code;
+	var code = argument0 + ' ' + operator + ' ' + argument1;
 	if (operator == '&&') {
-		code = '(' + argument0 + ' ' + operator + ' ' + argument1 + ')';	// to prevent compile errors when a && is within a ||
-	} else {
-		code = argument0 + ' ' + operator + ' ' + argument1;
+		code = '(' + code + ')';	// to prevent compile errors when a && is within a ||
 	}
   return [code, order];
 };
