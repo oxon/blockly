@@ -58,7 +58,7 @@ Blockly.Arduino['logic_compare'] = function(block) {
       Blockly.Arduino.ORDER_EQUALITY : Blockly.Arduino.ORDER_RELATIONAL;
   var argument0 = Blockly.Arduino.valueToCode(block, 'A', order) || '0';
   var argument1 = Blockly.Arduino.valueToCode(block, 'B', order) || '0';
-  var code = '(' + argument0 + ' ' + operator + ' ' + argument1 + ')';
+  var code = argument0 + ' ' + operator + ' ' + argument1;
   return [code, order];
 };
 
@@ -88,7 +88,12 @@ Blockly.Arduino['logic_operation'] = function(block) {
       argument1 = defaultArgument;
     }
   }
-  var code = '(' + argument0 + ' ' + operator + ' ' + argument1 + ')';
+	var code;
+	if (operator == '&&') {
+		code = '(' + argument0 + ' ' + operator + ' ' + argument1 + ')';	// to prevent compile errors when a && is within a ||
+	} else {
+		code = argument0 + ' ' + operator + ' ' + argument1;
+	}
   return [code, order];
 };
 
