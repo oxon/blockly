@@ -51,22 +51,22 @@ Blockly.Blocks.oxocard_turn_off = {
 Blockly.Blocks['oxocard_turn_off_with_buttons'] = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
-	this.appendDummyInput()
-	  .appendField(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE)
-	this.appendDummyInput()
-		.appendField(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE2)
-	this.appendDummyInput()
-		.appendField(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE3)
-	this.appendDummyInput()
-		.appendField(new Blockly.FieldButton(35,35,"L1"),"L1")
-		.appendField(new Blockly.FieldPlaceholder(200,50))
-		.appendField(new Blockly.FieldButton(35,35,"R1"),"R1")
-	this.appendDummyInput()
-		.appendField(new Blockly.FieldButton(35,35,"L2"),"L2")
-		.appendField(new Blockly.FieldButton(35,35,"L3"),"L3")
-		.appendField(new Blockly.FieldPlaceholder(104,60))
-		.appendField(new Blockly.FieldButton(35,35,"R3"),"R3")
-		.appendField(new Blockly.FieldButton(35,35,"R2"),"R2")
+		this.appendDummyInput()
+		  .appendField(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE);
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE2);
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE3);
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldButton(false, 35,35,"L1"),"L1")
+			.appendField(new Blockly.FieldPlaceholder(200,50))
+			.appendField(new Blockly.FieldButton(false, 35,35,"R1"),"R1")
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldButton(false, 35,35,"L2"),"L2")
+			.appendField(new Blockly.FieldButton(false, 35,35,"L3"),"L3")
+			.appendField(new Blockly.FieldPlaceholder(104,60))
+			.appendField(new Blockly.FieldButton(false, 35,35,"R3"),"R3")
+			.appendField(new Blockly.FieldButton(false, 35,35,"R2"),"R2");
 		// this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
