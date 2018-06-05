@@ -167,7 +167,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.CONTROLS_IF_TOOLTIP_4 = "Führe die erste Anweisung aus, falls die erste Bedingung wahr ist.  Führt ansonsten die zweite Anweisung aus, falls die zweite Bedingung wahr ist.  Führt die dritte Anweisung aus, falls keine der beiden Bedingungen wahr ist";
 /** @export */ Blockly.Msg.CONTROLS_REPEAT_HELPURL = "https://de.wikipedia.org/wiki/For-Schleife";
 /** @export */ Blockly.Msg.CONTROLS_REPEAT_INPUT_DO = "mache";
-/** @export */ Blockly.Msg.CONTROLS_REPEAT_TITLE = "Wiederhole %1 mal:";
+/** @export */ Blockly.Msg.CONTROLS_REPEAT_TITLE = "Wiederhole %1 mal";
 /** @export */ Blockly.Msg.CONTROLS_REPEAT_TOOLTIP = "Führt Anweisungen die angegebene Anzahl Mal aus";
 /** @export */ Blockly.Msg.CONTROLS_WHILEUNTIL_HELPURL = "https://de.wikipedia.org/wiki/Schleife_%28Programmierung%29";
 /** @export */ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_UNTIL = "Wiederhole bis";
