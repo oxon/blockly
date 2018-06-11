@@ -119,12 +119,6 @@ Blockly.Arduino['logic_boolean'] = function(block) {
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
-Blockly.Arduino['oxocard_logic_boolean'] = function(block) {
-  var code = (block.getFieldValue('BOOL') == 'TRUE') ? 'true' : 'false';
-  return [code, Blockly.Arduino.ORDER_ATOMIC];
-};
-
-
 /**
  * Code generator for the null value.
  * Arduino code: loop { X ? Y : Z }
