@@ -186,7 +186,7 @@ Blockly.Arduino.oxocard_comm_send_direct_message_and_number = function(block) {
 };
 
 Blockly.Arduino.oxocard_comm_check_for_direct = function() {
-	var code = 'oxocard.communication->isDirectMessageAndNotFiltered()';
+	var code = 'oxocard.communication->isNewDirectMessage()';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
