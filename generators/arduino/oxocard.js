@@ -203,6 +203,13 @@ Blockly.Arduino.oxocard_comm_compare_direct_message = function(block) {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.oxocard_comm_compare_direct_number_from = function(block) {
+	var num = Blockly.Arduino.valueToCode(this, 'NUM', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	var from = Blockly.Arduino.quote_(block.getFieldValue('FROM'));
+	var code = 'oxocard.communication->compareDirectNumberFrom(' + num + ', ' + from + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 Blockly.Arduino.oxocard_comm_compare_direct_number = function() {
 	var num = Blockly.Arduino.valueToCode(this, 'NUM', Blockly.Arduino.ORDER_ATOMIC) || 0;
 	var code = 'oxocard.communication->compareDirectNumber(' + num + ')';
