@@ -33,7 +33,7 @@ Blockly.Arduino['oxocard_turn_off_with_buttons'] = function(block) {
 		+ '  oxocard.button->createButtonByte(\n'
 		+ '  ' + valueL1 + ', ' + valueL2 + ', ' + valueL3 + ',\t// L1, L2, L3\n'
 		+ '  ' + valueR1 + ', ' + valueR2 + ', ' + valueR3 + ')\t// R1, R2, R3\n'
-		+ ');\n'
+		+ ');\n';
 };
 
 Blockly.Arduino.oxocard_handle_auto_turnoff = function() {
@@ -217,14 +217,24 @@ Blockly.Arduino.oxocard_comm_compare_direct_number = function() {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
-Blockly.Arduino.oxocard_comm_get_and_draw_direct_message = function() {
+Blockly.Arduino.oxocard_comm_get_and_draw_direct_message_from = function(block) {
+	var from = Blockly.Arduino.quote_(block.getFieldValue('FROM'));
 	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
-	return 'oxocard.matrix->drawText(oxocard.communication->getDirectMessage(), ' + isBigFont +');\n';
+	return 'oxocard.matrix->drawText(\n'
+		+ '  oxocard.communication->getDirectMessageFrom(' + from + '),\n'
+		+ '  ' + isBigFont + '\n'
+		+ ');\n';
+};
+
+Blockly.Arduino.oxocard_comm_get_direct_number_from = function(block) {
+	var from = Blockly.Arduino.quote_(block.getFieldValue('FROM'));
+	var code = 'oxocard.communication->getDirectNumberFrom(' + from + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
 Blockly.Arduino.oxocard_comm_get_direct_number = function() {
-  var code = 'oxocard.communication->getDirectNumber()';
-  return [code, Blockly.Arduino.ORDER_ATOMIC];
+	var code = 'oxocard.communication->getDirectNumber()';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
 // BROADCAST

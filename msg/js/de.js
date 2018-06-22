@@ -473,7 +473,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = "Liefert die empfangene Broadcast-Zahl";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = "lies Broadcast-Zahl";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TIP = "Zeichnet die empfangene Kurznachricht";
-/** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TITLE = "Zeichne empfangene Kurznachricht";
+/** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TITLE = "Zeichne Kurznachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TIP = "Liefert die empfangene Zahl";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TITLE = "lies Zahl";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_AND_NUMBER_TIP = "Sendet eine Nachricht und eine Zahl an alle Oxocards";
