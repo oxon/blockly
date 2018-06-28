@@ -439,7 +439,7 @@ Blockly.Blocks.oxocard_comm_enable = {
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1)
-			.appendField(new Blockly.FieldTextInput('Oxocard ' + Math.floor((Math.random() * 100) + 1)), 'NAME');
+			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME');
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ENABLE_TIP);
@@ -452,7 +452,7 @@ Blockly.Blocks.oxocard_comm_enable_with_name_and_id = {
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1)
-			.appendField(new Blockly.FieldTextInput('Oxocard ' + Math.floor((Math.random() * 100) + 1)), 'NAME');
+			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME');
 		this.appendValueInput('SENDER_ID')
 			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE2);
 		this.setInputsInline(true);
@@ -938,9 +938,9 @@ Blockly.Blocks.oxocard_comm_compare_broadcast_number = {	//obsolete
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
 	},
-    getBlockType: function() {
-      return Blockly.Types.BOOLEAN;
-    }
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
 };
 
 Blockly.Blocks.oxocard_comm_get_and_draw_broadcast_message = {
@@ -981,5 +981,51 @@ Blockly.Blocks.oxocard_comm_get_broadcast_number = {
 	},
 	getBlockType: function() {
 		return Blockly.Types.NUMBER;
+	}
+};
+
+Blockly.Blocks.oxocard_comm_set_sender_whitelist = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TITLE)
+			.appendField(this.newQuote_(true))
+			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME')
+			.appendField(this.newQuote_(false));
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	},
+	/**
+	 * Create an image of an open or closed quote.
+	 * @param {boolean} open True if open quote, false if closed.
+	 * @return {!Blockly.FieldImage} The field image of the quote.
+	 * @this Blockly.Block
+	 * @private
+	 */
+	newQuote_: function(open) {
+		if (open == this.RTL) {
+			var file = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAqUlEQVQI1z3KvUpCcRiA8ef9E4JNHhI0aFEacm1o0BsI0Slx8wa8gLauoDnoBhq7DcfWhggONDmJJgqCPA7neJ7p934EOOKOnM8Q7PDElo/4x4lFb2DmuUjcUzS3URnGib9qaPNbuXvBO3sGPHJDRG6fGVdMSeWDP2q99FQdFrz26Gu5Tq7dFMzUvbXy8KXeAj57cOklgA+u1B5AoslLtGIHQMaCVnwDnADZIFIrXsoXrgAAAABJRU5ErkJggg==';
+		} else {
+			var file = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAn0lEQVQI1z3OMa5BURSF4f/cQhAKjUQhuQmFNwGJEUi0RKN5rU7FHKhpjEH3TEMtkdBSCY1EIv8r7nFX9e29V7EBAOvu7RPjwmWGH/VuF8CyN9/OAdvqIXYLvtRaNjx9mMTDyo+NjAN1HNcl9ZQ5oQMM3dgDUqDo1l8DzvwmtZN7mnD+PkmLa+4mhrxVA9fRowBWmVBhFy5gYEjKMfz9AylsaRRgGzvZAAAAAElFTkSuQmCC';
+		}
+		return new Blockly.FieldImage(file, 12, 12, '"');
+	}
+};
+
+Blockly.Blocks.oxocard_comm_check_sender = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE)
+			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME')
+			.appendField('?');
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
 	}
 };

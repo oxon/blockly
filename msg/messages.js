@@ -1568,7 +1568,7 @@ Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE = 'Send message';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V1 = 'V1:';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V2 = 'V2:';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V3 = 'V3:';
-Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP = 'Sends a message with a text, value1, value2 and/or value3';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP = 'Sends a message with a text, value1, value2 and value3';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TITLE = 'Send broadcast number';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TIP = 'Broadcasts a number to every Oxocard';
 Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TITLE = 'new message received?';
@@ -1587,6 +1587,10 @@ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V2 = 'V2';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V3 = 'V3';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_SENDER_ID = 'Sender ID';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads value1, value2, value3 or the sender ID of the received message';
+Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TITLE = 'Set sender whitelist';
+Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TIP = 'Sets the sender whitelist with one or more names (e.g. \"Oxocard20, Tim\") or IDs (e.g. \"#42, #15, #8\"). To reset the list, leave the input field empty or write a *';
+Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE = 'is message from';
+Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TIP = 'Checks if received message is from the given sender';
 
 // Audio
 Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE = 'Wait after tones';

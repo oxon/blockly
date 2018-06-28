@@ -278,3 +278,14 @@ Blockly.Arduino.oxocard_comm_get_broadcast_number = function() {
   var code = 'oxocard.communication->getValue(' + n + ')';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+
+Blockly.Arduino.oxocard_comm_set_sender_whitelist = function(block) {
+	var name = Blockly.Arduino.quote_(block.getFieldValue('NAME'));
+	return 'oxocard.communication->setSenderWhitelist(' + name + ');\n';
+};
+
+Blockly.Arduino.oxocard_comm_check_sender = function(block) {
+	var name = Blockly.Arduino.quote_(block.getFieldValue('NAME'));
+	var code = 'oxocard.communication->isMessageFrom(' + name + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
