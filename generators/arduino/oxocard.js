@@ -147,6 +147,12 @@ Blockly.Arduino.oxocard_comm_enable = function(block) {
 	return 'oxocard.communication->start(' + name + ');\n';
 };
 
+Blockly.Arduino.oxocard_comm_enable_with_name_and_id = function(block) {
+	var name = Blockly.Arduino.quote_(block.getFieldValue('NAME'));
+	var senderId = Blockly.Arduino.valueToCode(this, 'SENDER_ID', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	return 'oxocard.communication->start(' + name + ', ' + senderId + ');\n';
+};
+
 Blockly.Arduino.oxocard_comm_disable = function(block) {
 	return 'oxocard.communication->stop();\n';
 };
@@ -230,10 +236,13 @@ Blockly.Arduino.oxocard_comm_get_direct_number = function() {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
-// BROADCAST
+// EXPERT
 Blockly.Arduino.oxocard_comm_send_broadcast_message = function(block) {
 	var msg = Blockly.Arduino.quote_(block.getFieldValue('MSG'));
-	return 'oxocard.communication->sendBroadcastMessage(' + msg + ');\n';
+	var val1 = Blockly.Arduino.valueToCode(this, 'VAL1', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	var val2 = Blockly.Arduino.valueToCode(this, 'VAL2', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	var val3 = Blockly.Arduino.valueToCode(this, 'VAL3', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	return 'oxocard.communication->sendMessage(' + msg + ', ' + val1 + ', ' + val2 + ', ' + val3 + ');\n';
 };
 
 Blockly.Arduino.oxocard_comm_send_broadcast_number = function() {
@@ -242,7 +251,7 @@ Blockly.Arduino.oxocard_comm_send_broadcast_number = function() {
 };
 
 Blockly.Arduino.oxocard_comm_check_for_broadcast = function() {
-	var code = 'oxocard.communication->isBroadcastMessage()';
+	var code = 'oxocard.communication->isNewMessage()';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
@@ -259,11 +268,13 @@ Blockly.Arduino.oxocard_comm_compare_broadcast_number = function() {
 };
 
 Blockly.Arduino.oxocard_comm_get_and_draw_broadcast_message = function() {
+	var n = this.getFieldValue('N');
 	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
-	return 'oxocard.matrix->drawText(oxocard.communication->getBroadcastMessage(), ' + isBigFont +');\n';
+	return 'oxocard.matrix->drawText(oxocard.communication->getMessage(' + n + '), ' + isBigFont +');\n';
 };
 
 Blockly.Arduino.oxocard_comm_get_broadcast_number = function() {
-  var code = 'oxocard.communication->getBroadcastNumber()';
+	var n = this.getFieldValue('N');
+  var code = 'oxocard.communication->getValue(' + n + ')';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };

@@ -1537,7 +1537,8 @@ Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TITLE = 'Draw forecast icon';
 Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TIP = 'Draws the weather forecast icon';
 
 // Communication
-Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE = 'Enable messages with name';
+Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = 'Enable messages with name';
+Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE2 = 'and ID';
 Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = 'Enables the sending and receiving of messages';
 Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = 'Disable messages';
 Blockly.Msg.OXOCARD_COMM_DISABLE_TIP = 'Disables the sending and receiving of messages';
@@ -1563,20 +1564,29 @@ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TITLE = 'Draw direct messag
 Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TIP = 'Draws the text from the received direct message';
 Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TITLE = 'get number';
 Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TIP = 'Reads the number from the received direct message';
-Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE = 'Send broadcast message';
-Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP = 'Broadcasts a message to every Oxocard';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE = 'Send message';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V1 = 'V1:';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V2 = 'V2:';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V3 = 'V3:';
+Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP = 'Sends a message with a text, value1, value2 and/or value3';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TITLE = 'Send broadcast number';
 Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TIP = 'Broadcasts a number to every Oxocard';
-Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TITLE = 'check for broadcast message';
-Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TIP = 'Checks if the received message is a broadcast message';
+Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TITLE = 'new message received?';
+Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TIP = 'Checks if the received message is new and permitted';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TITLE = 'compare broadcast message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TIP = 'Compares the received broadcast message with the given message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TITLE = 'compare broadcast number';
 Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TIP = 'Compares the received broadcast number with the given number';
-Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TITLE = 'Draw received broadcast message';
-Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP = 'Draws the text from the received broadcast message';
-Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = 'get broadcast number';
-Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads the number from the received broadcast message';
+Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TITLE = 'Draw received message';
+Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TEXT = 'Text';
+Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_SENDER = 'Sender';
+Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP = 'Draws the text or the sender of the received message';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = 'get received value';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V1 = 'V1';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V2 = 'V2';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V3 = 'V3';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_SENDER_ID = 'Sender ID';
+Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads value1, value2, value3 or the sender ID of the received message';
 
 // Audio
 Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE = 'Wait after tones';

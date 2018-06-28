@@ -438,8 +438,24 @@ Blockly.Blocks.oxocard_comm_enable = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE)
+			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1)
 			.appendField(new Blockly.FieldTextInput('Oxocard ' + Math.floor((Math.random() * 100) + 1)), 'NAME');
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ENABLE_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	}
+};
+
+Blockly.Blocks.oxocard_comm_enable_with_name_and_id = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1)
+			.appendField(new Blockly.FieldTextInput('Oxocard ' + Math.floor((Math.random() * 100) + 1)), 'NAME');
+		this.appendValueInput('SENDER_ID')
+			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE2);
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ENABLE_TIP);
@@ -486,7 +502,7 @@ Blockly.Blocks.oxocard_comm_wait_for_message_timeout = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_wait_for_message_timeout_ms = {
+Blockly.Blocks.oxocard_comm_wait_for_message_timeout_ms = {	//obsolete
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
@@ -640,7 +656,7 @@ Blockly.Blocks.oxocard_comm_compare_direct_message_from = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_compare_direct_message = {
+Blockly.Blocks.oxocard_comm_compare_direct_message = {	//obsolete
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
@@ -709,7 +725,7 @@ Blockly.Blocks.oxocard_comm_compare_direct_number_from = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_compare_direct_number = {
+Blockly.Blocks.oxocard_comm_compare_direct_number = {	//obsolete
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendValueInput('NUM')
@@ -794,7 +810,7 @@ Blockly.Blocks.oxocard_comm_get_direct_number_from = {
   }
 };
 
-Blockly.Blocks.oxocard_comm_get_direct_number = {
+Blockly.Blocks.oxocard_comm_get_direct_number = {	//obsolete
   helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
   init: function() {
     this.appendDummyInput()
@@ -817,6 +833,19 @@ Blockly.Blocks.oxocard_comm_send_broadcast_message = {
 			.appendField(this.newQuote_(true))
 			.appendField(new Blockly.FieldTextInput('Hello'), 'MSG')
 			.appendField(this.newQuote_(false));
+		this.appendValueInput('VAL1')
+			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V1)
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('VAL2')
+			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V2)
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('VAL3')
+			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TITLE_V3)
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_MESSAGE_TIP);
@@ -839,7 +868,7 @@ Blockly.Blocks.oxocard_comm_send_broadcast_message = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_send_broadcast_number = {
+Blockly.Blocks.oxocard_comm_send_broadcast_number = {	//obsolete
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendValueInput('NUM')
@@ -866,7 +895,7 @@ Blockly.Blocks.oxocard_comm_check_for_broadcast = {
     }
 };
 
-Blockly.Blocks.oxocard_comm_compare_broadcast_message = {
+Blockly.Blocks.oxocard_comm_compare_broadcast_message = {	//obsolete? blup
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
@@ -899,7 +928,7 @@ Blockly.Blocks.oxocard_comm_compare_broadcast_message = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_compare_broadcast_number = {
+Blockly.Blocks.oxocard_comm_compare_broadcast_number = {	//obsolete
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendValueInput('NUM')
@@ -920,6 +949,10 @@ Blockly.Blocks.oxocard_comm_get_and_draw_broadcast_message = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TITLE)
 			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TEXT, "0"],
+				[Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_SENDER, "0xFF"]
+			]), "N")
+			.appendField(new Blockly.FieldDropdown([
 				[Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_SMALL_FONT, "FALSE"],
 				[Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_BIG_FONT, "TRUE"]
 			]), "BUTTON");
@@ -932,15 +965,21 @@ Blockly.Blocks.oxocard_comm_get_and_draw_broadcast_message = {
 };
 
 Blockly.Blocks.oxocard_comm_get_broadcast_number = {
-  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE)
-    this.setOutput(true, 'Number');
-    this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP);
-    this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
-  },
-  getBlockType: function() {
-    return Blockly.Types.NUMBER;
-  }
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V1, "0"],
+				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V2, "1"],
+				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V3, "2"],
+				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_SENDER_ID, "0xFF"]
+			]), "N");
+		this.setOutput(true, 'Number');
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	},
+	getBlockType: function() {
+		return Blockly.Types.NUMBER;
+	}
 };
