@@ -308,3 +308,8 @@ Blockly.Arduino.oxocard_comm_check_sender = function(block) {
 	var code = 'oxocard.communication->isMessageFrom(' + name + ')';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+
+Blockly.Arduino.oxocard_comm_check_is_message_for_me = function(block) {
+	var code = 'oxocard.communication->isMessageForMe()';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};

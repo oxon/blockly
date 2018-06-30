@@ -1597,6 +1597,8 @@ Blockly.Msg.OXOCARD_COMM_SEND_MESSAGE_TITLE = 'Send message';
 Blockly.Msg.OXOCARD_COMM_SEND_MESSAGE_TIP = 'Sends a message with previously defined text and variables';
 Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE = 'is message from';
 Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TIP = 'Checks if received message is from the given sender';
+Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TITLE = 'is message for me?';
+Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TIP = 'Checks if received message is for me';
 
 // Audio
 Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE = 'Wait after tones';

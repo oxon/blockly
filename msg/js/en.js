@@ -492,6 +492,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_SEND_MESSAGE_TIP = "Sends a message with previously defined text and variables";
 /** @export */ Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE = "is message from";
 /** @export */ Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TIP = "Checks if received message is from the given sender";
+/** @export */ Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TITLE = "is message for me?";
+/** @export */ Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TIP = "Checks if received message is for me";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TIP = "Draws the text from the received direct message";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TITLE = "Draw direct message";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TIP = "Reads the number from the received direct message";

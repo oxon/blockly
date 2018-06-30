@@ -1118,7 +1118,21 @@ Blockly.Blocks.oxocard_comm_check_sender = {
 			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME')
 			.appendField('?');
 		this.setOutput(true, 'Boolean');
-		this.setTooltip(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
+};
+
+Blockly.Blocks.oxocard_comm_check_is_message_for_me = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TITLE);
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
 	},
 	getBlockType: function() {

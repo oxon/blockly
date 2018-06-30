@@ -732,6 +732,8 @@
 	"OXOCARD_COMM_SEND_MESSAGE_TIP": "Sends a message with previously defined text and variables",
 	"OXOCARD_COMM_CHECK_SENDER_TITLE": "is message from",
 	"OXOCARD_COMM_CHECK_SENDER_TIP": "Checks if received message is from the given sender",
+	"OXOCARD_COMM_IS_MESSAGE_FOR_ME_TITLE": "is message for me?",
+	"OXOCARD_COMM_IS_MESSAGE_FOR_ME_TIP": "Checks if received message is for me",
 	"OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE": "Wait after tones",
 	"OXOCARD_AUDIO_WAIT_FOR_TONE_TIP": "Waits after every following tone",
 	"OXOCARD_AUDIO_WAIT_NOT_FOR_TONE_TITLE": "Continue after tones",
