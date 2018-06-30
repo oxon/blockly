@@ -273,8 +273,8 @@ Blockly.Arduino.oxocard_comm_get_and_draw_broadcast_message = function() {
 };
 
 Blockly.Arduino.oxocard_comm_get_broadcast_number = function() {
-	var n = this.getFieldValue('N');
-  var code = 'oxocard.communication->getValue(' + n + ')';
+	var key = this.getFieldValue('KEY');
+  var code = 'oxocard.communication->getValue(' + key + ')';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 

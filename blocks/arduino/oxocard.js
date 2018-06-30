@@ -968,11 +968,17 @@ Blockly.Blocks.oxocard_comm_get_broadcast_number = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE)
 			.appendField(new Blockly.FieldDropdown([
-				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V1, "0"],
-				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V2, "1"],
-				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V3, "2"],
+				["a", "\'a\'"],
+				["b", "\'b\'"],
+				["c", "\'c\'"],
+				["x", "\'x\'"],
+				["y", "\'y\'"],
+				["z", "\'z\'"],
+				["R", "\'R\'"],
+				["G", "\'G\'"],
+				["B", "\'B\'"],
 				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_SENDER_ID, "0xFF"]
-			]), "N");
+			]), "KEY");
 		this.setOutput(true, 'Number');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -1078,15 +1084,15 @@ Blockly.Blocks.oxocard_comm_set_user_value = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_TITLE)
 			.appendField(new Blockly.FieldDropdown([
-				["a", "a"],
-				["b", "b"],
-				["c", "c"],
-				["x", "x"],
-				["y", "y"],
-				["z", "z"],
-				["R", "R"],
-				["G", "G"],
-				["B", "B"]
+				["a", "\'a\'"],
+				["b", "\'b\'"],
+				["c", "\'c\'"],
+				["x", "\'x\'"],
+				["y", "\'y\'"],
+				["z", "\'z\'"],
+				["R", "\'R\'"],
+				["G", "\'G\'"],
+				["B", "\'B\'"]
 			]), "KEY");
 		this.appendValueInput('VALUE')
 			.appendField(Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_WITH);
