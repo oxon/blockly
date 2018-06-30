@@ -7,7 +7,7 @@ goog.require('Blockly');
 goog.require('Blockly.ColorDefinitions');
 
 Blockly.Blocks['oxocard_logic_boolean'] = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(new Blockly.FieldDropdown([

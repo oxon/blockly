@@ -8,7 +8,7 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.ColorDefinitions');
 
 Blockly.Blocks.oxocard_matrix_draw_image = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 
 		this.appendDummyInput()
@@ -33,7 +33,7 @@ Blockly.Blocks.oxocard_matrix_draw_image = {
 
 
 Blockly.Blocks.oxocard_matrix_draw_rgb_image = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		var theColor = new Blockly.FieldColour();
 		this.appendDummyInput()
@@ -60,7 +60,7 @@ Blockly.Blocks.oxocard_matrix_draw_rgb_image = {
 };
 
 Blockly.Blocks.oxocard_matrix_set_color = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE)
@@ -73,7 +73,7 @@ Blockly.Blocks.oxocard_matrix_set_color = {
 };
 
 Blockly.Blocks.oxocard_matrix_set_random_color = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TITLE);
@@ -85,7 +85,7 @@ Blockly.Blocks.oxocard_matrix_set_random_color = {
 };
 
 Blockly.Blocks.oxocard_matrix_set_color_var = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TITLE);
@@ -104,7 +104,7 @@ Blockly.Blocks.oxocard_matrix_set_color_var = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_all = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_ALL_TITLE);
@@ -116,7 +116,7 @@ Blockly.Blocks.oxocard_matrix_draw_all = {
 };
 
 Blockly.Blocks.oxocard_matrix_clear = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_CLEAR_TITLE);
@@ -128,7 +128,7 @@ Blockly.Blocks.oxocard_matrix_clear = {
 };
 
 Blockly.Blocks.oxocard_matrix_set_fill = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_FILL_TITLE);
@@ -141,7 +141,7 @@ Blockly.Blocks.oxocard_matrix_set_fill = {
 
 
 Blockly.Blocks.oxocard_matrix_set_nofill = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_NOFILL_TITLE);
@@ -153,7 +153,7 @@ Blockly.Blocks.oxocard_matrix_set_nofill = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_pixel = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_PIXEL_TITLE);
@@ -174,7 +174,7 @@ Blockly.Blocks.oxocard_matrix_draw_pixel = {
 };
 
 Blockly.Blocks.oxocard_matrix_clear_pixel = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_CLEAR_PIXEL_TITLE);
@@ -195,7 +195,7 @@ Blockly.Blocks.oxocard_matrix_clear_pixel = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_line = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_LINE_TITLE);
@@ -219,7 +219,7 @@ Blockly.Blocks.oxocard_matrix_draw_line = {
 
 
 Blockly.Blocks.oxocard_matrix_draw_rectangle = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_RECTANGLE_TITLE);
@@ -242,7 +242,7 @@ Blockly.Blocks.oxocard_matrix_draw_rectangle = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_circle = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_CIRCLE_TITLE);
@@ -262,7 +262,7 @@ Blockly.Blocks.oxocard_matrix_draw_circle = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_triangle = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_TRIANGLE_TITLE);
@@ -287,7 +287,7 @@ Blockly.Blocks.oxocard_matrix_draw_triangle = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_number = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('NUMBER')
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_NUMBER_TITLE).setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
@@ -300,7 +300,7 @@ Blockly.Blocks.oxocard_matrix_draw_number = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_text = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_TITLE)
@@ -338,7 +338,7 @@ Blockly.Blocks.oxocard_matrix_draw_text = {
 };
 
 Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TITLE)
@@ -356,7 +356,7 @@ Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
 };
 
 Blockly.Blocks.oxocard_matrix_copy_frame_buffer_content = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TITLE)
@@ -385,7 +385,7 @@ Blockly.Blocks.oxocard_matrix_copy_frame_buffer_content = {
 };
 
 Blockly.Blocks.oxocard_matrix_update = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_UPDATE_TITLE);
@@ -397,7 +397,7 @@ Blockly.Blocks.oxocard_matrix_update = {
 };
 
 Blockly.Blocks.oxocard_matrix_enable_auto_update = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_ENABLE_AUTO_UPDATE_TITLE);
@@ -409,7 +409,7 @@ Blockly.Blocks.oxocard_matrix_enable_auto_update = {
 };
 
 Blockly.Blocks.oxocard_matrix_disable_auto_update = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_DISABLE_AUTO_UPDATE_TITLE);
@@ -421,7 +421,7 @@ Blockly.Blocks.oxocard_matrix_disable_auto_update = {
 };
 
 Blockly.Blocks.oxocard_matrix_read_pixel = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE);
@@ -451,7 +451,7 @@ Blockly.Blocks.oxocard_matrix_read_pixel = {
 };
 
 Blockly.Blocks.oxocard_matrix_is_pixel = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE);
@@ -474,7 +474,7 @@ Blockly.Blocks.oxocard_matrix_is_pixel = {
 };
 
 Blockly.Blocks.oxocard_matrix_draw_weather = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TITLE);
