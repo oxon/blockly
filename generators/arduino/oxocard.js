@@ -313,3 +313,9 @@ Blockly.Arduino.oxocard_comm_check_is_message_for_me = function(block) {
 	var code = 'oxocard.communication->isMessageForMe()';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+
+Blockly.Arduino.oxocard_comm_compare_message = function(block) {
+	var msg = Blockly.Arduino.quote_(block.getFieldValue('MSG'));
+	var code = 'oxocard.communication->compareText(' + msg + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
