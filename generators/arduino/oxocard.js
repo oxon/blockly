@@ -269,7 +269,7 @@ Blockly.Arduino.oxocard_comm_compare_broadcast_number = function() {
 Blockly.Arduino.oxocard_comm_get_and_draw_broadcast_message = function() {
 	var n = this.getFieldValue('N');
 	var isBigFont = this.getFieldValue('BUTTON').toLowerCase();
-	return 'oxocard.matrix->drawText(oxocard.communication->getMessage(' + n + '), ' + isBigFont +');\n';
+	return 'oxocard.matrix->drawText(oxocard.communication->getText(' + n + '), ' + isBigFont +');\n';
 };
 
 Blockly.Arduino.oxocard_comm_get_broadcast_number = function() {
@@ -283,9 +283,19 @@ Blockly.Arduino.oxocard_comm_set_sender_whitelist = function(block) {
 	return 'oxocard.communication->setSenderWhitelist(' + name + ');\n';
 };
 
+Blockly.Arduino.oxocard_comm_add_sender_id_to_whitelist = function() {
+	var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	return 'oxocard.communication->addSenderIdToTheWhitelist(' + value + ');\n';
+};
+
 Blockly.Arduino.oxocard_comm_set_receiver_list = function(block) {
 	var name = Blockly.Arduino.quote_(block.getFieldValue('NAME'));
 	return 'oxocard.communication->setReceiverList(' + name + ');\n';
+};
+
+Blockly.Arduino.oxocard_comm_add_receiver_id_to_list = function() {
+	var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	return 'oxocard.communication->addReceiverIdToTheList(' + value + ');\n';
 };
 
 Blockly.Arduino.oxocard_comm_set_user_message = function(block) {
@@ -293,7 +303,7 @@ Blockly.Arduino.oxocard_comm_set_user_message = function(block) {
 	return 'oxocard.communication->setText(' + text + ');\n';
 };
 
-Blockly.Arduino.oxocard_comm_set_user_value = function(block) {
+Blockly.Arduino.oxocard_comm_set_user_value = function() {
 	var key = this.getFieldValue('KEY');
 	var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || 0;
 	return 'oxocard.communication->setValue(' + key + ', ' + value + ');\n';

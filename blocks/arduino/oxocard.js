@@ -1018,6 +1018,20 @@ Blockly.Blocks.oxocard_comm_set_sender_whitelist = {
 	}
 };
 
+Blockly.Blocks.oxocard_comm_add_sender_id_to_whitelist = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_ADD_SENDER_ID_TO_WHITELIST_TITLE);
+		this.appendValueInput('VALUE');
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ADD_SENDER_ID_TO_WHITELIST_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	}
+};
+
 Blockly.Blocks.oxocard_comm_set_receiver_list = {
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
@@ -1045,6 +1059,20 @@ Blockly.Blocks.oxocard_comm_set_receiver_list = {
 			var file = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAn0lEQVQI1z3OMa5BURSF4f/cQhAKjUQhuQmFNwGJEUi0RKN5rU7FHKhpjEH3TEMtkdBSCY1EIv8r7nFX9e29V7EBAOvu7RPjwmWGH/VuF8CyN9/OAdvqIXYLvtRaNjx9mMTDyo+NjAN1HNcl9ZQ5oQMM3dgDUqDo1l8DzvwmtZN7mnD+PkmLa+4mhrxVA9fRowBWmVBhFy5gYEjKMfz9AylsaRRgGzvZAAAAAElFTkSuQmCC';
 		}
 		return new Blockly.FieldImage(file, 12, 12, '"');
+	}
+};
+
+Blockly.Blocks.oxocard_comm_add_receiver_id_to_list = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_ADD_RECEIVER_ID_TO_LIST_TITLE);
+		this.appendValueInput('VALUE');
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ADD_RECEIVER_ID_TO_LIST_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
 	}
 };
 
@@ -1093,9 +1121,9 @@ Blockly.Blocks.oxocard_comm_set_user_value = {
 				["R", "\'R\'"],
 				["G", "\'G\'"],
 				["B", "\'B\'"]
-			]), "KEY");
-		this.appendValueInput('VALUE')
+			]), "KEY")
 			.appendField(Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_WITH);
+		this.appendValueInput('VALUE');
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
