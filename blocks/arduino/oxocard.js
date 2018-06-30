@@ -835,7 +835,7 @@ Blockly.Blocks.oxocard_comm_get_direct_number = {	//obsolete
 };
 
 // BROADCAST
-Blockly.Blocks.oxocard_comm_send_broadcast_message = {
+Blockly.Blocks.oxocard_comm_send_broadcast_message = {	//obsolete
 	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
 	init: function() {
 		this.appendDummyInput()
@@ -1094,6 +1094,18 @@ Blockly.Blocks.oxocard_comm_set_user_value = {
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	}
+};
+
+Blockly.Blocks.oxocard_comm_send_message = {
+	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_MESSAGE_TITLE)
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SEND_MESSAGE_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
 	}
 };

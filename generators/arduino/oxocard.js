@@ -239,7 +239,9 @@ Blockly.Arduino.oxocard_comm_get_direct_number = function() {
 // EXPERT
 Blockly.Arduino.oxocard_comm_send_broadcast_message = function(block) {
 	var msg = Blockly.Arduino.quote_(block.getFieldValue('MSG'));
-	return 'oxocard.communication->sendMessage(' + msg + ', ' + val1 + ', ' + val2 + ', ' + val3 + ');\n';
+	var code = 'oxocard.communication->setText(' + msg + ');\n';
+	code += 'oxocard.communication->sendMessage();\n';
+	return code;
 };
 
 Blockly.Arduino.oxocard_comm_send_broadcast_number = function() {
@@ -295,6 +297,10 @@ Blockly.Arduino.oxocard_comm_set_user_value = function(block) {
 	var key = this.getFieldValue('KEY');
 	var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || 0;
 	return 'oxocard.communication->setValue(' + key + ', ' + value + ');\n';
+};
+
+Blockly.Arduino.oxocard_comm_send_message = function() {
+	return 'oxocard.communication->sendMessage();\n';
 };
 
 Blockly.Arduino.oxocard_comm_check_sender = function(block) {
