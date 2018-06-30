@@ -1587,8 +1587,10 @@ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V2 = 'V2';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_V3 = 'V3';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_SENDER_ID = 'Sender ID';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads value1, value2, value3 or the sender ID of the received message';
-Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TITLE = 'Set sender whitelist';
-Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TIP = 'Sets the sender whitelist with one or more names (e.g. \"Oxocard20, Tim\") or IDs (e.g. \"#42, #15, #8\"). To reset the list, leave the input field empty or write a *';
+Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TITLE = 'Set sender filter';
+Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TIP = 'Sets the sender filter with one or more names (e.g. \"Oxocard20, Tim\") or IDs (e.g. \"#42, #15, #8\"). To reset the list, leave the input field empty or write a *';
+Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE = 'Set receiver list';
+Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TIP = 'Sets the receiver list with one or more names (e.g. \"Oxocard20, Tim\") or IDs (e.g. \"#42, #15, #8\"). To reset the list, leave the input field empty or write a *';
 Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE = 'is message from';
 Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TIP = 'Checks if received message is from the given sender';
 
