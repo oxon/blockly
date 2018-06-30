@@ -1591,6 +1591,11 @@ Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TITLE = 'Set sender filter';
 Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TIP = 'Sets the sender filter with one or more names (e.g. \"Oxocard20, Tim\") or IDs (e.g. \"#42, #15, #8\"). To reset the list, leave the input field empty or write a *';
 Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE = 'Set receiver list';
 Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TIP = 'Sets the receiver list with one or more names (e.g. \"Oxocard20, Tim\") or IDs (e.g. \"#42, #15, #8\"). To reset the list, leave the input field empty or write a *';
+Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TITLE = 'Set message text';
+Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TIP = 'Sets the text message to be sent';
+Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_TITLE = 'Set message variable';
+Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_WITH = 'with';
+Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_TIP = 'Sets the value of a variable to be sent';
 Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE = 'is message from';
 Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TIP = 'Checks if received message is from the given sender';
 

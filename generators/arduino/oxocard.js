@@ -286,6 +286,17 @@ Blockly.Arduino.oxocard_comm_set_receiver_list = function(block) {
 	return 'oxocard.communication->setReceiverList(' + name + ');\n';
 };
 
+Blockly.Arduino.oxocard_comm_set_user_message = function(block) {
+	var text = Blockly.Arduino.quote_(block.getFieldValue('TEXT'));
+	return 'oxocard.communication->setText(' + text + ');\n';
+};
+
+Blockly.Arduino.oxocard_comm_set_user_value = function(block) {
+	var key = this.getFieldValue('KEY');
+	var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	return 'oxocard.communication->setValue(' + key + ', ' + value + ');\n';
+};
+
 Blockly.Arduino.oxocard_comm_check_sender = function(block) {
 	var name = Blockly.Arduino.quote_(block.getFieldValue('NAME'));
 	var code = 'oxocard.communication->isMessageFrom(' + name + ')';
