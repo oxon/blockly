@@ -90,7 +90,7 @@ Blockly.Blocks['text'] = {
 };
 
 Blockly.Blocks.oxocard_list_add = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput("VALUE")
 			.setCheck("Number")
@@ -106,7 +106,7 @@ Blockly.Blocks.oxocard_list_add = {
 };
 
 Blockly.Blocks.oxocard_list_add_color = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput("R")
 			.setCheck("Number")
@@ -128,7 +128,7 @@ Blockly.Blocks.oxocard_list_add_color = {
 };
 
 Blockly.Blocks.oxocard_list_get = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput("VALUE")
 			.setCheck("Number")
@@ -145,7 +145,7 @@ Blockly.Blocks.oxocard_list_get = {
 };
 
 Blockly.Blocks.oxocard_list_get_color = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput("VALUE")
 			.setCheck("Number")
@@ -170,7 +170,7 @@ Blockly.Blocks.oxocard_list_get_color = {
 };
 
 Blockly.Blocks.oxocard_list_remove = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput("VALUE")
 			.setCheck("Number")
@@ -186,7 +186,7 @@ Blockly.Blocks.oxocard_list_remove = {
 };
 
 Blockly.Blocks.oxocard_list_remove_color = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput("VALUE")
 			.setCheck("Number")

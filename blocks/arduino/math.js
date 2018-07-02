@@ -53,7 +53,7 @@ Blockly.Blocks.math_increment = {
 };
 
 Blockly.Blocks.math_set_var_with = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATH_SET_VAR_WITH_TITLE)
@@ -74,7 +74,7 @@ Blockly.Blocks.math_set_var_with = {
 };
 
 Blockly.Blocks.math_set_oxocard_random = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_RANDOM_TITLE1);

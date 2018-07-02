@@ -8,7 +8,7 @@ goog.require('Blockly.ColorDefinitions');
 
 
 Blockly.Blocks.oxocard_audio_wait_for_tone = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE);
@@ -20,7 +20,7 @@ Blockly.Blocks.oxocard_audio_wait_for_tone = {
 };
 
 Blockly.Blocks.oxocard_audio_wait_not_for_tone = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_WAIT_NOT_FOR_TONE_TITLE);
@@ -32,7 +32,7 @@ Blockly.Blocks.oxocard_audio_wait_not_for_tone = {
 };
 
 Blockly.Blocks.oxocard_audio_set_volume = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('VOL')
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_SET_VOLUME_TITLE).setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
@@ -45,7 +45,7 @@ Blockly.Blocks.oxocard_audio_set_volume = {
 };
 
 Blockly.Blocks.oxocard_audio_get_volume = {
-  helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+  helpUrl: 'https://www.oxocard.ch/instructions.html',
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TITLE)
@@ -59,7 +59,7 @@ Blockly.Blocks.oxocard_audio_get_volume = {
 };
 
 Blockly.Blocks.oxocard_audio_volume_up = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_VOLUME_UP_TITLE);
@@ -71,7 +71,7 @@ Blockly.Blocks.oxocard_audio_volume_up = {
 };
 
 Blockly.Blocks.oxocard_audio_volume_down = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_VOLUME_DOWN_TITLE);
@@ -83,7 +83,7 @@ Blockly.Blocks.oxocard_audio_volume_down = {
 };
 
 Blockly.Blocks.oxocard_audio_set_octave = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_SET_OCTAVE_TITLE)
@@ -98,7 +98,7 @@ Blockly.Blocks.oxocard_audio_set_octave = {
 };
 
 Blockly.Blocks.oxocard_audio_set_waveform = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_SET_WAVEFORM_TITLE)
@@ -115,7 +115,7 @@ Blockly.Blocks.oxocard_audio_set_waveform = {
 };
 
 Blockly.Blocks.oxocard_audio_set_bpm = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('BPM')
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_SET_BPM_TITLE).setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
@@ -128,7 +128,7 @@ Blockly.Blocks.oxocard_audio_set_bpm = {
 };
 
 Blockly.Blocks.oxocard_audio_wait = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_WAIT_TITLE)
@@ -144,7 +144,7 @@ Blockly.Blocks.oxocard_audio_wait = {
 };
 
 Blockly.Blocks.oxocard_audio_record_for = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TITLE)
@@ -160,7 +160,7 @@ Blockly.Blocks.oxocard_audio_record_for = {
 };
 
 Blockly.Blocks.oxocard_audio_play_recorded = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TITLE)
@@ -174,7 +174,7 @@ Blockly.Blocks.oxocard_audio_play_recorded = {
 };
 
 Blockly.Blocks.oxocard_audio_wait_for_loud_noise = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_LOUD_NOISE_TITLE);
@@ -186,7 +186,7 @@ Blockly.Blocks.oxocard_audio_wait_for_loud_noise = {
 };
 
 Blockly.Blocks.oxocard_audio_stop_tone = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_STOP_TONE_TITLE);
@@ -198,7 +198,7 @@ Blockly.Blocks.oxocard_audio_stop_tone = {
 };
 
 Blockly.Blocks.oxocard_audio_play_tone = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_TITLE)
@@ -214,7 +214,7 @@ Blockly.Blocks.oxocard_audio_play_tone = {
 };
 
 Blockly.Blocks.oxocard_audio_play_tone_dur_ms = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_TITLE)
@@ -232,7 +232,7 @@ Blockly.Blocks.oxocard_audio_play_tone_dur_ms = {
 };
 
 Blockly.Blocks.oxocard_audio_play_tone_dur = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_TITLE)
@@ -252,7 +252,7 @@ Blockly.Blocks.oxocard_audio_play_tone_dur = {
 };
 
 Blockly.Blocks.oxocard_audio_play_tone_hz = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('FRQ')
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TITLE)
@@ -265,7 +265,7 @@ Blockly.Blocks.oxocard_audio_play_tone_hz = {
 };
 
 Blockly.Blocks.oxocard_audio_play_tone_hz_dur_ms = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('FRQ')
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TITLE)
@@ -280,7 +280,7 @@ Blockly.Blocks.oxocard_audio_play_tone_hz_dur_ms = {
 };
 
 Blockly.Blocks.oxocard_audio_play_tone_hz_dur = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('FRQ')
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TITLE)
@@ -298,7 +298,7 @@ Blockly.Blocks.oxocard_audio_play_tone_hz_dur = {
 };
 
 Blockly.Blocks.oxocard_audio_play_sound_effect = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_SOUND_EFFECT_TITLE)

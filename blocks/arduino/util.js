@@ -8,7 +8,7 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.ColorDefinitions');
 
 Blockly.Blocks['infinite_loop'] = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 		this.appendDummyInput()

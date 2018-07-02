@@ -27,7 +27,7 @@ Blockly.Blocks['oxocard_time_delay'] = {
 };
 
 Blockly.Blocks.oxocard_time_get_millis = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 		.appendField(Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TITLE);
@@ -41,7 +41,7 @@ Blockly.Blocks.oxocard_time_get_millis = {
 };
 
 Blockly.Blocks.oxocard_set_time_zone = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 		.appendField(Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE)
@@ -77,7 +77,7 @@ Blockly.Blocks.oxocard_set_time_zone = {
 };
 
 Blockly.Blocks.oxocard_time_get_value = {
-	helpUrl: 'http://www.oxocard.ch/oxocard-befehle/',
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
 		.appendField(Blockly.Msg.OXOCARD_TIME_GET_VALUE_TITLE)
