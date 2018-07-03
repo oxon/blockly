@@ -58,16 +58,15 @@ Blockly.Blocks['oxocard_turn_off_with_buttons'] = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE3);
 		this.appendDummyInput()
-			.appendField(new Blockly.FieldButton(false, 35,35,"L1"),"L1")
+			.appendField(new Blockly.FieldButton(false, 35, 35, "L1"), "L1")
 			.appendField(new Blockly.FieldPlaceholder(200,50))
-			.appendField(new Blockly.FieldButton(false, 35,35,"R1"),"R1");
+			.appendField(new Blockly.FieldButton(false, 35, 35, "R1"), "R1");
 		this.appendDummyInput()
-			.appendField(new Blockly.FieldButton(false, 35,35,"L2"),"L2")
-			.appendField(new Blockly.FieldButton(false, 35,35,"L3"),"L3")
+			.appendField(new Blockly.FieldButton(false, 35, 35, "L2"), "L2")
+			.appendField(new Blockly.FieldButton(false, 35, 35, "L3"), "L3")
 			.appendField(new Blockly.FieldPlaceholder(104,60))
-			.appendField(new Blockly.FieldButton(false, 35,35,"R3"),"R3")
-			.appendField(new Blockly.FieldButton(false, 35,35,"R2"),"R2");
-		// this.setInputsInline(true);
+			.appendField(new Blockly.FieldButton(false, 35, 35, "R3"), "R3")
+			.appendField(new Blockly.FieldButton(false, 35, 35, "R2"), "R2");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TIP2);

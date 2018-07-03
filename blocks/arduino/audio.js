@@ -48,7 +48,7 @@ Blockly.Blocks.oxocard_audio_get_volume = {
   helpUrl: 'https://www.oxocard.ch/instructions.html',
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TITLE)
+        .appendField(Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TITLE);
     this.setOutput(true, 'Number');
     this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TIP);
     this.setColour(Blockly.ColorDefinitions.AUDIO);
@@ -89,7 +89,7 @@ Blockly.Blocks.oxocard_audio_set_octave = {
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_SET_OCTAVE_TITLE)
 			.appendField(new Blockly.FieldDropdown([["C3", "C3"],
 				["C4", "C4"], ["C5", "C5"], ["C6", "C6"],
-				["C7", "C7"], ["C8", "C8"]]), "OCTAVE")
+				["C7", "C7"], ["C8", "C8"]]), "OCTAVE");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_SET_OCTAVE_TIP);
@@ -106,7 +106,7 @@ Blockly.Blocks.oxocard_audio_set_waveform = {
 				[[Blockly.Msg.OXOCARD_AUDIO_WAVE_SINE, "WAVE_SINE"],
 				[Blockly.Msg.OXOCARD_AUDIO_WAVE_SQUARE, "WAVE_SQUARE"],
 				[Blockly.Msg.OXOCARD_AUDIO_WAVE_SAWTOOTH, "WAVE_SAWTOOTH"],
-				[Blockly.Msg.OXOCARD_AUDIO_WAVE_TRIANGLE, "WAVE_TRIANGLE"]]), "WAVEFORM")
+				[Blockly.Msg.OXOCARD_AUDIO_WAVE_TRIANGLE, "WAVE_TRIANGLE"]]), "WAVEFORM");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_SET_WAVEFORM_TIP);
@@ -135,7 +135,7 @@ Blockly.Blocks.oxocard_audio_wait = {
 			.appendField(new Blockly.FieldDropdown([["1/1", "NOTE_DUR_WHOLE"],
 				["1/2", "NOTE_DUR_HALF"], ["1/4", "NOTE_DUR_QUARTER"],
 				["1/8", "NOTE_DUR_EIGHTH"], ["1/16", "NOTE_DUR_SIXTEENTH"],
-				["1/32", "NOTE_DUR_THIRTY_SECOND"]]), "DUR")
+				["1/32", "NOTE_DUR_THIRTY_SECOND"]]), "DUR");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_WAIT_TIP);
@@ -151,7 +151,7 @@ Blockly.Blocks.oxocard_audio_record_for = {
 			.appendField(new Blockly.FieldDropdown([["250ms", "250"],
 				["500ms", "500"], ["1s", "1000"],
 				["1.5s", "1500"], ["2s", "2000"],
-				["2.5s", "2500"], ["3s", "3000"]]), "DUR")
+				["2.5s", "2500"], ["3s", "3000"]]), "DUR");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_RECORD_FOR_TIP);
@@ -165,7 +165,7 @@ Blockly.Blocks.oxocard_audio_play_recorded = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TITLE)
 			.appendField(new Blockly.FieldDropdown([["1", "false"],
-				["∞", "true"]]), "FOREVER")
+				["∞", "true"]]), "FOREVER");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TIP);
@@ -205,7 +205,7 @@ Blockly.Blocks.oxocard_audio_play_tone = {
 			.appendField(new Blockly.FieldDropdown([["C", "C"], ["CS", "CS"],
 				["D", "D"], ["DS", "DS"], ["E", "E"], ["F", "F"],
 				["FS", "FS"], ["G", "G"], ["GS", "GS"], ["A", "A"],
-				["AS", "AS"], ["B", "B"], ["REST", "REST"]]), "NOTE")
+				["AS", "AS"], ["B", "B"], ["REST", "REST"]]), "NOTE");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_TIP);
@@ -221,7 +221,7 @@ Blockly.Blocks.oxocard_audio_play_tone_dur_ms = {
 			.appendField(new Blockly.FieldDropdown([["C", "C"], ["CS", "CS"],
 				["D", "D"], ["DS", "DS"], ["E", "E"], ["F", "F"],
 				["FS", "FS"], ["G", "G"], ["GS", "GS"], ["A", "A"],
-				["AS", "AS"], ["B", "B"], ["REST", "REST"]]), "NOTE")
+				["AS", "AS"], ["B", "B"], ["REST", "REST"]]), "NOTE");
 		this.appendValueInput('DUR').setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
@@ -243,7 +243,7 @@ Blockly.Blocks.oxocard_audio_play_tone_dur = {
 			.appendField(new Blockly.FieldDropdown([["1/1", "NOTE_DUR_WHOLE"],
 				["1/2", "NOTE_DUR_HALF"], ["1/4", "NOTE_DUR_QUARTER"],
 				["1/8", "NOTE_DUR_EIGHTH"], ["1/16", "NOTE_DUR_SIXTEENTH"],
-				["1/32", "NOTE_DUR_THIRTY_SECOND"]]), "DUR")
+				["1/32", "NOTE_DUR_THIRTY_SECOND"]]), "DUR");
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_TIP);
@@ -284,11 +284,12 @@ Blockly.Blocks.oxocard_audio_play_tone_hz_dur = {
 	init: function() {
 		this.appendValueInput('FRQ')
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TITLE)
-			.setCheck('Number')
-		this.appendDummyInput().appendField(new Blockly.FieldDropdown([["1/1", "NOTE_DUR_WHOLE"],
+			.setCheck('Number');
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldDropdown([["1/1", "NOTE_DUR_WHOLE"],
 				["1/2", "NOTE_DUR_HALF"], ["1/4", "NOTE_DUR_QUARTER"],
 				["1/8", "NOTE_DUR_EIGHTH"], ["1/16", "NOTE_DUR_SIXTEENTH"],
-				["1/32", "NOTE_DUR_THIRTY_SECOND"]]), "DUR")
+				["1/32", "NOTE_DUR_THIRTY_SECOND"]]), "DUR");
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -332,7 +333,7 @@ Blockly.Blocks.oxocard_audio_play_sound_effect = {
 			.appendField(new Blockly.FieldDropdown([
 				["1", "false"],
 				["∞", "true"]
-			]), "FOREVER")
+			]), "FOREVER");
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
