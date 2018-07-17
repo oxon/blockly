@@ -955,8 +955,7 @@ Blockly.Blocks.oxocard_comm_get_broadcast_number = {
 				["z", "\'z\'"],
 				["R", "\'R\'"],
 				["G", "\'G\'"],
-				["B", "\'B\'"],
-				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_SENDER_ID, "0xFF"]
+				["B", "\'B\'"]
 			]), "KEY");
 		this.setOutput(true, 'Number');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP);
@@ -997,20 +996,6 @@ Blockly.Blocks.oxocard_comm_set_sender_whitelist = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_add_sender_id_to_whitelist = {
-	helpUrl: 'https://www.oxocard.ch/instructions.html',
-	init: function() {
-		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_COMM_ADD_SENDER_ID_TO_WHITELIST_TITLE);
-		this.appendValueInput('VALUE');
-		this.setInputsInline(true);
-		this.setPreviousStatement(true, null);
-		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ADD_SENDER_ID_TO_WHITELIST_TIP);
-		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
-	}
-};
-
 Blockly.Blocks.oxocard_comm_set_receiver_list = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
@@ -1038,20 +1023,6 @@ Blockly.Blocks.oxocard_comm_set_receiver_list = {
 			var file = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAn0lEQVQI1z3OMa5BURSF4f/cQhAKjUQhuQmFNwGJEUi0RKN5rU7FHKhpjEH3TEMtkdBSCY1EIv8r7nFX9e29V7EBAOvu7RPjwmWGH/VuF8CyN9/OAdvqIXYLvtRaNjx9mMTDyo+NjAN1HNcl9ZQ5oQMM3dgDUqDo1l8DzvwmtZN7mnD+PkmLa+4mhrxVA9fRowBWmVBhFy5gYEjKMfz9AylsaRRgGzvZAAAAAElFTkSuQmCC';
 		}
 		return new Blockly.FieldImage(file, 12, 12, '"');
-	}
-};
-
-Blockly.Blocks.oxocard_comm_add_receiver_id_to_list = {
-	helpUrl: 'https://www.oxocard.ch/instructions.html',
-	init: function() {
-		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_COMM_ADD_RECEIVER_ID_TO_LIST_TITLE);
-		this.appendValueInput('VALUE');
-		this.setInputsInline(true);
-		this.setPreviousStatement(true, null);
-		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ADD_RECEIVER_ID_TO_LIST_TIP);
-		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
 	}
 };
 
