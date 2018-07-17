@@ -147,12 +147,6 @@ Blockly.Arduino.oxocard_comm_enable = function(block) {
 	return 'oxocard.communication->start(' + name + ');\n';
 };
 
-Blockly.Arduino.oxocard_comm_enable_with_name_and_id = function(block) {
-	var name = Blockly.Arduino.quote_(block.getFieldValue('NAME'));
-	var senderId = Blockly.Arduino.valueToCode(this, 'SENDER_ID', Blockly.Arduino.ORDER_ATOMIC) || 0;
-	return 'oxocard.communication->start(' + name + ', ' + senderId + ');\n';
-};
-
 Blockly.Arduino.oxocard_comm_disable = function(block) {
 	return 'oxocard.communication->stop();\n';
 };

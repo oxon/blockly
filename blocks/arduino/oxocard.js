@@ -452,27 +452,6 @@ Blockly.Blocks.oxocard_comm_enable = {
 	}
 };
 
-Blockly.Blocks.oxocard_comm_enable_with_name_and_id = {
-	helpUrl: 'https://www.oxocard.ch/instructions.html',
-	init: function() {
-		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1)
-			.appendField(new Blockly.FieldTextInput(
-				'Oxocard' + Math.floor((Math.random() * 100) + 1),
-				function(text) {
-					return text.replace(/[,]+/g, " ").replace(/(\s)+/g, "-");	// replace ',' with ' ' and ' ' with '-'
-				}
-			), 'NAME');
-		this.appendValueInput('SENDER_ID')
-			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE2);
-		this.setInputsInline(true);
-		this.setPreviousStatement(true, null);
-		this.setNextStatement(true, null);
-		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ENABLE_TIP);
-		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
-	}
-};
-
 Blockly.Blocks.oxocard_comm_disable = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
