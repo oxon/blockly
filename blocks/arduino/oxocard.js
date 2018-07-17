@@ -8,20 +8,25 @@ goog.require('Blockly.ColorDefinitions');
 
 
 Blockly.Blocks['oxocard_button_ispressed'] = {
-  helpUrl: 'https://www.oxocard.ch/instructions.html',
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_BUTTON_PRESSED_TITLE)
-        .appendField(new Blockly.FieldDropdown([["L1", "L1"],
-                      ["L2", "L2"],  ["L3", "L3"], ["R1", "R1"], ["R2", "R2"],
-                      ["R3", "R3"]]), "BUTTON");
-	this.setOutput(true, 'Boolean');
-    this.setTooltip(Blockly.Msg.OXOCARD_BUTTON_PRESSED_TIP);
-    this.setColour(Blockly.ColorDefinitions.LOGIC);
-  },
-  getBlockType: function() {
-    return Blockly.Types.BOOLEAN;
-  }
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_BUTTON_PRESSED_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_BUTTON_L1, "L1"],
+				[Blockly.Msg.OXOCARD_BUTTON_L2, "L2"],
+				[Blockly.Msg.OXOCARD_BUTTON_L3, "L3"],
+				[Blockly.Msg.OXOCARD_BUTTON_R1, "R1"],
+				[Blockly.Msg.OXOCARD_BUTTON_R2, "R2"],
+				[Blockly.Msg.OXOCARD_BUTTON_R3, "R3"]
+			]), "BUTTON");
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_BUTTON_PRESSED_TIP);
+		this.setColour(Blockly.ColorDefinitions.LOGIC);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
 };
 
 Blockly.Blocks.oxocard_reboot = {
