@@ -1597,6 +1597,10 @@ Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TITLE = 'is message for me?';
 Blockly.Msg.OXOCARD_COMM_IS_MESSAGE_FOR_ME_TIP = 'Checks if received message is for me';
 Blockly.Msg.OXOCARD_COMM_COMPARE_MESSAGE_TITLE = 'compare received message';
 Blockly.Msg.OXOCARD_COMM_COMPARE_MESSAGE_TIP = 'Compares the received message with the given message';
+Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TITLE = 'Set communication type';
+Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE1 = 'Local (fast, only WLAN)';
+Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2 = 'Internet (slow, everywhere)';
+Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TIP = 'Sets the communication type to either local (within the same network) or internet (globally)';
 
 // Audio
 Blockly.Msg.OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE = 'Wait after tones';

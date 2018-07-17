@@ -1188,3 +1188,20 @@ Blockly.Blocks.oxocard_comm_compare_message = {
 		return Blockly.Types.BOOLEAN;
 	}
 };
+
+Blockly.Blocks.oxocard_comm_set_communication_type = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE1, "0"],
+				[Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2, "1"]
+			]), "TYPE");
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	}
+};
