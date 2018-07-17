@@ -307,6 +307,11 @@ Blockly.Arduino.oxocard_comm_send_message = function() {
 	return 'oxocard.communication->sendMessage();\n';
 };
 
+Blockly.Arduino.oxocard_comm_send_message_to = function(block) {
+	var receiver = Blockly.Arduino.quote_(block.getFieldValue('RECEIVER'));
+	return 'oxocard.communication->sendMessageTo(' + receiver + ');\n';
+};
+
 Blockly.Arduino.oxocard_comm_check_sender = function(block) {
 	var name = Blockly.Arduino.quote_(block.getFieldValue('NAME'));
 	var code = 'oxocard.communication->isMessageFrom(' + name + ')';
