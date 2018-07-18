@@ -319,6 +319,10 @@ Blockly.Arduino.oxocard_comm_compare_message = function(block) {
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.oxocard_comm_clear_all_messages = function() {
+	return 'oxocard.communication->clearAllReceivedMessages();\n';
+};
+
 Blockly.Arduino.oxocard_comm_set_communication_type = function() {
 	var type = this.getFieldValue('TYPE');
 	return '//oxocard.communication->setType(' + type + ');\n';

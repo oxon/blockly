@@ -1194,6 +1194,18 @@ Blockly.Blocks.oxocard_comm_compare_message = {
 	}
 };
 
+Blockly.Blocks.oxocard_comm_clear_all_messages = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TIP);
+		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+	}
+};
+
 Blockly.Blocks.oxocard_comm_set_communication_type = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {

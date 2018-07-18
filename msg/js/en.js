@@ -516,6 +516,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP = "Waits for a given time for a message";
 /** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP = "Waits until a new message is received";
 /** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE = "Wait for messages";
+/** @export */ Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TITLE = "Clear all received messages";
+/** @export */ Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TIP = "Clears all the received messages";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TITLE = "Set communication type";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE1 = "Local (fast, only WLAN)";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2 = "Internet (slow, everywhere)";

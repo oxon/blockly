@@ -516,6 +516,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE = "Warte auf Nachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_MESSAGE_TITLE = "vergleiche empfangene Kurznachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_COMPARE_MESSAGE_TIP = "Vergleicht die empfangene Kurznachricht mit dem angegebenen Text";
+/** @export */ Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TITLE = "Lösche alle empfangenen Kurznachrichten";
+/** @export */ Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TIP = "Löscht alle empfangenen Kurnachrichten";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TITLE = "Wähle Kommunikationsart";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE1 = "Lokal (schnell, nur WLAN)";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2 = "Internet (langsam, überall)";
