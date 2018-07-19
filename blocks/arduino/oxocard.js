@@ -952,15 +952,13 @@ Blockly.Blocks.oxocard_comm_get_broadcast_number = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE)
 			.appendField(new Blockly.FieldDropdown([
-				["a", "\'a\'"],
-				["b", "\'b\'"],
-				["c", "\'c\'"],
-				["x", "\'x\'"],
-				["y", "\'y\'"],
-				["z", "\'z\'"],
-				["R", "\'R\'"],
-				["G", "\'G\'"],
-				["B", "\'B\'"]
+				["a", "\'a\'"], ["b", "\'b\'"], ["c", "\'c\'"], ["d", "\'d\'"],
+				["e", "\'e\'"], ["f", "\'f\'"], ["g", "\'g\'"], ["h", "\'h\'"],
+				["i", "\'i\'"], ["j", "\'j\'"], ["k", "\'k\'"], ["l", "\'l\'"],
+				["m", "\'m\'"], ["n", "\'n\'"], ["o", "\'o\'"], ["p", "\'p\'"],
+				["q", "\'q\'"], ["r", "\'r\'"], ["s", "\'s\'"], ["t", "\'t\'"],
+				["u", "\'u\'"], ["v", "\'v\'"], ["w", "\'w\'"], ["x", "\'x\'"],
+				["y", "\'y\'"], ["z", "\'z\'"]
 			]), "KEY");
 		this.setOutput(true, 'Number');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP);
@@ -1067,15 +1065,13 @@ Blockly.Blocks.oxocard_comm_set_user_value = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_TITLE)
 			.appendField(new Blockly.FieldDropdown([
-				["a", "\'a\'"],
-				["b", "\'b\'"],
-				["c", "\'c\'"],
-				["x", "\'x\'"],
-				["y", "\'y\'"],
-				["z", "\'z\'"],
-				["R", "\'R\'"],
-				["G", "\'G\'"],
-				["B", "\'B\'"]
+				["a", "\'a\'"], ["b", "\'b\'"], ["c", "\'c\'"], ["d", "\'d\'"],
+				["e", "\'e\'"], ["f", "\'f\'"], ["g", "\'g\'"], ["h", "\'h\'"],
+				["i", "\'i\'"], ["j", "\'j\'"], ["k", "\'k\'"], ["l", "\'l\'"],
+				["m", "\'m\'"], ["n", "\'n\'"], ["o", "\'o\'"], ["p", "\'p\'"],
+				["q", "\'q\'"], ["r", "\'r\'"], ["s", "\'s\'"], ["t", "\'t\'"],
+				["u", "\'u\'"], ["v", "\'v\'"], ["w", "\'w\'"], ["x", "\'x\'"],
+				["y", "\'y\'"], ["z", "\'z\'"]
 			]), "KEY")
 			.appendField(Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_WITH);
 		this.appendValueInput('VALUE');
