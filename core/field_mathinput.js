@@ -77,5 +77,3 @@ Blockly.FieldMathInput.prototype.mathValidator = function(newText) {
 
 	return newText;
 }
-
-

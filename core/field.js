@@ -411,7 +411,7 @@ Blockly.Field.prototype.getSize = function() {
     this.render_();
   }
   var correctedHeight = {
-	height: this.size_.height+16,
+	height: this.size_.height+16,	// space between two fields
 	width: this.size_.width,
   };
   return correctedHeight;
@@ -426,7 +426,7 @@ Blockly.Field.prototype.getSize = function() {
  */
 Blockly.Field.prototype.getScaledBBox_ = function() {
   var bBox = this.borderRect_.getBBox();
-  
+
   var scaledHeight = bBox.height * this.sourceBlock_.workspace.scale;
   var scaledWidth = bBox.width * this.sourceBlock_.workspace.scale;
   var xy = this.getAbsoluteXY_();
