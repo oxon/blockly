@@ -65,6 +65,7 @@ Blockly.Blocks.oxocard_matrix_set_color = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE)
 			.appendField(new Blockly.FieldColour(), 'COLOR');
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP);
@@ -348,6 +349,7 @@ Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
 					["#2", "2"],
 					["#3", "3"]
 				]), "BUFFER");
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP);

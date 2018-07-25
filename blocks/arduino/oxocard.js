@@ -15,7 +15,8 @@ Blockly.Blocks['oxocard_button_ispressed'] = {
         .appendField(new Blockly.FieldDropdown([["L1", "L1"],
                       ["L2", "L2"],  ["L3", "L3"], ["R1", "R1"], ["R2", "R2"],
                       ["R3", "R3"]]), "BUTTON");
-	this.setOutput(true, 'Boolean');
+    this.setInputsInline(true);
+    this.setOutput(true, 'Boolean');
     this.setTooltip(Blockly.Msg.OXOCARD_BUTTON_PRESSED_TIP);
     this.setColour(Blockly.ColorDefinitions.LOGIC);
   },
@@ -295,7 +296,8 @@ Blockly.Blocks.oxocard_get_acceleration = {
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_GET_ACCELERATION_TITLE)
-			.appendField(new Blockly.FieldDropdown([["X", "X"], ["Y", "Y"], ["Z", "Z"]]), "AXIS")
+			.appendField(new Blockly.FieldDropdown([["X", "X"], ["Y", "Y"], ["Z", "Z"]]), "AXIS");
+		this.setInputsInline(true);
 		this.setOutput(true, 'Number');
 		this.setTooltip(Blockly.Msg.OXOCARD_GET_ACCELERATION_TIP);
 		this.setColour(Blockly.ColorDefinitions.ACCMETER);
@@ -319,6 +321,7 @@ Blockly.Blocks['oxocard_is_orientation'] = {
 				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_LEFT_FIELD, "HALF_LEFT"],
 				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_RIGHT_FIELD, "HALF_RIGHT"]
 			]), "DIRECTION")
+		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
 		this.setTooltip(Blockly.Msg.OXOCARD_IS_ORIENTATION_TIP);
 		this.setColour(Blockly.ColorDefinitions.ACCMETER);
@@ -355,6 +358,7 @@ Blockly.Blocks.oxocard_get_cursor_value = {
     this.appendDummyInput()
         .appendField(Blockly.Msg.OXOCARD_GET_CURSOR_VALUE_TITLE)
         .appendField(new Blockly.FieldDropdown([["X", "X"], ["Y", "Y"]]), "AXIS")
+    this.setInputsInline(true);
     this.setOutput(true, 'Number');
     this.setTooltip(Blockly.Msg.OXOCARD_GET_CURSOR_VALUE_TIP);
     this.setColour(Blockly.ColorDefinitions.ACCMETER);
@@ -375,7 +379,8 @@ Blockly.Blocks.oxocard_get_weather = {
 					["Chur", "67860"], ["Genf", "67000"], ["Interlaken", "67340"],
 					["Jungfraujoch", "67300"], ["Lugano", "67700"], ["Luzern", "66500"],
 					["Schaffhausen", "66200"], ["Sion", "67200"], ["StGallen", "66810"],
-					["Zuerich", "66700"]]), "CITY")
+					["Zuerich", "66700"]]), "CITY");
+		this.setInputsInline(true);
 	this.setPreviousStatement(true, null);
 	this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.OXOCARD_WEATHER_GET_FROM_TIP);
@@ -393,6 +398,7 @@ Blockly.Blocks.oxocard_weather_get_value = {
 					[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_HUMIDITY, "Humidity"],
 					[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_WIND, "Wind"],
 					[Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_PRECIPITATION, "Precipitation"]]), "TYPE")
+		this.setInputsInline(true);
     this.setOutput(true, 'Number');
     this.setTooltip(Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TIP);
     this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -445,6 +451,7 @@ Blockly.Blocks.oxocard_comm_enable = {
 					return text.replace(/[,]+/g, " ").replace(/(\s)+/g, "-");	// replace ',' with ' ' and ' ' with '-'
 				}
 			), 'NAME');
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ENABLE_TIP);
@@ -605,6 +612,7 @@ Blockly.Blocks.oxocard_comm_check_for_direct = {
 			.appendField(new Blockly.FieldTextInput('Jasmine'), 'FROM')
 			.appendField(this.newQuote_(false))
 			.appendField(Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TITLE2);
+		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -674,6 +682,7 @@ Blockly.Blocks.oxocard_comm_compare_direct_message = {	//obsolete
 			.appendField(this.newQuote_(true))
 			.appendField(new Blockly.FieldTextInput('Hello'), 'MSG')
 			.appendField(this.newQuote_(false));
+		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -796,6 +805,7 @@ Blockly.Blocks.oxocard_comm_get_direct_number_from = {
 				.appendField(this.newQuote_(true))
 				.appendField(new Blockly.FieldTextInput('Jasmine'), 'FROM')
 				.appendField(this.newQuote_(false));
+		this.setInputsInline(true);
     this.setOutput(true, 'Number');
     this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TIP);
     this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -870,8 +880,9 @@ Blockly.Blocks.oxocard_comm_send_broadcast_number = {	//obsolete
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('NUM')
-			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TITLE).setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
-		// this.setInputsInline(true);
+			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TITLE)
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SEND_BROADCAST_NUMBER_TIP);
@@ -901,7 +912,7 @@ Blockly.Blocks.oxocard_comm_compare_broadcast_message = {	//obsolete
 			.appendField(this.newQuote_(true))
 			.appendField(new Blockly.FieldTextInput('Hello'), 'MSG')
 			.appendField(this.newQuote_(false));
-		// this.setInputsInline(true);
+		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_MESSAGE_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -930,8 +941,9 @@ Blockly.Blocks.oxocard_comm_compare_broadcast_number = {	//obsolete
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendValueInput('NUM')
-			.appendField(Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TITLE).setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
-		// this.setInputsInline(true);
+			.appendField(Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TITLE)
+			.setCheck('Number')
+			.setAlign(Blockly.ALIGN_RIGHT);
 		this.setOutput(true, 'Boolean');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_COMPARE_BROADCAST_NUMBER_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -979,6 +991,7 @@ Blockly.Blocks.oxocard_comm_get_broadcast_number = {
 				["B", "\'B\'"],
 				[Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_SENDER_ID, "0xFF"]
 			]), "KEY");
+		this.setInputsInline(true);
 		this.setOutput(true, 'Number');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -996,6 +1009,7 @@ Blockly.Blocks.oxocard_comm_set_sender_whitelist = {
 			.appendField(this.newQuote_(true))
 			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME')
 			.appendField(this.newQuote_(false));
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TIP);
@@ -1040,6 +1054,7 @@ Blockly.Blocks.oxocard_comm_set_receiver_list = {
 			.appendField(this.newQuote_(true))
 			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME')
 			.appendField(this.newQuote_(false));
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TIP);
@@ -1084,6 +1099,7 @@ Blockly.Blocks.oxocard_comm_set_user_message = {
 			.appendField(this.newQuote_(true))
 			.appendField(new Blockly.FieldTextInput('Hello'), 'TEXT')
 			.appendField(this.newQuote_(false));
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TIP);
@@ -1151,6 +1167,7 @@ Blockly.Blocks.oxocard_comm_check_sender = {
 			.appendField(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE)
 			.appendField(new Blockly.FieldTextInput('Oxocard' + Math.floor((Math.random() * 100) + 1)), 'NAME')
 			.appendField('?');
+		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
