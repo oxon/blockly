@@ -52,7 +52,7 @@ Blockly.BlockSvg.INLINE_PADDING_Y = 8;
  * Minimum height of a block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y = 20;	// min size inner blocks
+Blockly.BlockSvg.MIN_BLOCK_Y = 24;	// min size inner blocks
 /**
  * Height of horizontal puzzle tab.
  * @const
@@ -120,7 +120,7 @@ Blockly.BlockSvg.DISTANCE_45_OUTSIDE = (1 - Math.SQRT1_2) *
  * SVG path for drawing next/previous notch from left to right.
  * @const
  */
-Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 2.5,0 5.5,6 5.5,-6';
+Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 2.6,0 5.5,6 5.5,-6';
 /**
  * SVG path for drawing next/previous notch from left to right with
  * highlighting.
@@ -132,6 +132,11 @@ Blockly.BlockSvg.NOTCH_PATH_LEFT_HIGHLIGHT = 'l 3.5,3.5 3.5,-3.5';
  * @const
  */
 Blockly.BlockSvg.NOTCH_PATH_RIGHT = 'l -1,0 -5.5,5.5 -5,-5.5';
+/**
+ * SVG path for drawing next/previous inner notch from right to left.
+ * @const
+ */
+Blockly.BlockSvg.NOTCH_PATH_INNER_RIGHT = 'l -0.5,0 -5.5,5.5 -5,-5.5';
 /**
  * SVG path for drawing jagged teeth at the end of collapsed blocks.
  * @const
@@ -204,7 +209,7 @@ Blockly.BlockSvg.TOP_LEFT_CORNER_HIGHLIGHT =
  * @const
  */
 Blockly.BlockSvg.INNER_TOP_LEFT_CORNER =
-    Blockly.BlockSvg.NOTCH_PATH_RIGHT + ' h -' +
+    Blockly.BlockSvg.NOTCH_PATH_INNER_RIGHT + ' h -' +
     (Blockly.BlockSvg.NOTCH_WIDTH - 11 - Blockly.BlockSvg.CORNER_RADIUS) +	// width left part if-block
     ' a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,0 -' +
@@ -981,7 +986,8 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps, highlightSteps) {
   if (this.outputConnection) {
     // Create output connection.
     this.outputConnection.setOffsetInBlock(0, 0);
-    steps.push('V', Blockly.BlockSvg.TAB_HEIGHT);
+    if (this.inputsInline) steps.push('V', Blockly.BlockSvg.TAB_HEIGHT+0.5);	// y-position left puzzle tab by inputsInline-blocks
+    else steps.push('V', Blockly.BlockSvg.TAB_HEIGHT);	// y-position left puzzle tab
     steps.push('l 0,-2 -4.5,-4.5 4.5,-4.5 ');
     if (this.RTL) {
       highlightSteps.push('M', (Blockly.BlockSvg.TAB_WIDTH * -0.25) + ',8.4');

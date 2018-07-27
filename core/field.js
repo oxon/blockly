@@ -331,8 +331,8 @@ Blockly.Field.prototype.render_ = function() {
  **/
 Blockly.Field.prototype.updateWidth = function() {
   var width = Blockly.Field.getCachedWidth(this.textElement_);
-  if(this instanceof Blockly.FieldNumber){
-	  width += 20;
+  if(this instanceof Blockly.FieldTextInput){
+	  width += Blockly.BlockSvg.SEP_SPACE_X;	// rigth space text input field
   }
   if (this.borderRect_) {
     this.borderRect_.setAttribute('width',
