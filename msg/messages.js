@@ -1543,14 +1543,13 @@ Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TITLE = 'Draw forecast icon';
 Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TIP = 'Draws the weather forecast icon';
 
 // Communication
-Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = 'Enable messages with name';
+Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = 'Enable messages';
 Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = 'Enables the sending and receiving of messages';
 Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = 'Disable messages';
 Blockly.Msg.OXOCARD_COMM_DISABLE_TIP = 'Disables the sending and receiving of messages';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TITLE = 'Wait for messages';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIP = 'Waits until a new message is received';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_FIELD = 'with timeout [s]';
-Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_MS_FIELD = 'with timeout [ms]';
 Blockly.Msg.OXOCARD_COMM_WAIT_FOR_MESSAGE_TIMEOUT_TIP = 'Waits for a given time for a message';
 Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT = 'at';
 Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_TITLE = 'Send direct message';
@@ -1585,8 +1584,6 @@ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_SENDER = 'Sender';
 Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP = 'Draws the text or the sender of the received message';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = 'read received variable';
 Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = 'Reads the value of the defined variable of the received message';
-Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TITLE = 'Set sender filter';
-Blockly.Msg.OXOCARD_COMM_SET_SENDER_WHITELIST_TIP = 'Sets the sender filter with one or more names (e.g. \"Oxocard20, Tim, James\"). To reset the list, leave the input field empty or write a *';
 Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE = 'Set receiver list';
 Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TIP = 'Sets the receiver list with one or more names (e.g. \"Oxocard20, Tim, James\"). To reset the list, leave the input field empty or write a *';
 Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TITLE = 'Set message text';
@@ -1607,7 +1604,7 @@ Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TITLE = 'Clear all received messages
 Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TIP = 'Clears all the received messages';
 Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TITLE = 'Set communication type';
 Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE1 = 'Local (fast, only WLAN)';
-Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2 = 'Internet (slow, everywhere)';
+Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2 = 'Internet (slower, everywhere)';
 Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TIP = 'Sets the communication type to either local (within the same network) or internet (globally)';
 
 // Audio
