@@ -48,7 +48,7 @@ Blockly.Blocks.oxocard_audio_get_volume = {
   helpUrl: 'https://www.oxocard.ch/instructions.html',
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TITLE)
+        .appendField(Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TITLE);
     this.setOutput(true, 'Number');
     this.setTooltip(Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TIP);
     this.setColour(Blockly.ColorDefinitions.AUDIO);
@@ -290,8 +290,9 @@ Blockly.Blocks.oxocard_audio_play_tone_hz_dur = {
 	init: function() {
 		this.appendValueInput('FRQ')
 			.appendField(Blockly.Msg.OXOCARD_AUDIO_PLAY_TONE_HZ_TITLE)
-			.setCheck('Number')
-		this.appendDummyInput().appendField(new Blockly.FieldDropdown([["1/1", "NOTE_DUR_WHOLE"],
+			.setCheck('Number');
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldDropdown([["1/1", "NOTE_DUR_WHOLE"],
 				["1/2", "NOTE_DUR_HALF"], ["1/4", "NOTE_DUR_QUARTER"],
 				["1/8", "NOTE_DUR_EIGHTH"], ["1/16", "NOTE_DUR_SIXTEENTH"],
 				["1/32", "NOTE_DUR_THIRTY_SECOND"]]), "DUR");

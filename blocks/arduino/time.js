@@ -30,7 +30,7 @@ Blockly.Blocks.oxocard_time_get_millis = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
-		.appendField(Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TITLE);
+			.appendField(Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TITLE);
 		this.setOutput(true, 'Number');
 		this.setTooltip(Blockly.Msg.OXOCARD_TIME_GET_MILLIS_TIP);
 		this.setColour(Blockly.ColorDefinitions.TIME);
@@ -44,36 +44,36 @@ Blockly.Blocks.oxocard_set_time_zone = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
-		.appendField(Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE)
-		.appendField(new Blockly.FieldDropdown([
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_1, "1"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_2, "2"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_3, "3"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_4, "4"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_5, "5"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_6, "6"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_7, "7"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_8, "8"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_9, "9"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_10, "10"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_11, "11"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_12, "12"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_13, "13"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_14, "14"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_15, "15"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_16, "16"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_17, "17"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_18, "18"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_19, "19"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_20, "20"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_21, "21"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_22, "22"],
-			[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_23, "23"],]), "ZONE");
-	this.setInputsInline(true);
-	this.setPreviousStatement(true, null);
-	this.setNextStatement(true, null);
-	this.setTooltip(Blockly.Msg.OXOCARD_TIME_GET_FROM_TIP);
-	this.setColour(Blockly.ColorDefinitions.TIME);
+			.appendField(Blockly.Msg.OXOCARD_TIME_GET_FROM_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_1, "1"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_2, "2"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_3, "3"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_4, "4"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_5, "5"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_6, "6"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_7, "7"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_8, "8"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_9, "9"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_10, "10"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_11, "11"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_12, "12"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_13, "13"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_14, "14"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_15, "15"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_16, "16"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_17, "17"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_18, "18"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_19, "19"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_20, "20"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_21, "21"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_22, "22"],
+				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_23, "23"],]), "ZONE");
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_TIME_GET_FROM_TIP);
+		this.setColour(Blockly.ColorDefinitions.TIME);
 	}
 };
 
