@@ -293,7 +293,7 @@ Blockly.Css.CONTENT = [
   '.blocklyNonEditableText>rect,',
   '.blocklyEditableText>rect {',
     'fill: #595959;',
-	'fill-opacity: 1;',
+	  'fill-opacity: 1;',
   '}',
 
   '.blocklyNonEditableText>text,',
@@ -315,16 +315,18 @@ Blockly.Css.CONTENT = [
     'z-index: 20;',
   '}',
   '.blocklyFlyoutButton {',
-    'fill: #888;',
-    'cursor: default;',
+    'fill: rgb(59,59,59);',
+    'cursor: pointer;',
   '}',
-
+  '.blocklyFlyoutButton .blocklyText {',
+    'cursor: pointer;',
+  '}',
   '.blocklyFlyoutButtonShadow {',
     'fill: #666;',
   '}',
 
   '.blocklyFlyoutButton:hover {',
-    'fill: #aaa;',
+    'fill: rgb(59,59,59);',
   '}',
 
   '.blocklyFlyoutLabel {',
@@ -501,7 +503,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyContextMenu {',
-    'border-radius: 4px;',
+    'border-radius: 0px;',
   '}',
 
   '.blocklyDropdownMenu {',

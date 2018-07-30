@@ -140,7 +140,7 @@ Blockly.FlyoutButton.prototype.createDom = function() {
     var shadow = Blockly.utils.createSvgElement('rect',
         {
           'class': 'blocklyFlyoutButtonShadow',
-          'rx': 4, 'ry': 4, 'x': 1, 'y': 1
+          'rx': 0, 'ry': 0, 'x': 0, 'y': 0
         },
         this.svgGroup_);
   }
@@ -149,7 +149,7 @@ Blockly.FlyoutButton.prototype.createDom = function() {
       {
         'class': this.isLabel_ ?
             'blocklyFlyoutLabelBackground' : 'blocklyFlyoutButtonBackground',
-        'rx': 4, 'ry': 4
+        'rx': 0, 'ry': 0
       },
       this.svgGroup_);
 
@@ -163,11 +163,11 @@ Blockly.FlyoutButton.prototype.createDom = function() {
       this.svgGroup_);
   svgText.textContent = this.text_;
 
-  this.width = Blockly.Field.getCachedWidth(svgText);
-  this.height = 20;  // Can't compute it :(
+  this.width = Blockly.Field.getCachedWidth(svgText) + 12;
+  this.height = 36;  // Can't compute it :(
 
   if (!this.isLabel_) {
-    this.width += 2 * Blockly.FlyoutButton.MARGIN;
+    this.width += 2 * (Blockly.FlyoutButton.MARGIN+6);
     shadow.setAttribute('width', this.width);
     shadow.setAttribute('height', this.height);
   }
@@ -175,7 +175,7 @@ Blockly.FlyoutButton.prototype.createDom = function() {
   rect.setAttribute('height', this.height);
 
   svgText.setAttribute('x', this.width / 2);
-  svgText.setAttribute('y', this.height - Blockly.FlyoutButton.MARGIN);
+  svgText.setAttribute('y', this.height/2 + Blockly.FlyoutButton.MARGIN);
 
   this.updateTransform_();
 
