@@ -359,7 +359,7 @@ Blockly.Blocks.oxocard_matrix_copy_frame_buffer_content = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TITLE)
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_TITLE);
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_COPY_FRAME_BUFFER_CONTENT_DESTI)
 			.appendField(new Blockly.FieldDropdown(
