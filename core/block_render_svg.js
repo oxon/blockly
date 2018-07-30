@@ -42,7 +42,7 @@ Blockly.BlockSvg.SEP_SPACE_X = 10;
  * Vertical space between elements.
  * @const
  */
-Blockly.BlockSvg.SEP_SPACE_Y = 15;	// size bottom part if-block
+Blockly.BlockSvg.SEP_SPACE_Y = 15;	// height bottom part statement block
 /**
  * Vertical padding around inline elements.
  * @const
@@ -210,7 +210,7 @@ Blockly.BlockSvg.TOP_LEFT_CORNER_HIGHLIGHT =
  */
 Blockly.BlockSvg.INNER_TOP_LEFT_CORNER =
     Blockly.BlockSvg.NOTCH_PATH_INNER_RIGHT + ' h -' +
-    (Blockly.BlockSvg.NOTCH_WIDTH - 11 - Blockly.BlockSvg.CORNER_RADIUS) +	// width left part if-block
+    (Blockly.BlockSvg.NOTCH_WIDTH - 11 - Blockly.BlockSvg.CORNER_RADIUS) +	// width left part statement block
     ' a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,0 -' +
     Blockly.BlockSvg.CORNER_RADIUS + ',' +
@@ -298,7 +298,7 @@ Blockly.BlockSvg.prototype.render = function(opt_bubble) {
   // Move the icons into position.
   var icons = this.getIcons();
   for (var i = 0; i < icons.length; i++) {
-    cursorX = icons[i].renderIcon(cursorX-space-6.5);	// icon x-position if-block
+    cursorX = icons[i].renderIcon(cursorX-space-6.5);	// icon x-position statement block
     cursorX += space;	// additional space after an icon
   }
   cursorX += this.RTL ? space : -space;
@@ -875,9 +875,11 @@ Blockly.BlockSvg.prototype.renderDrawRight_ = function(steps, highlightSteps,
       cursorX = inputRows.statementEdge + Blockly.BlockSvg.NOTCH_WIDTH;
       steps.push('H', cursorX);
       steps.push(Blockly.BlockSvg.INNER_TOP_LEFT_CORNER);
+      row.height -= 2;	// reduces height inner part statement block
       steps.push('v', row.height - 2 * Blockly.BlockSvg.CORNER_RADIUS);
       steps.push(Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER);
-      steps.push('H', inputRows.rightEdge);
+      if (y != inputRows.length - 1) steps.push('H', inputRows.rightEdge);
+      else  steps.push('H', inputRows.statementEdge + 19);	// length bottom part statement block
       if (this.RTL) {
         highlightSteps.push('M',
             (cursorX - Blockly.BlockSvg.NOTCH_WIDTH +
