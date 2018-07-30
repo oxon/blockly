@@ -69,10 +69,11 @@ Blockly.Blocks.oxocard_set_time_zone = {
 				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_21, "21"],
 				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_22, "22"],
 				[Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_23, "23"],]), "ZONE");
-	this.setPreviousStatement(true, null);
-	this.setNextStatement(true, null);
-	this.setTooltip(Blockly.Msg.OXOCARD_TIME_GET_FROM_TIP);
-	this.setColour(Blockly.ColorDefinitions.TIME);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_TIME_GET_FROM_TIP);
+		this.setColour(Blockly.ColorDefinitions.TIME);
 	}
 };
 
@@ -88,6 +89,7 @@ Blockly.Blocks.oxocard_time_get_value = {
 				[Blockly.Msg.OXOCARD_TIME_GET_VALUE_DAY, "Day"],
 				[Blockly.Msg.OXOCARD_TIME_GET_VALUE_MONTH, "Month"],
 				[Blockly.Msg.OXOCARD_TIME_GET_VALUE_YEAR, "Year"]]), "TYPE");
+		this.setInputsInline(true);
 		this.setOutput(true, 'Number');
 		this.setTooltip(Blockly.Msg.OXOCARD_TIME_GET_VALUE_TIP);
 		this.setColour(Blockly.ColorDefinitions.TIME);

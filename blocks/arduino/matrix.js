@@ -47,11 +47,13 @@ Blockly.Blocks.oxocard_matrix_draw_rgb_image = {
 				input.appendField(rgbLed , i + '' + j);
 			}
 		}
-		this.appendDummyInput().appendField(theColor, 'COLOR');
 		this.appendValueInput('X')
-			.appendField('x').setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
+			.appendField(theColor, 'COLOR')
+			.appendField(new Blockly.FieldPlaceholder(171,0))
+			.appendField('x').setCheck('Number');
 		this.appendValueInput('Y')
-			.appendField('y').setCheck('Number').setAlign(Blockly.ALIGN_RIGHT);
+			.appendField(new Blockly.FieldPlaceholder(206,0))
+			.appendField('y').setCheck('Number');
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_DRAW_RGB_IMAGE_TIP);
@@ -65,6 +67,7 @@ Blockly.Blocks.oxocard_matrix_set_color = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE)
 			.appendField(new Blockly.FieldColour(), 'COLOR');
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP);
@@ -348,6 +351,7 @@ Blockly.Blocks.oxocard_matrix_set_frame_buffer = {
 					["#2", "2"],
 					["#3", "3"]
 				]), "BUFFER");
+		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_FRAME_BUFFER_TIP);

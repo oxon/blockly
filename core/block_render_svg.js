@@ -42,7 +42,7 @@ Blockly.BlockSvg.SEP_SPACE_X = 10;
  * Vertical space between elements.
  * @const
  */
-Blockly.BlockSvg.SEP_SPACE_Y = 15;
+Blockly.BlockSvg.SEP_SPACE_Y = 15;	// height bottom part statement block
 /**
  * Vertical padding around inline elements.
  * @const
@@ -52,7 +52,7 @@ Blockly.BlockSvg.INLINE_PADDING_Y = 8;
  * Minimum height of a block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y = 25;
+Blockly.BlockSvg.MIN_BLOCK_Y = 24;	// min size inner blocks
 /**
  * Height of horizontal puzzle tab.
  * @const
@@ -120,7 +120,7 @@ Blockly.BlockSvg.DISTANCE_45_OUTSIDE = (1 - Math.SQRT1_2) *
  * SVG path for drawing next/previous notch from left to right.
  * @const
  */
-Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 2.5,0 5.5,6 5.5,-6';
+Blockly.BlockSvg.NOTCH_PATH_LEFT = 'l 2.6,0 5.5,6 5.5,-6';
 /**
  * SVG path for drawing next/previous notch from left to right with
  * highlighting.
@@ -132,6 +132,11 @@ Blockly.BlockSvg.NOTCH_PATH_LEFT_HIGHLIGHT = 'l 3.5,3.5 3.5,-3.5';
  * @const
  */
 Blockly.BlockSvg.NOTCH_PATH_RIGHT = 'l -1,0 -5.5,5.5 -5,-5.5';
+/**
+ * SVG path for drawing next/previous inner notch from right to left.
+ * @const
+ */
+Blockly.BlockSvg.NOTCH_PATH_INNER_RIGHT = 'l -0.5,0 -5.5,5.5 -5,-5.5';
 /**
  * SVG path for drawing jagged teeth at the end of collapsed blocks.
  * @const
@@ -204,8 +209,8 @@ Blockly.BlockSvg.TOP_LEFT_CORNER_HIGHLIGHT =
  * @const
  */
 Blockly.BlockSvg.INNER_TOP_LEFT_CORNER =
-    Blockly.BlockSvg.NOTCH_PATH_RIGHT + ' h -' +
-    (Blockly.BlockSvg.NOTCH_WIDTH - 15 - Blockly.BlockSvg.CORNER_RADIUS) +
+    Blockly.BlockSvg.NOTCH_PATH_INNER_RIGHT + ' h -' +
+    (Blockly.BlockSvg.NOTCH_WIDTH - 11 - Blockly.BlockSvg.CORNER_RADIUS) +	// width left part statement block
     ' a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,0 -' +
     Blockly.BlockSvg.CORNER_RADIUS + ',' +
@@ -285,22 +290,22 @@ Blockly.BlockSvg.prototype.render = function(opt_bubble) {
   Blockly.Field.startCache();
   this.rendered = true;
 
-  var cursorX = Blockly.BlockSvg.SEP_SPACE_X+20;
+  var space = Blockly.BlockSvg.SEP_SPACE_X;
+  var cursorX = space*2;	// first space left
   if (this.RTL) {
     cursorX = -cursorX;
   }
   // Move the icons into position.
   var icons = this.getIcons();
   for (var i = 0; i < icons.length; i++) {
-    cursorX = icons[i].renderIcon(cursorX);
+    cursorX = icons[i].renderIcon(cursorX-space-6.5);	// icon x-position statement block
+    cursorX += space;	// additional space after an icon
   }
-  cursorX += this.RTL ?
-      Blockly.BlockSvg.SEP_SPACE_X : -Blockly.BlockSvg.SEP_SPACE_X;
+  cursorX += this.RTL ? space : -space;
   // If there are no icons, cursorX will be 0, otherwise it will be the
   // width that the first label needs to move over by.
-
-  var inputRows = this.renderCompute_(cursorX);
-  this.renderDraw_(cursorX-10, inputRows);
+  var inputRows = this.renderCompute_(cursorX-space);	// -space
+  this.renderDraw_(cursorX-space, inputRows);	// was cursorX-10
   this.renderMoveConnections_();
 
   if (opt_bubble !== false) {
@@ -326,7 +331,7 @@ Blockly.BlockSvg.prototype.render = function(opt_bubble) {
  */
 Blockly.BlockSvg.prototype.renderFields_ = function(fieldList,
     cursorX, cursorY) {
-  cursorY += Blockly.BlockSvg.INLINE_PADDING_Y;
+  cursorY += Blockly.BlockSvg.INLINE_PADDING_Y;	// first space top
   if (this.RTL) {
     cursorX = -cursorX;
   }
@@ -444,13 +449,15 @@ Blockly.BlockSvg.prototype.renderCompute_ = function(iconWidth) {
 	  }
 	  if(field.customXSpacing && j==0){
 		 input.fieldWidth += Blockly.BlockSvg.SEP_SPACE_X;
+		 if (field.checkElement_){
+			 input.fieldWidth -= 14;	// right space "Zeichne Bild"
+		 }
 	  }else if(field.customXSpacing){
-		input.fieldWidth += field.customXSpacing;
-
+		 input.fieldWidth += field.customXSpacing;
 	  }
       // Get the dimensions of the field.
 	  var fieldSize = field.getSize();
-	  
+
       field.renderWidth = fieldSize.width;
       field.renderSep = (previousFieldEditable && field.EDITABLE) ?
 		  Blockly.BlockSvg.SEP_SPACE_X : 0;
@@ -459,11 +466,11 @@ Blockly.BlockSvg.prototype.renderCompute_ = function(iconWidth) {
 		}else{
 			input.fieldWidth += field.renderWidth;
 		}
-	  
+
       row.height = Math.max(row.height, fieldSize.height + ((field.customYSpacing) ? field.customYSpacing : 0));
       previousFieldEditable = field.EDITABLE;
     }
-	
+
     if (row.type != Blockly.BlockSvg.INLINE) {
       if (row.type == Blockly.NEXT_STATEMENT) {
         hasStatement = true;
@@ -478,7 +485,7 @@ Blockly.BlockSvg.prototype.renderCompute_ = function(iconWidth) {
       }
 	}
   }
-  
+
   // Make inline rows a bit thicker in order to enclose the values.
   for (var y = 0, row; row = inputRows[y]; y++) {
     row.thicker = false;
@@ -720,7 +727,7 @@ Blockly.BlockSvg.prototype.renderDrawRight_ = function(steps, highlightSteps,
           cursorX += input.renderWidth + Blockly.BlockSvg.SEP_SPACE_X;
         }
         if (input.type == Blockly.INPUT_VALUE) {
-			
+
           inlineSteps.push('M', (cursorX - Blockly.BlockSvg.SEP_SPACE_X) +
                            ',' + (cursorY + Blockly.BlockSvg.INLINE_PADDING_Y));
           inlineSteps.push('h', Blockly.BlockSvg.TAB_WIDTH - 2 -
@@ -774,7 +781,7 @@ Blockly.BlockSvg.prototype.renderDrawRight_ = function(steps, highlightSteps,
         }
       }
 
-      cursorX = Math.max(cursorX, inputRows.rightEdge);
+      cursorX = Math.max(cursorX, inputRows.rightEdge)+Blockly.BlockSvg.SEP_SPACE_X/2;	// right space by blocks with an inline field
       this.width = Math.max(this.width, cursorX);
       steps.push('H', cursorX);
       highlightSteps.push('H', cursorX - 0.5);
@@ -868,9 +875,11 @@ Blockly.BlockSvg.prototype.renderDrawRight_ = function(steps, highlightSteps,
       cursorX = inputRows.statementEdge + Blockly.BlockSvg.NOTCH_WIDTH;
       steps.push('H', cursorX);
       steps.push(Blockly.BlockSvg.INNER_TOP_LEFT_CORNER);
+      row.height -= 2;	// reduces height inner part statement block
       steps.push('v', row.height - 2 * Blockly.BlockSvg.CORNER_RADIUS);
       steps.push(Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER);
-      steps.push('H', inputRows.rightEdge);
+      if (y != inputRows.length - 1) steps.push('H', inputRows.rightEdge);
+      else  steps.push('H', inputRows.statementEdge + 19);	// length bottom part statement block
       if (this.RTL) {
         highlightSteps.push('M',
             (cursorX - Blockly.BlockSvg.NOTCH_WIDTH +
@@ -979,7 +988,8 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps, highlightSteps) {
   if (this.outputConnection) {
     // Create output connection.
     this.outputConnection.setOffsetInBlock(0, 0);
-    steps.push('V', Blockly.BlockSvg.TAB_HEIGHT);
+    if (this.inputsInline) steps.push('V', Blockly.BlockSvg.TAB_HEIGHT+0.5);	// y-position left puzzle tab by inputsInline-blocks
+    else steps.push('V', Blockly.BlockSvg.TAB_HEIGHT);	// y-position left puzzle tab
     steps.push('l 0,-2 -4.5,-4.5 4.5,-4.5 ');
     if (this.RTL) {
       highlightSteps.push('M', (Blockly.BlockSvg.TAB_WIDTH * -0.25) + ',8.4');

@@ -47,7 +47,7 @@ goog.require('goog.userAgent');
 Blockly.FieldTextInput = function(text, opt_validator) {
   Blockly.FieldTextInput.superClass_.constructor.call(this, text,
 	  opt_validator);
-	  this.size_.height = 20;
+	  this.size_.height = Blockly.BlockSvg.MIN_BLOCK_Y;
 };
 goog.inherits(Blockly.FieldTextInput, Blockly.Field);
 

@@ -265,13 +265,13 @@ Blockly.Arduino['math_change'] = function(block) {
 Blockly.Arduino.math_decrement = function(block) {
 	var varName = Blockly.Arduino.variableDB_.getName(
 		block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
-	return varName + ' --;\n';
+	return varName + '--;\n';
 };
 
 Blockly.Arduino.math_increment = function(block) {
 	var varName = Blockly.Arduino.variableDB_.getName(
 		block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
-	return varName + ' ++;\n';
+	return varName + '++;\n';
 };
 
 /** Rounding functions have a single operand. */

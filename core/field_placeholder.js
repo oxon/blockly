@@ -31,7 +31,7 @@ Blockly.FieldPlaceholder.prototype.init = function() {
 		'y': 0,
 		'height': 16,
 		'fill-opacity': 0}, this.fieldGroup_);
-	
+
   /** @type {!Element} */
   this.textElement_ = Blockly.utils.createSvgElement('text',
       {'class': 'blocklyText', 'y': this.size_.height - 12.5},
