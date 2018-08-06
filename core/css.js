@@ -315,7 +315,7 @@ Blockly.Css.CONTENT = [
     'z-index: 20;',
   '}',
   '.blocklyFlyoutButton {',
-    'fill: rgb(59,59,59);',
+    'fill: rgb(0,167,227);',
     'cursor: pointer;',
   '}',
   '.blocklyFlyoutButton .blocklyText {',
@@ -326,7 +326,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyFlyoutButton:hover {',
-    'fill: rgb(59,59,59);',
+    'fill: rgb(23,194,255);',
   '}',
 
   '.blocklyFlyoutLabel {',
