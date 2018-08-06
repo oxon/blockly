@@ -18,7 +18,8 @@ Blockly.Blocks['oxocard_button_ispressed'] = {
 				[Blockly.Msg.OXOCARD_BUTTON_L3, "L3"],
 				[Blockly.Msg.OXOCARD_BUTTON_R1, "R1"],
 				[Blockly.Msg.OXOCARD_BUTTON_R2, "R2"],
-				[Blockly.Msg.OXOCARD_BUTTON_R3, "R3"]
+				[Blockly.Msg.OXOCARD_BUTTON_R3, "R3"],
+				[Blockly.Msg.OXOCARD_BUTTON_ANY, "ANY"]
 			]), "BUTTON");
 		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');

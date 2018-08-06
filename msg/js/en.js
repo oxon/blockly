@@ -454,6 +454,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_BUTTON_R1 = "R1 (top right)";
 /** @export */ Blockly.Msg.OXOCARD_BUTTON_R2 = "R2 (bottom right outside)";
 /** @export */ Blockly.Msg.OXOCARD_BUTTON_R3 = "R3 (bottom right inside)";
+/** @export */ Blockly.Msg.OXOCARD_BUTTON_ANY = "Any";
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TIP = "Turns the whole display off";
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TITLE = "Clear display";
 /** @export */ Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TIP = "Checks if the received message is new and permitted";

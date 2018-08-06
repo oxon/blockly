@@ -530,6 +530,7 @@
 	"OXOCARD_BUTTON_R1": "R1 (Rechts oben)",
 	"OXOCARD_BUTTON_R2": "R2 (Rechts unten aussen)",
 	"OXOCARD_BUTTON_R3": "R3 (Rechts unten innen)",
+	"OXOCARD_BUTTON_ANY": "Irgendeiner",
 	"OXOCARD_GET_TIMER_SECONDS_TITLE": "Hole Timer Sekunden",
 	"OXOCARD_GET_TIMER_SECONDS_TIP": "Liefert die Sekunden des Timers",
 	"OXOCARD_RESET_TIMER_TITLE": "Timer zurücksetzen",
