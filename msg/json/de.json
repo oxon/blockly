@@ -726,7 +726,7 @@
 	"OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TEXT": "Text",
 	"OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_SENDER": "Absender",
 	"OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP": "Zeichnet den Text oder den Absender der empfangenen Kurznachricht",
-	"OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE": "lies empfangene Kurznachricht-Variable",
+	"OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE": "lies empfangene Variable",
 	"OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP": "Liefert den Wert der definierten Variable der empfangenen Kurznachricht",
 	"OXOCARD_COMM_SET_RECEIVER_LIST_TITLE": "Setze Empfänger",
 	"OXOCARD_COMM_SET_RECEIVER_LIST_TIP": "Setzt die Empfänger-Liste mit einem oder mehreren Namen (z.B. \"Oxocard20, Tim, James\"). Zum Zurücksetzten der Liste musst du das Eingabefeld leer lassen. Um lokal an alle Teilnehmer zu senden, kannst du ein \"*\" eingeben",

@@ -494,7 +494,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TEXT = "Text";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_SENDER = "Absender";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = "Liefert den Wert der definierten Variable der empfangenen Kurznachricht";
-/** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = "lies empfangene Kurznachricht-Variable";
+/** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = "lies empfangene Variable";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TIP = "Zeichnet die empfangene Kurznachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TITLE = "Zeichne Kurznachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TIP = "Liefert die empfangene Zahl";
