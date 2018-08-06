@@ -719,7 +719,7 @@
 	"OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP": "Draws the text or the sender of the received message",
 	"OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE": "read received variable",
 	"OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP": "Reads the value of the defined variable of the received message",
-	"OXOCARD_COMM_SET_RECEIVER_LIST_TITLE": "Set receiver list",
+	"OXOCARD_COMM_SET_RECEIVER_LIST_TITLE": "Set receiver",
 	"OXOCARD_COMM_SET_RECEIVER_LIST_TIP": "Sets the receiver list with one or more names (e.g. \"Oxocard20, Tim, James\"). To reset the list, leave the input field empty. To locally send to all participants write a \"*\"",
 	"OXOCARD_COMM_SET_USER_MESSAGE_TITLE": "Set message text",
 	"OXOCARD_COMM_SET_USER_MESSAGE_TIP": "Sets the text message to be sent",

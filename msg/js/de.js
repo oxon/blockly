@@ -457,7 +457,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TIP = "Schaltet alle Pixel aus";
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TITLE = "Lösche alle Pixel";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TIP = "Setzt die Empfänger-Liste mit einem oder mehreren Namen (z.B. \"Oxocard20, Tim, James\"). Zum Zurücksetzten der Liste musst du das Eingabefeld leer lassen. Um lokal an alle Teilnehmer zu senden, kannst du ein \"*\" eingeben";
-/** @export */ Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE = "Setze Empfänger-Liste";
+/** @export */ Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE = "Setze Empfänger";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TITLE = "Setze Kurznachricht-Text";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TIP = "Setzt die zu versendende Textnachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_USER_VALUE_TITLE = "Setze Kurznachricht-Variable";

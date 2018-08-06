@@ -480,7 +480,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_SENDER = "Sender";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TIP = "Reads the value of the defined variable of the received message";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_BROADCAST_NUMBER_TITLE = "read received variable";
-/** @export */ Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE = "Set receiver list";
+/** @export */ Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE = "Set receiver";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TIP = "Sets the receiver list with one or more names (e.g. \"Oxocard20, Tim, James\"). To reset the list, leave the input field empty. To locally send to all participants write a \"*\"";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TITLE = "Set message text";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_USER_MESSAGE_TIP = "Sets the text message to be sent";
