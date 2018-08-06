@@ -110,13 +110,14 @@ Blockly.Blocks.oxocard_list_add_color = {
 	init: function() {
 		this.appendValueInput("R")
 			.setCheck("Number")
-			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_TITLE1 + ' R:');
+			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_TITLE1)
+			.appendField('R');
 		this.appendValueInput("G")
 			.setCheck("Number")
-			.appendField('G:');
+			.appendField('G');
 		this.appendValueInput("B")
 			.setCheck("Number")
-			.appendField('B:');
+			.appendField('B');
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_LIST_ADD_COLOR_TITLE2);
 		this.setInputsInline(true);
