@@ -517,7 +517,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_CLEAR_ALL_MESSAGES_TIP = "Löscht alle empfangenen Kurnachrichten";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TITLE = "Wähle Kommunikationsart";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE1 = "Lokal (schneller, nur WLAN)";
-/** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2 = "Global (langsamer, Weltweit)";
+/** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2 = "Global (langsamer, weltweit)";
 /** @export */ Blockly.Msg.OXOCARD_COMM_SET_COMMUNICATION_TYPE_TIP = "Setzt die Kommunikationsart auf Lokal (innerhalb des gleichen Netzwerks) oder auf Global (Internet)";
 /** @export */ Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TIP = "Stellt eine Verbindung mit dem Internet her";
 /** @export */ Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TITLE = "Verbinde mit dem Internet";

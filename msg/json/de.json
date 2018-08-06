@@ -747,7 +747,7 @@
 	"OXOCARD_COMM_CLEAR_ALL_MESSAGES_TIP": "Löscht alle empfangenen Kurnachrichten",
 	"OXOCARD_COMM_SET_COMMUNICATION_TYPE_TITLE": "Wähle Kommunikationsart",
 	"OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE1": "Lokal (schneller, nur WLAN)",
-	"OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2": "Global (langsamer, Weltweit)",
+	"OXOCARD_COMM_SET_COMMUNICATION_TYPE_TYPE2": "Global (langsamer, weltweit)",
 	"OXOCARD_COMM_SET_COMMUNICATION_TYPE_TIP": "Setzt die Kommunikationsart auf Lokal (innerhalb des gleichen Netzwerks) oder auf Global (Internet)",
 	"OXOCARD_AUDIO_WAIT_FOR_TONE_TITLE": "Nach jedem Ton warten",
 	"OXOCARD_AUDIO_WAIT_FOR_TONE_TIP": "Wartet nach jedem Ton, bis er fertig gespielt wurde",
