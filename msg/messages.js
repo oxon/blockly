@@ -1459,6 +1459,7 @@ Blockly.Msg.OXOCARD_BUTTON_L3 = 'L3 (bottom left inside)';
 Blockly.Msg.OXOCARD_BUTTON_R1 = 'R1 (top right)';
 Blockly.Msg.OXOCARD_BUTTON_R2 = 'R2 (bottom right outside)';
 Blockly.Msg.OXOCARD_BUTTON_R3 = 'R3 (bottom right inside)';
+Blockly.Msg.OXOCARD_BUTTON_ANY = 'Any';
 Blockly.Msg.OXOCARD_GET_TIMER_SECONDS_TITLE = 'Get timer seconds';
 Blockly.Msg.OXOCARD_GET_TIMER_SECONDS_TIP = 'Returns the seconds value uf the timer';
 Blockly.Msg.OXOCARD_RESET_TIMER_TITLE = 'Reset timer';
