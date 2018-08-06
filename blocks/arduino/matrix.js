@@ -93,10 +93,13 @@ Blockly.Blocks.oxocard_matrix_set_color_var = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TITLE);
 		this.appendValueInput('R')
+			.appendField('R')
 			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
 		this.appendValueInput('G')
+			.appendField('G')
 			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
 		this.appendValueInput('B')
+			.appendField('B')
 			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
