@@ -422,3 +422,20 @@ Blockly.FieldTextInput.nonnegativeIntegerValidator = function(text) {
   }
   return n;
 };
+
+/**
+ * Ensure that correct receiver inputs are entered.
+ * @param {string} text The user's text.
+ * @return {?string} A string representing a valid text, or null if invalid.
+ */
+Blockly.FieldTextInput.oxocardNameValidator = function(text) {
+	if (text === null) {
+		return null;
+	}
+	text = String(text);
+	var pattern = new RegExp("[^a-zA-Z0-9 ,;]+", "g");	// match everything except the white listed characters
+	if (pattern.test(text)) {
+		text = null;
+	}
+	return text;
+};
