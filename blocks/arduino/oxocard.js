@@ -995,7 +995,7 @@ Blockly.Blocks.oxocard_comm_set_receiver_list = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('OxocardXX'), 'NAME')
+			.appendField(new Blockly.FieldTextInput('Tim'), 'NAME')
 			.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
@@ -1124,7 +1124,7 @@ Blockly.Blocks.oxocard_comm_check_sender = {
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE)
-			.appendField(new Blockly.FieldTextInput('OxocardXX'), 'NAME')
+			.appendField(new Blockly.FieldTextInput('Tim'), 'NAME')
 			.appendField('?');
 		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
