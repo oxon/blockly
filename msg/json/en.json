@@ -608,6 +608,7 @@
 	"OXOCARD_BUTTON_R1": "R1 (top right)",
 	"OXOCARD_BUTTON_R2": "R2 (bottom right outside)",
 	"OXOCARD_BUTTON_R3": "R3 (bottom right inside)",
+	"OXOCARD_BUTTON_ANY": "Any",
 	"OXOCARD_GET_TIMER_SECONDS_TITLE": "Get timer seconds",
 	"OXOCARD_GET_TIMER_SECONDS_TIP": "Returns the seconds value uf the timer",
 	"OXOCARD_RESET_TIMER_TITLE": "Reset timer",
