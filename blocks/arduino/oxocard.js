@@ -536,7 +536,7 @@ Blockly.Blocks.oxocard_comm_send_direct_message = {
 		.appendField(this.newQuote_(false))
 		.appendField(Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT)
 		.appendField(this.newQuote_(true))
-		.appendField(new Blockly.FieldTextInput('Tim'), 'RECEIVER')
+		.appendField(new Blockly.FieldTextInput('Tim', Blockly.FieldTextInput.oxocardNameValidator), 'RECEIVER')
 		.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
@@ -568,7 +568,7 @@ Blockly.Blocks.oxocard_comm_send_direct_number = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('Tim'), 'RECEIVER')
+			.appendField(new Blockly.FieldTextInput('Tim', Blockly.FieldTextInput.oxocardNameValidator), 'RECEIVER')
 			.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
@@ -600,7 +600,7 @@ Blockly.Blocks.oxocard_comm_check_for_direct = {
 			.appendField(Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TITLE1)
 			.appendField(Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('Jasmine'), 'FROM')
+			.appendField(new Blockly.FieldTextInput('Jasmine', Blockly.FieldTextInput.oxocardNameValidator), 'FROM')
 			.appendField(this.newQuote_(false))
 			.appendField(Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TITLE2);
 		this.setInputsInline(true);
@@ -638,7 +638,7 @@ Blockly.Blocks.oxocard_comm_compare_direct_message_from = {
 			.appendField(this.newQuote_(false))
 			.appendField(Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('Jasmine'), 'FROM')
+			.appendField(new Blockly.FieldTextInput('Jasmine', Blockly.FieldTextInput.oxocardNameValidator), 'FROM')
 			.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
@@ -708,7 +708,7 @@ Blockly.Blocks.oxocard_comm_compare_direct_number_from = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('Jasmine'), 'FROM')
+			.appendField(new Blockly.FieldTextInput('Jasmine', Blockly.FieldTextInput.oxocardNameValidator), 'FROM')
 			.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
@@ -758,7 +758,7 @@ Blockly.Blocks.oxocard_comm_get_and_draw_direct_message_from = {
 			.appendField(Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_DIRECT_MESSAGE_TITLE)
 			.appendField(Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('Jasmine'), 'FROM')
+			.appendField(new Blockly.FieldTextInput('Jasmine', Blockly.FieldTextInput.oxocardNameValidator), 'FROM')
 			.appendField(this.newQuote_(false))
 			.appendField(new Blockly.FieldDropdown([
 				[Blockly.Msg.OXOCARD_MATRIX_DRAW_TEXT_SMALL_FONT, "FALSE"],
@@ -794,7 +794,7 @@ Blockly.Blocks.oxocard_comm_get_direct_number_from = {
         .appendField(Blockly.Msg.OXOCARD_COMM_GET_DIRECT_NUMBER_TITLE)
 				.appendField(Blockly.Msg.OXOCARD_COMM_COMPARE_DIRECT_MESSAGE_FROM)
 				.appendField(this.newQuote_(true))
-				.appendField(new Blockly.FieldTextInput('Jasmine'), 'FROM')
+				.appendField(new Blockly.FieldTextInput('Jasmine', Blockly.FieldTextInput.oxocardNameValidator), 'FROM')
 				.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
     this.setOutput(true, 'Number');
@@ -995,7 +995,7 @@ Blockly.Blocks.oxocard_comm_set_receiver_list = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_SET_RECEIVER_LIST_TITLE)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('Tim'), 'NAME')
+			.appendField(new Blockly.FieldTextInput('Tim', Blockly.FieldTextInput.oxocardNameValidator), 'NAME')
 			.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
@@ -1094,7 +1094,7 @@ Blockly.Blocks.oxocard_comm_send_message_to = {
 			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_MESSAGE_TITLE)
 			.appendField(Blockly.Msg.OXOCARD_COMM_SEND_DIRECT_MESSAGE_AT)
 			.appendField(this.newQuote_(true))
-			.appendField(new Blockly.FieldTextInput('Tim'), 'RECEIVER')
+			.appendField(new Blockly.FieldTextInput('Tim', Blockly.FieldTextInput.oxocardNameValidator), 'RECEIVER')
 			.appendField(this.newQuote_(false));
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
@@ -1124,7 +1124,7 @@ Blockly.Blocks.oxocard_comm_check_sender = {
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_COMM_CHECK_SENDER_TITLE)
-			.appendField(new Blockly.FieldTextInput('Tim'), 'NAME')
+			.appendField(new Blockly.FieldTextInput('Tim', Blockly.FieldTextInput.oxocardNameValidator), 'NAME')
 			.appendField('?');
 		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
