@@ -474,7 +474,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_DISABLE_TIP = "Disables the sending and receiving of messages";
 /** @export */ Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = "Disable messages";
 /** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = "Enables the sending and receiving of messages";
-/** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = "Enable messages with name";
+/** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = "Enable messages (sender:";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP = "Draws the text or the sender of the received message";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TITLE = "Draw received message";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TEXT = "Text";
