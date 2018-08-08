@@ -687,7 +687,7 @@
 	"OXOCARD_MATRIX_READ_PIXEL_TIP": "Liefert die Farbe (RGB-Werte) des ausgewählten Pixels",
 	"OXOCARD_MATRIX_IS_PIXEL_TITLE": "ist Pixel gesetzt?",
 	"OXOCARD_MATRIX_IS_PIXEL_TIP": "Liefert wahr, wenn mindestens eine Farbe (RGB) des Pixels gesetzt ist",
-	"OXOCARD_COMM_ENABLE_TITLE1": "Nachrichten einschalten mit Name",
+	"OXOCARD_COMM_ENABLE_TITLE1": "Nachrichten einschalten (Absender:",
 	"OXOCARD_COMM_ENABLE_TIP": "Aktiviert das Empfangen und Senden von Nachrichten",
 	"OXOCARD_COMM_DISABLE_TITLE": "Nachrichten ausschalten",
 	"OXOCARD_COMM_DISABLE_TIP": "Deaktiviert das Empfangen und Senden von Nachrichten",

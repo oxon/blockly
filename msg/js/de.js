@@ -488,7 +488,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_COMM_DISABLE_TIP = "Deaktiviert das Empfangen und Senden von Nachrichten";
 /** @export */ Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = "Nachrichten ausschalten";
 /** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = "Aktiviert das Empfangen und Senden von Nachrichten";
-/** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = "Nachrichten einschalten mit Name";
+/** @export */ Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = "Nachrichten einschalten (Absender:";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TIP = "Zeichnet den Text oder den Absender der empfangenen Kurznachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TITLE = "Zeichne empfangene Kurznachricht";
 /** @export */ Blockly.Msg.OXOCARD_COMM_GET_AND_DRAW_BROADCAST_MESSAGE_TEXT = "Text";

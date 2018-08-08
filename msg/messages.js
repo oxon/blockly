@@ -1544,7 +1544,7 @@ Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TITLE = 'Draw forecast icon';
 Blockly.Msg.OXOCARD_WEATHER_DRAW_ICON_TIP = 'Draws the weather forecast icon';
 
 // Communication
-Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = 'Enable messages with name';
+Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 = 'Enable messages (sender:';
 Blockly.Msg.OXOCARD_COMM_ENABLE_TIP = 'Enables the sending and receiving of messages';
 Blockly.Msg.OXOCARD_COMM_DISABLE_TITLE = 'Disable messages';
 Blockly.Msg.OXOCARD_COMM_DISABLE_TIP = 'Disables the sending and receiving of messages';
