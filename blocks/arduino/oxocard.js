@@ -449,25 +449,28 @@ Blockly.Blocks.oxocard_comm_enable = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1 + ' ' +
-				this.oxocardName_() + ')');
+			.appendField(Blockly.Msg.OXOCARD_COMM_ENABLE_TITLE1)
+			.appendField('?')
+			.appendField(')');
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_COMM_ENABLE_TIP);
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
+		this.updateOxocardName()
 	},
-	/**
-	 * Get Oxocard name
-	 */
-	oxocardName_: function() {
+	updateOxocardName: function(){
+		var name = '?';
 		var connected = localStorage.getObject('connectedCard') || {};
-		if (!connected.id) {
-			return '???';
+		if(connected.id) {
+			var card =  window.oxocardManager.findById(connected.id) || {};
+			if(card.name){
+				name = card.name;
+			}
 		}
-		var card =  window.oxocardManager.findById(connected.id);
-		return card.name;
+		this.inputList[0].fieldRow[1].setText(name);
 	}
+
 };
 
 Blockly.Blocks.oxocard_comm_disable = {
