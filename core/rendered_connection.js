@@ -94,8 +94,13 @@ Blockly.RenderedConnection.prototype.bumpAwayFrom_ = function(staticConnection) 
   // Raise it to the top for extra visibility.
   var selected = Blockly.selected == rootBlock;
   selected || rootBlock.addSelect();
-  var dx = (staticConnection.x_ + Blockly.SNAP_RADIUS) - this.x_;
-  var dy = (staticConnection.y_ + Blockly.SNAP_RADIUS) - this.y_;
+	// Move block right to the uppermost parent to prevent overlaps
+	var sourceBlock = staticConnection.getSourceBlock();
+	while (sourceBlock.parentBlock_ != null) {	// get uppermost parent block
+		sourceBlock = sourceBlock.parentBlock_;
+	}
+	var dx = (sourceBlock.getRelativeToSurfaceXY().x - this.x_) + sourceBlock.width + Blockly.SNAP_RADIUS;
+	var dy = 0;
   if (reverse) {
     // When reversing a bump due to an uneditable block, bump up.
     dy = -dy;
