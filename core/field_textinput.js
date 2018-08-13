@@ -433,7 +433,7 @@ Blockly.FieldTextInput.oxocardNameValidator = function(text) {
 		return null;
 	}
 	text = String(text);
-	var pattern = new RegExp("[^a-zA-Z0-9 ,;]+", "g");	// match everything except the white listed characters
+	var pattern = new RegExp("[^a-zA-Z0-9 ,;*]+", "g");	// match everything except the white listed characters
 	if (pattern.test(text)) {
 		text = null;
 	}
