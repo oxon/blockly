@@ -455,6 +455,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_BUTTON_R1 = "R1 (Rechts oben)";
 /** @export */ Blockly.Msg.OXOCARD_BUTTON_R2 = "R2 (Rechts unten aussen)";
 /** @export */ Blockly.Msg.OXOCARD_BUTTON_R3 = "R3 (Rechts unten innen)";
+/** @export */ Blockly.Msg.OXOCARD_BUTTON_WAITFORPRESSED_TIP = "Wartet bis ein Knopf gedrück worden ist";
+/** @export */ Blockly.Msg.OXOCARD_BUTTON_WAITFORPRESSED_TITLE = "Warte bis Knopf gedrückt:";
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TIP = "Schaltet alle Pixel aus";
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TITLE = "Lösche alle Pixel";
 /** @export */ Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TIP = "Prüft, ob eine neue erlaubte Kurznachricht eingetroffen ist";

@@ -31,6 +31,26 @@ Blockly.Blocks['oxocard_button_ispressed'] = {
 	}
 };
 
+Blockly.Blocks['oxocard_button_waitforpressed'] = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_BUTTON_WAITFORPRESSED_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_BUTTON_L1, "L1"],
+				[Blockly.Msg.OXOCARD_BUTTON_L2, "L2"],
+				[Blockly.Msg.OXOCARD_BUTTON_L3, "L3"],
+				[Blockly.Msg.OXOCARD_BUTTON_R1, "R1"],
+				[Blockly.Msg.OXOCARD_BUTTON_R2, "R2"],
+				[Blockly.Msg.OXOCARD_BUTTON_R3, "R3"],
+				[Blockly.Msg.OXOCARD_BUTTON_ANY, "ANY"]
+			]), "BUTTON");
+		this.setInputsInline(true);
+		this.setTooltip(Blockly.Msg.OXOCARD_BUTTON_WAITFORPRESSED_TIP);
+		this.setColour(Blockly.ColorDefinitions.LOGIC);
+	}
+};
+
 Blockly.Blocks.oxocard_reboot = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {

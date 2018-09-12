@@ -524,6 +524,8 @@
 	"OXOCARD_READ_TEMPERATURE_TIP": "Liefert die Temperatur in °C (+/- 2°C Genauigkeit)",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "ist Knopf gedrückt?",
 	"OXOCARD_BUTTON_PRESSED_TIP": "Prüft, ob der Knopf gedrückt ist; Liefert wahr oder falsch",
+	"OXOCARD_BUTTON_WAITFORPRESSED_TITLE": "Warte bis Knopf gedrückt:",
+	"OXOCARD_BUTTON_WAITFORPRESSED_TIP": "Wartet bis ein Knopf gedrück worden ist",
 	"OXOCARD_BUTTON_L1": "L1 (Links oben)",
 	"OXOCARD_BUTTON_L2": "L2 (Links unten aussen)",
 	"OXOCARD_BUTTON_L3": "L3 (Links unten innen)",

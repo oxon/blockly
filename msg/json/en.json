@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-08-14 15:52:34.828607",
+		"lastupdated": "2018-09-12 11:16:20.030692",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -602,6 +602,8 @@
 	"OXOCARD_READ_TEMPERATURE_TIP": "Reads the temperature in °C (+/- 2°C precision)",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "is button pressed?",
 	"OXOCARD_BUTTON_PRESSED_TIP": "Checks if the button is pressed; Returns true or false",
+	"OXOCARD_BUTTON_WAITFORPRESSED_TITLE": "Wait until button is pressed:",
+	"OXOCARD_BUTTON_WAITFORPRESSED_TIP": "Waits until the button is pressed",
 	"OXOCARD_BUTTON_L1": "L1 (top left)",
 	"OXOCARD_BUTTON_L2": "L2 (bottom left outside)",
 	"OXOCARD_BUTTON_L3": "L3 (bottom left inside)",
