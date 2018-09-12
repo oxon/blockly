@@ -1333,9 +1333,9 @@ Blockly.Msg.ARD_TONE_WARNING = 'Frequency must be in range 31 - 65535';
 Blockly.Msg.ARD_NOTONE = 'Turn off tone on pin #';
 Blockly.Msg.ARD_NOTONE_TIP = 'Turns the tone off on the selected pin';
 
-/// Oxocard Blocks
+// Oxocard Blocks
 
-Blockly.Msg.OXOCARD_COMMENT_TITLE = "Comment";
+
 
 // Math
 Blockly.Msg.OXOCARD_MATH_INCREMENT_TITLE = 'Add 1 to';
@@ -1430,6 +1430,7 @@ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP = 'Returns the color (RGB) of the give
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = 'is pixel set?';
 Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TIP = 'Returns true if at least one color (RGB) of the pixel is set';
 
+Blockly.Msg.OXOCARD_COMMENT_TITLE = 'Comment';
 // System
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE = 'Turn Oxocard off';
 Blockly.Msg.OXOCARD_TURN_OXOCARD_OFF_TITLE2 = 'Click to set the Buttons';

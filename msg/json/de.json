@@ -496,7 +496,7 @@
 
 		"oxocard-specific-translation":"justacomment",
 
-		"OXOCARD_COMMENT_TITLE": "Kommentar",
+	"OXOCARD_COMMENT_TITLE": "Kommentar",
 	"OXOCARD_LOGIC_OPERATION_AND": "und",
 	"OXOCARD_LOGIC_OPERATION_OR": "oder",
 	"OXOCARD_LOGIC_WHILE_FOREVER_TITLE": "Wiederhole für immer",
