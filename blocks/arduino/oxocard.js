@@ -7,6 +7,21 @@ goog.require('Blockly');
 goog.require('Blockly.ColorDefinitions');
 
 
+
+Blockly.Blocks['oxocard_comment'] = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.setColour(Blockly.ColorDefinitions.COMMENT);
+		this.appendDummyInput()
+		.appendField(new Blockly.FieldTextInput(
+			Blockly.Msg.OXOCARD_COMMENT_TITLE
+		), 'COMMENT');
+		this.setPreviousStatement(true);
+		this.setNextStatement(true);
+   }
+   
+ };
+
 Blockly.Blocks['oxocard_button_ispressed'] = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {

@@ -13,3 +13,4 @@ Blockly.ColorDefinitions.DISPLAY = '#242424';
 Blockly.ColorDefinitions.ACCMETER = '#242424';
 Blockly.ColorDefinitions.COMMUNICATION = '#242424';
 Blockly.ColorDefinitions.AUDIO = '#242424';
+Blockly.ColorDefinitions.COMMENT = '#00a7e3';
