@@ -1335,7 +1335,7 @@ Blockly.Msg.ARD_NOTONE_TIP = 'Turns the tone off on the selected pin';
 
 /// Oxocard Blocks
 
-Blockly.Msg.OXOCARD_COMMENT_TITLE = "Comment"
+Blockly.Msg.OXOCARD_COMMENT_TITLE = "Comment";
 
 // Math
 Blockly.Msg.OXOCARD_MATH_INCREMENT_TITLE = 'Add 1 to';
