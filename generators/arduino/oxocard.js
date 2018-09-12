@@ -14,6 +14,11 @@ Blockly.Arduino.oxocard_button_waitforpressed = function() {
 	return 'oxocard.button->waitForPressed(' + dropdown_button + ');\n';
 };
 
+Blockly.Arduino.oxocard_comment = function() {	
+	var comment = this.getFieldValue('COMMENT') || '';
+	return '// ' + comment + '\n';
+  };
+
 Blockly.Arduino.oxocard_update = function() {
 	Blockly.Arduino.includes_['oxocard_flashscenario'] = '#include "flashscenario.h"';
 	 return 'FlashScenario(&oxocard).run();\n';

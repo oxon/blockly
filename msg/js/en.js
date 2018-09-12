@@ -459,6 +459,7 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_BUTTON_WAITFORPRESSED_TITLE = "Wait until button is pressed:";
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TIP = "Turns the whole display off";
 /** @export */ Blockly.Msg.OXOCARD_CLEAR_DISPLAY_TITLE = "Clear display";
+/** @export */ Blockly.Msg.OXOCARD_COMMENT_TITLE = "Comment";
 /** @export */ Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TIP = "Checks if the received message is new and permitted";
 /** @export */ Blockly.Msg.OXOCARD_COMM_CHECK_FOR_BROADCAST_TITLE = "new message received?";
 /** @export */ Blockly.Msg.OXOCARD_COMM_CHECK_FOR_DIRECT_TIP = "Checks if a new direct message was received";
