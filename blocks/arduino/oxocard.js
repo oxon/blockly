@@ -46,6 +46,8 @@ Blockly.Blocks['oxocard_button_waitforpressed'] = {
 				[Blockly.Msg.OXOCARD_BUTTON_ANY, "ANY"]
 			]), "BUTTON");
 		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
 		this.setTooltip(Blockly.Msg.OXOCARD_BUTTON_WAITFORPRESSED_TIP);
 		this.setColour(Blockly.ColorDefinitions.LOGIC);
 	}
