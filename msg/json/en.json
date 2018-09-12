@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-09-12 11:55:53.172209",
+		"lastupdated": "2018-09-12 16:11:48.269150",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -510,6 +510,7 @@
 	"ARD_TONE_WARNING": "Frequency must be in range 31 - 65535",
 	"ARD_NOTONE": "Turn off tone on pin #",
 	"ARD_NOTONE_TIP": "Turns the tone off on the selected pin",
+	"OXOCARD_COMMENT_TITLE": "Comment",
 	"OXOCARD_MATH_INCREMENT_TITLE": "Add 1 to",
 	"OXOCARD_MATH_INCREMENT_TIP": "Does increment the variable with the value 1",
 	"OXOCARD_MATH_DECREMENT_TITLE": "Substract 1 from",
@@ -602,7 +603,6 @@
 	"OXOCARD_READ_TEMPERATURE_TIP": "Reads the temperature in °C (+/- 2°C precision)",
 	"OXOCARD_BUTTON_PRESSED_TITLE": "is button pressed?",
 	"OXOCARD_BUTTON_PRESSED_TIP": "Checks if the button is pressed; Returns true or false",
-	"OXOCARD_COMMENT_TITLE" : "Comment",
 	"OXOCARD_BUTTON_WAITFORPRESSED_TITLE": "Wait until button is pressed:",
 	"OXOCARD_BUTTON_WAITFORPRESSED_TIP": "Waits until the button is pressed",
 	"OXOCARD_BUTTON_L1": "L1 (top left)",
