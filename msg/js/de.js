@@ -627,6 +627,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = "ist Pixel gesetzt?";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP = "Liefert die Farbe (RGB-Werte) des ausgewählten Pixels";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE = "lies Pixelfarbe";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TIP = "Die nachfolgenden Blöcke zeichnen in dieser Farbe, die dem Winkel auf dem Farbkreis(0-360°) entsprecen.";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TITLE = "Setze Pixelfarbe anhand des Winkels im Farbkreis";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP = "Die nachfolgenden Blöcke zeichnen in dieser Farbe, die mit den RGB-Werten bestimmt werden";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE = "Setze Pixelfarbe";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TIP = "Die nachfolgenden Blöcke zeichnen in dieser Farbe, die aus einer Palette gewählt wird";
