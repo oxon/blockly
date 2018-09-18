@@ -73,6 +73,13 @@ Blockly.Arduino.oxocard_matrix_set_color_var = function() {
 	return code += 'rgb(' + r + ', ' + g + ', ' + b + '));\n';
 };
 
+
+Blockly.Arduino.oxocard_matrix_set_color_angle = function() {
+	var code = 'oxocard.matrix->setForeColor(';
+	var hue = Blockly.Arduino.valueToCode(this, 'HUE', Blockly.Arduino.ORDER_NONE);
+	return code += 'rgbFromHue(' + hue + '));\n';
+};
+
 Blockly.Arduino.oxocard_matrix_draw_all = function(){
 	return 'oxocard.matrix->fillScreen();\n';
 };

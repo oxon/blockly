@@ -643,6 +643,8 @@
 	"OXOCARD_MATRIX_SET_RANDOM_COLOR_TIP":  "Die nachfolgenden Blöcke zeichnen in einer zufälligen Farbe",
 	"OXOCARD_MATRIX_SET_COLOR_VAR_TITLE":  "Setze Pixelfarbe",
 	"OXOCARD_MATRIX_SET_COLOR_VAR_TIP":  "Die nachfolgenden Blöcke zeichnen in dieser Farbe, die aus einer Palette gewählt wird",
+	"OXOCARD_MATRIX_SET_COLOR_ANGLE_TITLE":  "Setze Pixelfarbe anhand des Winkels im Farbkreis",
+	"OXOCARD_MATRIX_SET_COLOR_ANGLE_TIP":  "Die nachfolgenden Blöcke zeichnen in dieser Farbe, die dem Winkel auf dem Farbkreis(0-360°) entsprecen.",
 	"OXOCARD_MATRIX_DRAW_ALL_TITLE":  "Zeichne alle Pixel",
 	"OXOCARD_MATRIX_DRAW_ALL_TIP":  "Zeichnet alle Pixel auf der Oxocard",
 	"OXOCARD_MATRIX_CLEAR_TITLE":  "Lösche alle Pixel",

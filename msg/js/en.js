@@ -627,6 +627,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_IS_PIXEL_TITLE = "is pixel set?";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TIP = "Returns the color (RGB) of the given pixel";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_READ_PIXEL_TITLE = "read pixel color";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TIP = "The following draw-blocks will draw the color coresponding with the angle (0-360°)";
+/** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TITLE = "Set color from wheel based on angle";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TIP = "The following draw-blocks will draw this color";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_TITLE = "Set pen color";
 /** @export */ Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TIP = "The following draw-blocks will draw this color";

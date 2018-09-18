@@ -1371,6 +1371,9 @@ Blockly.Msg.OXOCARD_MATRIX_SET_RANDOM_COLOR_TIP = 'The following draw-blocks wil
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TITLE = 'Set pen color';
 Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_VAR_TIP = 'The following draw-blocks will draw this color';
 
+Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TITLE = 'Set color from wheel based on angle';
+Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TIP = 'The following draw-blocks will draw the color coresponding with the angle (0-360°)';
+
 Blockly.Msg.OXOCARD_MATRIX_DRAW_ALL_TITLE = 'Draw all pixels';
 Blockly.Msg.OXOCARD_MATRIX_DRAW_ALL_TIP = 'Draws all pixels';
 
