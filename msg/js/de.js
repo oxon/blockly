@@ -403,6 +403,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.NEW_VARIABLE_TITLE = "Name der neuen Variable:";
 /** @export */ Blockly.Msg.NEW_VARIABLE_TYPE_TITLE = "New variable type:";  // untranslated
 /** @export */ Blockly.Msg.ORDINAL_NUMBER_SUFFIX = "";
+/** @export */ Blockly.Msg.OXOCARD_AP_MODE_TIP = "Versetzt die Oxocard in den Konfigurations-modus. Nachdem Du Dich mit dem WiFi der Oxocard verbunden hast, kannst Du sie konfigurieren.";
+/** @export */ Blockly.Msg.OXOCARD_AP_MODE_TITLE = "Aktiviere Konfigurations-modus";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TIP = "Ruft die Lautstärke des Audio-Ausgangs ab";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_GET_VOLUME_TITLE = "hole Lautstärke";
 /** @export */ Blockly.Msg.OXOCARD_AUDIO_PLAY_RECORDED_TIP = "Spielt die aufgenommenen Audiodaten ab";
@@ -647,6 +649,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_NO_AUTO_TURNOFF_TITLE = "Nie automatisch ausschalten";
 /** @export */ Blockly.Msg.OXOCARD_NO_TONE_TIP = "Stoppt den Ton";
 /** @export */ Blockly.Msg.OXOCARD_NO_TONE_TITLE = "Stoppe Ton";
+/** @export */ Blockly.Msg.OXOCARD_PAIRING_MODE_TIP = "Die Oxocard kann mit einem Blockly verknüpft werden indem der angezeigte Farbcode abgetippt wird.";
+/** @export */ Blockly.Msg.OXOCARD_PAIRING_MODE_TITLE = "Verknüpfe mit Blockly";
 /** @export */ Blockly.Msg.OXOCARD_PRINTLN_TIP = "Schreibt die angegebene Zahl oder Text in die Konsole (mit einem Zeilenumbruch)";
 /** @export */ Blockly.Msg.OXOCARD_PRINTLN_TITLE = "Schreibe Zeile";
 /** @export */ Blockly.Msg.OXOCARD_PRINT_TIP = "Schreibt die angegebene Zahl oder Text in die Konsole";

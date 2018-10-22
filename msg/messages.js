@@ -1478,6 +1478,10 @@ Blockly.Msg.OXOCARD_PRINTLN_TITLE = 'Println';
 Blockly.Msg.OXOCARD_PRINTLN_TIP = 'Prints the given number or string to the console (with new line)';
 Blockly.Msg.OXOCARD_UPDATE_TITLE = 'Update Oxocard';
 Blockly.Msg.OXOCARD_UPDATE_TIP = 'Updates the Oxocard with the newest code from Blokly';
+Blockly.Msg.OXOCARD_AP_MODE_TITLE = 'Configuration mode';
+Blockly.Msg.OXOCARD_AP_MODE_TIP = 'Puts the Oxocard into the configuration/ap-mode. After connecting to the WiFi you can configure the Oxocard.';
+Blockly.Msg.OXOCARD_PAIRING_MODE_TITLE = 'Pair with blockly';
+Blockly.Msg.OXOCARD_PAIRING_MODE_TIP = 'Puts the Oxocard into the pairing-mode. This allows that the Oxocard can be repaired with a blockly.';
 
 // Display
 Blockly.Msg.OXOCARD_TURN_DISPLAY_ON_TITLE = 'Turn display on';
