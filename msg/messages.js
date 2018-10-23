@@ -1699,6 +1699,11 @@ Blockly.Msg.OXOCARD_TIME_GET_VALUE_DAY = 'day';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_MONTH = 'month';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_YEAR = 'year';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_TIP = 'Gets a specific value from the time (e.g. seconds)';
+Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TITLE = 'Set the internal clock to the provided values';
+Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TIP = 'Updates the time on the Oxocard to the provided values';
+Blockly.Msg.OXOCARD_TIME_SET_MANUAL_HOUR = 'Hour';
+Blockly.Msg.OXOCARD_TIME_SET_MANUAL_MINUTE = 'Minute';
+Blockly.Msg.OXOCARD_TIME_SET_MANUAL_SECOND = 'Second';
 
 // List
 Blockly.Msg.OXOCARD_LIST_ADD_TITLE1 = 'Append';

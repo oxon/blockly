@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-10-23 09:07:42.158131",
+		"lastupdated": "2018-10-23 10:14:48.697126",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -827,6 +827,11 @@
 	"OXOCARD_TIME_GET_VALUE_MONTH": "month",
 	"OXOCARD_TIME_GET_VALUE_YEAR": "year",
 	"OXOCARD_TIME_GET_VALUE_TIP": "Gets a specific value from the time (e.g. seconds)",
+	"OXOCARD_TIME_SET_MANUAL_TITLE": "Set the internal clock to the provided values",
+	"OXOCARD_TIME_SET_MANUAL_TIP": "Updates the time on the Oxocard to the provided values",
+	"OXOCARD_TIME_SET_MANUAL_HOUR": "Hour",
+	"OXOCARD_TIME_SET_MANUAL_MINUTE": "Minute",
+	"OXOCARD_TIME_SET_MANUAL_SECOND": "Second",
 	"OXOCARD_LIST_ADD_TITLE1": "Append",
 	"OXOCARD_LIST_ADD_TITLE1_5": " value",
 	"OXOCARD_LIST_ADD_TITLE2": "to the list",
