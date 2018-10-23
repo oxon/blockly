@@ -851,9 +851,9 @@
 	"OXOCARD_LIST_REMOVE_COLOR_TIP": "Entfernt das definierte Element von der Farben-Liste",
 
 	"OXOCARD_UPDATE_TITLE": "Oxocard aktualisieren",
-	"OXOCARD_UPDATE_TIP": "Aktualisiert die Oxocard mit dem neusten Code von Blockly",
-	"OXOCARD_AP_MODE_TITLE": "Aktiviere Konfigurations-modus",
-	"OXOCARD_AP_MODE_TIP": "Versetzt die Oxocard in den Konfigurations-modus. Nachdem Du Dich mit dem WiFi der Oxocard verbunden hast, kannst Du sie konfigurieren.",
+	"OXOCARD_UPDATE_TIP": "Versetzt die Oxocard in den Update-Modus. Wenn ein Programm im Blockly bereitgestellt wurde, wir dieses anschliessend auf die Oxocard geladen",
+	"OXOCARD_AP_MODE_TITLE": "Aktiviere Konfigurations-Modus",
+	"OXOCARD_AP_MODE_TIP": "Versetzt die Oxocard in den Konfigurations-Modus (Accesspoint-Modus). Nachdem Du deinen Computer mit dem WiFi der Oxocard verbunden hast, kannst Du sie in einem Browser unter http://192.168.4.1 konfigurieren",
 	"OXOCARD_PAIRING_MODE_TITLE": "Verknüpfe mit Blockly",
-	"OXOCARD_PAIRING_MODE_TIP": "Die Oxocard kann mit einem Blockly verknüpft werden indem der angezeigte Farbcode abgetippt wird."
+	"OXOCARD_PAIRING_MODE_TIP": "Die Oxocard kann mit einem Blockly verknüpft werden, indem der angezeigte Farbcode im Blockly abgetippt wird"
 }
