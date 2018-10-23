@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-09-18 14:50:02.503711",
+		"lastupdated": "2018-10-23 09:07:42.158131",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -624,6 +624,10 @@
 	"OXOCARD_PRINTLN_TIP": "Prints the given number or string to the console (with new line)",
 	"OXOCARD_UPDATE_TITLE": "Update Oxocard",
 	"OXOCARD_UPDATE_TIP": "Updates the Oxocard with the newest code from Blokly",
+	"OXOCARD_AP_MODE_TITLE": "Configuration mode",
+	"OXOCARD_AP_MODE_TIP": "Puts the Oxocard into the configuration/ap-mode. After connecting to the WiFi you can configure the Oxocard.",
+	"OXOCARD_PAIRING_MODE_TITLE": "Pair with blockly",
+	"OXOCARD_PAIRING_MODE_TIP": "Puts the Oxocard into the pairing-mode. This allows that the Oxocard can be repaired with a blockly.",
 	"OXOCARD_TURN_DISPLAY_ON_TITLE": "Turn display on",
 	"OXOCARD_TURN_DISPLAY_ON_TIP": "Turns the whole display on",
 	"OXOCARD_CLEAR_DISPLAY_TITLE": "Clear display",

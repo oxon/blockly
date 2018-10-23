@@ -21,7 +21,17 @@ Blockly.Arduino.oxocard_comment = function() {
 
 Blockly.Arduino.oxocard_update = function() {
 	Blockly.Arduino.includes_['oxocard_flashscenario'] = '#include "flashscenario.h"';
-	 return 'FlashScenario(&oxocard).run();\n';
+	return 'FlashScenario(&oxocard).run();\n';
+};
+
+Blockly.Arduino.oxocard_ap_mode = function() {
+	Blockly.Arduino.includes_['oxocard_accesspointscenario'] = '#include "accesspointscenario.h"';
+	return 'AccessPointScenario(&oxocard).run();\n';
+};
+
+Blockly.Arduino.oxocard_pairing_mode = function() {
+	Blockly.Arduino.includes_['oxocard_pairingscenario'] = '#include "pairingscenario.h"';
+	return 'PairingScenario(&oxocard).run();\n';
 };
 
 Blockly.Arduino.oxocard_reboot = function() {
