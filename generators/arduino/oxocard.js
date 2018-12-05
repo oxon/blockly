@@ -87,9 +87,15 @@ Blockly.Arduino.oxocard_read_temperature = function() {
 };
 
 Blockly.Arduino.oxocard_connect_to_internet = function() {
-	 return 'oxocard.wifi->autoConnect();\n';
+	var code = 'if(oxocard.wifi->autoConnectWithFeedback(oxocard.matrix) < 0){\n';
+	code += '  oxocard.system->turnOff();\n}\n';
+	return code;
 };
 
+Blockly.Arduino.oxocard_wifi_can_connect_to_internet = function() {
+	var code = 'oxocard.wifi->autoConnectWithoutRetries() == 0';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
 
 Blockly.Arduino.oxocard_statemachine = function(block) {
 

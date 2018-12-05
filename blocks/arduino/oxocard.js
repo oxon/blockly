@@ -213,6 +213,18 @@ Blockly.Blocks.oxocard_connect_to_internet = {
 	}
 };
 
+Blockly.Blocks.oxocard_wifi_can_connect_to_internet = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TITLE);
+		this.setInputsInline(true);
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TIP);
+		this.setColour(Blockly.ColorDefinitions.LOGIC);
+	}
+};
+
 Blockly.Blocks['oxocard_statemachine'] = {
 	init: function() {
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);

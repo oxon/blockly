@@ -855,6 +855,9 @@
 	"OXOCARD_LIST_REMOVE_TIP": "Entfernt das definierte Element von der Liste",
 	"OXOCARD_LIST_REMOVE_COLOR_TIP": "Entfernt das definierte Element von der Farben-Liste",
 
+	"OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TITLE": "Kann sich mit dem Internet verbinden?",
+	"OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TIP": "Prüft ob die Oxocard sich mit dem Internet/WiFi verbinden kann. Gibt Wahr oder Falsch zurück.",
+
 	"OXOCARD_UPDATE_TITLE": "Oxocard aktualisieren",
 	"OXOCARD_UPDATE_TIP": "Versetzt die Oxocard in den Update-Modus. Wenn ein Programm im Blockly bereitgestellt wurde, wir dieses anschliessend auf die Oxocard geladen",
 	"OXOCARD_AP_MODE_TITLE": "Aktiviere Konfigurations-Modus",
