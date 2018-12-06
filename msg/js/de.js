@@ -744,6 +744,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TIP = "Liest einen Wert aus den Wetterdaten";
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_TITLE = "lies";
 /** @export */ Blockly.Msg.OXOCARD_WEATHER_GET_VALUE_WIND = "Wind (km/h)";
+/** @export */ Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TIP = "Prüft ob die Oxocard sich mit dem Internet/WiFi verbinden kann. Gibt Wahr oder Falsch zurück.";
+/** @export */ Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TITLE = "Kann sich mit dem Internet verbinden?";
 /** @export */ Blockly.Msg.OXOCARD_WINK_TIP = "Zeichnet ein einfaches Zwinkersmiley ;)";
 /** @export */ Blockly.Msg.OXOCARD_WINK_TITLE = "Zeichne Zwinkersmiley ;)";
 /** @export */ Blockly.Msg.PROCEDURES_ALLOW_STATEMENTS = "Anweisungen erlauben";

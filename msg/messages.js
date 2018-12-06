@@ -1723,6 +1723,10 @@ Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TITLE2 = 'from the color list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_TIP = 'Remove defined element from the list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TIP = 'Remove defined element from the color list';
 
+// Wifi
+Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TITLE = 'Can connect with WiFi?';
+Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TIP = 'This returns true if the card can connect with the internet.';
+
 // Other
 Blockly.Msg.OXOCARD_RANDOM_TITLE1 = 'Random from';
 Blockly.Msg.OXOCARD_RANDOM_TITLE2 = 'to';
