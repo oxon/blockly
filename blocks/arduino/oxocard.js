@@ -19,7 +19,7 @@ Blockly.Blocks['oxocard_comment'] = {
 		this.setPreviousStatement(true);
 		this.setNextStatement(true);
    }
-   
+
  };
 
 Blockly.Blocks['oxocard_button_ispressed'] = {
@@ -354,10 +354,15 @@ Blockly.Blocks['oxocard_is_orientation'] = {
 	init: function() {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE)
-			.appendField(new Blockly.FieldDropdown([[Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD, "UP"],
+			.appendField(new Blockly.FieldDropdown([
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_FLAT_FIELD, "FLAT"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_FLAT_FLIPPED_FIELD, "FLAT_FLIPPED"],
+				//[Blockly.Msg.OXOCARD_IS_ORIENTATION_HORIZONTALLY_FIELD, "HORIZONTALLY"],	// obsolete
+				//[Blockly.Msg.OXOCARD_IS_ORIENTATION_VERTICALLY_FIELD, "VERTICALLY"],			// obsolete
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD, "UP"],
 				[Blockly.Msg.OXOCARD_IS_ORIENTATION_DOWN_FIELD, "DOWN"],
-				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HORIZONTALLY_FIELD, "HORIZONTALLY"],
-				[Blockly.Msg.OXOCARD_IS_ORIENTATION_VERTICALLY_FIELD, "VERTICALLY"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_LEFT_FIELD, "LEFT"],
+				[Blockly.Msg.OXOCARD_IS_ORIENTATION_RIGHT_FIELD, "RIGHT"],
 				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_UP_FIELD, "HALF_UP"],
 				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_DOWN_FIELD, "HALF_DOWN"],
 				[Blockly.Msg.OXOCARD_IS_ORIENTATION_HALF_LEFT_FIELD, "HALF_LEFT"],

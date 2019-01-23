@@ -14,7 +14,7 @@ Blockly.Arduino.oxocard_button_waitforpressed = function() {
 	return 'oxocard.button->waitForPressed(' + dropdown_button + ');\n';
 };
 
-Blockly.Arduino.oxocard_comment = function() {	
+Blockly.Arduino.oxocard_comment = function() {
 	var comment = this.getFieldValue('COMMENT') || '';
 	return '// ' + comment + '\n';
   };
@@ -111,7 +111,7 @@ Blockly.Arduino.oxocard_get_acceleration = function() {
 
 Blockly.Arduino.oxocard_is_orientation = function() {
   var dropdown_button = this.getFieldValue('DIRECTION');
-  var code = 'oxocard.accelerometer->isOrientation(LIS3DE::' + dropdown_button +')';
+  var code = 'oxocard.accelerometer->isOrientation(Orientation::' + dropdown_button +')';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
