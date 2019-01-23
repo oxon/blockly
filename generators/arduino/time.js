@@ -33,3 +33,11 @@ Blockly.Arduino.oxocard_time_get_value = function() {
   var code = 'oxocard.clock->get' + valueType + '()';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+
+Blockly.Arduino.oxocard_time_set_manual = function() {
+	var code = 'oxocard.clock->setManualTime(';
+	var h = Blockly.Arduino.valueToCode(this, 'H', Blockly.Arduino.ORDER_NONE);
+	var m = Blockly.Arduino.valueToCode(this, 'M', Blockly.Arduino.ORDER_NONE);
+	var s = Blockly.Arduino.valueToCode(this, 'S', Blockly.Arduino.ORDER_NONE);
+	return code += h + ', ' + m + ', ' + s + ');\n';
+};

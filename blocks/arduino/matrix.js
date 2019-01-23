@@ -109,6 +109,23 @@ Blockly.Blocks.oxocard_matrix_set_color_var = {
 	}
 };
 
+Blockly.Blocks.oxocard_matrix_set_color_angle = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TITLE);
+		this.appendValueInput('HUE')
+			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
+		this.appendDummyInput()
+			.appendField("°");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setInputsInline(true);
+		this.setTooltip(Blockly.Msg.OXOCARD_MATRIX_SET_COLOR_ANGLE_TIP);
+		this.setColour(Blockly.ColorDefinitions.DISPLAY);
+	}
+};
+
 Blockly.Blocks.oxocard_matrix_draw_all = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {

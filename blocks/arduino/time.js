@@ -98,3 +98,25 @@ Blockly.Blocks.oxocard_time_get_value = {
 		return Blockly.Types.NUMBER;
 	}
 };
+
+Blockly.Blocks.oxocard_time_set_manual = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TITLE);
+		this.appendValueInput('H')
+			.appendField(Blockly.Msg.OXOCARD_TIME_SET_MANUAL_HOUR)
+			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('M')
+		.appendField(Blockly.Msg.OXOCARD_TIME_SET_MANUAL_MINUTE)
+			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
+		this.appendValueInput('S')
+		.appendField(Blockly.Msg.OXOCARD_TIME_SET_MANUAL_SECOND)
+			.setCheck(Blockly.Types.NUMBER.checkList).setAlign(Blockly.ALIGN_RIGHT);
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TIP);
+		this.setColour(Blockly.ColorDefinitions.TIME);
+	}
+};

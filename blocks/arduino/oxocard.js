@@ -213,6 +213,18 @@ Blockly.Blocks.oxocard_connect_to_internet = {
 	}
 };
 
+Blockly.Blocks.oxocard_wifi_can_connect_to_internet = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TITLE);
+		this.setInputsInline(true);
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TIP);
+		this.setColour(Blockly.ColorDefinitions.LOGIC);
+	}
+};
+
 Blockly.Blocks['oxocard_statemachine'] = {
 	init: function() {
 		this.setColour(Blockly.ColorDefinitions.COMMUNICATION);
@@ -318,7 +330,7 @@ Blockly.Blocks['oxocard_statemachine_state'] = {
 	}
 };
 
-
+// Scenarios
 Blockly.Blocks.oxocard_update = {
 	helpUrl: 'https://www.oxocard.ch/instructions.html',
 	init: function() {
@@ -331,6 +343,29 @@ Blockly.Blocks.oxocard_update = {
 	}
 };
 
+Blockly.Blocks.oxocard_ap_mode = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_AP_MODE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(false, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_AP_MODE_TIP);
+		this.setColour(Blockly.ColorDefinitions.ONOFF);
+	}
+};
+
+Blockly.Blocks.oxocard_pairing_mode = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_PAIRING_MODE_TITLE);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(false, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_PAIRING_MODE_TIP);
+		this.setColour(Blockly.ColorDefinitions.ONOFF);
+	}
+};
 
 /* ---------- Accelerometer ---------- */
 Blockly.Blocks.oxocard_get_acceleration = {
