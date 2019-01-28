@@ -1508,6 +1508,20 @@ Blockly.Msg.OXOCARD_GET_ACCELERATION_TITLE = 'get acceleration';
 Blockly.Msg.OXOCARD_GET_ACCELERATION_TIP = 'Returns the selected accelerometer axis value';
 Blockly.Msg.OXOCARD_GET_ORIENTATION_TITLE = 'get orientation';
 Blockly.Msg.OXOCARD_GET_ORIENTATION_TIP = 'Returns the orientation of the Oxocard';
+
+Blockly.Msg.OXOCARD_ORIENTATION_FLAT = 'Flat';
+Blockly.Msg.OXOCARD_ORIENTATION_FLAT_FLIPPED = 'Flat Flipped';
+
+Blockly.Msg.OXOCARD_ORIENTATION_UP = 'Up';
+Blockly.Msg.OXOCARD_ORIENTATION_HALF_UP = 'Halfway Up';
+Blockly.Msg.OXOCARD_ORIENTATION_DOWN = 'Down';
+Blockly.Msg.OXOCARD_ORIENTATION_HALF_DOWN = 'Halfway Down';
+
+Blockly.Msg.OXOCARD_ORIENTATION_LEFT = 'Left';
+Blockly.Msg.OXOCARD_ORIENTATION_HALF_LEFT = 'Halfway Left';
+Blockly.Msg.OXOCARD_ORIENTATION_RIGHT = 'Right';
+Blockly.Msg.OXOCARD_ORIENTATION_HALF_RIGHT = 'Halfway Right';
+
 Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE = 'is orientation';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_UP_FIELD = 'Up';
 Blockly.Msg.OXOCARD_IS_ORIENTATION_DOWN_FIELD = 'Down';

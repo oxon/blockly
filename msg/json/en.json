@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-12-05 14:51:31.541634",
+		"lastupdated": "2019-01-28 11:57:04.651805",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -648,6 +648,16 @@
 	"OXOCARD_GET_ACCELERATION_TIP": "Returns the selected accelerometer axis value",
 	"OXOCARD_GET_ORIENTATION_TITLE": "get orientation",
 	"OXOCARD_GET_ORIENTATION_TIP": "Returns the orientation of the Oxocard",
+	"OXOCARD_ORIENTATION_FLAT": "Flat",
+	"OXOCARD_ORIENTATION_FLAT_FLIPPED": "Flat Flipped",
+	"OXOCARD_ORIENTATION_UP": "Up",
+	"OXOCARD_ORIENTATION_HALF_UP": "Halfway Up",
+	"OXOCARD_ORIENTATION_DOWN": "Down",
+	"OXOCARD_ORIENTATION_HALF_DOWN": "Halfway Down",
+	"OXOCARD_ORIENTATION_LEFT": "Left",
+	"OXOCARD_ORIENTATION_HALF_LEFT": "Halfway Left",
+	"OXOCARD_ORIENTATION_RIGHT": "Right",
+	"OXOCARD_ORIENTATION_HALF_RIGHT": "Halfway Right",
 	"OXOCARD_IS_ORIENTATION_TITLE": "is orientation",
 	"OXOCARD_IS_ORIENTATION_UP_FIELD": "Up",
 	"OXOCARD_IS_ORIENTATION_DOWN_FIELD": "Down",

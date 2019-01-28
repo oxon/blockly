@@ -127,7 +127,7 @@ Blockly.Arduino.oxocard_get_acceleration = function() {
 
 Blockly.Arduino.oxocard_is_orientation = function() {
   var dropdown_button = this.getFieldValue('DIRECTION');
-  var code = 'oxocard.accelerometer->isOrientation(LIS3DE::' + dropdown_button +')';
+  var code = 'oxocard.accelerometer->isOrientation(' + dropdown_button +')';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
