@@ -580,6 +580,7 @@
 	"OXOCARD_GET_ACCELERATION_TITLE": "hole Beschleunigung",
 	"OXOCARD_GET_ACCELERATION_TIP": "Liefert die Beschleunigung um die angegebene Achse",
 	"OXOCARD_GET_ORIENTATION_TITLE": "Orientierung ",
+	"OXOCARD_GET_ORIENTATION_TIP": "Liefert die Orientierung der Oxocard",
 	"OXOCARD_ORIENTATION_FLAT": "Flach",
 	"OXOCARD_ORIENTATION_FLAT_FLIPPED": "Flach umgekehrt",
 	"OXOCARD_ORIENTATION_UP": "Oben",
