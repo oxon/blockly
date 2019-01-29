@@ -390,16 +390,16 @@ Blockly.Blocks['oxocard_is_orientation'] = {
 		this.appendDummyInput()
 			.appendField(Blockly.Msg.OXOCARD_IS_ORIENTATION_TITLE)
 			.appendField(new Blockly.FieldDropdown([
-				[Blockly.Msg.OXOCARD_ORIENTATION_FLAT,         'Orientation.Flat'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_FLAT_FLIPPED, 'Orientation.FlatFlipped'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_UP,           'Orientation.Up'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_UP,      'Orientation.HalfUp'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_DOWN,         'Orientation.Down'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_DOWN,    'Orientation.HalfDown'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_LEFT,         'Orientation.Left'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_LEFT,    'Orientation.HalfLeft'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_RIGHT,        'Orientation.Right'],
-				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_RIGHT,   'Orientation.HalfRight']
+				[Blockly.Msg.OXOCARD_ORIENTATION_FLAT,         'Orientation::Flat'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_FLAT_FLIPPED, 'Orientation::FlatFlipped'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_UP,           'Orientation::Up'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_UP,      'Orientation::HalfUp'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_DOWN,         'Orientation::Down'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_DOWN,    'Orientation::HalfDown'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_LEFT,         'Orientation::Left'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_LEFT,    'Orientation::HalfLeft'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_RIGHT,        'Orientation::Right'],
+				[Blockly.Msg.OXOCARD_ORIENTATION_HALF_RIGHT,   'Orientation::HalfRight']
 			]), "DIRECTION");
 		this.setInputsInline(true);
 		this.setOutput(true, 'Boolean');
