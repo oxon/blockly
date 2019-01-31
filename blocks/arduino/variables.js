@@ -201,3 +201,98 @@ Blockly.Blocks.oxocard_list_remove_color = {
 		this.setColour(Blockly.ColorDefinitions.VARIABLES);
 	}
 };
+
+Blockly.Blocks.oxocard_pus_has_variable = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_PUS_HAS_VARIABLE_TITLE1)
+			.appendField(new Blockly.FieldDropdown([
+        ["a", "\'a\'"], ["b", "\'b\'"], ["c", "\'c\'"], ["d", "\'d\'"],
+        ["e", "\'e\'"], ["f", "\'f\'"], ["g", "\'g\'"], ["h", "\'h\'"],
+        ["i", "\'i\'"], ["j", "\'j\'"], ["k", "\'k\'"], ["l", "\'l\'"],
+        ["m", "\'m\'"], ["n", "\'n\'"], ["o", "\'o\'"], ["p", "\'p\'"],
+        ["q", "\'q\'"], ["r", "\'r\'"], ["s", "\'s\'"], ["t", "\'t\'"],
+        ["u", "\'u\'"], ["v", "\'v\'"], ["w", "\'w\'"], ["x", "\'x\'"],
+        ["y", "\'y\'"], ["z", "\'z\'"]
+      ]), "KEY")
+      .appendField(Blockly.Msg.OXOCARD_PUS_HAS_VARIABLE_TITLE2);
+		this.setInputsInline(true);
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_PUS_HAS_VARIABLE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
+};
+
+Blockly.Blocks.oxocard_pus_set_variable = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_PUS_SET_VARIABLE_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+        ["a", "\'a\'"], ["b", "\'b\'"], ["c", "\'c\'"], ["d", "\'d\'"],
+        ["e", "\'e\'"], ["f", "\'f\'"], ["g", "\'g\'"], ["h", "\'h\'"],
+        ["i", "\'i\'"], ["j", "\'j\'"], ["k", "\'k\'"], ["l", "\'l\'"],
+        ["m", "\'m\'"], ["n", "\'n\'"], ["o", "\'o\'"], ["p", "\'p\'"],
+        ["q", "\'q\'"], ["r", "\'r\'"], ["s", "\'s\'"], ["t", "\'t\'"],
+        ["u", "\'u\'"], ["v", "\'v\'"], ["w", "\'w\'"], ["x", "\'x\'"],
+        ["y", "\'y\'"], ["z", "\'z\'"]
+      ]), "KEY")
+			.appendField(Blockly.Msg.OXOCARD_PUS_SET_VARIABLE_WITH);
+		this.appendValueInput('VALUE');
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_PUS_SET_VARIABLE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	}
+};
+
+Blockly.Blocks.oxocard_pus_get_variable = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_PUS_GET_VARIABLE_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+        ["a", "\'a\'"], ["b", "\'b\'"], ["c", "\'c\'"], ["d", "\'d\'"],
+        ["e", "\'e\'"], ["f", "\'f\'"], ["g", "\'g\'"], ["h", "\'h\'"],
+        ["i", "\'i\'"], ["j", "\'j\'"], ["k", "\'k\'"], ["l", "\'l\'"],
+        ["m", "\'m\'"], ["n", "\'n\'"], ["o", "\'o\'"], ["p", "\'p\'"],
+        ["q", "\'q\'"], ["r", "\'r\'"], ["s", "\'s\'"], ["t", "\'t\'"],
+        ["u", "\'u\'"], ["v", "\'v\'"], ["w", "\'w\'"], ["x", "\'x\'"],
+        ["y", "\'y\'"], ["z", "\'z\'"]
+      ]), "KEY");
+		this.setInputsInline(true);
+		this.setOutput(true, 'Number');
+		this.setTooltip(Blockly.Msg.OXOCARD_PUS_GET_VARIABLE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	},
+	getBlockType: function() {
+		return Blockly.Types.NUMBER;
+	}
+};
+
+Blockly.Blocks.oxocard_pus_delete_variable = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_PUS_DELETE_VARIABLE_TITLE)
+			.appendField(new Blockly.FieldDropdown([
+        ["a", "\'a\'"], ["b", "\'b\'"], ["c", "\'c\'"], ["d", "\'d\'"],
+        ["e", "\'e\'"], ["f", "\'f\'"], ["g", "\'g\'"], ["h", "\'h\'"],
+        ["i", "\'i\'"], ["j", "\'j\'"], ["k", "\'k\'"], ["l", "\'l\'"],
+        ["m", "\'m\'"], ["n", "\'n\'"], ["o", "\'o\'"], ["p", "\'p\'"],
+        ["q", "\'q\'"], ["r", "\'r\'"], ["s", "\'s\'"], ["t", "\'t\'"],
+        ["u", "\'u\'"], ["v", "\'v\'"], ["w", "\'w\'"], ["x", "\'x\'"],
+        ["y", "\'y\'"], ["z", "\'z\'"]
+      ]), "KEY");
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_PUS_DELETE_VARIABLE_TIP);
+		this.setColour(Blockly.ColorDefinitions.VARIABLES);
+	}
+};
