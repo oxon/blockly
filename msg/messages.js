@@ -1713,8 +1713,8 @@ Blockly.Msg.OXOCARD_TIME_GET_VALUE_DAY = 'day';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_MONTH = 'month';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_YEAR = 'year';
 Blockly.Msg.OXOCARD_TIME_GET_VALUE_TIP = 'Gets a specific value from the time (e.g. seconds)';
-Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TITLE = 'Set the internal clock to the provided values';
-Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TIP = 'Updates the time on the Oxocard to the provided values';
+Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TITLE = 'Set internal clock to';
+Blockly.Msg.OXOCARD_TIME_SET_MANUAL_TIP = 'Updates the internal clock of the Oxocard to the provided values';
 Blockly.Msg.OXOCARD_TIME_SET_MANUAL_HOUR = 'Hour';
 Blockly.Msg.OXOCARD_TIME_SET_MANUAL_MINUTE = 'Minute';
 Blockly.Msg.OXOCARD_TIME_SET_MANUAL_SECOND = 'Second';
@@ -1736,6 +1736,18 @@ Blockly.Msg.OXOCARD_LIST_REMOVE_TITLE2 = 'from the list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TITLE2 = 'from the color list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_TIP = 'Remove defined element from the list';
 Blockly.Msg.OXOCARD_LIST_REMOVE_COLOR_TIP = 'Remove defined element from the color list';
+
+// PUS
+Blockly.Msg.OXOCARD_PUS_HAS_VARIABLE_TITLE1 = 'is persistent variable';
+Blockly.Msg.OXOCARD_PUS_HAS_VARIABLE_TITLE2 = 'set?';
+Blockly.Msg.OXOCARD_PUS_HAS_VARIABLE_TIP = 'Checks if defined variable is set in the persistent memory';
+Blockly.Msg.OXOCARD_PUS_SET_VARIABLE_TITLE = 'Set persistent variable';
+Blockly.Msg.OXOCARD_PUS_SET_VARIABLE_WITH = 'with';
+Blockly.Msg.OXOCARD_PUS_SET_VARIABLE_TIP = 'Sets defined variable in the persistent memory';
+Blockly.Msg.OXOCARD_PUS_GET_VARIABLE_TITLE = 'get persistent variable';
+Blockly.Msg.OXOCARD_PUS_GET_VARIABLE_TIP = 'Gets defined variable from the persistent memory';
+Blockly.Msg.OXOCARD_PUS_DELETE_VARIABLE_TITLE = 'Delete persistent variable';
+Blockly.Msg.OXOCARD_PUS_DELETE_VARIABLE_TIP = 'Deletes defined variable from the persistent memory';
 
 // Wifi
 Blockly.Msg.OXOCARD_WIFI_CAN_CONNECT_TO_INTERNET_TITLE = 'Can connect with WiFi?';

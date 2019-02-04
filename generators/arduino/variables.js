@@ -96,3 +96,26 @@ Blockly.Arduino.oxocard_list_remove_color = function(block) {
 		block, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || '0';
 	return 'oxocard.colorList->remove(' + value + ');\n';
 };
+
+Blockly.Arduino.oxocard_pus_has_variable = function(block) {
+  var key = this.getFieldValue('KEY');
+  var code = 'oxocard.persistentUserStorage->hasVariable(' + key + ')';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_pus_set_variable = function(block) {
+  var key = this.getFieldValue('KEY');
+  var value = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC) || 0;
+  return 'oxocard.persistentUserStorage->saveVariable(' + key + ', ' + value + ');\n';
+};
+
+Blockly.Arduino.oxocard_pus_get_variable = function(block) {
+  var key = this.getFieldValue('KEY');
+  var code = 'oxocard.persistentUserStorage->loadVariable(' + key + ')';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_pus_delete_variable = function(block) {
+  var key = this.getFieldValue('KEY');
+  return 'oxocard.persistentUserStorage->deleteVariable(' + key + ');\n';
+};
