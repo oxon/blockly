@@ -285,5 +285,5 @@ Blockly.Blocks['controls_flow_statements'] = {
    * Blockly.Blocks['controls_flow_statements'].LOOP_TYPES.push('custom_loop');
    */
   LOOP_TYPES: ['controls_repeat', 'controls_repeat_ext', 'controls_forEach',
-      'controls_for', 'controls_whileUntil']
+      'controls_for', 'controls_whileUntil', 'oxocard_logic_while_forever']
 };
