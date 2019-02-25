@@ -26,8 +26,10 @@ Blockly.Arduino['controls_repeat'] = function(block) {
   var repeats = Number(block.getFieldValue('TIMES'));
   var branch = Blockly.Arduino.statementToCode(block, 'DO');
   branch = Blockly.Arduino.addLoopTrap(branch, block.id);
-  var loopVar = Blockly.Arduino.variableDB_.getDistinctName(
-      'count', Blockly.Variables.NAME_TYPE);
+  var loopVar = Blockly.Arduino.CodeVariablesPrefix + 
+    Blockly.Arduino.variableDB_.getDistinctName(
+      'count', Blockly.Variables.NAME_TYPE
+    );
   var code = 'for (int ' + loopVar + ' = 0; ' +
       loopVar + ' < ' + repeats + '; ' +
       loopVar + '++) {\n' +
@@ -48,12 +50,16 @@ Blockly.Arduino['controls_repeat_ext'] = function(block) {
   var branch = Blockly.Arduino.statementToCode(block, 'DO');
   branch = Blockly.Arduino.addLoopTrap(branch, block.id);
   var code = '';
-  var loopVar = Blockly.Arduino.variableDB_.getDistinctName(
-      'count', Blockly.Variables.NAME_TYPE);
+  var loopVar = Blockly.Arduino.CodeVariablesPrefix + 
+    Blockly.Arduino.variableDB_.getDistinctName(
+      'count', Blockly.Variables.NAME_TYPE
+    );
   var endVar = repeats;
   if (!repeats.match(/^\w+$/) && !Blockly.isNumber(repeats)) {
-    var endVar = Blockly.Arduino.variableDB_.getDistinctName(
-        'repeat_end', Blockly.Variables.NAME_TYPE);
+    var endVar = Blockly.Arduino.CodeVariablesPrefix + 
+      Blockly.Arduino.variableDB_.getDistinctName(
+        'repeat_end', Blockly.Variables.NAME_TYPE
+      );
     code += 'int ' + endVar + ' = ' + repeats + ';\n';
   }
   code += 'for (int ' + loopVar + ' = 0; ' +
@@ -107,8 +113,10 @@ Blockly.Arduino['controls_whileUntil'] = function(block) {
  * @return {string} Completed code.
  */
 Blockly.Arduino['controls_for'] = function(block) {
-  var variable0 = Blockly.Arduino.variableDB_.getName(
-      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var variable0 =  Blockly.Arduino.CodeVariablesPrefix + 
+    Blockly.Arduino.variableDB_.getName(
+      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE
+    );
   var argument0 = Blockly.Arduino.valueToCode(block, 'FROM',
       Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
   var argument1 = Blockly.Arduino.valueToCode(block, 'TO',
@@ -137,20 +145,26 @@ Blockly.Arduino['controls_for'] = function(block) {
     // Cache non-trivial values to variables to prevent repeated look-ups.
     var startVar = argument0;
     if (!argument0.match(/^\w+$/) && !Blockly.isNumber(argument0)) {
-      var startVar = Blockly.Arduino.variableDB_.getDistinctName(
-          variable0 + '_start', Blockly.Variables.NAME_TYPE);
+      var startVar =  Blockly.Arduino.CodeVariablesPrefix + 
+        Blockly.Arduino.variableDB_.getDistinctName(
+          variable0 + '_start', Blockly.Variables.NAME_TYPE
+        );
       code += 'int ' + startVar + ' = ' + argument0 + ';\n';
     }
     var endVar = argument1;
     if (!argument1.match(/^\w+$/) && !Blockly.isNumber(argument1)) {
-      var endVar = Blockly.Arduino.variableDB_.getDistinctName(
-          variable0 + '_end', Blockly.Variables.NAME_TYPE);
+      var endVar =  Blockly.Arduino.CodeVariablesPrefix + 
+        Blockly.Arduino.variableDB_.getDistinctName(
+          variable0 + '_end', Blockly.Variables.NAME_TYPE
+        );
       code += 'int ' + endVar + ' = ' + argument1 + ';\n';
     }
     // Determine loop direction at start, in case one of the bounds
     // changes during loop execution.
-    var incVar = Blockly.Arduino.variableDB_.getDistinctName(
-        variable0 + '_inc', Blockly.Variables.NAME_TYPE);
+    var incVar =  Blockly.Arduino.CodeVariablesPrefix + 
+      Blockly.Arduino.variableDB_.getDistinctName(
+        variable0 + '_inc', Blockly.Variables.NAME_TYPE
+      );
     code += 'int ' + incVar + ' = ';
     if (Blockly.isNumber(increment)) {
       code += Math.abs(increment) + ';\n';

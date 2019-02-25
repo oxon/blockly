@@ -249,8 +249,10 @@ Blockly.Arduino['math_number_property'] = function(block) {
 Blockly.Arduino['math_change'] = function(block) {
   var argument0 = Blockly.Arduino.valueToCode(block, 'DELTA',
       Blockly.Arduino.ORDER_ADDITIVE) || '0';
-  var varName = Blockly.Arduino.variableDB_.getName(
-      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var varName = Blockly.Arduino.CodeVariablesPrefix
+    Blockly.Arduino.variableDB_.getName(
+      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE
+    );
   return varName + ' += ' + argument0 + ';\n';
 };
 
@@ -263,14 +265,18 @@ Blockly.Arduino['math_change'] = function(block) {
  * @return {array} Completed code with order of operation.
  */
 Blockly.Arduino.math_decrement = function(block) {
-	var varName = Blockly.Arduino.variableDB_.getName(
-		block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var varName = Blockly.Arduino.CodeVariablesPrefix +
+    Blockly.Arduino.variableDB_.getName(
+      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE
+    );
 	return varName + '--;\n';
 };
 
 Blockly.Arduino.math_increment = function(block) {
-	var varName = Blockly.Arduino.variableDB_.getName(
-		block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var varName = Blockly.Arduino.CodeVariablesPrefix +
+    Blockly.Arduino.variableDB_.getName(
+      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE
+    );
 	return varName + '++;\n';
 };
 
@@ -336,8 +342,10 @@ Blockly.Arduino['math_random_int'] = function(block) {
       Blockly.Arduino.ORDER_NONE) || '0';
   var argument1 = Blockly.Arduino.valueToCode(block, 'TO',
       Blockly.Arduino.ORDER_NONE) || '0';
-  var functionName = Blockly.Arduino.variableDB_.getDistinctName(
-      'math_random_int', Blockly.Generator.NAME_TYPE);
+  var functionName = Blockly.Arduino.CodeVariablesPrefix + 
+    Blockly.Arduino.variableDB_.getDistinctName(
+      'math_random_int', Blockly.Generator.NAME_TYPE
+    );
   Blockly.Arduino.math_random_int.random_function = functionName;
   var func = [
       'int ' + Blockly.Arduino.DEF_FUNC_NAME + '(int min, int max) {',
@@ -366,8 +374,10 @@ Blockly.Arduino['math_random_float'] = function(block) {
 
 Blockly.Arduino['math_set_var_with'] = function(block) {
 	var expression = this.getFieldValue('EXPRESSION');
-	var varName = Blockly.Arduino.variableDB_.getName(
-		block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var varName = Blockly.Arduino.CodeVariablesPrefix +
+    Blockly.Arduino.variableDB_.getName(
+      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE
+    );
 	return varName + ' = ' + expression + ';\n';
 };
 
