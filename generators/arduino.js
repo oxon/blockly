@@ -76,7 +76,7 @@ Blockly.Arduino.PinTypes = {
   SPI: 'SPI'
 };
 
-Blockly.Arduino.CodeVariablesPrefix = 'oc_';
+Blockly.Arduino.CodeVariablesPrefix = '';
 
 /**
  * Arduino generator short name for
