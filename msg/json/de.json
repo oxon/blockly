@@ -884,5 +884,7 @@
 	"OXOCARD_AP_MODE_TITLE": "Aktiviere Konfigurations-Modus",
 	"OXOCARD_AP_MODE_TIP": "Versetzt die Oxocard in den Konfigurations-Modus (Accesspoint-Modus). Nachdem Du deinen Computer mit dem WiFi der Oxocard verbunden hast, kannst Du sie in einem Browser unter http://192.168.4.1 konfigurieren",
 	"OXOCARD_PAIRING_MODE_TITLE": "Verknüpfe mit Blockly",
-	"OXOCARD_PAIRING_MODE_TIP": "Die Oxocard kann mit einem Blockly verknüpft werden, indem der angezeigte Farbcode im Blockly abgetippt wird"
+	"OXOCARD_PAIRING_MODE_TIP": "Die Oxocard kann mit einem Blockly verknüpft werden, indem der angezeigte Farbcode im Blockly abgetippt wird",
+	"OXOCARD_SET_PIN_MODE_TITLE": "Setze Pin Modus",
+	"OXOCARD_SET_PIN_MODE_TIP": "Setzt den Modus des ausgewählten IO Pins"
 }

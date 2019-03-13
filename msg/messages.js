@@ -1759,6 +1759,8 @@ Blockly.Msg.OXOCARD_RANDOM_TITLE2 = 'to';
 Blockly.Msg.OXOCARD_RANDOM_TIP = 'Returns a random number between (and with) the first given value to (and with) the second value';
 Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TITLE = 'Connect with internet';
 Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TIP = 'Opens a connection to the internet';
+Blockly.Msg.OXOCARD_SET_PIN_MODE_TITLE = 'Set pin mode';
+Blockly.Msg.OXOCARD_SET_PIN_MODE_TIP = 'Sets the mode of the choosen IO pin';
 
 /**
  * Ardublockly instances

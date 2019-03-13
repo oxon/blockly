@@ -691,6 +691,8 @@ goog.require('Blockly.Msg');
 /** @export */ Blockly.Msg.OXOCARD_SETUP_AS_IBEACON_TITLE = "Starte als iBeacon";
 /** @export */ Blockly.Msg.OXOCARD_SET_CURSOR_TIP = "Setzt die Anfangsposition des Cursors auf der Matrix";
 /** @export */ Blockly.Msg.OXOCARD_SET_CURSOR_TITLE = "Setze Cursor";
+/** @export */ Blockly.Msg.OXOCARD_SET_PIN_MODE_TIP = "Setzt den Modus des ausgewählten IO Pins";
+/** @export */ Blockly.Msg.OXOCARD_SET_PIN_MODE_TITLE = "Setze Pin Modus";
 /** @export */ Blockly.Msg.OXOCARD_SMILE_TIP = "Zeichnet ein einfaches Smiley :)";
 /** @export */ Blockly.Msg.OXOCARD_SMILE_TITLE = "Zeichne Smiley :)";
 /** @export */ Blockly.Msg.OXOCARD_TIME_GET_FROM_ID_1 = "Pacific - Samoa / Pago";
