@@ -349,7 +349,24 @@ Blockly.Arduino.oxocard_comm_set_communication_type = function() {
 };
 
 Blockly.Arduino.oxocard_set_pin_mode = function() {
-  var pin = this.getFieldValue('PIN');
-  var pinMode = this.getFieldValue('MODE');
-  return 'pinMode(' + pin + ', ' + pinMode + ');\n';
+	var pin = this.getFieldValue('PIN');
+	var pinMode = this.getFieldValue('MODE');
+	return 'pinMode(' + pin + ', ' + pinMode + ');\n';
+};
+
+Blockly.Arduino.oxocard_digital_write = function() {
+	var pin = this.getFieldValue('PIN');
+	var value = Blockly.Arduino.valueToCode(this, 'BOOL', Blockly.Arduino.ORDER_ATOMIC) || 0;
+	return 'digitalWrite(' + pin + ', ' + value + ');\n';
+};
+
+Blockly.Arduino.oxocard_pin_boolean = function(block) {
+	var code = (block.getFieldValue('BOOL') == 'HIGH') ? 'HIGH' : 'LOW';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.oxocard_digital_read = function(block) {
+	var pin = this.getFieldValue('PIN');
+	var code = 'digitalRead(' + pin + ')';
+	return [code, Blockly.Arduino.ORDER_ATOMIC];
 };

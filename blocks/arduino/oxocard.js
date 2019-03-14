@@ -1293,3 +1293,55 @@ Blockly.Blocks.oxocard_set_pin_mode = {
 		this.setColour(Blockly.ColorDefinitions.ONOFF);
 	}
 };
+
+Blockly.Blocks.oxocard_digital_write = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_DIGITAL_WRITE_TITLE)
+			.appendField(new Blockly.FieldDropdown([["IO5", "5"],
+				["IO16", "16"], ["IO17", "17"], ["IO18", "18"], ["IO19", "19"],
+				["IO23", "23"]]), "PIN");
+		this.appendValueInput('BOOL');
+		this.setInputsInline(true);
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setTooltip(Blockly.Msg.OXOCARD_DIGITAL_WRITE_TIP);
+		this.setColour(Blockly.ColorDefinitions.ONOFF);
+	}
+};
+
+Blockly.Blocks['oxocard_pin_boolean'] = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldDropdown([
+				["High", "HIGH"],
+				["Low", "LOW"]
+			]), "BOOL");
+		this.setOutput(true, 'Boolean');
+	  this.setColour(Blockly.ColorDefinitions.LOGIC);
+		this.setTooltip("%{BKY_LOGIC_BOOLEAN_TOOLTIP}");
+	},
+	getBlockType: function() {
+	  return Blockly.Types.BOOLEAN;
+	}
+};
+
+Blockly.Blocks.oxocard_digital_read = {
+	helpUrl: 'https://www.oxocard.ch/instructions.html',
+	init: function() {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.OXOCARD_DIGITAL_READ_TITLE)
+			.appendField(new Blockly.FieldDropdown([["IO5", "5"],
+				["IO16", "16"], ["IO17", "17"], ["IO18", "18"], ["IO19", "19"],
+				["IO23", "23"]]), "PIN");
+		this.setInputsInline(true);
+		this.setOutput(true, 'Boolean');
+		this.setTooltip(Blockly.Msg.OXOCARD_DIGITAL_READ_TIP);
+		this.setColour(Blockly.ColorDefinitions.LOGIC);
+	},
+	getBlockType: function() {
+		return Blockly.Types.BOOLEAN;
+	}
+};

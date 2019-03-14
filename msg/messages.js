@@ -1761,6 +1761,10 @@ Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TITLE = 'Connect with internet';
 Blockly.Msg.OXOCARD_CONNECT_TO_INTERNET_TIP = 'Opens a connection to the internet';
 Blockly.Msg.OXOCARD_SET_PIN_MODE_TITLE = 'Set pin mode';
 Blockly.Msg.OXOCARD_SET_PIN_MODE_TIP = 'Sets the mode of the choosen IO pin';
+Blockly.Msg.OXOCARD_DIGITAL_WRITE_TITLE = 'Set pin';
+Blockly.Msg.OXOCARD_DIGITAL_WRITE_TIP = 'Sets the state of the choosen IO pin';
+Blockly.Msg.OXOCARD_DIGITAL_READ_TITLE = 'read pin';
+Blockly.Msg.OXOCARD_DIGITAL_READ_TIP = 'Reads the state of the choosen IO pin';
 
 /**
  * Ardublockly instances
