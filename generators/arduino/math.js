@@ -374,6 +374,23 @@ Blockly.Arduino['math_random_float'] = function(block) {
 
 Blockly.Arduino['math_set_var_with'] = function(block) {
 	var expression = this.getFieldValue('EXPRESSION');
+  var re = /[a-zA-Z_][a-zA-Z0-9_]*/g
+  var changed = true;
+  while (changed) {
+    changed = false;
+    var matches = expression.matchAll(re);
+    for (var match of matches) {
+      if (match[0].indexOf(Blockly.Arduino.CodeVariablesPrefix) === 0) {
+        continue;
+      }
+      changed = true;
+      var replaced = expression.slice(0, match.index);
+      replaced += Blockly.Arduino.CodeVariablesPrefix + match[0];
+      replaced += expression.slice(match.index+match[0].length, expression.length);
+      expression = replaced;
+      break;
+    }
+  }
   var varName = Blockly.Arduino.CodeVariablesPrefix +
     Blockly.Arduino.variableDB_.getName(
       block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE
