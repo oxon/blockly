@@ -890,5 +890,5 @@
 	"OXOCARD_DIGITAL_WRITE_TITLE": "Setze Pin",
 	"OXOCARD_DIGITAL_WRITE_TIP": "Setzt den Zustand des ausgewählten IO Pins",
 	"OXOCARD_DIGITAL_READ_TITLE": "lies Pin",
-	"OXOCARD_DIGITAL_WRITE_TIP": "Liefert den Zustand des ausgewählten IO Pins"
+	"OXOCARD_DIGITAL_READ_TIP": "Liefert den Zustand des ausgewählten IO Pins"
 }
