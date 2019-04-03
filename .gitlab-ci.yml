@@ -37,7 +37,7 @@ build_blockly_compoent:
     - blockly_compressed.js
     - blockly_uncompressed.js
     - arduino_compressed.js
-    - msg/js/**/*.js
+    - msg/js/*.js
     expire_in: 1 week
   only:
   - master
