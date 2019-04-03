@@ -1,0 +1,11 @@
+FROM python:2.7-jessie
+
+WORKDIR /app
+RUN mkdir -p /app/blockly/
+COPY * /app/blockly/
+
+RUN apt-get install git
+RUN cd /app && git clone https://github.com/google/closure-library.git
+
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["cd /app/blockly && python build.py core generators langfiles"]
