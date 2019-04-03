@@ -634,13 +634,14 @@ Blockly.Toolbox.TreeNode.prototype.getExpandIconSafeHtml = function() {
 Blockly.Toolbox.TreeNode.prototype.onClick_ = function(
     /* eslint-disable no-unused-vars */ e /* eslint-disable no-unused-vars */) {
   // Expand icon.
+  e = (typeof e !== 'undefined') ? e : false;
   if (this.hasChildren() && this.isUserCollapsible_) {
     this.toggle();
-    this.select();
+    if (!e) this.select();
   } else if (this.isSelected()) {
     this.getTree().setSelectedItem(null);
   } else {
-    this.select();
+    if (!e) this.select();
   }
   this.updateRow();
 };
