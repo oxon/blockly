@@ -3,7 +3,7 @@ image: docker:stable
 variables:
   DOCKER_DRIVER: overlay2
   GCP_PROJECT_ID: oxocard
-  BLOCKLY_BUILDER_IMAGE_NAME: oxocard-blockly-builder
+  BLOCKLY_BUILDER_IMAGE_NAME: oxocard-blockly-component-builder
   BLOCKLY_BUILDER_IMAGE: eu.gcr.io/$GCP_PROJECT_ID/$BLOCKLY_BUILDER_IMAGE_NAME
 
 stages:
