@@ -3,7 +3,7 @@ image: docker:stable
 variables:
   DOCKER_DRIVER: overlay2
   GCP_PROJECT_ID: oxocard
-  BLOCKLY_BUILDER_IMAGE_NAME: oxocard-api-builder
+  BLOCKLY_BUILDER_IMAGE_NAME: oxocard-blockly-builder
   BLOCKLY_BUILDER_IMAGE: eu.gcr.io/$GCP_PROJECT_ID/$BLOCKLY_BUILDER_IMAGE_NAME
 
 stages:
@@ -16,10 +16,10 @@ build_blockly_component_builder_image:
   services:
     - docker:dind
   script:
-    - docker build -t $BLOCKLY_BUILDER_IMAGE_NAME:$CI_COMMIT_SHORT_SHA -t $BLOCKLY_BUILDER_IMAGE_NAME:latest -f BuilderDockerfile .
+    - docker build -t $BLOCKLY_BUILDER_IMAGE:$CI_COMMIT_SHORT_SHA -t $BLOCKLY_BUILDER_IMAGE:latest -f BuilderDockerfile .
     - echo $GCLOUD_SERVICE_KEY | docker login -u _json_key --password-stdin https://eu.gcr.io
-    - docker push  $BLOCKLY_BUILDER_IMAGE_NAME:latest
-    - docker push $BLOCKLY_BUILDER_IMAGE_NAME:$CI_COMMIT_SHORT_SHA
+    - docker push  $BLOCKLY_BUILDER_IMAGE:latest
+    - docker push $BLOCKLY_BUILDER_IMAGE:$CI_COMMIT_SHORT_SHA
   when: manual
 
 
@@ -30,8 +30,8 @@ build_blockly_compoent:
   - docker:dind
   script:
   - echo $GCLOUD_SERVICE_KEY | docker login -u _json_key --password-stdin https://eu.gcr.io
-  - docker pull $BLOCKLY_BUILDER_IMAGE_NAME:latest
-  - docker run -v "$(pwd):/app/blockly/" $BLOCKLY_BUILDER_IMAGE_NAME:latest
+  - docker pull $BLOCKLY_BUILDER_IMAGE:latest
+  - docker run -v "$(pwd):/app/blockly/" $BLOCKLY_BUILDER_IMAGE:latest
   artifacts:
     paths:
     - blockly_compressed.js
